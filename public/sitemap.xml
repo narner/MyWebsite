@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/posts/</loc>
+    <lastmod>2020-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2020-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/project-soli-the-coming-use-of-radar-in-human-machine-interfaces/</loc>
+    <lastmod>2020-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/classification-of-sound-files-on-ios-with-the-soundanalysis-framework-and-esc-10-coreml-model-october-29-2019/</loc>
+    <lastmod>2019-10-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/machine-learning-development-on-apple-platforms-october-14-2019/</loc>
+    <lastmod>2019-10-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/things-a-first-time-pm-should-know-about-ios-development-september-22-2019/</loc>
+    <lastmod>2019-09-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/machine-learning-powered-gesture-recognition-on-ios-octobober-7-2017/</loc>
+    <lastmod>2017-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/jazz-gestures-and-open-source-why-and-how-i-learned-to-code-october-3-2017/</loc>
+    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/integrating-arduino-bluetooth-sensors-with-ios-september-5-2017/</loc>
+    <lastmod>2017-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/integrating-the-grt-into-an-iphone-project-august-29-2017/</loc>
+    <lastmod>2017-08-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/real-time-data-receiving-and-rendering-in-processing-august-21-2017/</loc>
+    <lastmod>2017-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/publications/</loc>
+    <lastmod>2017-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/publications/publications/</loc>
+    <lastmod>2017-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/touche%CC%81-and-water-as-an-interface-august-15-2017/</loc>
+    <lastmod>2017-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/talking-to-plants-touche%CC%81-experiments-august-4-2017/</loc>
+    <lastmod>2017-08-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/tools-for-machine-learning-and-sensor-inputs-for-gesture-recognition-july-6-2017/</loc>
+    <lastmod>2017-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/eyeo-2016-observations-on-toolmaking-june-13-2016/</loc>
+    <lastmod>2016-06-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/participating-in-the-soli-alpha-developer-program-may-23-2016/</loc>
+    <lastmod>2016-05-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/projects_and_work/audiokit/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/projects_and_work/emulating-touche%CC%81/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/projects_and_work/o_soli_mio/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/projects_and_work/projectsandwork/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/projects_and_work/whistlr/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/projects_and_work/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+  </url>
+  
+</urlset>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Nick Arner  | Project Soli &amp; the Coming Use of Radar in Human-Machine Interfaces</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.68.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.1cb140d8ba31d5b2f1114537dd04802a.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="Project Soli &amp; the Coming Use of Radar in Human-Machine Interfaces" />
+<meta property="og:description" content="Radar is a 85 — year old technology that up until recently has not been actively deployed in human-machine interfaces. Radar — based gesture sensing allows user intent to be inferred across more contexts than optical-only based tracking currently allows.
+Google’s use of Project Soli, a radar-based gesture recognition system, in the Pixel 4 series of phones is most likely the first step in further adoption of radar as an input for interacting with our devices." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/2020/project-soli-the-coming-use-of-radar-in-human-machine-interfaces/" />
+<meta property="article:published_time" content="2020-04-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-07T00:00:00+00:00" />
+<meta itemprop="name" content="Project Soli &amp; the Coming Use of Radar in Human-Machine Interfaces">
+<meta itemprop="description" content="Radar is a 85 — year old technology that up until recently has not been actively deployed in human-machine interfaces. Radar — based gesture sensing allows user intent to be inferred across more contexts than optical-only based tracking currently allows.
+Google’s use of Project Soli, a radar-based gesture recognition system, in the Pixel 4 series of phones is most likely the first step in further adoption of radar as an input for interacting with our devices.">
+<meta itemprop="datePublished" content="2020-04-07T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-04-07T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="2933">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Project Soli &amp; the Coming Use of Radar in Human-Machine Interfaces"/>
+<meta name="twitter:description" content="Radar is a 85 — year old technology that up until recently has not been actively deployed in human-machine interfaces. Radar — based gesture sensing allows user intent to be inferred across more contexts than optical-only based tracking currently allows.
+Google’s use of Project Soli, a radar-based gesture recognition system, in the Pixel 4 series of phones is most likely the first step in further adoption of radar as an input for interacting with our devices."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://example.org/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Nick Arner
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=http://example.org/posts/2020/project-soli-the-coming-use-of-radar-in-human-machine-interfaces/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=http://example.org/posts/2020/project-soli-the-coming-use-of-radar-in-human-machine-interfaces/&amp;text=Project%20Soli%20&amp;%20the%20Coming%20Use%20of%20Radar%20in%20Human-Machine%20Interfaces" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://example.org/posts/2020/project-soli-the-coming-use-of-radar-in-human-machine-interfaces/&amp;title=Project%20Soli%20&amp;%20the%20Coming%20Use%20of%20Radar%20in%20Human-Machine%20Interfaces" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+      <h1 class="f1 athelas mt3 mb1">Project Soli &amp; the Coming Use of Radar in Human-Machine Interfaces</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-04-07T00:00:00Z">April 7, 2020</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Radar is a 85 — year old technology that up until recently has not been actively deployed in human-machine interfaces. Radar — based gesture sensing allows user intent to be inferred across more contexts than optical-only based tracking currently allows.</p>
+<p>Google’s use of Project Soli, a radar-based gesture recognition system, in the Pixel 4 series of phones is most likely the first step in further adoption of radar as an input for interacting with our devices.</p>
+<p><strong>Background on Project Soli</strong></p>
+<p>At Google I/O 2015, the ATAP (Advanced Technology and Projects) group <a href="https://www.youtube.com/watch?v=mpbWQbkl8_g">announced several new initiatives</a>. These included:</p>
+<ul>
+<li><a href="https://9to5google.com/2015/05/29/smart-lock-passwords-is-cool-but-google-project-abacus-wants-to-eliminate-password-authentication/">Project Abacus</a> — multi-factor user authentication based on user location, typing patterns, and voice patterns</li>
+<li><a href="https://techcrunch.com/2015/05/29/googles-project-vault-is-a-secure-computing-environment-on-a-micro-sd-card-for-any-platform/?ncid=rss&amp;utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Techcrunch+(TechCrunch)">Project Vault</a> — a secure computing environment on a MicroSD Card, for any platform</li>
+<li><a href="https://atap.google.com/jacquard/">Project Jacquard</a> — conductive thread embedded in mass-producible textiles to create wearable-based interactions</li>
+<li><a href="https://www.youtube.com/watch?v=0QNiZfSsPc0">Project Soli</a> — a tiny radar sensor that’s capable of micro-gesture detection</li>
+</ul>
+<p>Of these, Jacquard and Soli are still active — Jacquard having been integrated into a variety of consumer products with fashion labels such as <a href="https://atap.google.com/jacquard/collaborations/levi-trucker/">Levi’s</a>, <a href="https://atap.google.com/jacquard/collaborations/ysl/">Saint Laurant</a>, and <a href="https://atap.google.com/jacquard/collaborations/gmr/">Adidas</a>.</p>
+<p>After going through several prototype iterations, Google integrated Soli into the <a href="https://www.blog.google/products/pixel/new-features-pixel4/">Pixel 4 as part of the Motion Sense feature</a>, which allows the phone to start the process of facial authentication before the phone’s owner even has to touch their phone.</p>
+<p>​</p>
+<p><img src="/blog_assets/2020/Soli_Prototypes.jpg" alt="Soli_Prototypes"></p>
+<p>​							Soli Prototypes (from: <a href="https://venturebeat.com/2019/01/02/google-gets-regulatory-approval-to-deploy-radar-based-motion-sensing-device-project-soli/">https://venturebeat.com/2019/01/02/google-gets-regulatory-approval-to-deploy-radar-based-motion-sensing-device-project-soli/</a></p>
+<p>Shortly after the announcement at I/O, ATAP put out a call for third party developers to apply to the Alpha Developer program for Project Soli, as a way to gain feedback on their early stage development kit. I filled out an application to develop music — based interactions with Soli, and was accepted into the program.</p>
+<p>I wrote more about my experience as a member of the alpha developer program <a href="https://www.nickarner.com/blog/projectsoli">here</a>; what I wanted to do with this blog post was provide more of an overview of the capabilities of millimeter-wave radar, and how they enable certain new experiences and experiments in the field of human-computer interaction.</p>
+<p>There’s been several academic papers written exploring this area since Project Soli was announced exploring different application areas, so we’ll look at those; as well as a quick overview of what millimeter-wave radar is, and the types of properties afforded by it.</p>
+<p>First though, let’s take a look at the first commercial product to use Project Soli, the Pixel 4.</p>
+<h3 id="pixel-4-and-motion-sense-capabilities">PIXEL 4 AND MOTION SENSE: CAPABILITIES</h3>
+<p>The first commercial product to integrate Project Soli is the Pixel4, released by Google in October, 2019. The teaser-ad hinted that the new phone would be the first product to integrate with Soli; given the touchless air gestures shown in it:</p>
+<p><a href="http://www.youtube.com/watch?v=KnRbXWojW7c" title=""><img src="http://img.youtube.com/vi/KnRbXWojW7c/0.jpg" alt=""></a></p>
+<p>The Soli chip affords <strong>three new types of capabilities</strong> for the Pixel 4:</p>
+<p><strong>Presence</strong> — thanks to radar’s ability to detect motion in the nearby area from where it’s placed, the Pixel 4 will turn off the always-on display if the user of the phone isn’t nearby while it’s placed on a table; therefore being able to both save battery power and not intrude upon the user’s attention</p>
+<p><strong>Reach</strong> — the Soli sensor will detect if a hand is moving towards it; waking up the screen and activating the front facing cameras for face-unlock</p>
+<p><strong>Gestures</strong></p>
+<ul>
+<li>Flick</li>
+<li>Presence</li>
+<li>Reach</li>
+<li>Swipe</li>
+</ul>
+<p>9 to 5 Google did an <a href="https://9to5google.com/2019/10/09/pixel-4-motion-sense-app-game-developers/">analysis</a> of the Pokemon Wave Hello game that comes bundled with the Pixel 4 phones, and discovered a Unity plug-in in the game that connected to a “Motion Sense Bridge” application running on the phone that gave the game developers access to various gesture parameters:</p>
+<p>Flick</p>
+<ul>
+<li>flickConfidence</li>
+<li>flickDirection</li>
+<li>flickPrediction</li>
+<li>flickRange</li>
+<li>flickVelocity</li>
+</ul>
+<p>Presence</p>
+<ul>
+<li>presenceConfidence</li>
+<li>presencePrediction</li>
+<li>presenceRange</li>
+<li>presenceVelocity</li>
+</ul>
+<p>Reach</p>
+<ul>
+<li>reachAzimuth</li>
+<li>reachConfidence</li>
+<li>reachElevation</li>
+<li>reachPrediction</li>
+<li>reachRange</li>
+<li>reachVelocity</li>
+</ul>
+<p>Swipe</p>
+<ul>
+<li>swipeAmplitude</li>
+<li>swipeConfidence</li>
+<li>swipeDirection</li>
+<li>swipeIntensity</li>
+<li>swipePrediction</li>
+<li>swipeTheta</li>
+</ul>
+<p>Right now, third-party developers don’t have access to the MotionSense gestures unless they’ve been given access to the Android internal MotionSense Bridge app by Google. Hopefully, Google will open up full-access to the Soli sensor so developers are able to explore how they can use the gesture recognition capabilities it affords in new and innovative ways.</p>
+<p><img src="/blog_assets/2020/Pixel4_Soli_Chip.jpg" alt="Pixel4_Soli_Chip"></p>
+<p>(The Pixel 4’s Soli sensor; from iFixit’s Pixel 4 XL Teardown <a href="https://www.ifixit.com/Teardown/Google+Pixel+4+XL+Teardown/127320">https://www.ifixit.com/Teardown/Google+Pixel+4+XL+Teardown/127320</a>)</p>
+<p><img src="/blog_assets/2020/Pixel4_Sensors.jpg" alt="Pixel4_Sensors"></p>
+<p>The location of the Soli sensor on the Pixel 4 (from <a href="https://ai.googleblog.com/2020/03/soli-radar-based-perception-and.html">https://ai.googleblog.com/2020/03/Soli-radar-based-perception-and.html</a>)</p>
+<p><strong>Challenges of Creating a Training a Dataset for Radar-based Gesture Recognition</strong></p>
+<p>In a <a href="https://ai.googleblog.com/2020/03/soli-radar-based-perception-and.html">post on the Google AI Blog</a>, Google ATAP engineers describe some of the challenges and considerations for embedding radar into a smartphone, such as making the radar chip small and modular enough that it can fit at the top of a phone, adding filters to account for vibrational noise that occurs when music is playing from the phone, and machine learning algorithms that are able to run at a low power level.</p>
+<p>One of the challenges with creating any robust machine learning model, especially one that will be in a device in the hands of millions of consumers, is making sure the model is able to accurately predict a gesture across a wide and diverse population of users. At the semantic level, it’s easy for humans to differentiate what a swipe or a flick gesture is. However, since each person makes those gestures in slightly different ways through variations in speed, hand angle, length of the gesture; the machine learning model for inferring which gesture occurs needs to be robust enough to be able to correctly infer the user’s gesture regardless of these differences.</p>
+<p>To make sure their models were accurate, the <a href="https://venturebeat.com/2020/03/12/google-soli-ai-model-millions-of-gestures-thousands-volunteers/"><strong>Soli team trained their TensorFlow model on millions of gestures made by thousands of volunteers</strong></a><strong>.</strong> These models were then optimized to run directly on the Pixel 4’s DSP unit; enabling the phone to recognize gestures even when the main processor is powered down — which is how the Pixel 4 is able to detect is someone is moving towards the phone using MotionSense, and then power on the FaceUnlock sensors to unlock the phone.</p>
+<h3 id="partnership-with-infineon">PARTNERSHIP WITH INFINEON</h3>
+<p>While Google developed the machine learning algorithms, signal processing, and UX patterns for interacting with Soli, German company <a href="https://www.eetimes.com/infineon-flies-under-the-radar-on-googles-soli/">Infineon developed the radar chip that is part of the Project Soli system</a>. While it is possible to purchase development kits from Infineon, they only stream raw radar data — no processed signal features that could be used to train a machine learning model to recognize gestures or presence.</p>
+<p>In their SSIGRAPH paper, <a href="http://www.ivanpoupyrev.com/wp-content/uploads/2017/01/siggraph_final.pdf">Soli: Ubiquitous Gesture Sensing with Millimeter Wave Radar</a>, the ATAP authors describe a HAL (Hardware Abstraction Layer) as a set of abstractions that would allow Project Soli to work across different radar sensor architectures from different manufacturers. This would allow Google to have the flexibility to use the same set of Soli feature primitives across various types of radar while keeping the same high-level interaction patterns.</p>
+<h3 id="example-applications-from-the-alpha-dev-program">EXAMPLE APPLICATIONS FROM THE ALPHA DEV PROGRAM</h3>
+<p>Participants of the Soli Alpha Dev Program were encouraged to publish our work in academic publications; some members also created demos for showcase on various blogs, including:</p>
+<ul>
+<li><a href="http://homes.create.aau.dk/dano/nime17/papers/0054/index.html">New musical interfaces</a> (Demo <a href="https://www.youtube.com/watch?v=WGlVzIlJvno">video</a>)</li>
+<li><a href="https://bltt.org/project-soli-produces-first-gesture-protoype/">An in-air gestural keyboard</a></li>
+<li><a href="https://www.theverge.com/circuitbreaker/2016/6/10/11904036/project-soli-tiniest-violin-design-io">The world’s tiniest violin</a></li>
+<li><a href="https://www.youtube.com/watch?v=HMjGsInF2yM">Using Soli to identify objects for robotic arm control</a></li>
+</ul>
+<p>The HCI department at the University of St. Andrews produced a robust body of work as members of the Alpha Dev program, including</p>
+<ul>
+<li><a href="https://www.researchgate.net/publication/317044324_RadarCat_Radar_Categorization_for_Input_Interaction">Radar Categorization for Input Recognition</a> — the authors present RadarCat, a system that’s able to discriminate between “26 materials (including complex composite objects), next with 16 transparent materials (with different thickness and varying dyes) and finally 10 body parts from 6 participants”</li>
+<li><a href="https://www.researchgate.net/publication/321230369_Tangible_UI_by_object_and_material_classification_with_radar">Tangible UI by Object and Material Classification with Radar</a> — continuing their work from RadarCat; the authors also describe real-world application scenarios that this system could be used in, including self-checkout systems and smart medical devices.</li>
+<li><a href="https://www.researchgate.net/publication/329954067_Exploring_Tangible_Interactions_with_Radar_Sensing">Exploring Tangible Interactions with Radar Sensing</a> — exploring “radar as a platform for sensing tangible interaction with the counting, ordering, identification of objects and tracking the orientation, movement and distance of these objects”.</li>
+</ul>
+<p>Some of the projects from the Alpha Developer program were showcased in a video that was presented in the update from ATAP at the following year’s I/O event (2016):</p>
+<p><a href="http://www.youtube.com/watch?v=H41A_IWZwZI" title=""><img src="http://img.youtube.com/vi/H41A_IWZwZI/0.jpg" alt=""></a></p>
+<h3 id="google-papers">GOOGLE PAPERS</h3>
+<p>Members of Google ATAP also published papers on their work with Project Soli:</p>
+<ul>
+<li><a href="http://www.ivanpoupyrev.com/wp-content/uploads/2017/01/p851-wang.pdf">Soli: Ubiquitous Gesture Sensing with Millimeter Wave Radar</a> — SIGGRAPH 2016</li>
+<li><a href="https://drive.google.com/file/d/0B5SjnRdVtEfycXc5dXJLSmF5U1k/view">A Highly Integrated 60 GHz 6-Channel Transceiver With Antenna in Package for Smart Sensing and Short-Range Communications</a> — IEEE 2016</li>
+<li><a href="http://www.ivanpoupyrev.com/wp-content/uploads/2017/01/p851-wang.pdf">Interacting with Soli: Exploring Fine-Grained Dynamic Gesture Recognition in the Radio-Frequency Spectrum</a> — UIST 2016</li>
+<li><a href="https://www.semanticscholar.org/paper/A-Two-Tone-Radar-Sensor-for-Concurrent-Detection-of-Gu-Lien/6f5f071341e6bd622a8b63e65694de42968ad98f">A Two-Tone Radar Sensor for Concurrent Detection of Absolute Distance and Relative Movement for Gesture Sensing</a> — IEEE Sensors Letters 2017</li>
+</ul>
+<h1 id="speculation">Speculation</h1>
+<h3 id="properties-of-mm-wave-radar-and-its-affordances">PROPERTIES OF MM-WAVE RADAR AND IT’S AFFORDANCES</h3>
+<p>Radar sensing is based on detecting the changing patterns of motion of an object in space. Radio waves are transmitted from the radar, bounce of a target (a human hand in motion), and then re-received by the radar’s antennas. The timed difference between when the waves are sent and when they are received is used to create a profile of the object that’s in the radar’s path.</p>
+<p>In the case of human gestures, the hand moves its position through 3D space while in the line of sight of a radar sensor. The changes of position produce different profiles for the bounced off radar signals, allowing for different gestures to be detected.</p>
+<p>Since radar detects gestures based upon different motion characteristics, it’s not well suited for detecting static gestures, such as sign language, or a peace sign. However, it is well suited for detecting dynamic, motion based gestures, like a finger snap, or a key-turning motion.</p>
+<p>Unlike optical based sensors, radar’s performance isn’t dependent on lighting, can work through materials, and even detect gestures that occur when fingers may be occluding each other.</p>
+<p>Micro-gestures can be <a href="https://dl.acm.org/doi/10.1145/2984511.2984565">defined</a> as “interactions involving small amounts of motion and those that are performed primarily by muscles driving the fingers and articulating the wrist, rather than those involving larger muscle groups to avoid fatigue over time”. Some examples of these types of gestures are making the motion of pushing a button by tapping your forefinger against your thumb, making a slider motion by moving your thumb against the surface of your forefinger, and making a motion similar to turning a dial with your fingers and wrist.</p>
+<p>These gestures could be used in a variety of contexts (IoT, AR/VR, etc) for interacting with user interface elements.</p>
+<h3 id="googles-ambient-computing-future">GOOGLE’S AMBIENT COMPUTING FUTURE</h3>
+<p>In the <a href="https://www.cs.virginia.edu/~bjc8c/class/cs6501-f17/lien16soli.pdf">first published paper for Project Soli</a>, the authors (from Google ATAP) list several possible application areas:</p>
+<ul>
+<li>Virtual Reality</li>
+<li>Wearables and smart garments</li>
+<li>Internet of Things and game controllers</li>
+<li>“Traditional Devices” (mobile phones, tablets, laptops)</li>
+</ul>
+<p>If all of these device types were to integrate Project Soli, Google could leverage a universal gestural framework that all of them would have in common. This would make it easy for people to quickly use these new devices, all interacting with Google’s array of services.</p>
+<p>Ben Thompson’s article on Stratechery, “<a href="https://stratechery.com/2019/google-and-ambient-computing/">Google and Ambient Computing</a>”, analyzes Google’s recent shift from stating they want to help organize the world’s information, to one that helps you get things done.</p>
+<p>In his opening remarks at <a href="http://v/">Made by Google 2019</a>, Google Senior VP of Devices and Services, <a href="https://www.wired.com/story/one-mans-quest-to-make-googles-gadgets-great/">Rick Osterloh</a> (who was formerly the head of Google ATAP), outlines a vision of Google as a company that wants “to bring a more helpful Google to you.” Sundar Pichai stated in the keynote of 20193 I/O that “We are moving from a company that helps you find answers to a company that helps you get things done”.</p>
+<p>Ambient Computing was first coined by tech journalist Walt Mossberg in his final column, “<a href="https://www.theverge.com/2017/5/25/15686870/walt-mossberg-final-column-the-disappearing-computer">The Disappearing Computer</a>”. It’ also referred to as ubiquitous or pervasive computing.</p>
+<p>For some additional reading on this area of computing, check out the <a href="http://scihi.org/mark-weiser-and-his-vision-of-ubiquituous-computing/">work of Mark Weiser</a>, a Chief Scientist at Xerox PARC, especially his 1991 Scientific American article, “<a href="https://www.lri.fr/~mbl/Stanford/CS477/papers/Weiser-SciAm.pdf">The Computer for the 21st Century</a>”. Weiser coined the term ubiquitous computing, which he described as computing able to occur using “any device, in any location, and in any format”.</p>
+<p>Thompson makes the point that Google’s vision of ambient computing “does not compete with the smartphone, but rather leverages it”. Google isn’t trying to find whatever the next hardware platform is (like Facebook was doing with acquiring Oculus for VR, or Apple’s full-on push into AR); ratther, they are looking to create an ecosystem of ambient devices that all seamlessly connect (possibly using the smartphone as a hub?) and are intuitive to interact with; all connected to the services that Google’s providing.</p>
+<p>Having a unified way to <a href="https://staceyoniot.com/ambient-computings-next-big-problem-is-intent/">interact with devices that exist in a variety of contexts</a> would be hugely beneficial to Google in furthering adoption of their ambient computing vision. A small, easily embeddable sensor that can detect gestures from people regardless of lighting or other atmospheric conditions would bring this vision much closer to reality. This would make it easier for users to engage with a wide variety of devices that would offer access to Google’s services.</p>
+<h3 id="clues-from-apple-on-adoption-of-mm-wave-radar">CLUES FROM APPLE ON ADOPTION OF MM-WAVE RADAR</h3>
+<p>With the recent release of a <a href="https://www.apple.com/newsroom/2020/03/apple-unveils-new-ipad-pro-with-lidar-scanner-and-trackpad-support-in-ipados/">LiDAR capable iPad Pro</a> in service to AR capabilities, Apple seems to be showing a willingness to put sensors of ever increasing complexity (and utility) into their products. Additionally, Apple has put up at least one posting for roles related to radar; a <a href="https://www.linkedin.com/jobs/view/radar-signal-processing-engineer-at-apple-1380851968/">now inactive posting on LinkedIn</a> for a Radar Signal Processing Engineer includes the following in its description.</p>
+<p><img src="/blog_assets/2020/AppleJob1.jpg" alt="AppleJob1"></p>
+<p>​</p>
+<p><img src="/blog_assets/2020/AppleJob2.jpg" alt="AppleJob2"></p>
+<p>It feels fair to me to say that at the very least, Apple is looking at millimeter-wave radar as a sensing modality; when, how, and most importantly; if a radar-enabled Apple product ever leaves the labs in Cupertino is one that only time will be able to tell.</p>
+<p>My personal speculation is that Apple will release an AR headset with radar built-in for micro-gesture detection to augment their hand tracking capabilities. Additionally, as radar becomes better well known as a possible sensing modality (thanks mostly due to Project Soli, and whatever products Google and their partners decide to integrate it into), other AR and VR headset makers will begin integrating millimeter-wave radar chips into their headsets as a way to solve the “missing interface” problem mentioned earlier; making sure that the real-world physical objects that people interact with via AR/VR have a way to map to digital information that’s presented via the headset.</p>
+<h2 id="competition">COMPETITION</h2>
+<p>There is <a href="https://www.eetimes.com/document.asp?doc_id=1335123">at least one startup</a> working on millimeter-wave radar for human-machine interfaces; Taiwan’s KaiKuTek (“CoolTech”). They claim that their radar-based gesture sensing system can match, if not surpass, Google’s Project Soli.</p>
+<p>A Machine-Learning inference chip is integrated with the radar sensor; so all the inference is done on a <em>sensor-side compute</em> level, unlike the Pixel 4’s MotionSense system, in which the sensor (Soli) and the inference engine are on separate chip components. This is, KaiKuTek claims, they are able to achieve such a low power (1 mW) rating.</p>
+<h2 id="closing-thoughts">CLOSING THOUGHTS</h2>
+<p>With Project Soli, Google has advanced the conversation on how we interact with computers across a wide range of modalities and contexts. Millimeter-wave radar offers a promising way to gesturally interact with computers without having to worry about occlusion, lighting conditions, or similar limiting conditions imposed on camera-based systems.</p>
+<p>With the increasing pace of computers being embedded in more devices, millimeter-wave radar could end up enabling a more universal gestural language that’s familiar across these devices. Of course, each manufacturer will inevitably have differences between each other (though Google is the first to use mm-wave radar as a sensor for gestural interaction, it does not mean it will be the last), it could end up affording “similar enough” gestural interactions the same way that touchscreens are almost universal, but each OEM vendor enables different gestures for use with the touch screen.</p>
+<h2 id="appendix">APPENDIX:</h2>
+<p>I’ve included additional publications dealing with millimeter-wave radar and its applications in HCI (not necessarily involving Project Soli). A good portion of these focus on the machine learning techniques used to enable gesture recognition with a radar pipeline.</p>
+<ul>
+<li>
+<p><a href="https://www.researchgate.net/publication/328523480_One-Shot_Learning_for_Robust_Material_Classification_Using_Millimeter-Wave_Radar_System">One-Shot Learning for Robust Material Classification Using Millimeter-Wave Radar System</a></p>
+</li>
+<li>
+<p><a href="https://www.researchgate.net/publication/327147453_Hand_Gesture_Recognition_Using_a_Radar_Echo_I-Q_Plot_and_Convolutional_Neural_Network">Hand Gesture Recognition Using a Radar Echo I-Q Plot and Convolutional Neural Network</a></p>
+</li>
+<li>
+<p><a href="https://www.researchgate.net/publication/329111113_Robust_Gesture_Recognition_using_Millimetric-Wave_Radar_System">Robust Gesture Recognition using Millimetric-Wave Radar System</a></p>
+</li>
+<li>
+<p><a href="http://researchgate.net/publication/329362210_Hand_Gesture_Recognition_based_on_Radar_Micro-Doppler_Signature_Envelopes">Hand Gesture Recognition based on Radar Micro-Doppler Signature Envelopes</a></p>
+</li>
+<li>
+<p><a href="https://www.researchgate.net/publication/331479894_Reinventing_radar_The_power_of_4D_sensing">Reinventing radar: The power of 4D sensing</a></p>
+</li>
+<li>
+<p><a href="http://researchgate.net/publication/323438029_Gesture_Recognition_Using_mm-Wave_Sensor_for_Human-Car_Interface">Gesture Recognition Using mm-Wave Sensor for Human-Car Interface</a></p>
+</li>
+<li>
+<p><a href="https://www.researchgate.net/publication/335508422_Short-Range_Radar-based_Gesture_Recognition_System_using_3D_CNN_with_Triplet_Loss">Short-Range Radar-based Gesture Recognition System using 3D CNN with Triplet Loss</a></p>
+</li>
+<li>
+<p><a href="https://www.researchgate.net/publication/329362210_Hand_Gesture_Recognition_based_on_Radar_Micro-Doppler_Signature_Envelopes">Hand Gesture Recognition based on Radar Micro-Doppler Signature Envelopes</a></p>
+</li>
+<li>
+<p><a href="https://www.researchgate.net/publication/329111113_Robust_Gesture_Recognition_using_Millimetric-Wave_Radar_System">Robust Gesture Recognition using Millimetric-Wave Radar System</a></p>
+</li>
+<li>
+<p><a href="https://www.researchgate.net/publication/330863396_TS-I3D_based_Hand_Gesture_Recognition_Method_with_Radar_Sensor">TS-I3D based Hand Gesture Recognition Method with Radar Sensor</a></p>
+</li>
+<li>
+<p><a href="https://www.researchgate.net/publication/333733782_Character_Recognition_in_Air-Writing_Based_on_Network_of_Radars_For_Human-Machine_Interface">Character Recognition in Air-Writing Based on Network of Radars For Human-Machine Interface</a></p>
+</li>
+<li>
+<p><a href="https://www.researchgate.net/publication/325628921_Doppler-Radar_Based_Hand_Gesture_Recognition_System_Using_Convolutional_Neural_Networks">Doppler-Radar Based Hand Gesture Recognition System Using Convolutional Neural Networks</a></p>
+</li>
+<li>
+<p><a href="https://www.researchgate.net/publication/337026376_Eliciting_Contact-based_and_Contactless_Gestures_with_Radar-based_Sensors">Eliciting Contact-based and Contactless Gestures with Radar-based Sensors</a></p>
+</li>
+<li>
+<p><a href="https://www.researchgate.net/publication/331479894_Reinventing_radar_The_power_of_4D_sensing">Reinventing radar: The power of 4D sensing</a></p>
+</li>
+<li>
+<p><a href="https://ieeexplore.ieee.org/document/8755821">Motion Sensing Using Radar: Gesture Interaction and Beyond</a></p>
+</li>
+</ul>
+<p>Patents related to Project Soli:</p>
+<ul>
+<li><a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=US233946088">Gesture-Based Small Device Input</a></li>
+<li><a href="https://patents.google.com/patent/US9575560B2/en">Radar-based gesture-recognition through a wearable device</a></li>
+<li><a href="https://patents.google.com/patent/US20160055201A1/en?inventor=Gaetano+Roberto+Aiello">Radar Recognition-Aided Searches</a></li>
+<li><a href="https://patents.google.com/patent/US10503883B1/en?inventor=Ivan+Poupyrev&amp;clustered=true">Radar-based authentication</a></li>
+<li><a href="https://patents.google.com/patent/US20170097413A1/en">Radar-Enabled Sensor Fusion</a></li>
+<li><a href="https://patents.google.com/patent/US10139916B2/en?inventor=Ivan+Poupyrev&amp;clustered=true">Wide-field radar-based gesture recognition</a></li>
+<li><a href="https://patents.google.com/patent/US10409385B2/en?inventor=Ivan+Poupyrev&amp;clustered=true">Occluded gesture recognition</a></li>
+<li><a href="https://patents.google.com/patent/EP3177982B1/en?inventor=Ivan+Poupyrev&amp;clustered=true">Radar-based gesture sensing and data transmission</a></li>
+<li><a href="https://pdfaiw.uspto.gov/.aiw?Docid=20200064996">Smartphone-based Radar System Facilitating Ease and Accuracy of User Interactions With Displayed Objects in an Augmented Reality Interface</a></li>
+</ul>
+<p>Press Articles on the Pixel 4 Launch and Integration with Project Soli:</p>
+<ul>
+<li><a href="https://9to5google.com/2019/06/11/google-pixel-4-project-soli/">Rumor: Google’s Project Soli radar chip could debut in Google Pixel 4</a></li>
+<li><a href="https://www.theverge.com/2019/10/15/20908083/google-pixel-4-project-soli-radar-motion-sense-explainer">GOOGLE’S PROJECT Soli: THE TECH BEHIND PIXEL 4’S MOTION SENSE RADAR</a></li>
+<li><a href="https://www.cnet.com/news/project-soli-is-the-secret-star-of-googles-pixel-4-self-leak/">Project Soli is the secret star of Google’s Pixel 4 self-leak</a></li>
+<li><a href="https://9to5google.com/2019/09/23/pixel-4-xl-hands-on-face-unlock-back-finish/">Pixel 4 XL hands-on details ‘Face unlock,’ back finish, more</a></li>
+<li><a href="https://www.infineon.com/cms/en/about-infineon/press/press-releases/2019/INFPMM201910-003.html">Gesture control thanks to Infineon-radar technology in Google Pixel 4 Smartphone</a></li>
+<li><a href="https://9to5google.com/2019/10/15/ustwo-motion-sense-game-headed-south-pixel-4/">Monument Valley’s ustwo creates Motion Sense game ‘Headed South’ for Google Pixel 4</a></li>
+<li><a href="https://www.cnet.com/news/with-pixel-4-googles-experimental-tech-bets-finally-enter-the-spotlight/">With Pixel 4, Google’s experimental tech bets finally enter the spotlight</a></li>
+<li><a href="https://www.thedrum.com/creative-works/project/swift-google-soli-dance-dj">Google: Soli Dance DJ by Swift</a></li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://example.org/" >
+    &copy;  Nick Arner 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

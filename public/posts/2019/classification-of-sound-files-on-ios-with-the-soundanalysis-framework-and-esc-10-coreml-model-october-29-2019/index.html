@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Nick Arner  | Classification of Sound Files on iOS with the SoundAnalysis Framework and ESC-10 CoreML Model</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.68.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.1cb140d8ba31d5b2f1114537dd04802a.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="Classification of Sound Files on iOS with the SoundAnalysis Framework and ESC-10 CoreML Model" />
+<meta property="og:description" content="Earlier this year, Apple introduced the SoundAnalysis framework, enabling apps to “analyze streamed and file-based audio to classify it as a particular type”.
+It’s available in the following SDK’s:
+ iOS13&#43; macOS 10.15&#43; Mac Catalyst 13.0&#43; tvOS 13.0&#43; watchOS 6.0&#43;  INPUT TYPES The SoundAnalysis framework is able to work with live audio via the device microphone, or from pre-recorded audio files. In a real-world application scenario, these could be either audio files downloaded from a server onto the app, or recorded by the app for later analysis." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/2019/classification-of-sound-files-on-ios-with-the-soundanalysis-framework-and-esc-10-coreml-model-october-29-2019/" />
+<meta property="article:published_time" content="2019-10-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-10-29T00:00:00+00:00" />
+<meta itemprop="name" content="Classification of Sound Files on iOS with the SoundAnalysis Framework and ESC-10 CoreML Model">
+<meta itemprop="description" content="Earlier this year, Apple introduced the SoundAnalysis framework, enabling apps to “analyze streamed and file-based audio to classify it as a particular type”.
+It’s available in the following SDK’s:
+ iOS13&#43; macOS 10.15&#43; Mac Catalyst 13.0&#43; tvOS 13.0&#43; watchOS 6.0&#43;  INPUT TYPES The SoundAnalysis framework is able to work with live audio via the device microphone, or from pre-recorded audio files. In a real-world application scenario, these could be either audio files downloaded from a server onto the app, or recorded by the app for later analysis.">
+<meta itemprop="datePublished" content="2019-10-29T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-10-29T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="627">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Classification of Sound Files on iOS with the SoundAnalysis Framework and ESC-10 CoreML Model"/>
+<meta name="twitter:description" content="Earlier this year, Apple introduced the SoundAnalysis framework, enabling apps to “analyze streamed and file-based audio to classify it as a particular type”.
+It’s available in the following SDK’s:
+ iOS13&#43; macOS 10.15&#43; Mac Catalyst 13.0&#43; tvOS 13.0&#43; watchOS 6.0&#43;  INPUT TYPES The SoundAnalysis framework is able to work with live audio via the device microphone, or from pre-recorded audio files. In a real-world application scenario, these could be either audio files downloaded from a server onto the app, or recorded by the app for later analysis."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://example.org/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Nick Arner
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=http://example.org/posts/2019/classification-of-sound-files-on-ios-with-the-soundanalysis-framework-and-esc-10-coreml-model-october-29-2019/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=http://example.org/posts/2019/classification-of-sound-files-on-ios-with-the-soundanalysis-framework-and-esc-10-coreml-model-october-29-2019/&amp;text=Classification%20of%20Sound%20Files%20on%20iOS%20with%20the%20SoundAnalysis%20Framework%20and%20ESC-10%20CoreML%20Model" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://example.org/posts/2019/classification-of-sound-files-on-ios-with-the-soundanalysis-framework-and-esc-10-coreml-model-october-29-2019/&amp;title=Classification%20of%20Sound%20Files%20on%20iOS%20with%20the%20SoundAnalysis%20Framework%20and%20ESC-10%20CoreML%20Model" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+      <h1 class="f1 athelas mt3 mb1">Classification of Sound Files on iOS with the SoundAnalysis Framework and ESC-10 CoreML Model</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-10-29T00:00:00Z">October 29, 2019</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Earlier this year, Apple introduced the <a href="https://developer.apple.com/documentation/soundanalysis">SoundAnalysis framework</a>, enabling apps to “analyze streamed and file-based audio to classify it as a particular type”.</p>
+<p>It’s available in the following SDK’s:</p>
+<ul>
+<li>iOS13+</li>
+<li>macOS 10.15+</li>
+<li>Mac Catalyst 13.0+</li>
+<li>tvOS 13.0+</li>
+<li>watchOS 6.0+</li>
+</ul>
+<h3 id="input-types"><strong>INPUT TYPES</strong></h3>
+<p>The SoundAnalysis framework is able to work with live audio via the device microphone, or from pre-recorded audio files. In a real-world application scenario, these could be either audio files downloaded from a server onto the app, or recorded by the app for later analysis.</p>
+<p>However, at the time of writing, I was not able to get live audio input working with Sound Analysis after following Apple’s guide. Here’s a <a href="https://stackoverflow.com/questions/58496448/error-updating-tree-format-when-using-ios-soundanalysis-framework?noredirect=1#comment103345155_58496448">StackOverflow post</a> with what I was working through for future reference.</p>
+<p>Should I get live audio input working, I’ll update the blog post / project with an additional example. For now, this project demonstrates how to use SoundAnalysis off of audio files only.</p>
+<h3 id="dataset"><strong>DATASET</strong></h3>
+<p>The dataset I used is the ESC (environmental sound classification)-10 dataset; the same one that Apple uses in their <a href="https://apple.github.io/turicreate/docs/userguide/sound_classifier/">TuriCrate tutorial on Sound Classification</a>. The ESC-10 is a subset of the <a href="https://github.com/karoldvl/ESC-50">larger ESC-50 dataset that’s available on GitHub</a>.</p>
+<p>The dataset consists of ten classes, with ten files for each class. The classes are:</p>
+<ol>
+<li>Dog Barking</li>
+<li>Rain</li>
+<li>Sea Waves</li>
+<li>Crying baby</li>
+<li>Clock Tick</li>
+<li>Person Sneezing</li>
+<li>Helicopter</li>
+<li>Chainsaw</li>
+<li>Rooster</li>
+<li>Fire Crackling</li>
+</ol>
+<p>This is not a very large collection of audio files for an extremely robust dataset, and the classes aren’t particularly interesting in and of themselves without a larger context — the point of the project is to demonstrate the concept of how a sound classification dataset would be used with CreateML to create a CoreML model in conjunction with the SoundAnalysis framework. If you were building a custom sound classification recognition model for use in a production app, you would most likely need to create your own custom dataset that uses audio data that is close to the real world scenario in which your app would be used for.</p>
+<p>There are some other audio-focused datasets available; a compilation of some can be found <a href="http://www.cs.tut.fi/~heittolt/datasets">here</a>, <a href="https://towardsdatascience.com/a-data-lakes-worth-of-audio-datasets-b45b88cd4ad">here</a>, and <a href="https://cassebook.github.io/ch06/index/">here</a>. However, you’ll need to make sure that you check what the licenses are for each dataset before you use them to create a model that can be used in a commercial application.</p>
+<h3 id="createml-project"><strong>CREATEML PROJECT</strong></h3>
+<p>The <a href="https://developer.apple.com/documentation/createml">CreateML app</a> that’s included in Xcode allows developers to create CoreML models that recognize sounds without writing any code.</p>
+<p>With this <a href="https://developer.apple.com/videos/play/wwdc2019/425/">new template from CreateML</a>, you can make a machine learning model that can recognize types of sound events without having to write any code, and use the interface to do so in CreateML that you would use to make ML models that are trained on visual, tabular, or sensor data.</p>
+<p>In addition to the ECS-10 CoreML model, I’ve included the CreateML project used to make the model in this repository.</p>
+<p><img src="/blog_assets/2019/CreateMLInterface.jpg" alt="CreateMLI	nterface"></p>
+<p>​		CreateML Training Interface</p>
+<p>The ECS-10-CoreML-Demo is an Xcode project that demonstrates how to use the SoundAnalysis framework in an app.</p>
+<p>The app will randomly select from ten pre-loaded .wav files and play them through the speakers (using <a href="http://audiokit.io/">AudioKit</a>), while running an analysis with the SoundAnalyzer framework. Setting up this pipeline takes remarkably few lines of code:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#66d9ef">var</span> model: MLModel!
+
+    <span style="color:#75715e">//Access the bundled CoreML model</span>
+
+    <span style="color:#66d9ef">let</span> soundClassifier = ESC_10_Sound_Classifier()
+
+    model = soundClassifier.model
+
+    <span style="color:#75715e">// Create a new audio file analyzer.</span>
+
+    <span style="color:#66d9ef">do</span> {
+
+    audioFileAnalyzer = <span style="color:#f92672">**</span><span style="color:#66d9ef">try</span><span style="color:#f92672">**</span> SNAudioFileAnalyzer(url: audioFileURL)
+
+    } <span style="color:#66d9ef">catch</span>
+
+
+
+    <span style="color:#75715e">// Create a new observer that will be notified of analysis results.</span>
+
+    <span style="color:#66d9ef">let</span> resultsObserver = ResultsObserver()
+
+    <span style="color:#75715e">// Prepare a new request for the trained model.</span>
+
+    <span style="color:#66d9ef">do</span> {
+
+    <span style="color:#66d9ef">let</span> request = <span style="color:#66d9ef">try</span> SNClassifySoundRequest(mlModel: model)
+
+    <span style="color:#66d9ef">try</span> audioFileAnalyzer.add(request, withObserver: resultsObserver)
+
+    } <span style="color:#66d9ef">catch</span>
+
+
+
+    <span style="color:#75715e">// Analyze the audio data.</span>
+
+    audioFileAnalyzer.analyze()
+</code></pre></div><h3 id="heres-a-video-of-the-test-app-in-action"><strong>HERE’S A VIDEO OF THE TEST APP IN ACTION:</strong></h3>
+<p>The project can be found on GitHub <a href="https://github.com/narner/ESC10-CoreML">here</a>.</p>
+<p><a href="http://www.youtube.com/watch?v=dAtzSo51T_4" title=""><img src="http://img.youtube.com/vi/dAtzSo51T_4/0.jpg" alt=""></a></p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://example.org/" >
+    &copy;  Nick Arner 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

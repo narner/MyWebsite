@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Talking to Plants: Touché Experiments - Nick Arner</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Talking to Plants: Touché Experiments" />
+<meta property="og:description" content="As I mentioned in a previous post, I was really pleased to see that the ESP-Sensors project had included code for working with a circuit based on Touché.
+I had earlier come across other implementations of Touché for the Arduino, but unlike the ESP project, none of them utilized machine learning for classifying gesture types.
+Touché is a project developed at Disney Research that uses swept-frequency capacitive sensing to &ldquo;&hellip;not only detect a touch event, but simultaneously recognize complex configurations of the human hands and body during touch interaction." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/talking-to-plants-touche%CC%81-experiments-august-4-2017/" />
+<meta property="article:published_time" content="2017-08-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-08-04T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Talking to Plants: Touché Experiments"/>
+<meta name="twitter:description" content="As I mentioned in a previous post, I was really pleased to see that the ESP-Sensors project had included code for working with a circuit based on Touché.
+I had earlier come across other implementations of Touché for the Arduino, but unlike the ESP project, none of them utilized machine learning for classifying gesture types.
+Touché is a project developed at Disney Research that uses swept-frequency capacitive sensing to &ldquo;&hellip;not only detect a touch event, but simultaneously recognize complex configurations of the human hands and body during touch interaction."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="http://example.org/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="http://example.org/css/main.css" />
+
+	
+	<script src="http://example.org/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title"><a href="http://example.org/">Nick Arner</a></h1>
+	<div class="site-description"><nav class="nav social">
+			<ul class="flat"></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Talking to Plants: Touché Experiments</h1>
+			<div class="meta">Posted at &mdash; Aug 4, 2017 <span class="draft-label">DRAFT</span> </div>
+		</div>
+
+		<div class="markdown">
+			<p>As I mentioned in <a href="https://www.nickarner.com/blog/tools-for-machine-learning-and-sensor-inputs-for-gesture-recognition">a previous post</a>, I was really pleased to see that the <a href="https://github.com/damellis/ESP">ESP-Sensors project</a> had included code for <a href="https://github.com/damellis/ESP/wiki/%5BExample%5D-Touch%C3%A9-swept-frequency-capacitive-sensing">working with a circuit based on Touché</a>.</p>
+<p>I had earlier come across other implementations of Touché for the Arduino, but unlike the ESP project, none of them utilized machine learning for classifying gesture types.</p>
+<p>Touché is a <a href="https://www.disneyresearch.com/project/touche-touch-and-gesture-sensing-for-the-real-world/">project developed at Disney Research</a> that uses swept-frequency capacitive sensing to &ldquo;&hellip;not only detect a touch event, but simultaneously recognize complex configurations of the human hands and body during touch interaction.&rdquo;</p>
+<p>In other words, it&rsquo;s able to not just tell <em>if</em> a touch event occurred, but what <em>type</em> of touch event occurred. This differs from most capacitive sensors, which are only able to detect whether a touch event occurred, and possibly how far away from a sensor the user&rsquo;s hand is.</p>
+<p>Traditional capacitive sensing works by generating an electrical signal at a single frequency. This signal is applied to a conductive surface, such as a metal plate. When a hand is either close to or touching the surface, the value of capacitance changes - signifying that a touch event has occurred, or that a hand is close to the surface of the sensor. The <a href="http://playground.arduino.cc/Main/CapacitiveSensor?from=Main.CapSense">CapSense library</a> allows for traditional capacitive sensing to be implemented on an Arduino.</p>
+<p>Swept-frequency capacitive sensing makes use of <em>multiple</em> frequencies. In their <a href="https://s3-us-west-1.amazonaws.com/disneyresearch/wp-content/uploads/20140805145650/touchechi20121.pdf">C</a><a href="https://s3-us-west-1.amazonaws.com/disneyresearch/wp-content/uploads/20140805145650/touchechi20121.pdf">HI 2012 paper</a>, the Touché developers state the reason for using multiple frequencies is &ldquo;Objects excited by an electrical signal respond differently at different frequencies, therefore, the changes in the return signal will also be frequency dependent.&rdquo; Rather than using a single data point generated by an electrical signal at a single frequency, as in traditional capacitive sensing, Touché utilizes multiple data points from multiple generated frequencies.</p>
+<p>This capacitive profile is used to train a machine learning pipeline to differentiate between various touch interactions. This machine learning pipeline is based around a Support Vector Machine. Specifically, it uses the <a href="http://www.nickgillian.com/wiki/pmwiki.php?n=GRT.SVM">SVM module from the Gesture Recognition Toolkit</a>.</p>
+<p>Check out the video that accompanied the Touché CHI 2012 paper:</p>
+<p><a href="http://www.youtube.com/watch?v=E4tYpXVTjxA" title=""><img src="http://img.youtube.com/vi/E4tYpXVTjxA/0.jpg" alt=""></a></p>
+<p>There have been a few other open-source implementation of touch-sensing based off of Touché that I&rsquo;ve come across before, but the one provided in the ESP project seemed to be the easiest to set-up, and the most usable to work with.</p>
+<p>The authors continued their work by showing how Touché could be used to interact with plants in the <a href="https://www.disneyresearch.com/project/botanicus-interacticus-interactive-plant-technology/">Botanicus Interacticus project</a>, which was displayed in an exhibition at SIGGRAPH 2012:</p>
+<p><a href="http://www.youtube.com/watch?v=EcRSKEIucjk" title=""><img src="http://img.youtube.com/vi/EcRSKEIucjk/0.jpg" alt=""></a></p>
+<p>I have two plants on my desk: a fern plant, and an air plant. I really enjoy the way they add some color to my work area, and am grateful for their presence.</p>
+<p>I wanted to see if they could talk to me.</p>
+<p><img src="/blog_assets/2017/Touche+FernPlantSetup.jpg" alt="Touche+FernPlantSetup"></p>
+<p><img src="/blog_assets/2017/Touche+AirPlant-Setup.jpg" alt="Touche+AirPlant-Setup"></p>
+<h2 id="the-fern">THE FERN</h2>
+<p>I first experimented with the fern. As suggested in the <a href="https://pdfs.semanticscholar.org/bad6/92a87a416a228542f5ed554503b604ad481e.pdf">Botanicus Interacticus paper</a>, I inserted a simple wire lead into the soil of the plant. This would allow the ESP system to measure the conductive profile of the plant as I touch it.</p>
+<p>After doing some experiments, I was able to easily train the ESP system to recognize whether I was touching a single leaf:</p>
+<p><img src="/blog_assets/2017/fern.gif" alt="fern"></p>
+<p>or whether I was lightly caressing down on the top of the leafs with the palm of my hand.</p>
+<p><img src="/blog_assets/2017/fern2.gif" alt="fern2"></p>
+<p>Here&rsquo;s what that looked like in action:</p>
+<p><a href="http://www.youtube.com/watch?v=ZPsU6U54CRM" title=""><img src="http://img.youtube.com/vi/ZPsU6U54CRM/0.jpg" alt=""></a></p>
+<p>I also tried experimenting as to whether or not the system was able to detect whether or not I was touching individual leaves, but was not able to get consistent results. I discuss my theory on why this may be the case at the end of this post.</p>
+<h2 id="the-air-plant">THE AIR PLANT</h2>
+<p>I experimented with the air plant next, and successfully trained the ESP system to be able to discriminate between whether I had my hand at rest on top of the plant:</p>
+<p><img src="/blog_assets/2017/airplant+rest.gif" alt="airplant+rest"></p>
+<p>and whether or not was &ldquo;tickling&rdquo; the top of the plant</p>
+<p><img src="/blog_assets/2017/ariplant+tickle.gif" alt="ariplant+tickle"></p>
+<p>Here&rsquo;s what the system looked like in use:</p>
+<p><a href="http://www.youtube.com/watch?v=RJ--EB5DpOc" title=""><img src="http://img.youtube.com/vi/RJ--EB5DpOc/0.jpg" alt=""></a></p>
+<p>What I was not successful at was training the ESP to discriminate between the act of touching a leaf, and rubbing my finger on a leaf as shown below:</p>
+<p><img src="s/blog_assets/2017/leaf+rub.gif" alt="leaf+rub"></p>
+<p>I tried moving the alligator clip from one of the leafs to the root - my theory being that perhaps the capacitance wasn&rsquo;t being spread evenly throughout the plant.</p>
+<p><img src="/blog_assets/2017/AirPlant+Electrode.jpg" alt="AirPlant+Electrode"></p>
+<p><img src="/blog_assets/2017/AirPlant+Electrode2.jpg" alt="AirPlant+Electrode2"></p>
+<p>This appeared to have no affect, however.</p>
+<p>I was a bit surprised at this - given the subtlety in touch which it seemed Touché was capable of measuring, I had thought the system would be capable of discriminating between touching and rubbing a single leaf. That said, there could be some missing factor (such as amount of training data/sessions) that I&rsquo;m not aware of yet in order to make that happen.</p>
+<h2 id="further-learning-goals">FURTHER LEARNING GOALS:</h2>
+<h3 id="using-regression">USING REGRESSION</h3>
+<p>In the Bottanicus Interactus video (at the time below), the authors show that they are able to determine where at on a long plant stem is being touched, and interact with it in a way that resembles using a slider moving continuously between two points.</p>
+<p><a href="http://www.youtube.com/watch?v=EcRSKEIucjk" title=""><img src="http://img.youtube.com/vi/EcRSKEIucjk/0.jpg" alt=""></a></p>
+<p>The Touché system uses a Support Vector Machine Learning algorithm, which is capable of both classification and regression; two types of machine learning tasks. In classification, a machine learning system detects what <em>type</em> of events have occurred - in this case, the <em>type of touch</em> that occurred. In regression tasks, a machine learning system maps the distance between two points to control a parameter - so, for instance, you could map the distance travelled by the hand between two points on a plant stem to the value of a volume slider.</p>
+<p>in the ESP system, classification is currently supported; regression is not. In order to use Touché to control a continuous stream of value between one point and another, the ESP system would need to be modified to support regression.</p>
+<p>(For more info on the principles behind classification and regression, check Rebecca Fiebrink&rsquo;s Kadenze course, <a href="https://www.kadenze.com/courses/machine-learning-for-musicians-and-artists/info">Machine Learning for Musicians and Artists</a>).</p>
+<h3 id="finer-discrimination">FINER DISCRIMINATION</h3>
+<p>Determine whether or not it is possible to detect the touches of individual leafs, as opposed to detecting whether &ldquo;a leaf&rdquo; has been touched. It may be that this is possible, but dependent on the type of plant involved - a plant with thicker, more &ldquo;solid&rdquo; leaves may return a conductive pattern that&rsquo;s better at discriminating between individual leaf touches than the thin, loose leaves of the fern plant.</p>
+<h3 id="gesture-timeouts">GESTURE TIMEOUTS</h3>
+<p>If you watch the videos of the Touché system in action above, you may have noticed that there were occasionally instances in which there is a short &ldquo;bounce&rdquo; during the transition between one gesture class and another. In the Air Plant example, when the hand is moving from a &ldquo;Resting Hand&rdquo; position to a &ldquo;No Hand&rdquo; position, the ESP system will falsely recognize a &ldquo;Tickling&rdquo; gesture.</p>
+<p>A potential remedy for this situation is to add a <a href="http://nickgillian.com/grt/api/0.1.0/_class_label_filter_8h.html">Class Label Filter</a> to the ESP&rsquo;s gesture recognition pipeline. This class will allow the system to get rid of the erroneously recognized gesture class. Adding this filter to the ESP pipeline is something I&rsquo;m planning on exploring in future experiments.</p>
+<h2 id="code">CODE</h2>
+<p>The Processing sketches shown in the videos, and the ESP session data, can be found <a href="https://github.com/narner/Touche-Experiments">here</a>. You&rsquo;ll need to make sure you have <a href="http://processing.org/">Processing</a> installed on your system to run the sketches, and have followed the installation guide for setting the <a href="https://github.com/damellis/ESP">ESP</a> if you want to run the included sessions.</p>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+			
+		</div>
+		</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+
+</body>
+</html>

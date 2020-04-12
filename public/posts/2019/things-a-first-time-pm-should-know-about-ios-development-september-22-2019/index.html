@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Nick Arner  | Things a First Time PM Should Know About iOS Development</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.68.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.1cb140d8ba31d5b2f1114537dd04802a.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="Things a First Time PM Should Know About iOS Development" />
+<meta property="og:description" content="This post is a modification of some notes I wrote for a friend, who was recently hired for their first Project Management position at a startup that is developing an iOS app. They don&rsquo;t have a technical background, and wanted to know what some fundamental things to know about iOS development, the iOS ecosystem, and workflows of development.
+I modified those notes for this blogpost. Feel free to reach out at nicholasarner@gmail." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/2019/things-a-first-time-pm-should-know-about-ios-development-september-22-2019/" />
+<meta property="article:published_time" content="2019-09-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-09-27T00:00:00+00:00" />
+<meta itemprop="name" content="Things a First Time PM Should Know About iOS Development">
+<meta itemprop="description" content="This post is a modification of some notes I wrote for a friend, who was recently hired for their first Project Management position at a startup that is developing an iOS app. They don&rsquo;t have a technical background, and wanted to know what some fundamental things to know about iOS development, the iOS ecosystem, and workflows of development.
+I modified those notes for this blogpost. Feel free to reach out at nicholasarner@gmail.">
+<meta itemprop="datePublished" content="2019-09-27T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-09-27T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1938">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Things a First Time PM Should Know About iOS Development"/>
+<meta name="twitter:description" content="This post is a modification of some notes I wrote for a friend, who was recently hired for their first Project Management position at a startup that is developing an iOS app. They don&rsquo;t have a technical background, and wanted to know what some fundamental things to know about iOS development, the iOS ecosystem, and workflows of development.
+I modified those notes for this blogpost. Feel free to reach out at nicholasarner@gmail."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://example.org/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Nick Arner
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=http://example.org/posts/2019/things-a-first-time-pm-should-know-about-ios-development-september-22-2019/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=http://example.org/posts/2019/things-a-first-time-pm-should-know-about-ios-development-september-22-2019/&amp;text=Things%20a%20First%20Time%20PM%20Should%20Know%20About%20iOS%20Development" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://example.org/posts/2019/things-a-first-time-pm-should-know-about-ios-development-september-22-2019/&amp;title=Things%20a%20First%20Time%20PM%20Should%20Know%20About%20iOS%20Development" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+      <h1 class="f1 athelas mt3 mb1">Things a First Time PM Should Know About iOS Development</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-09-27T00:00:00Z">September 27, 2019</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>This post is a modification of some notes I wrote for a friend, who was recently hired for their first Project Management position at a startup that is developing an iOS app. They don&rsquo;t have a technical background, and wanted to know what some fundamental things to know about iOS development, the iOS ecosystem, and workflows of development.</p>
+<p>I modified those notes for this blogpost. Feel free to reach out at <a href="mailto:nicholasarner@gmail.com">nicholasarner@gmail.com</a> if you have any questions or want to learn more!</p>
+<h2 id="app-development">App Development</h2>
+<p><strong>Languages</strong></p>
+<p>There are two programming languages that can be used for developing Apple apps; Objective-C, and Swift. Objective-C was the first language that was used by Apple for macOS/iOS development. You shouldn&rsquo;t really ever encounter much about Objective-C though, unless you&rsquo;re dealing with an older app project.</p>
+<p>Swift is Apple&rsquo;s big investment into the future of software development on their platforms - any new apps written from scratch should be implemented in Swift.</p>
+<p>With every new OS version update, there&rsquo;s a corresponding Xcode update, (and also update to the Swift language), so often some time is needed to be spent whenever this happens making sure that apps are converted to the new Swift version.</p>
+<p><strong>Interfacing between Swift and Other Languages</strong></p>
+<p>Swift and Objective-C code can be used together in projects, so if there&rsquo;s a project that contains some legacy Objective-C code, you can integrate newer Swift code with it easily. More info <a href="https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift">here</a>.</p>
+<p>Additionally, it&rsquo;s quite easy to <a href="https://theswiftdev.com/2018/01/15/how-to-call-c-code-from-swift/">interface with C code directly from Swift</a>. If a lot of the core functionality of your product is implemented in C code,  you can use that code both in your iOS app via Swift, and an Android app via Java or Kotlin.</p>
+<p><strong>Xcode/iOS SDK/Documentation</strong></p>
+<p>Xcode is an IDE (<a href="https://en.wikipedia.org/wiki/Integrated_development_environment">Integrated Development Environment</a>) that Apple provides for developing apps on their platforms. When you download Xcode, you&rsquo;re also downloading the iOS, macOS, watchOS, and iPad) SDK&rsquo;s (<a href="https://www.notion.so/narner/Things-a-First-Time-PM-Should-Know-About-iOS-Development-7ddcc5c1155f45fbaa1baa1277a19ea5">software development kits</a>), which contain all the software libraries that let you develop for the respective platforms.</p>
+<p>There&rsquo;s generally a lot of overlap between the last three of these; with variances specific to the respective device types. One of the things that Apple is currently working on, <a href="https://arstechnica.com/gadgets/2019/07/catalyst-deep-dive-the-future-of-mac-software-according-to-apple-and-devs/">Project Catalyst</a>, will allow for iOS apps to be able to be easily ported to run as desktop-based macOS apps.</p>
+<p>All the documentation for the software tools for building app functionality can be found on Apple&rsquo;s dev site <a href="https://developer.apple.com/documentation/">here.</a></p>
+<p>Apple also provides a detailed <a href="https://developer.apple.com/design/human-interface-guidelines/">Human-Interface Guide</a> for making sure apps conform to the best practices of user interaction that their platforms afford — required reading for anyone who&rsquo;s designing apps for Apple devices.</p>
+<p><strong>View Controllers / Storyboards</strong></p>
+<p>Inside of Xcode, there&rsquo;s a file called the Storyboard - this is where all the individual views that make up the app&rsquo;s user interface are laid out in a sequential order, with connection between them that signify transitioning between one view and the other. Each view has a corresponding file, usually named something like &ldquo;MyViewController.swift&rdquo; — the code that controls the interaction between the user interface of a view, and the logic / feature code of that view.</p>
+<p>Not all of the UI is implemented from working in the storyboard file, however - oftentimes, when a user interface starts to grow more visually interesting; it gets somewhat difficult to implement it in the purely visual modality of storyboards, so the developer may end up implementing the interface partially (or at times fully) in code.</p>
+<p><img src="/blog_assets/2019/XcodeStoryboard.jpg" alt="XcodeStoryboard"></p>
+<p><strong>SwiftUI</strong></p>
+<p>One exciting direction that Apple is moving in is a new framework called <a href="https://developer.apple.com/xcode/swiftui/">SwiftUI</a>. It borrows a lot of concepts from reactive programming — user interfaces are able to be built in a way that&rsquo;s more <em>reactive</em> to external events (user input, network traffic, API calls, etc) in a way that is both more friendly to programmers writing the code (they don&rsquo;t have to write as much of it or try to take into account unknown information about the type of data that they&rsquo;re going to receive).</p>
+<p>Right now, it&rsquo;s only available for apps that target iOS 13 or later. If your app needs to support a version of iOS older than iOS 13, you won&rsquo;t be able to take advantage of SwiftUI.</p>
+<p>Eventually, these earlier versions of iOS will start to decline in percentage in the total number of iOS devices in worldwide use, and the oldest version of iOS that will be running on users&rsquo; phones will be iOS 13, so it will be safe to use SwiftIUI for all apps that need to be backwards compatible.</p>
+<p>Whenever Apple starts saying &ldquo;you should start writing all of your new apps in Swift UI&rdquo;&hellip;you should listen, because eventually the &ldquo;should&rdquo; will be replaced by &ldquo;have to&rdquo;&hellip;meaning, also, that any <em>existing</em> apps you have will need to be updated to use SwiftUI, too.</p>
+<p>Apple&rsquo;s provided some great <a href="https://developer.apple.com/tutorials/swiftui">resources for learning SwiftUI</a>, and there&rsquo;s a great community sourced set of them <a href="https://github.com/vlondon/awesome-swiftui">here</a>, too.</p>
+<h2 id="managing-source-code">MANAGING SOURCE CODE</h2>
+<p><strong>Shared Code</strong></p>
+<p>You may hear developers reference things like &ldquo;core code&rdquo;, &ldquo;shared libraries&rdquo;, &ldquo;core libraries&rdquo; or the like - they&rsquo;re most likely referencing code that is shared between iOS and Android, or in some cases, between an MacOS app and an iOS app. This often, but not always, encompasses code that contains core functionality or perhaps core IP that the apps are centered around.</p>
+<p><strong>Package Managers / Dependencies</strong></p>
+<p>No one likes to reinvent the wheel, especially developers - good developers are often extremely lazy, in the sense that if there&rsquo;s something that they don&rsquo;t have to write code to do, then they won&rsquo;t do it.</p>
+<p>One unfortunate downside to having too many dependencies is that if there&rsquo;s no documented process for how to properly add a new one or how a new team member can clone the repository that contains dependencies with various methods of managing them, then there becomes a sort of time trap where new people have to figure out and guess how to setup the project on their machine. Anyone who does know how has a sort of &ldquo;tribal knowledge&rdquo; that they then have to spend time passing this info on to new team members if it isn&rsquo;t written down anywhere.</p>
+<p>There are a few different ways to manage dependencies in the iOS ecosystem:</p>
+<ul>
+<li><a href="https://cocoapods.org/">CocoaPods</a></li>
+<li><a href="https://swift.org/package-manager/">Swift Package Manager</a> (specific to Swift code only)</li>
+</ul>
+<p>One that&rsquo;s not specific to the iOS ecosystem though is the use of <a href="https://git-scm.com/book/en/v1/Getting-Started-Git-Basics">git</a> submodules; which is a way to use git to add in code from other, existing source-code repositories to their project.</p>
+<ul>
+<li><a href="https://chrisjean.com/git-submodules-adding-using-removing-and-updating/">Git Submodules</a></li>
+</ul>
+<p><strong>Git/SourceControl</strong></p>
+<p>Git is the system that&rsquo;s most commonly used for source control / checking code into a project.</p>
+<p>You hopefully won&rsquo;t ever really have to do with git much other than if you want to pull the latest changes to the code that the engineering team is working on. To do this, you&rsquo;ll need to have git installed on your computer. Follow the instructions <a href="https://gist.github.com/derhuerst/1b15ff4652a867391f03#file-mac-md">here</a> to get it set up on your computer.</p>
+<p>Generally companies have preferred programs/ways for interfacing with git, so best to just use whatever your company uses. There are also generally project specific instructions for how to clone the project (i.e. download all the source code, dependencies, etc etc onto your computer so the project can be compiled and run).</p>
+<p><strong>Running the &ldquo;in-development&rdquo; version of the app on your computer</strong></p>
+<p>You&rsquo;ll almost certainly want to be able to run the in-development version of your app for yourself so that you&rsquo;re able to see / test new changes, bug fixes, and features to app in a day-to-day setting.</p>
+<p>You&rsquo;ll first need to <a href="https://apps.apple.com/us/app/xcode/id497799835?mt=12">Download Xcode</a>.</p>
+<p>Someone on your team will have to invite you to the company&rsquo;s Apple development team account, which, essentially, will give you &ldquo;permission&rdquo; to run the app on your device/the iOS simulator on your computer. The simulator is included when you download Xcode, and allows apps to be run on a simulated iPhone or iPad on your desktop, without having to run them on a physical iPhone or iPad.</p>
+<p>Once you&rsquo;ve been invited to the Apple development account, you&rsquo;ll have the ability to upload app updates to the Apple App Store, should that end up being part of your job.</p>
+<p>Click on Preferences&hellip;</p>
+<p><img src="/blog_assets/2019/XcodePreferences.jpg" alt="XcodePreferences"></p>
+<p>Click on Accounts, then on the &ldquo;+&rdquo; button the bottom left corner</p>
+<p><img src="/blog_assets/2019/XcodeAccounts.jpg" alt="XcodeAccounts"></p>
+<p>Click on Accounts, then on the &ldquo;+&rdquo; button the bottom left corner</p>
+<p>You&rsquo;ll be prompted to sign in with your Apple ID - once that&rsquo;s down, click on &ldquo;Download Manual Profiles&rdquo;</p>
+<p>Assuming everything here worked, you should know be able to run the app from the simulator or on your own iPhone.</p>
+<h2 id="app-store-distribution">App Store Distribution</h2>
+<p><strong>Getting your app to Apple</strong></p>
+<p>When you update an app, you can select the update to go live immediately after Apple has approved it, to go live at a specific date/time, or to be manually set live by someone on the team</p>
+<p>Basically, when an update has been certified by the as &ldquo;feature complete&rdquo; by a manager, it enters a code freeze (no more features/bug fixes get added to that version, which is being submitted to the app store)</p>
+<p>A binary gets created (essentially, all the source code, frameworks, assets get bundled up into what&rsquo;s called an IPA (iOS App Store Package) file, which is then uploaded to the app store. Various different workflows for this; sometimes a lead engineer or eng manager will handle this process; sometimes a PM; all depends on the team.</p>
+<p>Various automated checks from Apple servers are performed during this process — if they detect any errors, those have to get corrected and then the app gets re-uploaded. Once the file is uploaded, it enters review by Apple (there&rsquo;s a team at Apple that manually reviews all of these).</p>
+<p>New screenshots may need to be added if there are big UI changes; also having a text summary so that the Apple testers know what&rsquo;s new / what may need to be tested</p>
+<p>Video recordings of the app are helpful too; especially for &ldquo;bigger&rdquo; changes since the previously released version. <a href="https://www.airsquirrels.com/reflector">Reflector</a> is a good app for this; it let&rsquo;s you mirror your phone running the iOS app  to your laptop, and recored a video of the phone.</p>
+<p>If there are major changes to the app since the last time it was updated, my experience has been that having these things + making sure they are very clear helps speed the review process up quite a bit than if they had not been there</p>
+<p><strong>Apple Beta Updates</strong></p>
+<p>Apple beta versions of their pre-release software to developers, so that they&rsquo;re able to have a head-start for updating their apps to be able to work with the new changes that Apple will be releasing, and to make sure they are able to conform to any new requirements that Apple may specify that they need to meet. Developers are able to download iOS beta versions onto iOS devices, and able to download the corresponding beta versions of Xcode and the iOS SDK (Software Development Kit; the suite of software libraries used to develop iOS apps) to develop for  the new version.</p>
+<h2 id="further-education"><strong>Further Education</strong></h2>
+<p>Staying up to date on everything that Apple announces during their WWDC (worldwide developers conference) event is a good idea - things to be aware of as far as new features for iOS / relevant devices. All the videos from WWDC events are <a href="https://developer.apple.com/videos/wwdc2019/%5D(https://developer.apple.com/videos/wwdc2019/)">here</a>; grouped by date and topic.</p>
+<p>You can also <a href="https://apps.apple.com/us/app/wwdc/id640199958">download this app</a> from Apple and watch all the WWDC videos from there on your phone/iPad.</p>
+<p><a href="https://www.raywenderlich.com/">Ray Wenderlich</a> has probably one of the best tutorial sites on the internet for iOS development, as well as other topics like Android development, game development in Unity, etc.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://example.org/" >
+    &copy;  Nick Arner 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

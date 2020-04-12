@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Nick Arner</title>
+    <link>http://example.org/publications/</link>
+    <description>Recent content in Publications on Nick Arner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/publications/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Publications</title>
+      <link>http://example.org/publications/publications/</link>
+      <pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/publications/publications/</guid>
+      <description>Arner, N. Investigation of the use of Multi-Touch Gestures in Music Interaction - MSc Thesis University of York Department of Electronics, 2013.
+Bernardo, F., Arner, N., Batchelor, P. O Soli Mio: Exploring Millimeter Wave Radar for Musical Interaction  Proceedings of New Interfaces for Musical Expression, Aalborg University, Copenhagen, Denmark, 2017</description>
+    </item>
+    
+  </channel>
+</rss>

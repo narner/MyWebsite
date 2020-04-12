@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Nick Arner</title>
+    <link>http://example.org/posts/</link>
+    <description>Recent content in About on Nick Arner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Project Soli &amp; the Coming Use of Radar in Human-Machine Interfaces</title>
+      <link>http://example.org/posts/project-soli-the-coming-use-of-radar-in-human-machine-interfaces/</link>
+      <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/project-soli-the-coming-use-of-radar-in-human-machine-interfaces/</guid>
+      <description>Radar is a 85 — year old technology that up until recently has not been actively deployed in human-machine interfaces. Radar — based gesture sensing allows user intent to be inferred across more contexts than optical-only based tracking currently allows.
+Google’s use of Project Soli, a radar-based gesture recognition system, in the Pixel 4 series of phones is most likely the first step in further adoption of radar as an input for interacting with our devices.</description>
+    </item>
+    
+    <item>
+      <title>Classification of Sound Files on iOS with the SoundAnalysis Framework and ESC-10 CoreML Model</title>
+      <link>http://example.org/posts/classification-of-sound-files-on-ios-with-the-soundanalysis-framework-and-esc-10-coreml-model-october-29-2019/</link>
+      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/classification-of-sound-files-on-ios-with-the-soundanalysis-framework-and-esc-10-coreml-model-october-29-2019/</guid>
+      <description>Earlier this year, Apple introduced the SoundAnalysis framework, enabling apps to “analyze streamed and file-based audio to classify it as a particular type”.
+It’s available in the following SDK’s:
+ iOS13+ macOS 10.15+ Mac Catalyst 13.0+ tvOS 13.0+ watchOS 6.0+  INPUT TYPES The SoundAnalysis framework is able to work with live audio via the device microphone, or from pre-recorded audio files. In a real-world application scenario, these could be either audio files downloaded from a server onto the app, or recorded by the app for later analysis.</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning Development on Apple Platforms</title>
+      <link>http://example.org/posts/machine-learning-development-on-apple-platforms-october-14-2019/</link>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/machine-learning-development-on-apple-platforms-october-14-2019/</guid>
+      <description>Machine Learning Development on Apple Platforms Apple has been investing heavily in machine learning (ML) capabilities for its development platforms. Acquisitions of applied ML startups allows Apple to fold their technology into the hardware, operating system, and software development tooling for their products. Creating developer friendly frameworks makes it easy to leverage the ML capabilities of Apple’s computing devices, allowing for a greater number of apps that can apply ML in a wider array of use cases.</description>
+    </item>
+    
+    <item>
+      <title>Things a First Time PM Should Know About iOS Development</title>
+      <link>http://example.org/posts/things-a-first-time-pm-should-know-about-ios-development-september-22-2019/</link>
+      <pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/things-a-first-time-pm-should-know-about-ios-development-september-22-2019/</guid>
+      <description>This post is a modification of some notes I wrote for a friend, who was recently hired for their first Project Management position at a startup that is developing an iOS app. They don&amp;rsquo;t have a technical background, and wanted to know what some fundamental things to know about iOS development, the iOS ecosystem, and workflows of development.
+I modified those notes for this blogpost. Feel free to reach out at nicholasarner@gmail.</description>
+    </item>
+    
+    <item>
+      <title>Machine-Learning powered Gesture Recognition on iOS</title>
+      <link>http://example.org/posts/machine-learning-powered-gesture-recognition-on-ios-octobober-7-2017/</link>
+      <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/machine-learning-powered-gesture-recognition-on-ios-octobober-7-2017/</guid>
+      <description>It’s almost hard not to be reading about machine learning these days — and that trend will only increase. Machine learning is opening up powerful new capabilities for smartphone apps, from image classification to facial recognition.
+It’s also capable of identifying how someone is interacting with their smartphone.
+This project shows how to use the Gesture Recognition Toolkit to detect how a user is moving their phone through physical space. (I wrote up a quick guide here on how to begin integrating the GRT into an iPhone app project).</description>
+    </item>
+    
+    <item>
+      <title>Jazz, Gestures, and Open-Source - Why and How I Learned to Code</title>
+      <link>http://example.org/posts/jazz-gestures-and-open-source-why-and-how-i-learned-to-code-october-3-2017/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/jazz-gestures-and-open-source-why-and-how-i-learned-to-code-october-3-2017/</guid>
+      <description>Inspired by a conversation with Diana Berlin, I wrote about what motivates me as a technologist, and the personal story behind why and how I learned to code.
+I published the piece on Medium here, and am including it below as an archive:
+ There’s been lots of discussion lately on how many people working as software developers “started off doing something else” before they learned to code…often meaning that they studied something other than computer science in college.</description>
+    </item>
+    
+    <item>
+      <title>Integrating Arduino-Bluetooth Sensors with iOS</title>
+      <link>http://example.org/posts/integrating-arduino-bluetooth-sensors-with-ios-september-5-2017/</link>
+      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/integrating-arduino-bluetooth-sensors-with-ios-september-5-2017/</guid>
+      <description>One area that I&amp;rsquo;ve been exploring recently is Bluetooth communication between sensor-circuits and iOS apps. I wanted to share one of these studies, based on some of the examples provided from the good folks at Adafruit. It consists of a sensor that can detect the presence of a flame, and send that information over Bluetooth to an iPhone app, which displays the reading from the sensor.
+Here&amp;rsquo;s what it looks like in action:</description>
+    </item>
+    
+    <item>
+      <title>Integrating the GRT into an iPhone Project</title>
+      <link>http://example.org/posts/integrating-the-grt-into-an-iphone-project-august-29-2017/</link>
+      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/integrating-the-grt-into-an-iphone-project-august-29-2017/</guid>
+      <description>In this blog post, I&amp;rsquo;ll show you to add the Gesture Recognition Toolkit to an iPhone app. Created by Nick GIllian while he was a post-doc at MIT, the GRT is a &amp;ldquo;cross-platform, open-source, C++ machine learning library designed for real-time gesture recognition&amp;rdquo;. I had known from this issue on GitHub that the GRT has been used in iOS development. I was only able to find one example of this in action, which this guide is partially based upon.</description>
+    </item>
+    
+    <item>
+      <title>Real-time data receiving and rendering in Processing</title>
+      <link>http://example.org/posts/real-time-data-receiving-and-rendering-in-processing-august-21-2017/</link>
+      <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/real-time-data-receiving-and-rendering-in-processing-august-21-2017/</guid>
+      <description>Real-time data receiving and rendering in Processing - August 21, 2017 I wanted to talk a little bit about one of the technical challenges I had faced while writing the Processing receiver sketches for the Touché experiments in some previous blog posts (here and here).
+The problem I was experiencing was that the Processing sketches that would receive the gesture-classification data from the ESP program seemed to updating incredibly slowly. As in, I could clearly see the gesture-classification results being updated in the ESP program, but in the Processing receiver sketches, the results would be displayed several seconds behind what the ESP system was sending!</description>
+    </item>
+    
+    <item>
+      <title>Touché, and Water as an Interface</title>
+      <link>http://example.org/posts/touche%CC%81-and-water-as-an-interface-august-15-2017/</link>
+      <pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/touche%CC%81-and-water-as-an-interface-august-15-2017/</guid>
+      <description>After experimenting with learning how Touché could be used to interact with plants, I wanted to see how I could use it to interact with water.
+In the Touché paper, the authors demonstrate that the sensor is capable of detecting how a user is touching the surface of, or submerging their hand in water. The system is able to distinguish among a variety of touch interactions: no hand, 1 finger, 3 fingers, and hand submerged:</description>
+    </item>
+    
+    <item>
+      <title>Talking to Plants: Touché Experiments</title>
+      <link>http://example.org/posts/talking-to-plants-touche%CC%81-experiments-august-4-2017/</link>
+      <pubDate>Fri, 04 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/talking-to-plants-touche%CC%81-experiments-august-4-2017/</guid>
+      <description>As I mentioned in a previous post, I was really pleased to see that the ESP-Sensors project had included code for working with a circuit based on Touché.
+I had earlier come across other implementations of Touché for the Arduino, but unlike the ESP project, none of them utilized machine learning for classifying gesture types.
+Touché is a project developed at Disney Research that uses swept-frequency capacitive sensing to &amp;ldquo;&amp;hellip;not only detect a touch event, but simultaneously recognize complex configurations of the human hands and body during touch interaction.</description>
+    </item>
+    
+    <item>
+      <title>Tools for Machine Learning and Sensor Inputs for Gesture Recognition</title>
+      <link>http://example.org/posts/tools-for-machine-learning-and-sensor-inputs-for-gesture-recognition-july-6-2017/</link>
+      <pubDate>Tue, 06 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/tools-for-machine-learning-and-sensor-inputs-for-gesture-recognition-july-6-2017/</guid>
+      <description>The past several years have seen an explosion in machine learning, including in creative contexts - everything fromhallucinating puppyslugs, togenerating new melodies, machine learning is already beginning to revolutionize the way artists and musicians execute their craft.
+My personal interest in the area of machine learning relates to using it to recognize human gestural input via sensors. This interest was sparked from working with Project Soli as a member of the Alpha Developer program.</description>
+    </item>
+    
+    <item>
+      <title>EYEO 2016: Observations on Toolmaking</title>
+      <link>http://example.org/posts/eyeo-2016-observations-on-toolmaking-june-13-2016/</link>
+      <pubDate>Mon, 13 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/eyeo-2016-observations-on-toolmaking-june-13-2016/</guid>
+      <description>I&amp;rsquo;m writing this having returned from the 2016 EYEO Festival, a gathering of creative technologists, designers, and artists from all over the world. It was an amazing experience, and I highly recommend going if you ever have the chance to do so. There were many things I enjoyed about it&amp;hellip;the excellent talks, getting to meet people I&amp;rsquo;ve only talked to on Twitter for the first time, and the late night dancing at Prince&amp;rsquo;s nightclub.</description>
+    </item>
+    
+    <item>
+      <title>Participating in the SOLI Alpha Developer Program</title>
+      <link>http://example.org/posts/participating-in-the-soli-alpha-developer-program-may-23-2016/</link>
+      <pubDate>Mon, 23 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/participating-in-the-soli-alpha-developer-program-may-23-2016/</guid>
+      <description>Last year, Google announced that they would be accepting accepting applications from developers to be part of the Project SOLI Alpha Developer program. My friend Paul Batchelor and I were one of 80 total developers selected worldwide to be part of the Alpha program. Our work focuses on the use of SOLI in interactive music.
+We were selected to attend a workshop in Mountain View with other Alpha developers, and members of the SOLI team.</description>
+    </item>
+    
+  </channel>
+</rss>

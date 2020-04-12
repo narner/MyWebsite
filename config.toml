@@ -1,0 +1,27 @@
+baseURL = "https://www.nickarner.com"
+languageCode = "en-us"
+title = "Nick Arner"
+# theme = "anubis"
+theme = "ezhil"
+
+RSSLink = ""
+logo = ""
+orgName = ""
+orgWebsite = ""
+orgDescription = ""
+
+
+
+  # [params]
+  # [menu]
+  #     [[menu.main]]
+  #     identifier = "main"
+  #     name = "Main"
+  #     url = "/home"
+  #     weight = 10
+  #
+  #     [[menu.main]]
+  #     identifier = "notes"
+  #     name = "Notes"
+  #     url = "/notes/"
+  #     weight = 10

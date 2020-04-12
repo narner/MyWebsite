@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Nick Arner</title>
+    <link>http://example.org/projects_and_work/</link>
+    <description>Recent content in About on Nick Arner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://example.org/projects_and_work/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://example.org/projects_and_work/audiokit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/projects_and_work/audiokit/</guid>
+      <description>AudioKit is an open-source audio analysis, synthesis, and processing toolkit for iOS and OS X apps. Now in its third version, I was involved in development, communication, and education since prior to the initial public release in 2014.
+Prior to its initial public release, I helped prepare AudioKit for open-sourcing by creating example projects, writing tutorials, and creating website content. I also worked on features like framework testing, and what we internally called &amp;ldquo;Sensible Defaults&amp;rdquo; - the idea that programmers wanting to incorporate AudioKit into their projects who didn&amp;rsquo;t have an audio or music background could easily get get started with using audio objects thatt sounded good without having to tweak individual parameters to start.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/projects_and_work/emulating-touche%CC%81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/projects_and_work/emulating-touche%CC%81/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/projects_and_work/o_soli_mio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/projects_and_work/o_soli_mio/</guid>
+      <description>I was of 80 developers worldwide to be accepted into Google&amp;rsquo;s Project Soli Alpha Developer Program and was one of only 14 Alpha Developers to be invited to Google HQ to workshop new ideas regarding potential applications using SOLI. Specifically, my work involved investigating Soli&amp;rsquo;s potential use in new musical instruments. Some of this work was showin in this video presented by ATAP at Google I/O 2016:
+
+This research was published in O Soli Mio: Exploring Millimeter Wave Radar for Musical Interaction, co-written with Francisco Bernardo and Paul Batchelor, at the NIME 2017 Conference in Copenhagen.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/projects_and_work/projectsandwork/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/projects_and_work/projectsandwork/</guid>
+      <description>Selected Projects
+ AudioKit - Open-Souce Apple Framework for Audio Analysis, Synthesis, and Processing O Soli Mio - Radar Powered Gestural Interfaces for Music Emulating Touché - Open-Source Capacitive Sensing Interactions with Plants and Watern` Whistlr - iOS Contact Sharing over Audio  Any open-source work can be found on my GitHub account.
+Notes
+I write about human-computer interaction, new technologies, and softwtare development here.
+What I&amp;rsquo;m Up To Now</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/projects_and_work/whistlr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/projects_and_work/whistlr/</guid>
+      <description>with Matt Becker and Tana Green
+Whistlr was an app for sharing your contact information with acquaintances, colleagues at a conference, or the person you just met at the coffeeshop.
+The app would create your contact profile by pulling in your contact card information from the iOS Contacts App. Once you had done that, you could share your contact card with othter people nearby who had Whistlr open. For security, whenever a contact card was sent, a three-digit code was generated.</description>
+    </item>
+    
+  </channel>
+</rss>
