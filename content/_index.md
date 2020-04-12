@@ -3,38 +3,3 @@ type = "single"
 title = "Home"
 description = "Nick Arner"
 +++
-
-
-### Selected Projects
-
-* [AudioKit - Open-Souce Apple Framework for Audio Analysis, Synthesis, and Processing](/projects_and_work/audiokit/)
-* [O Soli Mio - Radar Powered Gestural Interfaces for Music](/projects_and_work/o_soli_mio/)
-* [Emulating Touché - Open-Source Capacitive Sensing Interactions with Plants and Water](/projects_and_work/emulating_touché/)
-* [Whistlr - iOS Contact Sharing over Audio](/projects_and_work/whistlr/)
-
-Any open-source work can be found on [my GitHub account](https://github.com/narner).
-
-
-### Notes
-
-I write about human-computer interaction, new technologies, and software development [here](/notes/).
-Published work can be found [here](/publications/publications/).
-
-
-### What I'm Up To Now
-
-I'm currently freelancing as an iOS/macOS developer and hardware prototyper. I enjoy working with early and mid-stage startups,
-founders prototyping MVP's, and consulting for larger corporations on R&D projects. Please email me if you'd like to work
-together.
-
-<!-- ## About Me
-
-In the past, I've worked at small product companies on educational and productivity software, digital development agencies,
-and startups working on Augmented Reality authoring tools. -->
-
-
-### Get In Touch
-
-Send me a note at nicholasarner (at) gmail (dot) com, or find me on [Twittter](https://twitter.com/nickarner).
-
-[Resume](/NFA-Resume.pdf/)
