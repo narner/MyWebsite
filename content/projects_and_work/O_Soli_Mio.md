@@ -1,6 +1,5 @@
 ---
 title: "O Soli Mio"
-draft: true
 ---
 
 
