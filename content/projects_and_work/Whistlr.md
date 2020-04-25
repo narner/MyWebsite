@@ -21,6 +21,3 @@ This is the [post](https://medium.com/@narner/announcing-whistlr-for-ios-15a715b
 
 
 [![](http://img.youtube.com/vi/igx09piNgms/0.jpg)](http://www.youtube.com/watch?v=igx09piNgms "")
-
-
-TODO: back up phone / get IPA file and add to archives folder on external drive
