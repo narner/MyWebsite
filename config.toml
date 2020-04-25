@@ -1,4 +1,4 @@
-baseURL = "https://www.nickarner.com"
+# baseURL = "https://www.nickarner.com"
 languageCode = "en-us"
 title = "Nick Arner"
 # theme = "anubis"
