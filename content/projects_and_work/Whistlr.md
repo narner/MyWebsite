@@ -13,13 +13,7 @@ It was powered  by [Chirp](http://chirp.io/)’s data over sound technology; let
 
 This is the [post](https://medium.com/@narner/announcing-whistlr-for-ios-15a715b7706b) we shared to announce it.
 
-![](/post_assets/whistlr/MainScreen.jpg)    
-![](/post_assets/whistlr/WhistlSent.jpg)
-![](/post_assets/whistlr/ContactPage.jpg)
-
-<div>
-<img src="attachment:/post_assets/whistlr/MainScreen.jpg" width="120" height="300"/>
-</div
+![](/post_assets/whistlr/WhistlrCollage.jpg)    
 
 
 [![](http://img.youtube.com/vi/igx09piNgms/0.jpg)](http://www.youtube.com/watch?v=igx09piNgms "")
