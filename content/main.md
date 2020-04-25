@@ -21,16 +21,16 @@ I write about human-computer interaction, new technologies, and software develop
 Published work can be found [here](/publications/publications/).
 
 
-### What I'm Up To Now
+<!-- ### What I'm Up To Now
 
 I'm currently freelancing as an iOS/macOS developer and hardware prototyper. I enjoy working with early and mid-stage startups,
 founders prototyping MVP's, and consulting for larger corporations on R&D projects. Please email me if you'd like to work
-together.
+together. -->
 
 <!-- ## About Me
 
 In the past, I've worked at small product companies on educational and productivity software, digital development agencies,
-and startups working on Augmented Reality authoring tools. -->
+and startups working on Augmented Reality authoring tools and mental health. -->
 
 
 ### Get In Touch
