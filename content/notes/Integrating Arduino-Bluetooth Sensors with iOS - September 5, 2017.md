@@ -1,7 +1,6 @@
 ---
 title: "Integrating Arduino-Bluetooth Sensors with iOS"
 date: 2017-09-05
-draft: true
 ---
 
 One area that I've been exploring recently is Bluetooth communication between sensor-circuits and iOS apps. I wanted to share one of these studies, based on some of the examples provided from the good folks at Adafruit. It consists of a sensor that can detect the presence of a flame, and send that information over Bluetooth to an iPhone app, which displays the reading from the sensor.

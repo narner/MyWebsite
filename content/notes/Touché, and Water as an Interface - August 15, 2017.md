@@ -1,7 +1,6 @@
 ---
 title: "Touché, and Water as an Interface"
 date: 2017-08-15
-draft: true
 ---
 
 After experimenting with learning how [Touché could be used to interact with plants](https://www.nickarner.com/blog/2017/7/8/talking-to-plants-touché-experiments), I wanted to see how I could use it to interact with water.

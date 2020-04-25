@@ -1,7 +1,6 @@
 ---
 title: "Jazz, Gestures, and Open-Source - Why and How I Learned to Code"
 date: 2017-10-03
-draft: true
 ---
 
 Inspired by a conversation with [Diana Berlin](http://dianaberlin.com/), I wrote about what motivates me as a technologist, and the personal story behind why and how I learned to code.

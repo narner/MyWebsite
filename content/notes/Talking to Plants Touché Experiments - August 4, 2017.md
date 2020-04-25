@@ -1,7 +1,6 @@
 ---
 title: "Talking to Plants: Touché Experiments"
 date: 2017-08-04
-draft: true
 ---
 
 As I mentioned in [a previous post](https://www.nickarner.com/blog/tools-for-machine-learning-and-sensor-inputs-for-gesture-recognition), I was really pleased to see that the [ESP-Sensors project](https://github.com/damellis/ESP) had included code for [working with a circuit based on Touché](https://github.com/damellis/ESP/wiki/[Example]-Touché-swept-frequency-capacitive-sensing).

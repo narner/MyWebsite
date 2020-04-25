@@ -1,7 +1,6 @@
 ---
 title: "Integrating the GRT into an iPhone Project"
 date: 2017-08-29
-draft: true
 ---
 
 In this blog post, I'll show you to add the [Gesture Recognition Toolkit](https://github.com/nickgillian/grt) to an iPhone app. Created by [Nick GIllian](http://www.nickgillian.com/) while he was a post-doc at MIT, the GRT is a "cross-platform, open-source, C++ machine learning library designed for real-time gesture recognition".  I had known from this [issue on GitHub](https://github.com/nickgillian/grt/issues/24) that the GRT has been used in iOS development. I was only able to find [one example](https://github.com/magnusja/WatchGRT) of this in action, which this guide is partially based upon.

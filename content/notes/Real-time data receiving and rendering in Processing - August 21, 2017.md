@@ -1,7 +1,6 @@
 ---
 title: "Real-time data receiving and rendering in Processing"
 date: 2017-08-21
-draft: true
 ---
 
 # Real-time data receiving and rendering in Processing - August 21, 2017
