@@ -5,9 +5,10 @@ type: "main"
 ---
 ## About Me
 
-Intrigued by the possibilities of augmented reality on mobile phones, in 2014 Nick researched gestural interfaces for mobile augmented-reality apps at AirMarkr, an early mobile augmented reality startup when consumer AR was in its nascence.
+Nick has been working in the human-comptuer interaction field since 2014 Nick, when he was working as a researcher/prototyper
+for mobile augmented-reality apps at AirMarkr, an early mobile augmented reality startup when consumer AR was in its nascence.
 
-Nick continued to work as an iOS developer at both product focused and consulting companies, where he collaborated with product
+He continued to work as an iOS developer at both product focused and consulting companies, where he collaborated with product
 managers and designers to prototype concepts and produced production-ready features.
 
 Nick was also selected to be a member of Google ATAP's Project Soli Alpha Developer program, where he was invited to test the
@@ -20,12 +21,9 @@ Technologies. He then joined full-time as its first employee, prompting him to r
 developing a node-based interface tool for creating AR interactions that used sensor-input and machine learning to drive
 interactions. The tool allowed users the ability to create ARKit-based apps without writing any code. Nick also researched and
 prototyped AR-focused features and experiments around a variety of modalities, including audio and voice, haptics, gestures, and
-controllers. This was conducted with a focus on speed, and the ability to quickly demonstrate concepts and examples for feature
-evaluation. During this period, he worked with a variety of technologies, from Objective-C and Swift on both macOS and iOS to
-Python on a Raspberry Pi, and hardware sketches with Arduinos.
+controllers.
 
-Nick is currently prototyping and creating new forms of human-computer interaction. He is especially keen on
-building tools that delight and empower people to extend their creativity through technology.
+Nick is currently freelancing and consulting for early stage startups in the consumer/social and healthcare spaces. 
 
 
 
