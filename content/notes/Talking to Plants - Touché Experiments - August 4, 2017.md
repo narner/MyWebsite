@@ -1,5 +1,5 @@
 ---
-title: "Talking to Plants: Touché Experiments"
+title: "Talking to Plants - Touché Experiments"
 date: 2017-08-04
 ---
 
