@@ -13,17 +13,21 @@ Let's take a look quick at how the receiver sketches are set-up to receive data 
 
 A server is created as a global parameter at the top of the sketch:
 
+
 ```
 Server server;
 ```
 
+
 And, in the setup method, is configured to listen for data on port 5204:
+
 
 ```
 server = new Server(this, 5204); // listen on port 5204
 ```
 
 In the standard draw() method, as long as a client connection exists, we'll extract the data. The value of a text label (the set-up code for which isn't shown here for brevity) is set depending on the value of the extracted data. In this case, we're checking if we receive a 1, a 2, or a 3 from the ESP program, and then update the text value accordingly.
+
 
 ```
 void draw() {
@@ -50,13 +54,14 @@ void draw() {
 }
 ```
 
+
 This was actually just a slightly modified version of an [example program that was included with the ESP repository,](https://github.com/damellis/ESP/blob/master/Processing/BallDrop/BallDrop.pde) so I was fairly certain that the problem I was experiencing wasn't a fault of that particular bit of code.
 
 The ESP sends the gesture results out via a UDP stream - as gesture recognition is being performed, the program takes the predicted results, and sends them out over a network connection. I wondered whether or not it would be worth trying to modify the ESP program to send out the gesture results via an OSC stream, rather than a pure UPD network stream, since I was much more familiar with OSC configuration and usage.
 
 While looking at the Processing [oscP5 library](http://www.sojamo.de/libraries/oscP5/), I realized something - there's a callback function that gets OSC data as it's coming into the program. Arguments from the stream can then be parsed out, and events can be triggered or parameters updated accordingly.
 
-```java
+```
 void oscEvent(final OscMessage msg) {
   receivedValue = msg.get(0).intValue();
   println("Received value was:", receivedValue);

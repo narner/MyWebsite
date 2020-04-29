@@ -34,29 +34,29 @@ Inside the loop function is the code that will get the value from the flame sens
 
 
 ```
-		// read the sensor on analog A9:
-    int sensorReading = analogRead(A9);
-    // map the sensor range (four options):
-    // ex: 'long int map(long int, long int, long int, long int, long int)'
-    int range = map(sensorReading, sensorMin, sensorMax, 0, 3);
+// read the sensor on analog A9:
+int sensorReading = analogRead(A9);
+// map the sensor range (four options):
+// ex: 'long int map(long int, long int, long int, long int, long int)'
+int range = map(sensorReading, sensorMin, sensorMax, 0, 3);
 
-    // range value:
-    switch (range) {
-        case 0:    // A fire closer than 1.5 feet away.
-          Serial.println(0);
-          Serial.flush();
-         break;
-        case 1:    // A fire between 1-3 feet away.
-          Serial.println(1);
-          Serial.flush();
-         break;
-        case 2:    // No fire detected.
-          Serial.println(2);
-          Serial.flush();
-        break;
-      }
-    ...
+// range value:
+switch (range) {
+		case 0:    // A fire closer than 1.5 feet away.
+			Serial.println(0);
+			Serial.flush();
+		 break;
+		case 1:    // A fire between 1-3 feet away.
+			Serial.println(1);
+			Serial.flush();
+		 break;
+		case 2:    // No fire detected.
+			Serial.println(2);
+			Serial.flush();
+		break;
 	}
+...
+}
 ```
 
 
