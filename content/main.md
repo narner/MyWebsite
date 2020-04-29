@@ -3,6 +3,9 @@ title: "Nick Arner"
 date: 2018-03-02T14:58:10+01:00
 type: "main"
 ---
+## About Me
+
+I'm interested in the ways humans interact with technology, and how to develop systems that allow for fluid and delightful interactions between people and machines.
 
 
 ### Selected Projects
@@ -12,7 +15,7 @@ type: "main"
 * [Emulating Touché - Open-Source Capacitive Sensing Interactions with Plants and Water](/projects_and_work/emulating_touché/)
 * [Whistlr - iOS Contact Sharing over Audio](/projects_and_work/whistlr/)
 
-Any open-source work can be found on [my GitHub account](https://github.com/narner).
+Open-source work can be found on [my GitHub account](https://github.com/narner).
 
 
 ### Notes
@@ -27,10 +30,7 @@ I'm currently freelancing as an iOS/macOS developer and hardware prototyper. I e
 founders prototyping MVP's, and consulting for larger corporations on R&D projects. Please email me if you'd like to work
 together. -->
 
-<!-- ## About Me
 
-In the past, I've worked at small product companies on educational and productivity software, digital development agencies,
-and startups working on Augmented Reality authoring tools and mental health. -->
 
 
 ### Get In Touch
