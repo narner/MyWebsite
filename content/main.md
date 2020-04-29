@@ -3,7 +3,6 @@ title: "Nick Arner"
 date: 2018-03-02T14:58:10+01:00
 type: "main"
 ---
-## About Me
 
 Nick has been working in the human-comptuer interaction field since 2014, when he was working as a researcher/prototyper
 for mobile augmented-reality apps at AirMarkr, an early mobile augmented reality startup when consumer AR was in its nascence.
