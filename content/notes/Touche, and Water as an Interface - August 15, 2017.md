@@ -7,7 +7,7 @@ After experimenting with learning how [Touché could be used to interact with pl
 
 In the [Touché paper](https://s3-us-west-1.amazonaws.com/disneyresearch/wp-content/uploads/20140805145650/touchechi20121.pdf), the authors demonstrate that the sensor is capable of detecting how a user is touching the surface of, or submerging their hand in water. The system is able to distinguish among a variety of touch interactions: no hand, 1 finger, 3 fingers, and hand submerged:
 
-​																				[![](http://img.youtube.com/vi/E4tYpXVTjxA/0.jpg)](http://www.youtube.com/watch?v=E4tYpXVTjxA "")
+​																				[![](http://img.youtube.com/vi/E4tYpXVTjxA/0.jpg)](https://www.youtube.com/watch?v=E4tYpXVTjxA "")
 
 
 
@@ -67,7 +67,7 @@ Finally, I took a glass cooking dish, and placed the steel-electrode horizontall
 
 Here's a short clip of the system in use:
 
-[![](http://img.youtube.com/vi/6-5DdljQmEk/0.jpg)](http://www.youtube.com/watch?v=6-5DdljQmEk "")
+[![](http://img.youtube.com/vi/6-5DdljQmEk/0.jpg)](https://www.youtube.com/watch?v=6-5DdljQmEk "")
 
 
 
