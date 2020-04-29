@@ -3,8 +3,6 @@ title: "Real-time data receiving and rendering in Processing"
 date: 2017-08-21
 ---
 
-# Real-time data receiving and rendering in Processing - August 21, 2017
-
 I wanted to talk a little bit about one of the technical challenges I had faced while writing the Processing receiver sketches for the Touché experiments in some previous blog posts ([here](https://www.nickarner.com/blog/2017/7/8/talking-to-plants-touché-experiments) and [here](https://www.nickarner.com/blog/2017/7/10/touch-and-water-as-an-interface)).
 
 The problem I was experiencing was that the Processing sketches that would receive the gesture-classification data from the ESP program seemed to updating *incredibly* slowly. As in, I could clearly see the gesture-classification results being updated in the ESP program, but in the Processing receiver sketches, the results would be displayed several seconds behind what the ESP system was sending! Several seconds behind, actually.
