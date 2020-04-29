@@ -11,7 +11,7 @@ Nick continued to work as an iOS developer at both product focused and consultin
 managers and designers to prototype concepts and produced production-ready features.
 
 Nick was also selected to be a member of Google ATAP's Project Soli Alpha Developer program, where he was invited to test the
-millimeter-wave radar development kit that Gogole had produced..This program included selection to attend a development workshop
+millimeter-wave radar development kit that Gogole had produced. This program included selection to attend a development workshop
 with the ATAP team, as well as inclusion of his work in a video shown at Google I/O. Driven by an interest in radar’s use as an
 interaction modality, he co-wrote a paper on this work, which was presented at NIME 2016.
 
@@ -24,7 +24,7 @@ controllers. This was conducted with a focus on speed, and the ability to quickl
 evaluation. During this period, he worked with a variety of technologies, from Objective-C and Swift on both macOS and iOS to
 Python on a Raspberry Pi, and hardware sketches with Arduinos.
 
-Nick is currently interested in prototyping and creating new forms of human-computer interaction. He is especially keen on
+Nick is currently prototyping and creating new forms of human-computer interaction. He is especially keen on
 building tools that delight and empower people to extend their creativity through technology.
 
 
