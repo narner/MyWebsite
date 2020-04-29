@@ -50,7 +50,7 @@ With this [new template from CreateML](https://developer.apple.com/videos/play/w
 
 In addition to the ECS-10 CoreML model, I’ve included the CreateML project used to make the model in this repository.
 
-![CreateMLI	nterface](/blog_assets/2019/CreateMLInterface.jpg)	
+![CreateMLI	nterface](/blog_assets/2019/CreateMLInterface.jpg)
 
 ​		CreateML Training Interface
 
@@ -62,7 +62,7 @@ The app will randomly select from ten pre-loaded .wav files and play them throug
 
 
 
-```swift
+```
     var model: MLModel!
 
     //Access the bundled CoreML model
@@ -97,9 +97,9 @@ The app will randomly select from ten pre-loaded .wav files and play them throug
 
 
 
-    // Analyze the audio data.
+// Analyze the audio data.
 
-    audioFileAnalyzer.analyze()
+audioFileAnalyzer.analyze()
 ```
 
 

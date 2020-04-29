@@ -13,19 +13,19 @@ Let's take a look quick at how the receiver sketches are set-up to receive data 
 
 A server is created as a global parameter at the top of the sketch:
 
-```java
+```
 Server server;
 ```
 
 And, in the setup method, is configured to listen for data on port 5204:
 
-```java
+```
 server = new Server(this, 5204); // listen on port 5204
 ```
 
 In the standard draw() method, as long as a client connection exists, we'll extract the data. The value of a text label (the set-up code for which isn't shown here for brevity) is set depending on the value of the extracted data. In this case, we're checking if we receive a 1, a 2, or a 3 from the ESP program, and then update the text value accordingly.
 
-```java
+```
 void draw() {
   // check for incoming data
   Client client = server.available();
@@ -75,7 +75,7 @@ Swapping out the default renderer from JAVA2D to P3D improved the performance fr
 
 Here's what the sketches' setup function looked like before these modifications:
 
-```java
+```
 void setup() {
   fullScreen();
   ...
@@ -85,7 +85,7 @@ void setup() {
 
 And after setup() was modified with a different renderer, and a higher frame-rate:
 
-```java
+```
 void setup() {
   fullScreen(P3D);
   frameRate(600);

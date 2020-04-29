@@ -33,7 +33,7 @@ Inside the loop function is the code that will get the value from the flame sens
 
 
 
-```arduino
+```
 		// read the sensor on analog A9:
     int sensorReading = analogRead(A9);
     // map the sensor range (four options):
@@ -71,7 +71,7 @@ The [Adafruit Basic Chat tutorial](https://learn.adafruit.com/crack-the-code/sen
 
 
 
-```swift
+```
 func updateIncomingData () {
      NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "Notify"), object: nil , queue: nil){
      notification in
