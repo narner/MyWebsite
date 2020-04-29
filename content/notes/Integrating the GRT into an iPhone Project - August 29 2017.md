@@ -38,7 +38,7 @@ Essentially, what we're doing is allowing a GRT pipeline to be created by the fr
 
 The init method of our GestureRecognitionPipeline.mm file call's down to the GRT code, and creates an instance of a pipeline:
 
-```objective-c
+```
 - (instancetype)init
 {
     self = [super init];
@@ -70,7 +70,7 @@ Finally, let's import the GRT-iOS framework, to verify that we can create object
 
 
 
-```objective-c
+```
 #import <GRTTiOS/GRTiOS.h>
 ```
 
@@ -80,7 +80,7 @@ Now, we can create an instance of a GRT Pipeline in our view controller's viewDi
 
 
 
-```swift
+```
 let pipeline = GestureRecognitionPipeline()
 ```
 
