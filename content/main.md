@@ -5,7 +5,7 @@ type: "main"
 ---
 ## About Me
 
-Nick has been working in the human-comptuer interaction field since 2014 Nick, when he was working as a researcher/prototyper
+Nick has been working in the human-comptuer interaction field since 2014, when he was working as a researcher/prototyper
 for mobile augmented-reality apps at AirMarkr, an early mobile augmented reality startup when consumer AR was in its nascence.
 
 He continued to work as an iOS developer at both product focused and consulting companies, where he collaborated with product
