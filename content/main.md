@@ -5,7 +5,28 @@ type: "main"
 ---
 ## About Me
 
-I'm interested in the ways humans interact with technology, and how to develop systems that allow for fluid and delightful interactions between people and machines.
+Intrigued by the possibilities of augmented reality on mobile phones, in 2014 Nick researched gestural interfaces for mobile augmented-reality apps at AirMarkr, an early mobile augmented reality startup when consumer AR was in its nascence.
+
+Nick continued to work as an iOS developer at both product focused and consulting companies, where he collaborated with product
+managers and designers to prototype concepts and produced production-ready features.
+
+Nick was also selected to be a member of Google ATAP's Project Soli Alpha Developer program, where he was invited to test the
+millimeter-wave radar development kit that Gogole had produced..This program included selection to attend a development workshop
+with the ATAP team, as well as inclusion of his work in a video shown at Google I/O. Driven by an interest in radar’s use as an
+interaction modality, he co-wrote a paper on this work, which was presented at NIME 2016.
+
+During this time, Nick actively involved himself in the startup space and provided extensive consulting for Asteroid
+Technologies. He then joined full-time as its first employee, prompting him to relocate to San Francisco. He contributed to
+developing a node-based interface tool for creating AR interactions that used sensor-input and machine learning to drive
+interactions. The tool allowed users the ability to create ARKit-based apps without writing any code. Nick also researched and
+prototyped AR-focused features and experiments around a variety of modalities, including audio and voice, haptics, gestures, and
+controllers. This was conducted with a focus on speed, and the ability to quickly demonstrate concepts and examples for feature
+evaluation. During this period, he worked with a variety of technologies, from Objective-C and Swift on both macOS and iOS to
+Python on a Raspberry Pi, and hardware sketches with Arduinos.
+
+Nick is currently interested in prototyping and creating new forms of human-computer interaction. He is especially keen on
+building tools that delight and empower people to extend their creativity through technology.
+
 
 
 ### Selected Projects
