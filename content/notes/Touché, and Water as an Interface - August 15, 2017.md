@@ -3,7 +3,7 @@ title: "Touché, and Water as an Interface"
 date: 2017-08-15
 ---
 
-After experimenting with learning how [Touché could be used to interact with plants](https://www.nickarner.com/blog/2017/7/8/talking-to-plants-touché-experiments), I wanted to see how I could use it to interact with water.
+After experimenting with learning how [Touché could be used to interact with plants]({{< ref "Talking to Plants Touché Experiments - August 4, 2017.md" >}}), I wanted to see how I could use it to interact with water.
 
 In the [Touché paper](https://s3-us-west-1.amazonaws.com/disneyresearch/wp-content/uploads/20140805145650/touchechi20121.pdf), the authors demonstrate that the sensor is capable of detecting how a user is touching the surface of, or submerging their hand in water. The system is able to distinguish among a variety of touch interactions: no hand, 1 finger, 3 fingers, and hand submerged:
 
@@ -19,13 +19,13 @@ First, the default state of not touching the water:
 
 ![no+hands](/blog_assets/2017/no+hands.gif)
 
-​	
+​
 
 Touching the water with one finger-tip:
 
 ![Touche+One+Finger](/blog_assets/2017/Touche+One+Finger.gif)
 
-​	
+​
 
 Touching the water with all five finger-tips :
 
