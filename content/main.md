@@ -26,6 +26,6 @@ Published work can be found [here](/publications/publications/).
 
 ### Get In Touch
 
-Send me a note at nicholasarner (at) gmail (dot) com, or find me on [Twittter](https://twitter.com/nickarner).
+Send me a note at nicholasarner (at) gmail (dot) com, or find me on [Twitter](https://twitter.com/nickarner).
 
 [Resume](NFA-Resume.pdf)
