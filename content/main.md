@@ -24,15 +24,6 @@ I write about human-computer interaction, new technologies, and software develop
 Published work can be found [here](/publications/publications/).
 
 
-<!-- ### What I'm Up To Now
-
-I'm currently freelancing as an iOS/macOS developer and hardware prototyper. I enjoy working with early and mid-stage startups,
-founders prototyping MVP's, and consulting for larger corporations on R&D projects. Please email me if you'd like to work
-together. -->
-
-
-
-
 ### Get In Touch
 
 Send me a note at nicholasarner (at) gmail (dot) com, or find me on [Twittter](https://twitter.com/nickarner).
