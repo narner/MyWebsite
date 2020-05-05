@@ -28,4 +28,4 @@ Published work can be found [here](/publications/publications/).
 
 Send me a note at nicholasarner (at) gmail (dot) com, or find me on [Twittter](https://twitter.com/nickarner).
 
-[Resume](/static/NFA-Resume.pdf/)
+[Resume](NFA-Resume.pdf)
