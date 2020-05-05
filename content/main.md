@@ -6,7 +6,7 @@ type: "main"
 
 
 
-Nick is a developer and researcher working in the field of human-computer interaction. He’s interested in sensors, humane interfaces, augmented reality, and ubiquitous computing. He lives and works in the San Francisco Bay Area. 
+Nick is a developer and researcher working in the field of human-computer interaction. He’s interested in sensors, humane interfaces, augmented reality, and ubiquitous computing. He lives and works in the San Francisco Bay Area.
 
 ### Selected Projects
 
@@ -28,4 +28,4 @@ Published work can be found [here](/publications/publications/).
 
 Send me a note at nicholasarner (at) gmail (dot) com, or find me on [Twittter](https://twitter.com/nickarner).
 
-[Resume](/NFA-Resume.pdf/)
+[Resume](static/NFA-Resume.pdf/)
