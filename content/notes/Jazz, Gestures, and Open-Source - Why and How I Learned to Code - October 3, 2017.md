@@ -17,7 +17,9 @@ I originally went to college on a music scholarship. My instrument of choice was
 
 
 
-![bass](/static/blog_assets/2017/bass.jpg)
+![playing_bass](/blog_assets/2017/playing_bass.jpg)
+
+
 
 My major was Music Technology, which was housed in Capital University’s Conservatory of Music. My classes focused on electronic music, studio recording, sound for media, and a fair bit of music theory, sight-singing, and keyboard practice.
 
@@ -32,6 +34,8 @@ I wasn’t allowed to play bass for that entire summer, nor for the following se
 
 
 ![wrist_braces](/blog_assets/2017/wrist_braces.jpg)
+
+
 
 I eventually switched my degree from a Bachelor’s of Music to a Bachelor’s of Arts, but I still continued with studying Music Technology.
 
