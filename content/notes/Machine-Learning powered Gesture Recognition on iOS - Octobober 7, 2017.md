@@ -161,7 +161,7 @@ I was able to train the gesture recognition system to be able to recognize a rap
 
 …and a “wave motion”:
 
-![Swipe+Gesture](/blog_assets/2017/Wave+Gesture.gif)
+![Swipe+Gesture](/blog_assets/2017/WaveGesture.gif)
 
 
 
