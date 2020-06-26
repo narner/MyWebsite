@@ -5,7 +5,7 @@ date: 2020-06-26
 
 ---
 
-I've been interviewing for new positions recently, and for one of the roles I interviewed for; was told it would be a good job to brush up on my Objective-C knowledge. I've been writing iOS and macOS apps primarily in Swift since it was launched in 2014; I've actually been writing software in Swift longer than I ever did in Objective-C. So, I spent some time reviewing Objective-C concepts and patterns; and thought it may be helpful to share my review note in the form of a blog post for anyone who may find themself in a similar circumstance. 
+I've been [interviewing for new positions recently](https://nickarner.com/NFA-Resume.pdf), and for one of the roles I interviewed for; was told it would be a good job to brush up on my Objective-C knowledge. I've been writing iOS and macOS apps primarily in Swift since it was launched in 2014; I've actually been writing software in Swift longer than I ever did in Objective-C. So, I spent some time reviewing Objective-C concepts and patterns; and thought it may be helpful to share my review note in the form of a blog post for anyone who may find themself in a similar circumstance. 
 
 This definitely is not a complete overview of the Objective-C language or the patterns and paradigms of programming in it, but it should be a good overview of some of the concepts in it that may come up during an interview. 
 
