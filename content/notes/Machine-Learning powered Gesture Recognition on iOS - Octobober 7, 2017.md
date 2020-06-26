@@ -29,7 +29,7 @@ When gestures are performed, the app will display the predicted gesture output o
 
 The App Delegate contains a global instance of a GRT pipeline, so that it can be accessed by both View Controllers:
 
-```swift
+```
 var pipeline: GestureRecognitionPipeline?
 
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -43,7 +43,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 An AccelerometerManager class will allow the two View Controllers to have access to the X, Y, and Z coordinates from the phone’s accelerometer. The start method, shown below, will create an object that will return the accelerometer data:
 
-```swift
+```
 func start(_ accHandler: @escaping (_ x: Double, _ y: Double, _ z: Double) -> Void) {
     let handler: CMAccelerometerHandler  = {(data: CMAccelerometerData?, error: Error?) -> Void in
         guard let acceleration = data?.acceleration else {
@@ -97,7 +97,7 @@ What’s happening here is that the pipeline is comparing the incoming accelerom
 
 The app will first make sure sure that it can successfully load the `train.grt` pipeline file and `trainingData.csv` classification data files. If it can, then a call to the pipeline’s `train` method is made, which is located in the Objective-C wrapper for the GRT:
 
-```swift
+```
 - (BOOL)trainPipeline {
     *self.trainingData = self.classificationData->split(80);
     BOOL trainSuccess = self.instance->train( *(self.trainingData) );
@@ -108,7 +108,7 @@ The app will first make sure sure that it can successfully load the `train.grt` 
 
 Back in the Prediction Controller, the performGesturePrediction() method takes the real-time accelerometer coordinates, and puts them inside of a Vector:
 
-```swift
+```
 func performGesturePrediction() {
         accelerometerManager.start { (x, y, z) -> Void in
             self.vector.clear()
@@ -120,13 +120,13 @@ func performGesturePrediction() {
 
 This vector is then passed to the pipeline’s Objective-C wrapper:
 
-```swift
+```
 self.pipeline?.predict(self.vector)
 ```
 
 The remainder of the function gets the predicted class label from the pipeline, and displays the predicted gesture result in the user interface:
 
-```swift
+```
 ...
             DispatchQueue.main.async {
                 self.predictedGestureLabel.text = String(describing:                 self.pipeline?.predictedClassLabel ?? 0)
