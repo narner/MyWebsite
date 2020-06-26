@@ -51,8 +51,6 @@ A protocol declares the methods that are required for a particular situation. If
 @end
 ```
 
-&nbsp;
-
 By default, all methods listed in a protocol are required. However, you can specify methods as optional:
 
 ```objective-c
