@@ -15,7 +15,7 @@ The iPhone’s accelerometer will be used as the input for the gesture recogniti
 
 The app will have two modes, and two view controllers accordingly. The first one, shown below, is the training mode. While we’re making the corresponding gesture with the phone, the red “Train” button is held down. While it’s held down, data from the phone’s accelerometer is being saved to a data structure that we’ll use to train our pipeline. As soon as the button is let go from being held down, that process is stopped. A segment controller will serve as a way to set the class-label for the gesture that’s being performed.
 
-![Training+VC](/blog_assets/2017/Training+VC.jpg){height=750px width=422px}
+![Training+VC](/blog_assets/2017/Training+VC.jpg)
 
 
 
