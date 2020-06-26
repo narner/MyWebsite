@@ -209,6 +209,8 @@ BOOL objectsAreEqual = ([a isEqual:b]); *// NO*
 
 As Matt points, out, however, "...some NSObject subclasses override isEqual: and thereby redefine the criteria for equality." [NSValue](https://developer.apple.com/documentation/foundation/nsvalue?language=objc) is an object that encapsulates a value - if you compare two NSValue objects with ==, you'll get a result stating that they are not equal, because they occupy distinct spaces in memory, though their values are the same. If you compare them with isEqual, you'll get a result stating that they **are** equal, because their values are the same, though they occupy different spaces in memory. 
 
+
+
 ```
 NSPoint point = NSMakePoint(2.0, 3.0);
 NSValue *a = [NSValue valueWithPoint:point];
@@ -219,6 +221,8 @@ BOOL valuesAreEqual = ([a isEqual:b]); *// YES*
 ```
 
  
+
+
 
 **Grand Central Dispatch and NSOperation**
 
