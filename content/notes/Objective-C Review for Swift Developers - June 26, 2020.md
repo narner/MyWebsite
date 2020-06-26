@@ -381,5 +381,5 @@ In the code above, the receiver is the definition or instance of a class, and th
 
 
 
- *Thanks to* [*Warren Moore*](https://twitter.com/warrenm) *for proof-reading this post*
+ *Thanks to* [*Warren Moore*](https://twitter.com/warrenm) *for proof-reading this post.*
 
