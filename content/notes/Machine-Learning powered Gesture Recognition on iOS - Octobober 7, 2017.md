@@ -1,7 +1,5 @@
----
 title: "Machine-Learning Powered Gesture Recognition on iOS"
 date: 2017-10-07
----
 
 It’s almost hard not to be reading about machine learning these days — and that trend will only increase. Machine learning is opening up powerful new capabilities for smartphone apps, from image classification to facial recognition. 
 
@@ -12,8 +10,6 @@ This project shows how to use the [Gesture Recognition Toolkit](https://github.c
 The iPhone’s accelerometer will be used as the input for the gesture recognition system. This all for the app to extract gestural intent from the way the iPhone is moved by the user. The data will be fed into a classifier that’s part of a GRT pipeline, which will predict what gesture the user is performing. To access this sensor data, the app will make use of Apple’s [CoreMotion Framework](https://developer.apple.com/documentation/coremotion). The fine folks at NSHipster have a good overview of the framework [here](http://nshipster.com/cmdevicemotion/). 
 
 The app will have two modes, and two view controllers accordingly. The first one, shown below, is the training mode. While we’re making the corresponding gesture with the phone, the red “Train” button is held down. While it’s held down, data from the phone’s accelerometer is being saved to a data structure that we’ll use to train our pipeline. As soon as the button is let go from being held down, that process is stopped. A segment controller will serve as a way to set the class-label for the gesture that’s being performed.
-
-
 
 ![Training+VC](/blog_assets/2017/Training+VC.jpg)
 
