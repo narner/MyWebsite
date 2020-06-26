@@ -121,8 +121,6 @@ Here's what posting a notification looks like:
 ```
 [[NSNotificationCenter defaultCenter] postNotificationName:@”EventOccurred” object:nil userInfo:nil];
 
-
-
 ```
 
 In the ViewController that you want to receive the notification in, add an observer for it: 
