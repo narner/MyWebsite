@@ -3,8 +3,6 @@ title: "Machine Learning Development on Apple Platforms"
 date: 2019-10-14
 ---
 
-# Machine Learning Development on Apple Platforms
-
 Apple has been investing heavily in machine learning (ML) capabilities for its development platforms. Acquisitions of applied ML startups allows Apple to fold their technology into the hardware, operating system, and software development tooling for their products. Creating developer friendly frameworks makes it easy to leverage the ML capabilities of Apple’s computing devices, allowing for a greater number of apps that can apply ML in a wider array of use cases.
 
 It's up to app developers to creatively make use of these powerful capabilities. A wide range of available input data (video, audio, text, and sensors) allows developers to create compelling apps in sectors as varied as health care, augmented reality, and creativity tools.
