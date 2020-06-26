@@ -75,18 +75,13 @@ With [Automated Reference Counting](https://clang.llvm.org/docs/AutomaticReferen
 There are three attributes of properties that can be changed for a property: 
 
 - Atomicity (whether an object returns valid data)
-
-- - Properties are declared atomic by default. If a property is atomic, it's guaranteed that if you try to read from it, you will get back a valid value.
+  - Properties are declared atomic by default. If a property is atomic, it's guaranteed that if you try to read from it, you will get back a valid value.
   - nonatomic properties can return junk data, but accessing and setting them is faster than atomic properties
-
 - Access (who can access the property)
-
-- - readwrite means that anyone with access to the property can set and get it's value. This is the default for properties. 
+  - readwrite means that anyone with access to the property can set and get it's value. This is the default for properties. 
   - readonly properties can be read from, but not written to
-
 - Storage (how a property is referenced)
-
-- - An object with a strong reference will be kept alive in memory as long as there's a reference to that object.
+  - An object with a strong reference will be kept alive in memory as long as there's a reference to that object.
   - A weak reference means that whenever existing references to an object are destroyed, the object will be removed from memory.
   - Any property with the copy attribute logically copies any value assigned to it 
 
@@ -159,7 +154,7 @@ NSDictionary *usernameDictionary = @{@”username”: @”narner”};
 ```objective-c
 -(void) receiveNotification:(NSNotification*)notification
  {
-   **if** ([notification.name isEqualToString:@"UserNameUpdated"])
+   if ([notification.name isEqualToString:@"UserNameUpdated"])
    {
      NSDictionary *userInfo = notification.userInfo;
      NSString *userName = (NSString*)userInfo[@"username"];
@@ -268,18 +263,18 @@ Your Weather class could observe the properties of the class like so:
 ```objective-c
 @immplementation Weather
 
- \- (void)observeChanges:(Temperature *)temperature {
+ - (void)observeChanges:(Temperature *)temperature {
    [person addObserver:**self**
        forKeyPath:@"lowTemperature"
          options:NSKeyValueObservingOptionNew
          context:nil];
  }
 
- \- (void)observeValueForKeyPath:(NSString *)keyPath
+ - (void)observeValueForKeyPath:(NSString *)keyPath
             ofObject:(id)object
              change:(NSDictionary<NSKeyValueChangeKey,id> *)change
             context:(void *)context {
-   **if** ([keyPath isEqualToString:@"lowTemperature"]) {
+  	if ([keyPath isEqualToString:@"lowTemperature"]) {
      NSNumber *ageNumber = change[NSKeyValueChangeNewKey];
      NSInteger lowTemperature = [lowTemperature integerValue];
      NSLog(@"New low temperature is: %@", lowTemperature);
