@@ -1,5 +1,5 @@
 ---
-title: "Machine-Learning powered Gesture Recognition on iOS"
+title: "Machine-Learning Powered Gesture Recognition on iOS"
 date: 2017-10-07
 ---
 
