@@ -15,7 +15,7 @@ The app will have two modes, and two view controllers accordingly. The first one
 
 
 
-![Training+VC](/Users/nickarner/Documents/MyWebsite/static/blog_assets/2017/Training+VC.jpg)
+![Training+VC](/blog_assets/2017/Training+VC.jpg)
 
 
 
@@ -23,7 +23,7 @@ The second View Controller is the real-time prediction mode. When we get to this
 
 When gestures are performed, the app will display the predicted gesture output on the screen, as well as print the predicted class to the console when in debug mode. 
 
-![Prediction+VC](/Users/nickarner/Documents/MyWebsite/static/blog_assets/2017/Prediction+VC.jpg)
+![Prediction+VC](/blog_assets/2017/Prediction+VC.jpg)
 
 
 
