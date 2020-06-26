@@ -143,25 +143,25 @@ The remainder of the function gets the predicted class label from the pipeline, 
 
 One important consideration to keep in mind when implementing a real-time gesture recognition system is to train the system what *not* to recognize. In this case, the resting state of the phone (when a gesture isn’t being performed with it) is when the phone is held stationary:
 
-![StationaryPosition](/Users/nickarner/Documents/MyWebsite/static/blog_assets/2017/StationaryPosition.jpg)
+![StationaryPosition](/blog_assets/2017/StationaryPosition.jpg)
 
 ​	
 
 I was able to train the gesture recognition system to be able to recognize a rapid shaking of the phone:			
 
-![Gesture1](/Users/nickarner/Documents/MyWebsite/static/blog_assets/2017/Gesture1.gif)
+![Gesture1](/blog_assets/2017/Gesture1.gif)
 
 
 
 …a side swipe:
 
-![Swipe+Gesture](/Users/nickarner/Documents/MyWebsite/static/blog_assets/2017/Swipe+Gesture.gif)
+![Swipe+Gesture](/blog_assets/2017/Swipe+Gesture.gif)
 
 
 
 …and a “wave motion”:
 
-![img](https://static1.squarespace.com/static/52e0ac24e4b073428e07d275/t/59d8f95f197aea8dd9452b65/1507391879410/Wave+gesture?format=1500w)
+![Swipe+Gesture](/blog_assets/2017/Wave+Gesture.gif)
 
 
 
