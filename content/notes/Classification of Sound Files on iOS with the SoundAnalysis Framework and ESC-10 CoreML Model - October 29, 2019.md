@@ -83,8 +83,8 @@ The app will randomly select from ten pre-loaded .wav files and play them throug
     	try audioFileAnalyzer.add(request, withObserver: resultsObserver)
     } catch
 
-	  // Analyze the audio data.
-	  audioFileAnalyzer.analyze()
+	 // Analyze the audio data.
+	 audioFileAnalyzer.analyze()
 ```
 
 
