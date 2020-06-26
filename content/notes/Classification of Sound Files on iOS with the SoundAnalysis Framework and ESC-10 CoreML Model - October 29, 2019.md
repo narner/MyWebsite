@@ -50,7 +50,7 @@ With this [new template from CreateML](https://developer.apple.com/videos/play/w
 
 In addition to the ECS-10 CoreML model, I’ve included the CreateML project used to make the model in this repository.
 
-![CreateMLI	nterface](/blog_assets/2019/CreateMLInterface.jpg)
+![CreateMLInterface](/blog_assets/2019/CreateMLInterface.jpg)
 
 ​		CreateML Training Interface
 
