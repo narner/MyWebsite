@@ -21,6 +21,8 @@ When gestures are performed, the app will display the predicted gesture output o
 
 ![Prediction+VC](/blog_assets/2017/Prediction+VC.jpg)
 
+&nbsp;
+
 
 
 The App Delegate contains a global instance of a GRT pipeline, so that it can be accessed by both View Controllers:
@@ -36,6 +38,10 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
     return true
 }
 ```
+
+&nbsp;
+
+
 
 An AccelerometerManager class will allow the two View Controllers to have access to the X, Y, and Z coordinates from the phone’s accelerometer. The start method, shown below, will create an object that will return the accelerometer data:
 
@@ -55,6 +61,8 @@ func start(_ accHandler: @escaping (_ x: Double, _ y: Double, _ z: Double) -> Vo
 ```
 
 The stop method will halt this process, so that the app is only gathering data from the phone’s accelerometer when the pipeline is being trained, or performing real-time recognition. 
+
+&nbsp;
 
 ## TRAINING VIEW CONTROLLER
 
@@ -83,7 +91,9 @@ func TrainBtnPressed(_ sender: Any) {
     }
 ```
 
-Once the gesture data has been recorded, and the “Save Pipeline” button is pressed, the pipeline and gesture training data is saved.
+Once the gesture data has been recorded, and the “Save Pipeline” button is pressed, the pipeline and gesture training data is saved. 
+
+&nbsp;
 
 ## PREDICTION VIEW CONTROLLER  
 
