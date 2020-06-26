@@ -1,5 +1,5 @@
 ---
-title: "Real-time data receiving and rendering in Processing"
+title: "Real-Time Data Teceiving and Rendering in Processing"
 date: 2017-08-21
 ---
 

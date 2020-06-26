@@ -64,42 +64,27 @@ The app will randomly select from ten pre-loaded .wav files and play them throug
 
 ```
     var model: MLModel!
-
+    
     //Access the bundled CoreML model
-
     let soundClassifier = ESC_10_Sound_Classifier()
-
     model = soundClassifier.model
 
     // Create a new audio file analyzer.
-
     do {
-
     audioFileAnalyzer = **try** SNAudioFileAnalyzer(url: audioFileURL)
-
     } catch
 
-
-
     // Create a new observer that will be notified of analysis results.
-
     let resultsObserver = ResultsObserver()
-
     // Prepare a new request for the trained model.
 
     do {
-
-    let request = try SNClassifySoundRequest(mlModel: model)
-
-    try audioFileAnalyzer.add(request, withObserver: resultsObserver)
-
+    	let request = try SNClassifySoundRequest(mlModel: model)
+    	try audioFileAnalyzer.add(request, withObserver: resultsObserver)
     } catch
 
-
-
-// Analyze the audio data.
-
-audioFileAnalyzer.analyze()
+		// Analyze the audio data.
+		audioFileAnalyzer.analyze()
 ```
 
 
