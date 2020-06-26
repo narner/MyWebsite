@@ -74,7 +74,7 @@ However, strong references are not always the right thing to use when writing co
 
 With [Automated Reference Counting](https://clang.llvm.org/docs/AutomaticReferenceCounting.html), the compiler inserts the object code messages retain and release into the source code, which will increase and decrease the reference count of the objects, when appropriate, at run time. Essentially, what ARC does is add in memory management handling code automatically when the code is compiled. When an object's reference count reaches zero, the object gets marked for deallocation. 
 
-![ARC](blog_assets/2020/ARC.jpg)																
+![ARC](/blog_assets/2020/ARC.jpg)																
 
  (from [Apple's Transitioning to ARC Release Notes](https://developer.apple.com/library/archive/releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011226))
 
