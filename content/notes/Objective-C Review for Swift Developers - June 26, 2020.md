@@ -285,6 +285,8 @@ Just like DispatchQueue, NSOperation also allows for specification of Quality of
 
 The [NSHipster article on NSOperation](https://nshipster.com/nsoperation/) states that "...For one-off computation, or simply speeding up an existing method, it will often be more convenient to use a lightweight GCD dispatch than employ NSOperation." Since NSOperation can be cancelled, scheduled, and have it's operational state observed, it's probably best for more "heavy-duty" threaded tasks. 
 
+&nbsp;
+
 
 
 **What is Key-Value Observation?**
@@ -324,6 +326,8 @@ Your Weather class could observe the properties of the class like so:
  }
 ```
 
+&nbsp;
+
 
 
 **What is the purpose and function of Key-Value Coding (KVC).**
@@ -332,6 +336,8 @@ Key-Value Coding is what makes things like Key-Value Observation possible. It's 
 
 Any object that inherits from NSObject (so, everything; as that's the root base class off all objects in Objective-C). 
 
+&nbsp;
+
 
 
 **What are the disadvantages of the Singleton Pattern?** 
@@ -339,6 +345,8 @@ Any object that inherits from NSObject (so, everything; as that's the root base 
 The Singleton Pattern restricts the instantiation of a class to a single instance. That single object is able to be accessed globally throughout your app by other classes and objects - data can be shared between different pieces of code without having to pass the data around manually. 
 
 The problem with the Singleton Pattern is that it makes unit testing difficult - since the Singleton relies on a global application state, it's impossible to completely isolate classes that interact with the Singleton instance. As a result, these classes can't be truly isolated from one another to ensure testing of their independent functions. Additionally, the Singleton pattern encourages excessive coupling between classes - since the class that needs to access the Singleton is bound to a specific interface, making it not only more difficult to test, but also making production code more fragile. 
+
+&nbsp;
 
 
 
@@ -351,6 +359,8 @@ Messaging is the terminology for invoking methods on an object. In Objective-C, 
 ```
 
 In the code above, the receiver is the definition or instance of a class, and the selector is the name of the method that you want to invoke. When the receiver object receives the message of the selector, it calls the corresponding method. 
+
+&nbsp;
 
 
 
