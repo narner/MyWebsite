@@ -81,12 +81,18 @@ With [Automated Reference Counting](https://clang.llvm.org/docs/AutomaticReferen
 There are three attributes of properties that can be changed for a property: 
 
 - Atomicity (whether an object returns valid data)
+
   - Properties are declared atomic by default. If a property is atomic, it's guaranteed that if you try to read from it, you will get back a valid value.
+
   - nonatomic properties can return junk data, but accessing and setting them is faster than atomic properties
+
 - Access (who can access the property)
+
   - readwrite means that anyone with access to the property can set and get it's value. This is the default for properties. 
   - readonly properties can be read from, but not written to
+
 - Storage (how a property is referenced)
+
   - An object with a strong reference will be kept alive in memory as long as there's a reference to that object.
   - A weak reference means that whenever existing references to an object are destroyed, the object will be removed from memory.
   - Any property with the copy attribute logically copies any value assigned to it 
@@ -117,6 +123,8 @@ The most common example of the Delegate Pattern in iOS development is the UITabl
 These delegate methods govern not only the properties of the table-view, will also update whenever the user interacts with the table view in the app. If a user selects a row in the table view, then didSelectRowAtIndexPath is called. Depending on what the indexPath value is (which determines what row was selected, and therefore what table-view cell was selected), the view controller can then take the correct action based on what was selected. 
 
 A delegate's property is always declared weak to ensure that no retain cycles are created. Since a delegate and its delegating object have to refer to each other, if both were marked as strong, a retain cycle would occur, and the objects may not be able to be deallocated using ARC. Marking the delegate as weak prevents this from occurring. 
+
+&nbsp;
 
 
 
@@ -178,6 +186,8 @@ NSDictionary *usernameDictionary = @{@”username”: @”narner”};
  }
 ```
 
+&nbsp;
+
 
 
 **What are the tradeoffs between Delegates and Notifications?**
@@ -204,6 +214,8 @@ A P-List (or "Property List"), is a file that stores serialized objects. These o
 - NSDictionary
 
 For further review, check out [Apple's Reference Article on P-Lists](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
+
+&nbsp;
 
 
 
@@ -283,8 +295,6 @@ So, let's say you have a Temperature class with the following properties:
 &nbsp;
 
 Your Weather class could observe the properties of the class like so: 
-
-
 
 ```
 @immplementation Weather
