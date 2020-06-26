@@ -41,7 +41,7 @@ Apple has created a variety of [CoreML models for developers](https://developer.
 
 ​						Image Segmmentation - Deeplab V3 Model
 
-![ObjectDetectionRealTime](s/blog_assets/2019/ObjectDetectionRealTime.jpg)
+![ObjectDetectionRealTime](/blog_assets/2019/ObjectDetectionRealTime.jpg)
 
 ​							Object Detection - YOLOv3 Model
 
