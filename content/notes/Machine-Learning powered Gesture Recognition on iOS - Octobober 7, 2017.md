@@ -1,5 +1,9 @@
+---
+
 title: "Machine-Learning Powered Gesture Recognition on iOS"
 date: 2017-10-07
+
+---
 
 It’s almost hard not to be reading about machine learning these days — and that trend will only increase. Machine learning is opening up powerful new capabilities for smartphone apps, from image classification to facial recognition. 
 
@@ -116,12 +120,12 @@ Back in the Prediction Controller, the performGesturePrediction() method takes t
 
 ```
 func performGesturePrediction() {
-	accelerometerManager.start { (x, y, z) -> Void in
-		self.vector.clear()
-		self.vector.pushBack(x)
-		self.vector.pushBack(y)
-		self.vector.pushBack(z)
-...
+        accelerometerManager.start { (x, y, z) -> Void in
+            self.vector.clear()
+            self.vector.pushBack(x)
+            self.vector.pushBack(y)
+            self.vector.pushBack(z)
+            ...
 ```
 
 This vector is then passed to the pipeline’s Objective-C wrapper:
@@ -134,13 +138,13 @@ The remainder of the function gets the predicted class label from the pipeline, 
 
 ```
 ...
-DispatchQueue.main.async {
-				self.predictedGestureLabel.text = String(describing:self.pipeline?.predictedClassLabel ?? 0)
-			}
+            DispatchQueue.main.async {
+                self.predictedGestureLabel.text = String(describing:                 self.pipeline?.predictedClassLabel ?? 0)
+            }
 
-		print("PREDICTED GESTURE", self.pipeline?.predictedClassLabel ?? 0);
-	}
-}
+            print("PREDICTED GESTURE", self.pipeline?.predictedClassLabel ?? 0);
+        }
+    }
 ```
 
 &nbsp;
