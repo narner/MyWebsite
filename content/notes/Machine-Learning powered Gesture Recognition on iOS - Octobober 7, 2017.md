@@ -116,12 +116,12 @@ Back in the Prediction Controller, the performGesturePrediction() method takes t
 
 ```
 func performGesturePrediction() {
-        accelerometerManager.start { (x, y, z) -> Void in
-            self.vector.clear()
-            self.vector.pushBack(x)
-            self.vector.pushBack(y)
-            self.vector.pushBack(z)
-            ...
+	accelerometerManager.start { (x, y, z) -> Void in
+		self.vector.clear()
+		self.vector.pushBack(x)
+		self.vector.pushBack(y)
+		self.vector.pushBack(z)
+...
 ```
 
 This vector is then passed to the pipeline’s Objective-C wrapper:
@@ -134,16 +134,16 @@ The remainder of the function gets the predicted class label from the pipeline, 
 
 ```
 ...
-            DispatchQueue.main.async {
-                self.predictedGestureLabel.text = String(describing:                 self.pipeline?.predictedClassLabel ?? 0)
-            }
+DispatchQueue.main.async {
+				self.predictedGestureLabel.text = String(describing:self.pipeline?.predictedClassLabel ?? 0)
+			}
 
-            print("PREDICTED GESTURE", self.pipeline?.predictedClassLabel ?? 0);
-        }
-    }
+		print("PREDICTED GESTURE", self.pipeline?.predictedClassLabel ?? 0);
+	}
+}
 ```
 
-
+&nbsp;
 
 ## USING THE APP 
 
