@@ -9,6 +9,8 @@ I've been [interviewing for new positions recently](https://nickarner.com/NFA-Re
 
 This definitely is not a complete overview of the Objective-C language or the patterns and paradigms of programming in it, but it should be a good overview of some of the concepts in it that may come up during an interview. 
 
+&nbsp;
+
 
 
 **What are Categories?**
@@ -21,6 +23,8 @@ If you want to add a method to an existing class, you can use a category. The ca
 @end
 ```
 
+&nbsp;
+
 
 
 **What are Extensions?**
@@ -32,6 +36,8 @@ Extensions are similar to categories in that you they allow you to extend the fu
 // Add new properties and variables here		
 @end
 ```
+
+&nbsp;
 
 
 
@@ -71,6 +77,8 @@ However, strong references are not always the right thing to use when writing co
 With [Automated Reference Counting](https://clang.llvm.org/docs/AutomaticReferenceCounting.html), the compiler inserts the object code messages retain and release into the source code, which will increase and decrease the reference count of the objects, when appropriate, at run time. Essentially, what ARC does is add in memory management handling code automatically when the code is compiled. When an object's reference count reaches zero, the object gets marked for deallocation. 
 
 ![ARC](blog_assets/2020/ARC.png)																 (from [Apple's Transitioning to ARC Release Notes](https://developer.apple.com/library/archive/releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011226))
+
+&nbsp;
 
 &nbsp;
 
