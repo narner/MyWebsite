@@ -45,6 +45,8 @@ A protocol declares the methods that are required for a particular situation. If
 @end
 ```
 
+&nbsp;
+
 By default, all methods listed in a protocol are required. However, you can specify methods as optional:
 
 ```objective-c
@@ -55,6 +57,8 @@ By default, all methods listed in a protocol are required. However, you can spec
 //list of optional methods for the protocol
 @end
 ```
+
+&nbsp;
 
 
 
@@ -67,6 +71,8 @@ However, strong references are not always the right thing to use when writing co
 With [Automated Reference Counting](https://clang.llvm.org/docs/AutomaticReferenceCounting.html), the compiler inserts the object code messages retain and release into the source code, which will increase and decrease the reference count of the objects, when appropriate, at run time. Essentially, what ARC does is add in memory management handling code automatically when the code is compiled. When an object's reference count reaches zero, the object gets marked for deallocation. 
 
 ![ARC](blog_assets/2020/ARC.png)																 (from [Apple's Transitioning to ARC Release Notes](https://developer.apple.com/library/archive/releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011226))
+
+&nbsp;
 
 
 
@@ -84,6 +90,8 @@ There are three attributes of properties that can be changed for a property:
   - An object with a strong reference will be kept alive in memory as long as there's a reference to that object.
   - A weak reference means that whenever existing references to an object are destroyed, the object will be removed from memory.
   - Any property with the copy attribute logically copies any value assigned to it 
+
+&nbsp;
 
 
 
@@ -104,6 +112,8 @@ The most common example of the Delegate Pattern in iOS development is the UITabl
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 ```
 
+&nbsp;
+
 These delegate methods govern not only the properties of the table-view, will also update whenever the user interacts with the table view in the app. If a user selects a row in the table view, then didSelectRowAtIndexPath is called. Depending on what the indexPath value is (which determines what row was selected, and therefore what table-view cell was selected), the view controller can then take the correct action based on what was selected. 
 
 A delegate's property is always declared weak to ensure that no retain cycles are created. Since a delegate and its delegating object have to refer to each other, if both were marked as strong, a retain cycle would occur, and the objects may not be able to be deallocated using ARC. Marking the delegate as weak prevents this from occurring. 
@@ -123,6 +133,8 @@ Here's what posting a notification looks like:
 
 ```
 
+&nbsp;
+
 In the ViewController that you want to receive the notification in, add an observer for it: 
 
 ```
@@ -130,6 +142,8 @@ In the ViewController that you want to receive the notification in, add an obser
                        selector:**@selector**(methodToCallNext:) 
                          name:@"EventOccurred" object:nil];
 ```
+
+&nbsp;
 
 Whenever the notification is received in the ViewController, the `methodToCallNext` will be called.
 
@@ -139,6 +153,8 @@ When the lifecycle of that ViewController is finished, remove the notification o
 [[NSNotificationCenter defaultCenter] removeObserver:myObserver];
 ```
 
+&nbsp;
+
 You can also pass objects:
 
 ```
@@ -146,6 +162,8 @@ NSDictionary *usernameDictionary = @{@”username”: @”narner”};
 
  [[NSNotificationCenter defaultCenter] postNotificationName:@”UserNameUpdated” object:nil userInfo:usernameDictionary];
 ```
+
+&nbsp;
 
 ...and receive them via Notifications:
 
@@ -195,7 +213,9 @@ For further review, check out [Apple's Reference Article on P-Lists](https://dev
 
 In Objective-C, using the == operator checks to see if two objects point to the same location in memory; in other words, whether or not they have the same identity. isEqual, in its base implementation, simply tests for whether objects have the same identity in the same way that == does.
 
-In the code below (from the NSHipster post), we have two objects, a and b. They are distinct objects that occupy distinct places in memory - they, therefore, do not have the same identity, and are not equal to each other. 
+In the code below (from the NSHipster post), we have two objects, a and b. They are distinct objects that occupy distinct places in memory - they, therefore, do not have the same identity, and are not equal to each other. &nbsp;
+
+
 
 ```
 NSObject *a = [NSObject new];
@@ -220,7 +240,7 @@ BOOL valuesHaveSameIdentity = (a == b); *// NO*
 BOOL valuesAreEqual = ([a isEqual:b]); *// YES*
 ```
 
- 
+&nbsp;
 
 
 
@@ -260,7 +280,11 @@ So, let's say you have a Temperature class with the following properties:
 @property (nonatomic, strong) NSFloat *highTemperature
 ```
 
+&nbsp;
+
 Your Weather class could observe the properties of the class like so: 
+
+
 
 ```
 @immplementation Weather
@@ -322,6 +346,10 @@ In the code above, the receiver is the definition or instance of a class, and th
 #include <Framework_name/Header_filename.h>
 #import <Framework_name/Header_filename.h>
 ```
+
+&nbsp;
+
+&nbsp;
 
 
 
