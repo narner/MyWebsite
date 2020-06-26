@@ -82,8 +82,6 @@ With [Automated Reference Counting](https://clang.llvm.org/docs/AutomaticReferen
 
 &nbsp;
 
-
-
 **Describe the various @property types**
 
 There are three attributes of properties that can be changed for a property: 
