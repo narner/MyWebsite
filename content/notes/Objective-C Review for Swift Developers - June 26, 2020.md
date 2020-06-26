@@ -255,7 +255,7 @@ Key-Value Observation allows for objects to monitor for changes of values in a d
 
 So, let's say you have a Temperature class with the following properties: 
 
-```objective-c
+```
 @property (nonatomic, strong) NSFloat *lowTemperature
 @property (nonatomic, strong) NSFloat *highTemperature
 ```
