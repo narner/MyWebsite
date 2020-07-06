@@ -32,8 +32,6 @@ self.createAudioChannel(readableChannelName: self.createdChannelReadableName, fu
 
 &nbsp;
 
-
-
 **Interacting with Audio Channels**
 
 Whenever a user joined a new audio channel, three objects were created: 
