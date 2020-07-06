@@ -1,5 +1,5 @@
 ---
-title: "Push_To_Talk_Audio_Chat_App"
+title: "Push-To-Talk Audio Chat App"
 
 ---
 
@@ -11,13 +11,9 @@ Users could see available nearby channels and join them. Using the push-to-talk 
 
 ![PushToTalkLoginFlow](/blog_assets/2020/PushToTalkLoginFlow.png)
 
-​																							Onboarding Flow
-
 
 
 ![PushToTalkMainStoryboard](/blog_assets/2020/PushToTalkMainStoryboard.png)
-
-​																								Primary User Flow
 
 &nbsp;
 
