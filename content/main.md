@@ -14,6 +14,7 @@ Nick is a developer and researcher working in the field of human-computer intera
 * [O Soli Mio - Radar Powered Gestural Interfaces for Music](/projects_and_work/o_soli_mio/)
 * [Emulating Touché - Open-Source Capacitive Sensing Interactions with Plants and Water](/projects_and_work/emulating_touché/)
 * [Whistlr - iOS Contact Sharing over Audio](/projects_and_work/whistlr/)
+* [Push-To-Talk Audio Chat App](/projects_and_work/Push_To_Talk_Audio_Chat_App/)
 
 Open-source work can be found on [my GitHub account](https://github.com/narner).
 
@@ -28,4 +29,4 @@ Published work can be found [here](/publications/publications/).
 
 Send me a note at nicholasarner (at) gmail (dot) com, or find me on [Twitter](https://twitter.com/nickarner).
 
-[Resume](NFA-Resume.pdf)
+[Resume](NFA-Resume.pdf)	
