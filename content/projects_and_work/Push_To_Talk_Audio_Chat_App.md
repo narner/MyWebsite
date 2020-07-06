@@ -19,6 +19,8 @@ Users could see available nearby channels and join them. Using the push-to-talk 
 
 ​																								Primary User Flow
 
+&nbsp;
+
 
 
 **Creating Audio Channels**
@@ -31,6 +33,8 @@ We created audio channels using a combination of a randomly - generated number, 
 self.createAudioChannel(readableChannelName: self.createdChannelReadableName, fullChannelName: self.createdChannelName, id: self.createdChannelSessionID, token: self.createdChannelToken, createdTime: createdTime)
 
 ```
+
+&nbsp;
 
 
 
@@ -50,6 +54,8 @@ The `session` object would create an OpenTok session with an API key and `sessio
 The `subscriber` object handled listening to audio streams from a session (in other words, the audio of other participants in the audio channel).
 
 Finally, the `publisher` would handle the broadcat of your own live audio to other members of the audio channel. 
+
+&nbsp;
 
 
 
@@ -72,6 +78,8 @@ Push To Talk functionality was achieved by setting the `publishAudio` property o
         publisher?.publishAudio = false
     }
 ```
+
+&nbsp;
 
 
 
