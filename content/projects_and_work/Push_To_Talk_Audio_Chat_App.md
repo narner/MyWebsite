@@ -9,13 +9,13 @@ Users could see available nearby channels and join them. Using the push-to-talk 
 
 
 
-![PushToTalkLoginFlow](/Users/nickarner/Documents/MyWebsite/static/blog_assets/2020/PushToTalkLoginFlow.png)
+![PushToTalkLoginFlow](/blog_assets/2020/PushToTalkLoginFlow.png)
 
 ​																							Onboarding Flow
 
 
 
-![PushToTalkMainStoryboard](/Users/nickarner/Documents/MyWebsite/static/blog_assets/2020/PushToTalkMainStoryboard.png)
+![PushToTalkMainStoryboard](/blog_assets/2020/PushToTalkMainStoryboard.png)
 
 ​																								Primary User Flow
 
@@ -155,5 +155,5 @@ The received data would then be parsed to determine the channel information, and
 
 If you clicked on a channel, the app would navigate to a new screen with a button that would stream your microphone audio to the other members of the channel.
 
-![JoinChannel+PushToTalk](/Users/nickarner/Documents/MyWebsite/static/blog_assets/2020/JoinChannel+PushToTalk.gif)
+![JoinChannel+PushToTalk](/blog_assets/2020/JoinChannel+PushToTalk.gif)
 
