@@ -2,8 +2,7 @@
 title: "Whistlr"
 ---
 
-
-*with Matt Becker and Tana Green*
+*with [Matt Becker](https://www.linkedin.com/in/mattsbecker/) and [Tana Green](https://www.linkedin.com/in/tanagreen/)*
 
 [Whistlr](https://twitter.com/WhistlrApp) was an app for sharing your contact information with acquaintances, colleagues at a conference, or the person you just met at the coffeeshop.
 
