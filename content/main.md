@@ -24,9 +24,12 @@ Open-source work can be found on [my GitHub account](https://github.com/narner).
 I write about human-computer interaction, new technologies, and software development [here](/notes/).
 Published work can be found [here](/publications/publications/).
 
+### Working Together
+
+I'm currentlt available for full-time and freelance iOS / macOS development roles. You can download my resume [here](NFA-Resume.pdf).
+
 
 ### Get In Touch
 
 Send me a note at nicholasarner (at) gmail (dot) com, or find me on [Twitter](https://twitter.com/nickarner).
 
-[Resume](NFA-Resume.pdf)	
