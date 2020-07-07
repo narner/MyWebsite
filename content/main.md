@@ -6,7 +6,7 @@ type: "main"
 
 
 
-Nick is a developer and researcher working in the field of human-computer interaction. He’s interested in sensors, humane interfaces, augmented reality, and ubiquitous computing. He lives and works in the San Francisco Bay Area.
+I'm a developer and researcher working in the field of human-computer interaction. My main interests are sensors, humane interfaces, augmented reality, and ubiquitous computing. I currently live and work in the San Francisco Bay Area.
 
 ### Selected Projects
 
