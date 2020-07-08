@@ -26,7 +26,7 @@ Published work can be found [here](/publications/publications/).
 
 ### Working Together
 
-I'm currentlt available for full-time and freelance iOS / macOS development roles. You can download my resume [here](NFA-Resume.pdf).
+I'm currently available for full-time and freelance iOS / macOS development roles. You can download my resume [here](NFA-Resume.pdf).
 
 
 ### Get In Touch
