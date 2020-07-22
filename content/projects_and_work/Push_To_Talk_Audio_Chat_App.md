@@ -87,11 +87,13 @@ When a user creates an audio channel, the channel name and ID is broadcast:
 This channel info would be broadcast on a loop, so that if a new phone entered the range of the space and they missed the initial broadcast that occured when the channel was created: 
 
 ```
-self.broadcastTimer = Timer.scheduledTimer(timeInterval: 10, 
-																					target: self, 
-																					selector:#selector(self.broadcastNewChannel), 
-																					userInfo: nil, 
-																					repeats: true)
+self.broadcastTimer = Timer.scheduledTimer(
+timeInterval: 10, 
+target: self, 
+selector:#selector(self.broadcastNewChannel), 
+userInfo: nil, 
+repeats: true)
+
 self.broadcastTimer.fire()
 ```
 
