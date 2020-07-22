@@ -27,7 +27,6 @@ We created audio channels using a combination of a randomly - generated number, 
 
 ```
 self.createAudioChannel(readableChannelName: self.createdChannelReadableName, fullChannelName: self.createdChannelName, id: self.createdChannelSessionID, token: self.createdChannelToken, createdTime: createdTime)
-
 ```
 
 &nbsp;
@@ -40,7 +39,6 @@ Whenever a user joined a new audio channel, three objects were created:
 var session: OTSession?
 var subscriber: OTSubscriber?
 var publisher: OTPublisher?
-
 ```
 
 The `session` object would create an OpenTok session with an API key and `sessionID`.
@@ -51,31 +49,27 @@ Finally, the `publisher` would handle the broadcat of your own live audio to oth
 
 &nbsp;
 
-
-
 **Push To Talk** 
 
 Push To Talk functionality was achieved by setting the `publishAudio` property of an instance of the OpenTok  `OTPublisher` object to true if the Microphone button was held down: 
 
 ```
-    @IBAction func pressButtonToTalk(_ sender: UIButton?) -> Void {
-        userIsTalking = true
-        publisher?.publishAudio = true
-    }
+@IBAction func pressButtonToTalk(_ sender: UIButton?) -> Void {
+	userIsTalking = true
+	publisher?.publishAudio = true
+}
 ```
 
 ...and false if the button was released:
 
 ```
-    @IBAction func releaseButton(_ sender: UIButton?) -> Void {
-        userIsTalking = false
-        publisher?.publishAudio = false
-    }
+@IBAction func releaseButton(_ sender: UIButton?) -> Void {
+	userIsTalking = false
+	publisher?.publishAudio = false
+}
 ```
 
 &nbsp;
-
-
 
 **Location-Based Broadcasting**
 
@@ -93,18 +87,21 @@ When a user creates an audio channel, the channel name and ID is broadcast:
 This channel info would be broadcast on a loop, so that if a new phone entered the range of the space and they missed the initial broadcast that occured when the channel was created: 
 
 ```
-            self.broadcastTimer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.broadcastNewChannel), userInfo: nil, repeats: true)
-            self.broadcastTimer.fire()
-
+self.broadcastTimer = Timer.scheduledTimer(timeInterval: 10, 
+																					target: self, 
+																					selector:#selector(self.broadcastNewChannel), 
+																					userInfo: nil, 
+																					repeats: true)
+self.broadcastTimer.fire()
 ```
 
 Additionally, we if the creator of a channel deleted the channel, that information would also be broadcast in the MultiPeer message, and any other nearby phones would remove that channel from their list of available channels to join. 
 
 ```
-    @objc func broadcastDeletedChannel(deletedChannel: String){
-        let broadcast: String = "DELETE"+" "+deletedChannel+" " + "" + " " + ""
-        MultiPeer.instance.send(object: broadcast, type: DataType.string.rawValue)
-    }
+@objc func broadcastDeletedChannel(deletedChannel: String){
+	let broadcast: String = "DELETE"+" "+deletedChannel+" " + "" + " " + ""
+	MultiPeer.instance.send(object: broadcast, type: DataType.string.rawValue)
+}
 ```
 
 
