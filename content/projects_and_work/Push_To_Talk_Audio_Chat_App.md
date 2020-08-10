@@ -73,7 +73,7 @@ Push To Talk functionality was achieved by setting the `publishAudio` property o
 
 **Location-Based Broadcasting**
 
-We used an open-soruce library called [MultiPeer](https://github.com/dingwilson/MultiPeer) to broadcast and receive channel information to nearby phones. MultiPeer is a wrapper around Apple's [MultipeerConnectivity Framework](https://developer.apple.com/documentation/multipeerconnectivity), and let's phones transmit information ot other phones that are nearby using Bluetooth and WiFi radios. 
+We used an open-soruce library called [MultiPeer](https://github.com/dingwilson/MultiPeer) to broadcast and receive channel information to nearby phones. MultiPeer is a wrapper around Apple's [MultipeerConnectivity Framework](https://developer.apple.com/documentation/multipeerconnectivity), and let's phones transmit information to other phones that are nearby using Bluetooth and WiFi radios. 
 
 When a user creates an audio channel, the channel name and ID is broadcast:
 
