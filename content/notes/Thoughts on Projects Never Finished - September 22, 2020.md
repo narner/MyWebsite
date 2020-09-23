@@ -17,23 +17,25 @@ I posted about this on Twitter, and got some really interesting responses:
 
 ![UnfinishedProjects](/blog_assets/2020/UnfinishedProjects-1.png)
 
-
+&nbsp;
 
 I particularly liked what [Chris Taylor](https://twitter.com/MrCatid) had to say when reflecting on how it felt like there were so many things I started and didn't finish this year:
 
 ![UnfinishedProjects-2](/blog_assets/2020/UnfinishedProjects-2.png)
 
-
+&nbsp;
 
 It was heartening to see that this resonated with others; I really loved that [Lauren Valdez](https://twitter.com/TheLaurenValdez) drew parallels to the Marie Kondo method of tidying up:
 
 ![UnfinishedProjects-3](/blog_assets/2020/UnfinishedProjects-3.png)
 
-
+&nbsp;
 
 I really liked what [Michael Usachenko](https://twitter.com/themichaelusa) did with for his unfinished open-source projects: 
 
 ![UnfinishedProjects-4](/blog_assets/2020/UnfinishedProjects-4.png)
+
+&nbsp;
 
 To that end, I made my own ["Graveyard" repository on GitHub](https://github.com/narner/graveyard). I originally balked at calling it the Graveyard, but on further reflection; it was clear that, to me,  this would be a "resting place" for projects and 
 
