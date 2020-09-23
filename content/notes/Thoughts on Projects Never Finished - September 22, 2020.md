@@ -1,7 +1,7 @@
-```
+---
 title: "Thoughts on Projects Never Finished"
 date: 2020-09-22
-```
+---
 
 Something that's been on my mind a lot this year in relation to my work is that of unfinished projects. I know that starting and not finishing (despite every intention to!) projects is something that's universal, but something I've in particular had a very hard time making peace with.
 
