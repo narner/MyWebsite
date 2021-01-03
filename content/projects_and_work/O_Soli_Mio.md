@@ -22,4 +22,5 @@ This research was published in [*O Soli Mio: Exploring Millimeter Wave Radar for
 
 
 
-I wrote about the experience of being part of the Soli Alpha Developer Program, as well as an overview of the coming use of radar as an integral part of human-computer interaction.
+I wrote about [the experience of being part of the Soli Alpha Developer Program](https://nickarner.com/notes/participating-in-the-soli-alpha-developer-program-may-23-2016/), as well as an [overview of the coming use of radar as an integral part of human-computer interaction](https://nickarner.com/notes/project-soli-the-coming-use-of-radar-in-human-machine-interfaces-april-2020/).
+

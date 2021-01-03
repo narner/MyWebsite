@@ -1,13 +1,21 @@
 body {
-    font-family: "ubuntu", sans-serif;
-    font-weight: 400;
+    xfont-weight: 400;
     color: #333;
     line-height: 1.6;
     font-size: 16px;
+    max-width: 760px;
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont,
+                'avenir next', avenir,
+                'helvetica neue', helvetica,
+                ubuntu,
+                roboto, noto,
+                'segoe ui', arial,
+                sans-serif;
 }
 
 a, a:hover {
-    color: #a00;
+    color: #ff5858;
     text-decoration: none;
     word-break: break-word;
 }
@@ -66,7 +74,7 @@ blockquote {
     font-size: 1.4rem;
     font-family: Georgia,bitstream charter,serif;
     border-left: 3px solid;
-    border-color: #a00;
+    border-color: #ff5858;
     padding-left: 20px;
 }
 
@@ -80,7 +88,7 @@ blockquote em {
 }
 
 a,a:hover {
-    color: #a00;
+    color: #ff5858;
     text-decoration: none
 }
 
@@ -89,10 +97,10 @@ a:hover {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: raleway,sans-serif;
+    xfont-family: raleway,sans-serif;
     line-height: 1.2;
     color: #333;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 h1 {
@@ -296,7 +304,7 @@ ul {
 }
 
 .post .draft-label {
-    color: #a00;
+    color: #ff5858;
     text-decoration: none;
     padding: 2px 4px;
     border-radius: 4px;
@@ -314,7 +322,7 @@ ul {
     border: 1px solid #a00;
     border-radius: 4px;
     padding: 0px 6px;
-    color: #a00;
+    color: #ff5858;
     line-height: 20px;
     font-size: 12px;
     text-decoration: none;
@@ -386,11 +394,12 @@ table th, table td {
 
 @media (max-width: 767px) {
     body {
-        padding: 20px;
+        padding: 2rem;
+        padding-top: 0;
     }
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 2.4rem;
     }
 
     h2 {

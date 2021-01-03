@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Touché, and Water as an Interface - Nick Arner</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Touché, and Water as an Interface" />
+<meta property="og:description" content="After experimenting with learning how Touché could be used to interact with plants, I wanted to see how I could use it to interact with water.
+In the Touché paper, the authors demonstrate that the sensor is capable of detecting how a user is touching the surface of, or submerging their hand in water. The system is able to distinguish among a variety of touch interactions: no hand, 1 finger, 3 fingers, and hand submerged:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/notes/touche-and-water-as-an-interface-august-15-2017/" />
+<meta property="article:published_time" content="2017-08-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-08-15T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Touché, and Water as an Interface"/>
+<meta name="twitter:description" content="After experimenting with learning how Touché could be used to interact with plants, I wanted to see how I could use it to interact with water.
+In the Touché paper, the authors demonstrate that the sensor is capable of detecting how a user is touching the surface of, or submerging their hand in water. The system is able to distinguish among a variety of touch interactions: no hand, 1 finger, 3 fingers, and hand submerged:"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+
+	
+	<script src="/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title"><a href="/">Nick Arner</a></h1>
+	<div class="site-description"><nav class="nav social">
+			<ul class="flat"></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Touché, and Water as an Interface</h1>
+			<div class="meta">Posted at &mdash; Aug 15, 2017</div>
+		</div>
+
+		<div class="markdown">
+			<p>After experimenting with learning how <a href="/notes/talking-to-plants-touche-experiments-august-4-2017/">Touché could be used to interact with plants</a>, I wanted to see how I could use it to interact with water.</p>
+<p>In the <a href="https://s3-us-west-1.amazonaws.com/disneyresearch/wp-content/uploads/20140805145650/touchechi20121.pdf">Touché paper</a>, the authors demonstrate that the sensor is capable of detecting how a user is touching the surface of, or submerging their hand in water. The system is able to distinguish among a variety of touch interactions: no hand, 1 finger, 3 fingers, and hand submerged:</p>
+<p>​																				<a href="https://www.youtube.com/watch?v=E4tYpXVTjxA" title=""><img src="http://img.youtube.com/vi/E4tYpXVTjxA/0.jpg" alt=""></a></p>
+<p>I decided to see if I could replicate the same results using the <a href="https://github.com/damellis/ESP">ESP-system</a>.</p>
+<p>This experiment was not as successful as the previous one using plants as an interface (I wasn&rsquo;t able to exactly replicate all of the types of interactions that the author&rsquo;s of the Touché paper did), but, what I learned may provide some clues with how to go about improving a Touché based - water interface in future, longer term projects. Additionally, I was able to train the system to distinguish between two types of touches:</p>
+<p>First, the default state of not touching the water:</p>
+<p><img src="/blog_assets/2017/no+hands.gif" alt="no+hands"></p>
+<p>​</p>
+<p>Touching the water with one finger-tip:</p>
+<p><img src="/blog_assets/2017/Touche+One+Finger.gif" alt="Touche+One+Finger"></p>
+<p>​</p>
+<p>Touching the water with all five finger-tips :</p>
+<p><img src="/blog_assets/2017/Touche+Five+Fingers.gif" alt="Touche+Five+Fingers"></p>
+<p>SETUP CONFIGURATIONS</p>
+<p>In this still from the Touché paper video, you can see what looks like a metal plate on the bottom of the water tank, which is connected to the circuit via a wire. The narration in the video stated that the electrode was placed <em>under</em> the container - I attempted this, but my sensor readings did not appear as strong as the electrodes I used (shown below) had <em>some</em> direct contact with the water.</p>
+<p><img src="/blog_assets/2017/Touche+Video+Electrode.jpg" alt="Touche+Video+Electrode"></p>
+<p>I ended up trying a variety of different configurations for working with the sensor.</p>
+<p>My first thought was to try using aluminum foil, since it was cheap and easy to work with:</p>
+<p><img src="/blog_assets/2017/Aluminum+Conductor.jpg" alt="Aluminum+Conductor"></p>
+<p>I went to Lowe&rsquo;s, and got a sheet of steel, and crudely hacked off a small square that would fit in my water container. I first tried having the plate submerged, but this seemed to make the system less responsive than if the plate was put upright against a corner of the Tupperware container, as shown below:</p>
+<p><img src="/blog_assets/2017/Upright+plate.jpg" alt="Upright+plate"></p>
+<p>This seemed to work <em>OK</em>, but I wanted to experiment further with electrodes and water containers. I tried wrapping the steel plate in solder, and then connecting the alligator clip to one of the ends of the solder:</p>
+<p><img src="/blog_assets/2017/Aluminum+Solder.jpg" alt="Aluminum+Solder"></p>
+<p>That configuration did not prove to be very effective.</p>
+<p>Finally, I took a glass cooking dish, and placed the steel-electrode horizontally as shown below:</p>
+<p><img src="/blog_assets/2017/AluminumPlate+Dish.jpg" alt="AluminumPlate+Dish"></p>
+<p>Here&rsquo;s a short clip of the system in use:</p>
+<p><a href="https://www.youtube.com/watch?v=6-5DdljQmEk" title=""><img src="http://img.youtube.com/vi/6-5DdljQmEk/0.jpg" alt=""></a></p>
+<h2 id="code">CODE</h2>
+<p>The Processing sketch + ESP model are on GitHub <a href="https://www.nickarner.com/blog/2017/7/10/touch-and-water-as-an-interface#">here</a>. If you&rsquo;re trying to replicate the experiments shown here, you&rsquo;ll most likely need to train your own model; as the accuracy will vary based on individual setups.</p>
+<h2 id="further-goals">FURTHER GOALS</h2>
+<p>Though I wasn&rsquo;t able to get the results I necessarily wanted with this experiment, I believe there is a lot of room for further research and exploration that may shed some insight into a deeper understanding of how the Touché system works, and how it can be applied to create a water-based interface.</p>
+<p><strong>Test out a greater variety of containers and electrodes</strong> - I have a feeling that this is probably the key to building a better water-based interface. It will be important to keep in mind that the results of this study will determine how the interface is used in-context; whether it&rsquo;s an installation, a game, or a VR scenario.</p>
+<p><strong>Better understand of Support-Vector Machines</strong> - This would be useful so that I can understand why the Touché developers chose this particular algorithm. Currently, I&rsquo;d say I have a fairly shallow knowledge of the algorithms used in interactive machine learning contexts&hellip;often times, the parameters used in these situations still feel a bit like magic numbers. I think that diving a bit deeper into the nature of the algorithms will be useful in creating more accurate gesture-recognition systems.</p>
+<p><strong>Experiment with pre-and-post processing modules for the machine learning pipeline</strong> - The GRT has several modules for processing incoming data before and after it&rsquo;s sent through a classification or regression module. Some of these modules may be useful in filtering sensor the data from the sensor, potentially providing for more accurate gesture classification.</p>
+<p>I still consider this prototyping experiment a success, as I was able to use everyday objects (a Tupperware container, a sheet of steel, an off-the-shelf electronics) to build a system that could distinguish whether I was touching the surface of water with one finger, five fingers, or not touching the water at all.</p>
+<h2 id="implications">IMPLICATIONS</h2>
+<p>Given its multi-sensory characteristics and emotional resonance, water can be an interesting choice for an interface in a game, installation, or in an AR/VR context.</p>
+<p>Pier and Goldberg, in the their paper &ldquo;<a href="https://www.researchgate.net/publication/232725076_Using_water_as_interface_media_in_VR_applications">Using water as interface media in VR applications</a>&rdquo;, make a compelling case for why using water may be an interesting and engaging digital interface. They state</p>
+<p>&ldquo;In our experience, touching real water has proven to be rather dramatic as a tactile interface since it involves much more than the mere skin contact with the water, the effect is magnified by the temperature and wetness which affect the perception of the user.&rdquo;</p>
+<p>The aspects of the water that the authors measured were pressure, flux, and movement. It could be interesting to combine these with a Touché sensor in a sensor-fusion setup (whereby several different types of sensors are combined into one data stream that&rsquo;s fed to a machine-learning classifier, which would then detect meaningful data based on the combination of inputs).</p>
+<p>In &ldquo;Capturing Water and Sound Waves to Interact with Virtual Nature&rdquo;, Díaz et al. propose interacting with water (and wind, in their specific experiments) as a way to &ldquo;&hellip;.give the user the sensation that his/her presence affects the virtual world and then to let the user perceive that the actions he/she takes on the real world can change the virtual one in a smooth nature way in order to achieve virtual biofeedback&rdquo;&hellip;in other words, using a water-based interface as a bridge between the physical and virtual worlds.</p>
+<p>There remains a lot of work left in experimenting with water-based interfaces - sensors like Touché have the ability to allow for more interactions that help make use of our everyday environment.</p>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+			
+		</div>
+		</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>	
+	</nav>
+</div>
+
+
+
+
+</body>
+</html>

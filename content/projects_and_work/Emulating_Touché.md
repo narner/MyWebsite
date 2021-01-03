@@ -13,3 +13,8 @@ was touching various plants, or how to use [water as an interface]({{< ref "Touc
 ![airplant+rest](/blog_assets/2017/Touche+AirPlant-Setup.jpg)
 
 ![ariplant+tickle](/blog_assets/2017/Touche+FernPlantSetup.jpg)
+
+
+
+I wrote about these experiments in [Touché, and Water as an Interface](https://nickarner.com/notes/touche-and-water-as-an-interface-august-15-2017/), and [Talking to Plants: Touché Experiments.](https://nickarner.com/notes/talking-to-plants-touche-experiments-august-4-2017/)
+

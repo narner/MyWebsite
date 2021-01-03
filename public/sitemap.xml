@@ -3,125 +3,187 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/posts/</loc>
+    <loc>/notes/</loc>
+    <lastmod>2020-12-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-12-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/notes/some-thoughts-on-interfaces-december-10-2020/</loc>
+    <lastmod>2020-12-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/notes/thoughts-on-projects-never-finished-september-22-2020/</loc>
+    <lastmod>2020-09-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/notes/objective-c-review-for-swift-developers-june-26-2020/</loc>
+    <lastmod>2020-06-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/notes/why-writing-should-be-part-of-your-teams-development-culture-june-2020/</loc>
+    <lastmod>2020-06-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/notes/project-soli-the-coming-use-of-radar-in-human-machine-interfaces-april-2020/</loc>
     <lastmod>2020-04-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
-    <lastmod>2020-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/posts/project-soli-the-coming-use-of-radar-in-human-machine-interfaces/</loc>
-    <lastmod>2020-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/posts/classification-of-sound-files-on-ios-with-the-soundanalysis-framework-and-esc-10-coreml-model-october-29-2019/</loc>
+    <loc>/notes/classification-of-sound-files-on-ios-with-the-soundanalysis-framework-and-esc-10-coreml-model-october-29-2019/</loc>
     <lastmod>2019-10-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/machine-learning-development-on-apple-platforms-october-14-2019/</loc>
+    <loc>/notes/machine-learning-development-on-apple-platforms-october-14-2019/</loc>
     <lastmod>2019-10-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/things-a-first-time-pm-should-know-about-ios-development-september-22-2019/</loc>
+    <loc>/notes/things-a-first-time-pm-should-know-about-ios-development-september-22-2019/</loc>
     <lastmod>2019-09-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/machine-learning-powered-gesture-recognition-on-ios-octobober-7-2017/</loc>
+    <loc>/main/</loc>
+    <lastmod>2018-03-02T14:58:10+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/notes/machine-learning-powered-gesture-recognition-on-ios-octobober-7-2017/</loc>
     <lastmod>2017-10-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/jazz-gestures-and-open-source-why-and-how-i-learned-to-code-october-3-2017/</loc>
+    <loc>/notes/jazz-gestures-and-open-source-why-and-how-i-learned-to-code-october-3-2017/</loc>
     <lastmod>2017-10-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/integrating-arduino-bluetooth-sensors-with-ios-september-5-2017/</loc>
+    <loc>/notes/integrating-arduino-bluetooth-sensors-with-ios-september-5-2017/</loc>
     <lastmod>2017-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/integrating-the-grt-into-an-iphone-project-august-29-2017/</loc>
+    <loc>/notes/integrating-the-grt-into-an-iphone-project-august-29-2017/</loc>
     <lastmod>2017-08-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/real-time-data-receiving-and-rendering-in-processing-august-21-2017/</loc>
+    <loc>/notes/real-time-data-receiving-and-rendering-in-processing-august-21-2017/</loc>
     <lastmod>2017-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/publications/</loc>
+    <loc>/publications/</loc>
     <lastmod>2017-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/publications/publications/</loc>
+    <loc>/publications/publications/</loc>
     <lastmod>2017-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/touche%CC%81-and-water-as-an-interface-august-15-2017/</loc>
+    <loc>/notes/touche-and-water-as-an-interface-august-15-2017/</loc>
     <lastmod>2017-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/talking-to-plants-touche%CC%81-experiments-august-4-2017/</loc>
+    <loc>/notes/talking-to-plants-touche-experiments-august-4-2017/</loc>
     <lastmod>2017-08-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/tools-for-machine-learning-and-sensor-inputs-for-gesture-recognition-july-6-2017/</loc>
+    <loc>/notes/tools-for-machine-learning-and-sensor-inputs-for-gesture-recognition-july-6-2017/</loc>
     <lastmod>2017-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/eyeo-2016-observations-on-toolmaking-june-13-2016/</loc>
+    <loc>/notes/eyeo-2016-observations-on-toolmaking-june-13-2016/</loc>
     <lastmod>2016-06-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/participating-in-the-soli-alpha-developer-program-may-23-2016/</loc>
+    <loc>/notes/participating-in-the-soli-alpha-developer-program-may-23-2016/</loc>
     <lastmod>2016-05-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/projects_and_work/audiokit/</loc>
+    <loc>/drafts/arctype/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/projects_and_work/emulating-touche%CC%81/</loc>
+    <loc>/drafts/flock/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/projects_and_work/o_soli_mio/</loc>
+    <loc>/drafts/jelly/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/projects_and_work/projectsandwork/</loc>
+    <loc>/drafts/jumbo/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/projects_and_work/whistlr/</loc>
+    <loc>/drafts/roboflow/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/projects_and_work/</loc>
+    <loc>/drafts/rosebud/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>/drafts/visitorx/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>/archive/</loc>
+  </url>
+  
+  <url>
+    <loc>/archive/audiokit/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/drafts/</loc>
+  </url>
+  
+  <url>
+    <loc>/projects_and_work/emulating_touch%C3%A9/</loc>
+  </url>
+  
+  <url>
+    <loc>/projects_and_work/o_soli_mio/</loc>
+  </url>
+  
+  <url>
+    <loc>/projects_and_work/</loc>
+  </url>
+  
+  <url>
+    <loc>/projects_and_work/push_to_talk_audio_chat_app/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>/projects_and_work/whistlr/</loc>
   </url>
   
 </urlset>
