@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drafts on Nick Arner</title>
+    <link>/drafts/</link>
+    <description>Recent content in Drafts on Nick Arner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/drafts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/drafts/arctype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/drafts/arctype/</guid>
+      <description>Ehi Airewele - Ehi actually cold-messaged me on LinkedIn, as he was looking for a cofounder for his company, Jumbo. Jumbo is a live audio talk platform for sports analysts. I actually really don&amp;rsquo;t care for sports at all (Ehi is planning on sports as the starting point for Jumbo), but I was really impressed with Ehi. Specifically, I was impressed with the fact that he taught himself to code specifically (he was working at a VC firm up until the start of the pandemic, in which he was laid off).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/drafts/flock/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/drafts/flock/</guid>
+      <description>Aaron Ng - Aaron is incredibly creative, and is working on several things. One of them is flock.network; a CRM that&amp;rsquo;s built on top of Twitter. Aaron went through YC earlier this year, but decided not to participate in demo day and take subsequent funding (for now) - with VC&amp;rsquo;s hitting him up all the time for requests for new features. What&amp;rsquo;s most exciting to me about Flock is the possibility of using it for hiring - my experience has been that you can find stronger candidates for jobs via Twitter than LinkedIn or AngelList.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/drafts/jelly/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/drafts/jelly/</guid>
+      <description>Aaron Ng - Aaron is incredibly creative, and is working on several things. One of them is flock.network; a CRM that&amp;rsquo;s built on top of Twitter. Aaron went through YC earlier this year, but decided not to participate in demo day and take subsequent funding (for now) - with VC&amp;rsquo;s hitting him up all the time for requests for new features. What&amp;rsquo;s most exciting to me about Flock is the possibility of using it for hiring - my experience has been that you can find stronger candidates for jobs via Twitter than LinkedIn or AngelList.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/drafts/jumbo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/drafts/jumbo/</guid>
+      <description>Ehi Airewele - Ehi actually cold-messaged me on LinkedIn, as he was looking for a cofounder for his company, Jumbo. Jumbo is a live audio talk platform for sports analysts. I actually really don&amp;rsquo;t care for sports at all (Ehi is planning on sports as the starting point for Jumbo), but I was really impressed with Ehi. Specifically, I was impressed with the fact that he taught himself to code specifically (he was working at a VC firm up until the start of the pandemic, in which he was laid off).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/drafts/roboflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/drafts/roboflow/</guid>
+      <description>Joseph Nelson - co founder and CEO of Roboflow. Joseph had a previous startup that was acquired while in DC, and is now living in Iowa with his cofounder Brad Dwyer. Their company, around 5 people now; is working on making computer vision tools. Their website allows for computer vision dataset hosting, data set augmentation (adding noise and rotation to images in a dataset to make them more robust.
+This helps eliminate a lot of the tedious, boilerplate code that machine learning researchers have to write when creating vision-based ML models.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/drafts/rosebud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/drafts/rosebud/</guid>
+      <description>Lisha Li - Lisha&amp;rsquo;s the founder Rosebud; another YC company. Rosebud lets you make &amp;ldquo;creative deepfakes&amp;rdquo; - synthetically generated photos, and digitally animated virtual humans They&amp;rsquo;re honestly pretty wild. Lisha is a math PhD from Berkley, and used to work at a VC firm. I&amp;rsquo;ve spent some time giving her feedback on the mobile demo app that they&amp;rsquo;re currently building. I&amp;rsquo;m excited about Rosebud because of how they&amp;rsquo;re making some pretty cutting edge ML techniques to work in a way that makes new creative applications possible.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/drafts/visitorx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/drafts/visitorx/</guid>
+      <description>Ehi Airewele - Ehi actually cold-messaged me on LinkedIn, as he was looking for a cofounder for his company, Jumbo. Jumbo is a live audio talk platform for sports analysts. I actually really don&amp;rsquo;t care for sports at all (Ehi is planning on sports as the starting point for Jumbo), but I was really impressed with Ehi. Specifically, I was impressed with the fact that he taught himself to code specifically (he was working at a VC firm up until the start of the pandemic, in which he was laid off).</description>
+    </item>
+    
+  </channel>
+</rss>

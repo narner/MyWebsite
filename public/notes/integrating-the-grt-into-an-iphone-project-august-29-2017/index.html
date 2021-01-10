@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Integrating the GRT into an iPhone Project - Nick Arner</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Integrating the GRT into an iPhone Project" />
+<meta property="og:description" content="In this blog post, I&rsquo;ll show you to add the Gesture Recognition Toolkit to an iPhone app. Created by Nick GIllian while he was a post-doc at MIT, the GRT is a &ldquo;cross-platform, open-source, C&#43;&#43; machine learning library designed for real-time gesture recognition&rdquo;. I had known from this issue on GitHub that the GRT has been used in iOS development. I was only able to find one example of this in action, which this guide is partially based upon." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/notes/integrating-the-grt-into-an-iphone-project-august-29-2017/" />
+<meta property="article:published_time" content="2017-08-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-08-29T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Integrating the GRT into an iPhone Project"/>
+<meta name="twitter:description" content="In this blog post, I&rsquo;ll show you to add the Gesture Recognition Toolkit to an iPhone app. Created by Nick GIllian while he was a post-doc at MIT, the GRT is a &ldquo;cross-platform, open-source, C&#43;&#43; machine learning library designed for real-time gesture recognition&rdquo;. I had known from this issue on GitHub that the GRT has been used in iOS development. I was only able to find one example of this in action, which this guide is partially based upon."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+
+	
+	<script src="/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title"><a href="/">Nick Arner</a></h1>
+	<div class="site-description"><nav class="nav social">
+			<ul class="flat"></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Integrating the GRT into an iPhone Project</h1>
+			<div class="meta">Posted at &mdash; Aug 29, 2017</div>
+		</div>
+
+		<div class="markdown">
+			<p>In this blog post, I&rsquo;ll show you to add the <a href="https://github.com/nickgillian/grt">Gesture Recognition Toolkit</a> to an iPhone app. Created by <a href="http://www.nickgillian.com/">Nick GIllian</a> while he was a post-doc at MIT, the GRT is a &ldquo;cross-platform, open-source, C++ machine learning library designed for real-time gesture recognition&rdquo;.  I had known from this <a href="https://github.com/nickgillian/grt/issues/24">issue on GitHub</a> that the GRT has been used in iOS development. I was only able to find <a href="https://github.com/magnusja/WatchGRT">one example</a> of this in action, which this guide is partially based upon.</p>
+<p>To add the GRT to an iOS project, we&rsquo;re going to create a CocoaTouch framework from the GRT source files. We&rsquo;ll also include an Objective-C++ wrapper that will allow us to easily interface between the framework, and the Swift code in our application. To get started, we need to do a bit of set-up work first.</p>
+<p>First, create the folder where you want your project to live. Clone GRT as a submodule by using the commands:</p>
+<ul>
+<li>git submodule init</li>
+<li>git submodule add <a href="https://github.com/nickgillian/grt.git">https://github.com/nickgillian/grt.git</a></li>
+</ul>
+<p>Create a new Xcode project. Set the target be a CocoaTouch Framework. Note that if you want to use the GRT in a watchOS project, the steps below will be the same, just with a watchOS Framework target, rather than a CocoaTouch Framework target:</p>
+<p><img src="/blog_assets/2017/iOS+CocoaTouch+Framework.jpg" alt="iOS+CocoaTouch+Framework"></p>
+<p>Note that if you want to use the GRT in a watchOS project, the steps below will be the same, just with a watchOS Framework target, rather than a CocoaTouch Framework target:</p>
+<p><img src="/blog_assets/2017/watchOS+CocoaTouch+Framework.jpg" alt="watchOS+CocoaTouch+Framework"></p>
+<p>Copy the GRT folder into the project, making sure that the files are added to the framework target.</p>
+<p><img src="/blog_assets/2017/GRT+folder.jpg" alt="GRT+folder"></p>
+<p>&ldquo;Copy items if needed&rdquo; should be selected.</p>
+<p><img src="/blog_assets/2017/Copying+to+framework.jpg" alt="Copying+to+framework"></p>
+<p>In order to access the GRT from an iOS app, we&rsquo;ll need to create an Objective-C wrapper. This will allow us to call down into the GRT C++ code from Objective-C or Swift. <a href="https://github.com/magnusja">Magnus Jahnen</a>, the author of the previously mentioned, watchGRT repository, created <a href="https://github.com/magnusja/grt/tree/501160c5883aa030235edaaeab43525866134c6d/iOS/ObjCWrapper">some wrapper files</a> which I&rsquo;ve modified for this particular project. You can grab these modified files here and add them to your project,</p>
+<p>Essentially, what we&rsquo;re doing is allowing a GRT pipeline to be created by the framework from our Swift-based app. The <a href="https://github.com/nickgillian/grt/blob/master/GRT/CoreModules/GestureRecognitionPipeline.h">GestureRecognitionPipeline</a> is the core object of the GRT. It allows you to set-up a gesture recognition system with modules that will perform <a href="https://github.com/nickgillian/grt/tree/master/GRT/PreProcessingModules">pre-processing</a> on incoming data (say, from an iPhone&rsquo;s accelerometer or gyroscope), configure a <a href="https://github.com/nickgillian/grt/tree/master/GRT/ClassificationModules">classification module</a> for identifying the gesture performed, and then applying any <a href="https://github.com/nickgillian/grt/tree/master/GRT/PostProcessingModules">post-processing</a> needed to make sure that</p>
+<p>The init method of our GestureRecognitionPipeline.mm file call&rsquo;s down to the GRT code, and creates an instance of a pipeline:</p>
+<pre><code>- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.instance = new GRT::GestureRecognitionPipeline;
+
+        // Redirect cout to NSLog
+        self.nsLogStream = new NSLogStream(std::cout);
+    }
+    return self;
+}
+</code></pre><p>The last step here is to compile the framework. Note that if you make any changes to the Objective-C wrapper, you will need to compile the framework again - whatever functionality from the GRT that you want to add to your app will need to be exposed accordingly in the wrapper.</p>
+<p>Now that we&rsquo;ve finished setting up the framework, we can go ahead and add it to an iOS project.</p>
+<p>Create a new target for an iOS app. I&rsquo;ve named mine &ldquo;GRT-iOS-HelloWorld&rdquo;:</p>
+<p><img src="/blog_assets/2017/HelloWorld+App.jpg" alt="HelloWorld+App"></p>
+<p>We&rsquo;ll go ahead and add the framework to our new app:</p>
+<p><img src="/blog_assets/2017/Adding+framework.jpg" alt="Adding+framework"></p>
+<p>Finally, let&rsquo;s import the GRT-iOS framework, to verify that we can create objects from the GRT. Create a Bridging-Header file, and add this line to it:</p>
+<pre><code>#import &lt;GRTTiOS/GRTiOS.h&gt;
+</code></pre><p>Now, we can create an instance of a GRT Pipeline in our view controller&rsquo;s viewDidLoad method:</p>
+<pre><code>let pipeline = GestureRecognitionPipeline()
+</code></pre><p>Build and run the app to verify that there are no compile errors. If not, then you&rsquo;ve successfully added the GRT to your iPhone project!</p>
+<p>The app doesn&rsquo;t do anything yet; in a future post, I&rsquo;ll show how I implemented a real-time gesture recognition system using the GRT on iOS. You can download the project <a href="https://github.com/narner/GRT-iOS-HelloWorld">here</a>.</p>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+			
+		</div>
+		</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>	
+	</nav>
+</div>
+
+
+
+
+</body>
+</html>

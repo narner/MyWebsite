@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Real-Time Data Teceiving and Rendering in Processing - Nick Arner</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Real-Time Data Teceiving and Rendering in Processing" />
+<meta property="og:description" content="I wanted to talk a little bit about one of the technical challenges I had faced while writing the Processing receiver sketches for the Touché experiments in some previous blog posts (here and here).
+The problem I was experiencing was that the Processing sketches that would receive the gesture-classification data from the ESP program seemed to updating incredibly slowly. As in, I could clearly see the gesture-classification results being updated in the ESP program, but in the Processing receiver sketches, the results would be displayed several seconds behind what the ESP system was sending!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/notes/real-time-data-receiving-and-rendering-in-processing-august-21-2017/" />
+<meta property="article:published_time" content="2017-08-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-08-21T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Real-Time Data Teceiving and Rendering in Processing"/>
+<meta name="twitter:description" content="I wanted to talk a little bit about one of the technical challenges I had faced while writing the Processing receiver sketches for the Touché experiments in some previous blog posts (here and here).
+The problem I was experiencing was that the Processing sketches that would receive the gesture-classification data from the ESP program seemed to updating incredibly slowly. As in, I could clearly see the gesture-classification results being updated in the ESP program, but in the Processing receiver sketches, the results would be displayed several seconds behind what the ESP system was sending!"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+
+	
+	<script src="/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title"><a href="/">Nick Arner</a></h1>
+	<div class="site-description"><nav class="nav social">
+			<ul class="flat"></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Real-Time Data Teceiving and Rendering in Processing</h1>
+			<div class="meta">Posted at &mdash; Aug 21, 2017</div>
+		</div>
+
+		<div class="markdown">
+			<p>I wanted to talk a little bit about one of the technical challenges I had faced while writing the Processing receiver sketches for the Touché experiments in some previous blog posts (<a href="https://www.nickarner.com/blog/2017/7/8/talking-to-plants-touch%C3%A9-experiments">here</a> and <a href="https://www.nickarner.com/blog/2017/7/10/touch-and-water-as-an-interface">here</a>).</p>
+<p>The problem I was experiencing was that the Processing sketches that would receive the gesture-classification data from the ESP program seemed to updating <em>incredibly</em> slowly. As in, I could clearly see the gesture-classification results being updated in the ESP program, but in the Processing receiver sketches, the results would be displayed several seconds behind what the ESP system was sending! Several seconds behind, actually.</p>
+<p>Take the plant experiments, specifically, When the sketch started, the default state would be &ldquo;No Hand&rdquo;. However&hellip;even after I began touching one of the plants, the receiver would still show a &ldquo;No Hand&rdquo; result, even though I could verify that the gesture was being classified correctly in the ESP program (for clarification here: the <a href="https://github.com/damellis/ESP">ESP program</a> was what was performing the gesture classification; the receiver sketches were displaying the results).</p>
+<p>Let&rsquo;s take a look quick at how the receiver sketches are set-up to receive data from the ESP program. The sketches use <a href="https://processing.org/reference/libraries/net/index.html">Processing Networking library</a>  to set up a server for receiving data.</p>
+<p>A server is created as a global parameter at the top of the sketch:</p>
+<pre><code>Server server;
+</code></pre><p>And, in the setup method, is configured to listen for data on port 5204:</p>
+<pre><code>server = new Server(this, 5204); // listen on port 5204
+</code></pre><p>In the standard draw() method, as long as a client connection exists, we&rsquo;ll extract the data. The value of a text label (the set-up code for which isn&rsquo;t shown here for brevity) is set depending on the value of the extracted data. In this case, we&rsquo;re checking if we receive a 1, a 2, or a 3 from the ESP program, and then update the text value accordingly.</p>
+<pre><code>void draw() {
+  // check for incoming data
+  Client client = server.available();
+  if (client != null) {
+    // check for a full line of incoming data
+    String line = client.readStringUntil('\n');
+
+    if (line != null) {
+      println(line);
+      int val = int(trim(line)); // extract the predicted class from the ESP sender
+      println(val);
+      if (val == 1) {
+        messageText = &quot;GESTURE 1&quot;;
+      } else if (val == 2) {
+        messageText = &quot;GESTURE 2&quot;;
+      } else if (val == 3) {
+        messageText = &quot;GESTURE 3&quot;;
+      }
+    }
+  }
+...
+}
+</code></pre><p>This was actually just a slightly modified version of an <a href="https://github.com/damellis/ESP/blob/master/Processing/BallDrop/BallDrop.pde">example program that was included with the ESP repository,</a> so I was fairly certain that the problem I was experiencing wasn&rsquo;t a fault of that particular bit of code.</p>
+<p>The ESP sends the gesture results out via a UDP stream - as gesture recognition is being performed, the program takes the predicted results, and sends them out over a network connection. I wondered whether or not it would be worth trying to modify the ESP program to send out the gesture results via an OSC stream, rather than a pure UPD network stream, since I was much more familiar with OSC configuration and usage.</p>
+<p>While looking at the Processing <a href="http://www.sojamo.de/libraries/oscP5/">oscP5 library</a>, I realized something - there&rsquo;s a callback function that gets OSC data as it&rsquo;s coming into the program. Arguments from the stream can then be parsed out, and events can be triggered or parameters updated accordingly.</p>
+<pre><code>void oscEvent(final OscMessage msg) {
+  receivedValue = msg.get(0).intValue();
+  println(&quot;Received value was:&quot;, receivedValue);
+}
+</code></pre><p>This actually ended up giving me a flash of insight - the code I had for getting the UDP data was housed inside Processing&rsquo;s <a href="https://processing.org/reference/draw_.html">draw()</a> method. This method is called repeatedly throughout the lifecycle of a Processing sketch, and is updated at whatever Processing&rsquo;s frame-rate is.</p>
+<p>So, I finally had a hunch as to what the issue was - the Receiver sketch wasn&rsquo;t reading the network results fast enough because the frame-rate at which the draw() function was being called (where the network receiving code was) was not being called fast enough!</p>
+<p>Processing&rsquo;s default frame-rate is 60 FPS. Bumping that up to 480 FPS made a huge improvement in performance - but not enough.</p>
+<p>Processing also has different <em>types</em> of renderers. The default is JAVA2D, which, according to this <a href="https://stackoverflow.com/questions/22808318/choosing-a-renderer-difference-between-default-and-j2d">StackOverflow discussion</a>, is the slowest of the renderers that Processing ships with. Processing also comes with the P2D, P3D, and PDF (for rendering PDF&rsquo;s) renderers. Both P2D and P3D use OpenGL; the 2D and 3D versions are optimized for 2-D and 3-D rendering, respectively.</p>
+<p>Swapping out the default renderer from JAVA2D to P3D improved the performance from being unacceptably latent, to being effective for a real-time system.</p>
+<p>Here&rsquo;s what the sketches' setup function looked like before these modifications:</p>
+<pre><code>void setup() {
+  fullScreen();
+  ...
+
+}
+</code></pre><p>And after setup() was modified with a different renderer, and a higher frame-rate:</p>
+<pre><code>void setup() {
+  fullScreen(P3D);
+  frameRate(600);
+  ...
+}
+</code></pre><p>Using one of Processing&rsquo;s OpenGL based renderers seems to be the way to go if your sketch is receiving network data that&rsquo;s not called in a callback, but rather in the draw() method. Make sure to test the value you pass to frameRate(), as an optimal value will be dependent on how complex your sketch is.</p>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+			
+		</div>
+		</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>	
+	</nav>
+</div>
+
+
+
+
+</body>
+</html>

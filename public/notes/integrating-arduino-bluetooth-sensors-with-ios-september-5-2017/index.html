@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Integrating Arduino-Bluetooth Sensors with iOS - Nick Arner</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Integrating Arduino-Bluetooth Sensors with iOS" />
+<meta property="og:description" content="One area that I&rsquo;ve been exploring recently is Bluetooth communication between sensor-circuits and iOS apps. I wanted to share one of these studies, based on some of the examples provided from the good folks at Adafruit. It consists of a sensor that can detect the presence of a flame, and send that information over Bluetooth to an iPhone app, which displays the reading from the sensor.
+Here&rsquo;s what it looks like in action:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/notes/integrating-arduino-bluetooth-sensors-with-ios-september-5-2017/" />
+<meta property="article:published_time" content="2017-09-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-09-05T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Integrating Arduino-Bluetooth Sensors with iOS"/>
+<meta name="twitter:description" content="One area that I&rsquo;ve been exploring recently is Bluetooth communication between sensor-circuits and iOS apps. I wanted to share one of these studies, based on some of the examples provided from the good folks at Adafruit. It consists of a sensor that can detect the presence of a flame, and send that information over Bluetooth to an iPhone app, which displays the reading from the sensor.
+Here&rsquo;s what it looks like in action:"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+
+	
+	<script src="/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title"><a href="/">Nick Arner</a></h1>
+	<div class="site-description"><nav class="nav social">
+			<ul class="flat"></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Integrating Arduino-Bluetooth Sensors with iOS</h1>
+			<div class="meta">Posted at &mdash; Sep 5, 2017</div>
+		</div>
+
+		<div class="markdown">
+			<p>One area that I&rsquo;ve been exploring recently is Bluetooth communication between sensor-circuits and iOS apps. I wanted to share one of these studies, based on some of the examples provided from the good folks at Adafruit. It consists of a sensor that can detect the presence of a flame, and send that information over Bluetooth to an iPhone app, which displays the reading from the sensor.</p>
+<p>Here&rsquo;s what it looks like in action:</p>
+<p><img src="/blog_assets/2017/Demo.gif" alt="Demo"></p>
+<p>For this study, I used Adafruit&rsquo;s <a href="https://www.adafruit.com/product/659">FLORA</a> family of Arduino-based boards for prototyping. The FLORA boards are fully compatible with the Arduino IDE,  and can be easily used in wearables projects.</p>
+<p>The Bluetooth board I used was the <a href="https://www.adafruit.com/product/2487">FLORA-Bluetooth Module</a>, and the sensor is a flame sensor that was included in the <a href="http://www.microcenter.com/product/435332/24_Sensors_Kit">Inland 24 Sensors Kit</a>.</p>
+<p>Here&rsquo;s the completed circuit:</p>
+<p><img src="/blog_assets/2017/iOS_Arduino.jpg" alt="iOS_Arduino"></p>
+<h2 id="arduino-sketch">ARDUINO SKETCH</h2>
+<p>In order to run the Arduino sketch, you&rsquo;ll need to make sure you have:</p>
+<ul>
+<li>The latest version of the <a href="https://www.arduino.cc/en/Main/Software">Arduino IDE</a></li>
+<li>The <a href="https://learn.adafruit.com/add-boards-arduino-v164/installing-boards">Adafruit AVR boards package</a> installed</li>
+<li>The <a href="https://learn.adafruit.com/adafruit-flora-bluefruit-le/installing-software">Adafruit BluefruitLE nRF51 library</a> installed</li>
+</ul>
+<p>The sketch is build off of the <a href="https://github.com/adafruit/Adafruit_BluefruitLE_nRF51/tree/master/examples/bleuart_cmdmode">blueart_cmdmode sketch</a> that&rsquo;s included in the Adafruit BluefruitLE nRF51 library. Most of the sketch is boilerplate code that&rsquo;s used to configure the FLORA and the FLORA Bluetooth module.</p>
+<p>Inside the loop function is the code that will get the value from the flame sensor, scale it, and determine whether a close flame (less than 1.5 feet away), a far flame (1-3 feet away), or no flame was detected:</p>
+<pre><code>// read the sensor on analog A9:
+int sensorReading = analogRead(A9);
+// map the sensor range (four options):
+// ex: 'long int map(long int, long int, long int, long int, long int)'
+int range = map(sensorReading, sensorMin, sensorMax, 0, 3);
+
+// range value:
+switch (range) {
+		case 0:    // A fire closer than 1.5 feet away.
+			Serial.println(0);
+			Serial.flush();
+		 break;
+		case 1:    // A fire between 1-3 feet away.
+			Serial.println(1);
+			Serial.flush();
+		 break;
+		case 2:    // No fire detected.
+			Serial.println(2);
+			Serial.flush();
+		break;
+	}
+...
+}
+</code></pre><h2 id="ios-app">iOS APP</h2>
+<p>The iOS app is a stripped-down version of the <a href="https://github.com/adafruit/Basic-Chat">Basic Chat app</a> made by Adafruit, which shows how to implement two-way communication between an iOS app and a Bluetooth-enabled Arduino.</p>
+<p>I modified the app for this demo so that it only receives information from the Bluetooth-sensor, as for this application, I only need to send information from the sensor to the iPhone; there&rsquo;s no need for two-way communication.</p>
+<p>The <a href="https://learn.adafruit.com/crack-the-code/sending-and-receiving-data-with-arduino">Adafruit Basic Chat tutorial</a> gives a good overview on how Bluetooth communication works with iOS. For this example, the most important part is the updateIncomingData function, which will listen for incoming Bluetooth data from the FLORA sensor, and update the UI accordingly:</p>
+<pre><code>func updateIncomingData () {
+     NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: &quot;Notify&quot;), object: nil , queue: nil){
+     notification in
+
+            let dataString = characteristicASCIIValue as String
+            if (dataString == &quot;0&quot;){
+                self.stateLabel.text = &quot;Close Fire&quot;
+                self.backgroundView.backgroundColor = UIColor.red
+            } else if (dataString == &quot;1&quot;) {
+                self.stateLabel.text = &quot;Distant Fire&quot;
+                self.backgroundView.backgroundColor = UIColor.red
+            } else {
+                self.stateLabel.text = &quot;No Fire&quot;
+                self.backgroundView.backgroundColor = UIColor.white
+            }
+        }
+    }
+</code></pre><h2 id="running-the-sketch-and-app">RUNNING THE SKETCH AND APP</h2>
+<ul>
+<li>Upload the sketch to your FLORA board. Open the Serial Monitor to verify that the sketch has been uploaded, and that the Bluetooth sensor has been configured.</li>
+<li>Run the iPhone app on a physical device. Make sure you have Bluetooth enabled. When you see your Arduino show up, click &ldquo;Connect&rdquo;.</li>
+<li>Use a lighter to test that the system is working.</li>
+</ul>
+<p>The repository for the project can be found <a href="https://github.com/narner/iOS-FlameSensor-Bluetooth-Study">here</a>.</p>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+			
+		</div>
+		</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>	
+	</nav>
+</div>
+
+
+
+
+</body>
+</html>
