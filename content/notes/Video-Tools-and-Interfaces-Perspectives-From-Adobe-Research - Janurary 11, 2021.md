@@ -6,7 +6,7 @@ date: 2021-01-11
 
 
 
-I recently attended an online seminar hosted by [Mira Dontcheva](https://research.adobe.com/person/mira-dontcheva/) of Adobe Research. Mira is a principal scientist and research manager working in Human-Computer Interaction. Her seminar, titled “Video is the Core Communication Tool of the Future”, highlighted some of the work that Adobe Research is doing in that area. 
+I recently attended an [online seminar](https://hci.stanford.edu/courses/cs547/speaker.php?date=2020-11-20) hosted by [Mira Dontcheva](https://research.adobe.com/person/mira-dontcheva/) of Adobe Research. Mira is a principal scientist and research manager working in Human-Computer Interaction. Her seminar, titled “Video is the Core Communication Tool of the Future”, highlighted some of the work that Adobe Research is doing in that area. 
 
 Mira was quick to point out that the title of the talk may already be inaccurate, given how the Covid-19 epidemic has so accelerated this technological trend. We’re on more video calls than ever before, Zoom is now a household name (and it’s stock shooting through the roof), doctors are having more telemedicine appointments, and students are raising their virtual hands on Zoom calls, rather than in-person. 
 
