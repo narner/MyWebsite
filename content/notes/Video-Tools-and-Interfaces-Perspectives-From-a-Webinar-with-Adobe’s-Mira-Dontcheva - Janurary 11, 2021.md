@@ -1,6 +1,6 @@
 ---
 title: "Video Tools and Interfaces: Perspectives From a Webinar with Adobe’s Mira Dontcheva "
-date: 2021-01-07
+date: 2021-01-11
 
 ---
 
@@ -53,7 +53,7 @@ These primitives can be created by leveraging computer vision and machine learni
 
 **Object Recognition (including People Detection)**
 
-![Object Recognition](/blog_assets/2020/Object_Recognition.png)
+![Object Recognition](/blog_assets/2020/object_recognition.jpeg)
 
 https://en.wikipedia.org/wiki/Object_detection
 
