@@ -100,7 +100,7 @@ All of these research projects leverage computer vision and ML techniques to det
 
 ## VIDEO TO AUGMENTED-REALITY TUTORIALS
 
-During the webinar, we also discussed Augmented-Reality as a way to interact with video content. Augmented-Reality provides a way to bring video content out of a flat computer screen and into the physical, real world. It has the potential to take video content about and set in the real world, and actually *put that content in the real world* by displaying the videos in context around the objects that they are about. Instead of watching a cooking tutorial on your laptop and then cooking the meal in your kitchen, you would be able 
+During the webinar, we also discussed Augmented-Reality as a way to interact with video content. Augmented-Reality provides a way to bring video content out of a flat computer screen and into the physical, real world. It has the potential to take video content about and set in the real world, and actually *put that content in the real world* by displaying the videos in context around the objects that they are about. Instead of watching a cooking tutorial on your laptop and then cooking the meal in your kitchen, you would be able to have an AR headset guide you through the tutorial. 
 
 Some of the work I did at a previous startup, Asteroid, involved prototyping video content interactions for AR. While experimenting with various headsets and mobile AR usage, we came to the conclusion that that AR was great for displaying multimedia content. 
 
@@ -120,7 +120,7 @@ The interfaces for working with video that make use of these new ML and CV techn
 
 * Making video translatable to interactive documents
 
-* CTRL-F for video, so you can find specific things in a video file down to the frame level 
+* CTRL-F for video, so you can find specific things in a video file at the frame level 
 
 * Bookmarks for video 
 
