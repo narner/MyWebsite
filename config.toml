@@ -10,8 +10,7 @@ orgName = ""
 orgWebsite = ""
 orgDescription = ""
 staticDir = "static"
-googleAnalytics = "G-Q2DB2TWHVJ"
-
+googleAnalytics = "UA-187116527-1"
 
   # [params]
   # [menu]
