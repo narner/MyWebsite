@@ -10,7 +10,7 @@ orgName = ""
 orgWebsite = ""
 orgDescription = ""
 staticDir = "static"
-  
+googleAnalytics = "G-Q2DB2TWHVJ"
 
 
   # [params]
@@ -26,3 +26,6 @@ staticDir = "static"
   #     name = "Notes"
   #     url = "/notes/"
   #     weight = 10
+
+
+#http://cloudywithachanceofdevops.com/posts/2018/05/17/setting-up-google-analytics-on-hugo/
