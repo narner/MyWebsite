@@ -1,5 +1,5 @@
 ---
-title: "Investment Notes - Roboflow.ai"
+title: "Memo - Roboflow"
 date: 2021-02-01
 
 ---
