@@ -33,6 +33,7 @@ Roboflow’s expertise in computer-vision and machine learning, combined with th
 
 
 **Product**
+
 Developers can easily create new ML models based off of common architectures, such as YOLO5, MobileNet, and ResNet. These models can then be exported in a variety of formats that are common to standard machine learning workflows. 
 Roboflow also includes tools for pre-processing datasets, eliminating the need for writing common boilerplate computer vision code. It also includes tools for determining the health of a dataset, as the ability to host. A relatively new feature, [Roboflow Annotate](https://roboflow.com/annotate), allows for annotating datasets in Roboflow, but Roboflow also provides integrations for other common labelling services and tools. Their latest feature is an [API](https://docs.roboflow.com/adding-data/upload-api) that allows developers to directly upload new images for training directly from an application.
 
@@ -41,17 +42,19 @@ Roboflow enables developers without deep machine learning expertise to create vi
 
 
 **Pricing**
+
 Roboflow has [three tiers of pricing](https://roboflow.com/pricing)**:** 
 
-Starter - For individuals and small companies experimenting with new computer vision applications
+* Starter - For individuals and small companies experimenting with new computer vision applications
 
-Professional - Enhanced features, including more more dataset analysis and augmentation features; and collaboration for teams
+* Professional - Enhanced features, including more more dataset analysis and augmentation features; and collaboration for teams
 
-Enterprise - Higher-grade security, dedicated support, unlimited teams and sharing
+* Enterprise - Higher-grade security, dedicated support, unlimited teams and sharing
 
 
 
 **Growth / Adoption**
+
 Roboflow has had over 10,000 users since their January release ranging from individual developers to startups and Fortune 50 companies.
 
 Roboflow has already been used in [supply chain optimization](https://blog.roboflow.com/retail-store-item-detection-using-yolov5/), [gaming](https://blog.roboflow.com/improving-uno-with-computer-vision/), [traffic optimization](https://blog.roboflow.com/infrastructure-asset-management-with-computer-vision/), [environmental improvement](https://blog.roboflow.com/using-computer-vision-to-count-fish-populations/), [cancer research](https://blog.roboflow.com/cancer-research-computer-vision/), [accessibility](https://blog.roboflow.com/computer-vision-american-sign-language/), and [much more](https://blog.roboflow.com/tag/case-studies/). 
@@ -59,6 +62,7 @@ Roboflow has already been used in [supply chain optimization](https://blog.robof
 
 
 **Founders and Team**
+
 Roboflow was founded by [Joseph Nelson](https://www.linkedin.com/in/josephofiowa) and [Brad Dwyer](https://www.linkedin.com/in/brad-dwyer-b6b4136) in January 2020. They first met each other in 2000. Roboflow is the second startup that Joseph has founded; his previous one was acquired in 2018. It is also Brad’s second startup -; his last company, in the social games space, reached 10 million players and is an active ten-person company that Brad left to start Roboflow.
 
 There are three full-time team members, in addition to the founders; and they are looking to bring on another full-stack engineer very soon. Additionally, they have on intern working with them. 
@@ -71,4 +75,5 @@ My impression of the founders are that they are exceptionally hard working and e
 
 
 **Investment Details** 
+
 Roboflow participated in the YC summer 2020 session. [They recently announced a $2.1M Seed Round, led by Lachy Groom and Craft Ventures](https://blog.roboflow.com/seed-round/), and are currently [hiring for several roles](https://roboflow.com/careers). 
