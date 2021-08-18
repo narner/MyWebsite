@@ -63,7 +63,7 @@ Roboflow has already been used in [supply chain optimization](https://blog.robof
 
 **Founders and Team**
 
-Roboflow was founded by [Joseph Nelson](https://www.linkedin.com/in/josephofiowa) and [Brad Dwyer](https://www.linkedin.com/in/brad-dwyer-b6b4136) in January 2020. They first met each other in 2000. Roboflow is the second startup that Joseph has founded; his previous one was acquired in 2018. It is also Brad’s second startup -; his last company, in the social games space, reached 10 million players and is an active ten-person company that Brad left to start Roboflow.
+Roboflow was founded by [Joseph Nelson](https://www.linkedin.com/in/josephofiowa) and [Brad Dwyer](https://www.linkedin.com/in/brad-dwyer-b6b4136) in January 2020. They first met each other in 2000. Roboflow is the second startup that Joseph has founded; his previous one was acquired in 2018. It is also Brad’s second startup - his last company, in the social games space, reached 10 million players and is an active ten-person company that Brad left to start Roboflow.
 
 There are three full-time team members, in addition to the founders; and they are looking to bring on another full-stack engineer very soon. Additionally, they have on intern working with them. 
 
