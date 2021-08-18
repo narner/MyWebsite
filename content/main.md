@@ -6,7 +6,7 @@ type: "main"
 
 
 
-I'm a developer and researcher working in the field of human-computer interaction. My main interests are sensors, humane interfaces, augmented reality, and ubiquitous computing. I currently live and work in San Francisco.
+I'm a developer and researcher working in the field of Human-Computer Interaction. My main interests are sensors, humane interfaces, augmented reality, and ubiquitous computing. I currently live and work in San Francisco, California. 
 
 ### Selected Projects
 
@@ -23,7 +23,7 @@ Published work can be found [here](/publications/publications/).
 
 ### Working Together
 
-I'm currently available for freelance iOS / macOS development projects. You can download my resume [here](NFA-Resume.pdf). 
+I'm currently available for small freelance iOS / macOS development projects, as well as technical writing and reserach work. You can download my resume [here](NFA-Resume.pdf). 
 
 ### Investing / Advising
 
