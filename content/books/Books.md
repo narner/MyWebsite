@@ -1,6 +1,9 @@
+---
+title: "Books"
+date: 2021-09-6
+draft: false
 
-
-
+---
 
 These are by no means a comprehensive list of books I own or have read; but are ones that I own and have read that related to my work. Sharing in the hope of finding new ones to read and sparking interesting and productive conversations. 
 

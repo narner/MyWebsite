@@ -6,7 +6,7 @@ type: "main"
 
 
 
-I'm a developer and researcher working in the field of Human-Computer Interaction. My main interests are sensors, humane interfaces, augmented reality, and ubiquitous computing. I currently live and work in San Francisco, California. 
+I'm a developer and researcher working in the field of Human-Computer Interaction.  I live and work in San Francisco, California. 
 
 ### Selected Projects
 
@@ -18,7 +18,7 @@ I'm a developer and researcher working in the field of Human-Computer Interactio
 
 ### Notes
 
-I write about human-computer interaction, new technologies, and software development [here](/notes/).
+I write about HCI, new technologies, and software development [here](/notes/).
 Published work can be found [here](/publications/publications/).
 
 ### Working Together
@@ -28,6 +28,10 @@ I'm currently available for small freelance iOS / macOS development projects, as
 ### Investing / Advising
 
 I do some some [angel investing](investing/investing/); if you're interested in any of the roles at the companies I've invested in, please feel free to reach out. 
+
+### Other Things
+
+I keep a list of book's I've found important in my work [here](books/books/), and a collection of [links](/links/links) I've found interesting here. 
 
 
 ### Get In Touch

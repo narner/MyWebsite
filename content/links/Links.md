@@ -1,10 +1,8 @@
 ---
 title: "Links"
-date: 2020-08-18
+date: 2021-09-6
 draft: false
 ---
-
-
 
 [Old Links](links/old_links/)
 
