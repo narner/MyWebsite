@@ -1,6 +1,6 @@
 ---
 title: "Investing"
-date: 2021-09-06
+date: "2021-09-06"
 draft: false
 ---
 
