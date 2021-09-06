@@ -1,6 +1,6 @@
 ---
 title: "Classification of Sound Files on iOS with the SoundAnalysis Framework and ESC-10 CoreML Model"
-date: 2019-10-29
+date: "2019-10-29"
 ---
 
 Earlier this year, Apple introduced the [SoundAnalysis framework](https://developer.apple.com/documentation/soundanalysis), enabling apps to “analyze streamed and file-based audio to classify it as a particular type”.

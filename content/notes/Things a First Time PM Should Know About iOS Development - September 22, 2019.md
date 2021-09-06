@@ -1,6 +1,6 @@
 ---
 title: "Things a First Time PM Should Know About iOS Development"
-date: 2019-09-27
+date: "2019-09-27"
 ---
 
 This post is a modification of some notes I wrote for a friend, who was recently hired for their first Project Management position at a startup that is developing an iOS app. They don't have a technical background, and wanted to know what some fundamental things to know about iOS development, the iOS ecosystem, and workflows of development.

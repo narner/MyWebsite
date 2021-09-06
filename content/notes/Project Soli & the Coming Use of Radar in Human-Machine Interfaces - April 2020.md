@@ -1,6 +1,6 @@
 ---
 title: "Project Soli & the Coming Use of Radar in Human-Machine Interfaces"
-date: 2020-04-07
+date: "2020-04-07"
 ---
 
 Radar is a 85 — year old technology that up until recently has not been actively deployed in human-machine interfaces. Radar — based gesture sensing allows user intent to be inferred across more contexts than optical-only based tracking currently allows.

@@ -1,7 +1,6 @@
 ---
 title: "Video Tools and Interfaces: Perspectives From Adobe Research"
-date: 2021-01-11
-
+date: "2021-01-11"
 ---
 
 

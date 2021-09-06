@@ -1,6 +1,6 @@
 ---
 title: "Touché, and Water as an Interface"
-date: 2017-08-15
+date: "2017-08-15"
 ---
 
 After experimenting with learning how [Touché could be used to interact with plants]({{< ref "Talking to Plants - Touche Experiments - August 4, 2017.md" >}}), I wanted to see how I could use it to interact with water.
@@ -19,13 +19,13 @@ First, the default state of not touching the water:
 
 ![no+hands](/blog_assets/2017/no+hands.gif)
 
-​
+
 
 Touching the water with one finger-tip:
 
 ![Touche+One+Finger](/blog_assets/2017/Touche+One+Finger.gif)
 
-​
+
 
 Touching the water with all five finger-tips :
 

@@ -1,8 +1,7 @@
 ---
 
 title: "Machine-Learning Powered Gesture Recognition on iOS"
-date: 2017-10-07
-
+date: "2017-10-07"
 ---
 
 It’s almost hard not to be reading about machine learning these days — and that trend will only increase. Machine learning is opening up powerful new capabilities for smartphone apps, from image classification to facial recognition. 

@@ -1,6 +1,6 @@
 ---
 title: "EYEO 2016: Observations on Toolmaking"
-date: 2016-06-13
+date: "2016-06-13"
 ---
 
 I'm writing this having returned from the 2016 [EYEO Festival](http://eyeofestival.com/), a gathering of creative technologists, designers, and artists from all over the world. It was an amazing experience, and I highly recommend going if you ever have the chance to do so. There were many things I enjoyed about it...the excellent talks, getting to meet people I've only talked to on Twitter for the first time, and the late night dancing at Prince's nightclub.

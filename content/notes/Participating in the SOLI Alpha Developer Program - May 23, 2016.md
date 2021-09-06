@@ -1,6 +1,6 @@
 ---
 title: "Participating in the SOLI Alpha Developer Program"
-date: 2016-05-23
+date: "2016-05-23"
 ---
 
 

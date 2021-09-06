@@ -1,6 +1,6 @@
 ---
 title: "Real-Time Data Teceiving and Rendering in Processing"
-date: 2017-08-21
+date: "2017-08-21"
 ---
 
 I wanted to talk a little bit about one of the technical challenges I had faced while writing the Processing receiver sketches for the Touché experiments in some previous blog posts ([here](https://www.nickarner.com/blog/2017/7/8/talking-to-plants-touché-experiments) and [here](https://www.nickarner.com/blog/2017/7/10/touch-and-water-as-an-interface)).

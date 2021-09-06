@@ -1,6 +1,6 @@
 ---
 title: "Why Writing Should be Part of Your Team's Development Culture"
-date: 2020-06-08
+date: "2020-06-08"
 ---
 
 Writing things down is the best way to prevent common knowledge around a team’s development processes from being misremembered or miscommunicated. Documenting systems and practices around a team’s software development workflow stops tribal knowledge* from being the primary way that information is shared and spread amongst a team.   
