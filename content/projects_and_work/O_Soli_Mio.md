@@ -1,5 +1,6 @@
 ---
 title: "O Soli Mio"
+date: "2021-09-06"
 ---
 
 

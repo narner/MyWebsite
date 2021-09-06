@@ -1,5 +1,6 @@
 ---
 title: "Whistlr"
+date: "2021-09-06"
 ---
 
 *with [Matt Becker](https://www.linkedin.com/in/mattsbecker/) and [Tana Green](https://www.linkedin.com/in/tanagreen/)*
@@ -13,6 +14,5 @@ It was powered  by [Chirp](http://chirp.io/)’s data over sound technology; let
 This is the [post](https://medium.com/@narner/announcing-whistlr-for-ios-15a715b7706b) we shared to announce it.
 
 ![](/post_assets/whistlr/WhistlrCollage.jpg)    
-
 
 [![](http://img.youtube.com/vi/p2KNcUt_-ZI/0.jpg)](http://www.youtube.com/watch?v=p2KNcUt_-ZI "")

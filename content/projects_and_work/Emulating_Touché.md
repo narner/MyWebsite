@@ -1,5 +1,6 @@
 ---
 title: "Emulating Touché"
+date: "2021-09-06"
 ---
 
 In 2017, I worked on a project where I built a circuit that emulated the [Touché
