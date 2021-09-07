@@ -31,7 +31,7 @@ I do some some [angel investing](investing/); if you're interested in any of the
 
 ### Other Things
 
-I keep a list of books I've found important in my work [here](books/), and a collection of [links](links/links/) I've found interesting here. 
+I keep a list of books I've found important in my work [here](books/), and a collection of [links](links/) I've found interesting here. 
 
 
 ### Get In Touch
