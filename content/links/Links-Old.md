@@ -1,10 +1,7 @@
 ---
 title: "Old Links"
 date: "2021-08-18"
-draft: false
 ---
-
-
 
 *Older + un-categorized links from my Notion archive*
 
