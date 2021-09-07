@@ -1,6 +1,7 @@
 ---
 title: "Links"
-date: "2021-09-6"
+date: "2021-09-06"
+
 ---
 
 [Old Links](links/old_links/)
