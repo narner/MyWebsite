@@ -1,7 +1,6 @@
 ---
 title: "Investing"
 date: "2021-09-06"
-draft: false
 ---
 
 I'm fortunate to be an investor and advisor in some fantastic companies. Some of them are hiring - if you see a role you're interested in at any of these, please feel free to reach out at nicholasarner@gmail.com
