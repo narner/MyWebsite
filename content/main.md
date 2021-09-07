@@ -27,11 +27,11 @@ I'm currently available for small freelance iOS / macOS development projects, as
 
 ### Investing / Advising
 
-I do some some [angel investing](investing/investing/); if you're interested in any of the roles at the companies I've invested in, please feel free to reach out. 
+I do some some [angel investing](investing/); if you're interested in any of the roles at the companies I've invested in, please feel free to reach out. 
 
 ### Other Things
 
-I keep a list of books I've found important in my work [here](books/books/), and a collection of [links](/links/links) I've found interesting here. 
+I keep a list of books I've found important in my work [here](books/), and a collection of [links](links) I've found interesting here. 
 
 
 ### Get In Touch
