@@ -23,11 +23,11 @@ Published work can be found [here](/publications/publications/).
 
 ### Working Together
 
-I'm currently available for small freelance iOS / macOS development projects, as well as technical writing and reserach work. You can download my resume [here](NFA-Resume.pdf). 
+I'm currently available for small freelance iOS / macOS development projects, as well as technical writing and research work. You can download my resume [here](NFA-Resume.pdf). 
 
 ### Investing / Advising
 
-I do some some [angel investing](investing/); if you're interested in any of the roles at the companies I've invested in, please feel free to reach out. 
+I also [angel invest](investing/); if you're interested in any of the roles at the companies I've invested in, please feel free to reach out. 
 
 ### Other Things
 
