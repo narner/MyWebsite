@@ -33,7 +33,7 @@ If we are to empower users to accomplish complex tasks through software, the int
 
 ## **Skill Floors and Skill Ceilings**
 
-A piece of software with a low skill ceiling and a high skill floor is one in which it is very easy to get started for very simple tasks, without having to do a lot of research or manual reading to figure out how to get started. 
+A piece of software with a low skill floor and a high skill ceiling is one in which it is very easy to get started for very simple tasks, without having to do a lot of research or manual reading to figure out how to get started. 
 
 At the same time, the software should offer enough functionality such that should a user take the time to learn how to use it, they will be able to accomplish more complex tasks the more time they spend learning the software. 
 
