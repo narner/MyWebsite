@@ -1,6 +1,6 @@
 ---
 title: "Some Thoughts on Interfaces"
-date: "2020-12-16"
+date: "2021-10-24"
 ---
 
 
@@ -95,11 +95,9 @@ A possible answer to that question are adaptive interfaces; parts of software th
 
 Phones, tablets, and computers carry ever more powerful sensors that are capable of gathering rich streams of data about the world. Cameras, microphones, GPS sensors, accelerometers, gyroscopes, magnetometers, LiDAR, radar. All of these things can be used to provide context for how a user is interacting with the software that’s running on that device. 
 
-These devices are also becoming capable of running more powerful ML models locally; without having to connect to a cloud server that’s running the model and the increased latency that it introduces. These models can be trained on the rich data streams from a device’s sensors, and be used to determine how a user is interacting with their device and the software applications running on it. Depending on the context, on-device ML models could be used to adjust the software interface according to the needs of the person using itl. 
+These devices are also becoming capable of running more powerful ML models locally; without having to connect to a cloud server that’s running the model and the increased latency that it introduces. These models can be trained on the rich data streams from a device’s sensors, and be used to determine how a user is interacting with their device and the software applications running on it. Depending on the context, on-device ML models could be used to adjust the software interface according to the needs of the person using it. 
 
-This allows for interfaces to become more dynamic; adapting to individual users’ preferences and behavior over time, rather than remaining static and uniform. As users learn to use the software, the software learns how they use it, and can adapt itself accordingly. The reasons for these adaptations should be transparent to the user - they should always be able to see how their actions influenced the software’s behavior and responses to them, and easily reverse them should they choose.
-
-Similarly, this type of local-based machine learning may be able to assist users with acquiring domain - specific knowledge the longer they use their software. 
+This allows for interfaces to become more dynamic, adapting to individual users’ preferences and behavior over time, rather than remaining static and uniform. As users learn to use the software, the software learns how they use it, and can adapt itself accordingly. The reasons for these adaptations should be transparent to the user - they should always be able to see how their actions influenced the software’s behavior and responses to them, and easily reverse them should they choose.
 
 
 
@@ -129,14 +127,14 @@ The goal when creating these interfaces should be to help users get into a flow 
 
 
 
-## **UI Latency**
+## **Final Thoughts**
 
 Interfaces are our gateway to working with computers. They’re how we’re able to take the raw power of a computer and use it to browse the internet, calculate expenses in a spreadsheet, or play a video game.
 
-They should help users accomplish their goals without getting in the way. They should be suited to the task at hand, and let the user focus on that task. They do not necessarily need to be simple, as sometimes the thing the user may be trying to accomplish is quite complex; but, they should be able to afford the user a clear understanding of their mechanics and operation. Complex interfaces sho;uld still be easy to learn - just because something is complex, does not mean that the path to learning how to use it should be one that is difficult or frustrating. Complex interfaces should help guide the person using them on their mechanics and usage, while keeping them in a flow state. 
+They should help users accomplish their goals without getting in the way. They should be suited to the task at hand, and let the user focus on that task. They do not necessarily need to be simple, as sometimes the thing the user may be trying to accomplish is quite complex; but, they should be able to afford the user a clear understanding of their mechanics and operation. Complex interfaces should still be easy to learn - just because something is complex, does not mean that the path to learning how to use it should be one that is difficult or frustrating. Complex interfaces should help guide the person using them on their mechanics and usage, while keeping them in a flow state. 
 
 They should not always be static - when appropriate, interfaces should learn how individual users use them, and adapt themselves to the user’s needs and patterns of usage. Similarly, when appropriate, they should also be capable of transmitting domain-specific knowledge of the domain of the software to the user while they use it.
 
 This has been something of a dream in user interfaces for a long time now, but we finally have the capabilities to realize it. With a plethora of sensors and the ability to run machine learning models on the devices themselves, we can create interfaces that learn and adapt to a user’s behavior, while still respecting our privacy. 
 
-If we truly want computers to be “bicycles for the mind”, they have to be as easy to interact with as...a bicycle, a screwdriver, a hammer; anything who’s form indicates how it should be used. Our way of interacting with computation is mediated primarily through pixels displayed on glass. It is essential that the way those pixels are arranged and represented to the people using them are clear, unobtrusive, and intuitive to use. 	
+If we truly want computers to be “bicycles for the mind”, they have to be as easy to interact with as...a bicycle, a screwdriver, a hammer; anything who’s form indicates how it should be used. Our way of interacting with computation is mediated primarily through pixels displayed on glass. It is essential that the way those pixels are arranged and represented to the people using them are clear, unobtrusive, and intuitive to use. 
