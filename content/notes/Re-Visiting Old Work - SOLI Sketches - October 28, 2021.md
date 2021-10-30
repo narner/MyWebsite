@@ -16,10 +16,14 @@ What follows is a write-up I did following some prototypes I made in June of 201
 
 Having focused my initial work with Soli around interacting with music, I was interested in exploring how it could be used when interacting with visual systems. The sketches described and shown here are the first in a series I have planned that focuses on showing how simple gestures can be used to add interactivity to creative coding projects. 
 
-**Micro-Gestures: Soli’s Strength**There have been many types of gesture recognition systems developed that the creative coding community has used to make their project interactive, such as the Kinect or the Leap Motion. Unlike those sensors, which focus on large hand gestures or pose detection, Soli is able to detect gestures that show the subtlety and capability of the human hand. 
+**Micro-Gestures: Soli’s Strength**
+
+There have been many types of gesture recognition systems developed that the creative coding community has used to make their project interactive, such as the Kinect or the Leap Motion. Unlike those sensors, which focus on large hand gestures or pose detection, Soli is able to detect gestures that show the subtlety and capability of the human hand. 
 Soli’s strength lies in the fact that it uses [millimeter-wave radar to detect hand gestures](http://dl.acm.org/citation.cfm?id=2925953) - giving it the ability to detect what can effectively be called micro-gestures. These gestures, subtler and smaller than gestures that make use of a wider hand-space, or the entire body of a user. Google ATAP showed off these sensing capabilities at I/O 2016, in which they [demonstrated](https://www.youtube.com/watch?v=Na89OzXllkk) how Soli could effectively be used to control both a smartwatch, and an audio speaker. 
 
-**Gesture Recognition**For these sketches, gesture recognition was performed using an [OpenFrameworks](https://openframeworks.cc/) example project that was provided in the Soli Alpha Developers’ SDK. This allowed for training simple gesture recognizers, the result of which would be sent via OSC ([Open Sound Control](http://opensoundcontrol.org/)) to the sketches. Depending on what gesture was detected by the Soli sensor, a corresponding event would occur in the sketch. 
+**Gesture Recognition**
+
+For these sketches, gesture recognition was performed using an [OpenFrameworks](https://openframeworks.cc/) example project that was provided in the Soli Alpha Developers’ SDK. This allowed for training simple gesture recognizers, the result of which would be sent via OSC ([Open Sound Control](http://opensoundcontrol.org/)) to the sketches. Depending on what gesture was detected by the Soli sensor, a corresponding event would occur in the sketch. 
 
 For these first sketches, I focused on two simple gestures: finger snaps and hand/finger wiggling:
 
