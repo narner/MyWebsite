@@ -29,7 +29,7 @@ For these first sketches, I focused on two simple gestures: finger snaps and han
 
 ![FingerSnap](/blog_assets/2021/FingerSnap.gif)
 
-![FingerSnap](/blog_assets/2021/Hand+FingerWiggling)
+![FingerSnap](/blog_assets/2021/Hand+FingerWiggling.gif)
 
 
 
