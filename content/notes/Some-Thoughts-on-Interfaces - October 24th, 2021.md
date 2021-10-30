@@ -9,7 +9,7 @@ The way we’ve interacted with computers has evolved considerably - from the ea
 
 
 
-![Computer History](/blog_assets/2020/ComputerHistory.jpg)
+![Computer History](/blog_assets/2021/ComputerHistory.jpg)
 
 
 
@@ -41,7 +41,7 @@ CAD software is a good example of what a high floor and a high ceiling looks lik
 
 Might it be possible for future software tools with high floors to assist new users with acquiring that domain knowledge the more they use the tool? 
 
-![HyperCard](/blog_assets/2020/HyperCard.jpg)
+![HyperCard](/blog_assets/2021/HyperCard.jpg)
 
 *https://arstechnica.com/gadgets/2019/05/25-years-of-hypercard-the-missing-link-to-the-web/*
 
@@ -49,7 +49,7 @@ Might it be possible for future software tools with high floors to assist new us
 
 [HyperCard](http://hypercard) was a piece of software that was [inspired by an LSD trip](http://mondo2000.com/2018/06/18/the-inspiration-for-hypercard/) (not microdosing for worker productivity, but rather the hippy kind of encounter), and was truly ahead of its time. HyperCard allowed Mac users to create mini programs out of a card based interface. It’s creator, Macintosh legend [Bill Atkinson](https://en.wikipedia.org/wiki/Bill_Atkinson), described it as a “...software erector set that lets non-programmers put together interactive information”. It allowed people to make mini programs without ever having to write a line of code - in 1987. 
 
-![NoCode](/blog_assets/2020/NoCode.jpg)
+![NoCode](/blog_assets/2021/NoCode.jpg)
 
 These tools have low floors because people can get started using them with little to no domain experience or guidance and training using the tools. However, because they rely so much on high level abstractions, they also have low ceilings - the user may not be able to accomplish more complex tasks within the tool’s abstractions, and so hit the skill ceiling of the tool. Doing more would require diving deeper into a level of abstraction that the tool doesn’t support; having hidden it in further higher levels of abstraction that make the tool easy to use in the first place. 
 
