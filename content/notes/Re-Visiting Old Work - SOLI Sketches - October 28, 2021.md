@@ -21,9 +21,13 @@ Soli’s strength lies in the fact that it uses [millimeter-wave radar to detect
 
 **Gesture Recognition**For these sketches, gesture recognition was performed using an [OpenFrameworks](https://openframeworks.cc/) example project that was provided in the Soli Alpha Developers’ SDK. This allowed for training simple gesture recognizers, the result of which would be sent via OSC ([Open Sound Control](http://opensoundcontrol.org/)) to the sketches. Depending on what gesture was detected by the Soli sensor, a corresponding event would occur in the sketch. 
 
-For these first sketches, I focused on two simple gestures: finger snaps and hand/finger wiggling:![img](https://lh3.googleusercontent.com/0SFXe67kDS6dleVVq2ft39bYBPz3M6PTPkGBFOz-QzqnT9mPr48MIJnxdPVR5v2_eN1O7m-M_4Jbsw-s4jLUEfyX_JbzsRrgNqovlja38CylBr26vAc1Mp98tL0e3Qfbn9pNBjN8=s1600) 
+For these first sketches, I focused on two simple gestures: finger snaps and hand/finger wiggling:
 
-![img](https://lh3.googleusercontent.com/FQSDZJgwWdR4bSC2R-JL0pTcRYSO_kCPHyf-Rdj3udw0Az1T1cdhpruMpb4dJ3SK60no15ykthGK71oRsbeq4TQtcbqUpwLzB6CQSI5gBR9MkcbyXe21qz_af_Uh7DvlMRd1OSKT=s1600)
+![FingerSnap](/blog_assets/2021/FingerSnap.gif)
+
+![FingerSnap](/blog_assets/2021/Hand+FingerWiggling)
+
+
 
 The reason for this was that it was easy to train the Soli gesture recognition system to recognize these with a limited amount of training data, and a limited number of test subjects (I was the only person training the system, and the only person using the system). 
 
