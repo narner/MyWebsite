@@ -12,7 +12,7 @@ Soli would later be included in the [Pixel smartphone](https://www.theverge.com/
 During the course of the Alpha Developer Program, participants were only able to show work that was disseminated via an academic publication. While some of the work I had done was able to get published; some wasn’t. But now that the Developer Program has ended, I’m able to share the remainder of this old work. 
 
 What follows is a write-up I did following some prototypes I made in June of 2017: 
-————————————————————————————————————————————————————————————
+————————————————————————————————————————————————————————
 
 Having focused my initial work with Soli around interacting with music, I was interested in exploring how it could be used when interacting with visual systems. The sketches described and shown here are the first in a series I have planned that focuses on showing how simple gestures can be used to add interactivity to creative coding projects. 
 
