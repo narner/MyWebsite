@@ -98,7 +98,7 @@ I made several demos, including a yoga pose detector, and an app that could reco
 
 The visual, node-based canvas allowed for fairly complex ARKit-based interactions to be created without having to write any code. Once you had prototyped your interactions and exported out your Xcode project, you could dive into the code to modify it as you wished, and build out a complete iOS app around it.
 
-**------------------------------------------------------------------------------------------------------------------------------------------------------------------------------**
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Visual programming environments opened up a new way of thinking for me about how I could use computers. I would no longer be constrained to using already written software as a user - I could create my own software even though I didn’t (yet) know the first thing about programming. I was able to explore the medium of computation through the lenses of things I was familiar with (music) or things that I had a desire to learn (interactive visuals). 
 
