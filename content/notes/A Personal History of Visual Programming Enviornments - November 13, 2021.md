@@ -44,6 +44,8 @@ I’d route the audio into Quartz Composer, and use the amplitude / frequency of
 
 ![QuartzComposer](/blog_assets/2021/QuartzComposer.png)
 
+...and would use the knobs and keys on a MIDI keyboard controller to adjust visual parameters or trigger visual sequences. 
+
 [Source](https://stackoverflow.com/questions/15049276/quartz-composer-viewer-zoom)
 
 Because you could connect anything to anything just by dragging virtual patch cowards between objects,you could quickly see how these different connections affected the visual output. 
