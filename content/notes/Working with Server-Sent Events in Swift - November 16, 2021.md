@@ -14,7 +14,9 @@ In this scenario, a server broadcasts any updated data, and the client applicati
 
 In this post, I'll walk through how to implement an iOS app to connect to an event source using the[ EventSource Library](https://github.com/inaka/EventSource).
 
+&nbsp;
 
+&nbsp;
 
 **Setting up the EventSource and Receiving Data**
 
@@ -61,9 +63,9 @@ eventSource?.onMessage({ [self] (id, event, data) in
 currId = id;
 ```
 
+&nbsp;
 
-
-
+&nbsp;
 
 **Receiving and Processing Data from the Server**
 
@@ -143,7 +145,9 @@ func setupEventSource(channelURLString: String) {
 
 Now, we're all set up to connect to our EventSource and receive data from it in our app. 
 
+&nbsp;
 
+&nbsp;
 
 **Reconnection**
 
@@ -178,9 +182,9 @@ func resetEventSource(completion: @escaping () -> Void) {
 }
 ```
 
+&nbsp;
 
-
-
+&nbsp;
 
 **Final Thoughts**
 
