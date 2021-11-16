@@ -22,6 +22,8 @@ In this post, I'll walk through how to implement an iOS app to connect to an eve
 
 In the function below, we'll first setup our EventSource with the URL of the server that we're connecting to:
 
+&nbsp;
+
 ```
 func setupEventSource(channelURLString: String) {
         
@@ -30,9 +32,11 @@ func setupEventSource(channelURLString: String) {
 	eventSource?.connect()
 ```
 
-
+&nbsp;
 
 Inside this function, we'll register our callbacks for interacting with the EventSource. The first one, onComplete, is called if the EventSource is closed for whatever reason. This could happen if there's an error at the network layer, loss of connectivity, or the server itself requests a disconnection.
+
+&nbsp;
 
 ```
 eventSource?.onComplete({ [self] (statusCode, reconnect, error) in
@@ -40,9 +44,11 @@ eventSource?.onComplete({ [self] (statusCode, reconnect, error) in
 })
 ```
 
-
+&nbsp;
 
 The next callback is called once our EventSource has successfully connected to the upstream server, and is ready to receive data from it:
+
+&nbsp;
 
 ```
 eventSource?.onOpen {
@@ -52,7 +58,11 @@ eventSource?.onOpen {
 
 
 
-Finally, we register a callback that gets called whenever we have received a message over the EventSource. This gives us back an id, an event, and data from our server.
+
+
+&nbsp;Finally, we register a callback that gets called whenever we have received a message over the EventSource. This gives us back an id, an event, and data from our server.
+
+&nbsp;
 
 ```
 eventSource?.onMessage({ [self] (id, event, data) in
@@ -81,6 +91,8 @@ We'll use this to keep track of whatever the most recent event ID from our event
 
 The data we get back is represented as a `String`: 
 
+&nbsp;
+
 ```
 guard let dataString = data else {
 	return
@@ -90,6 +102,8 @@ guard let dataString = data else {
 
 
 If you're receiving JSON data, and want to convert it to a Dictionary, you can do so with a function like this:
+
+&nbsp;
 
 ```
 func convertToDictionary(text: String) -> [String: Any]? {
@@ -104,9 +118,11 @@ func convertToDictionary(text: String) -> [String: Any]? {
 }
 ```
 
-
+&nbsp;
 
 Here's the full function that we use to set-up our EventSource and register the three callbacks within it: `onComplete`, `onOpen`, and `onMessage`.
+
+&nbsp;
 
 ```
 func setupEventSource(channelURLString: String) {
@@ -141,7 +157,7 @@ func setupEventSource(channelURLString: String) {
 }
 ```
 
-
+&nbsp;
 
 Now, we're all set up to connect to our EventSource and receive data from it in our app. 
 
@@ -153,13 +169,17 @@ Now, we're all set up to connect to our EventSource and receive data from it in 
 
 If someone dismisses our app to the background, we have no guarantee for how long our EventSource will stay open. In order to re-establish connection with our server when the app is opened again, we can set-up a notification listener in our ViewController to detect when the app has moved back into the foreground:
 
+&nbsp;
+
 ```
 NotificationCenter.default.addObserver(self, selector:#selector(appMovedToForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
 ```
 
-
+&nbsp;
 
 When the ViewController receives the notification that the app has moved back into the foreground, we can then call the `appMovedToForeground` function, which re-establishes the connection with our server if the EventSource is closed:
+
+&nbsp;
 
 ```
 @objc func appMovedToForeground() {
@@ -170,9 +190,11 @@ When the ViewController receives the notification that the app has moved back in
 }
 ```
 
-
+&nbsp;
 
 Here's the function for resetting the EventSource - we make sure to manually disconnect before connecting again, just to make sure that we don't ever enter a state where we're accidentally trying to connect to the EventSource if we're already connected.
+
+&nbsp;
 
 ```
 func resetEventSource(completion: @escaping () -> Void) {
