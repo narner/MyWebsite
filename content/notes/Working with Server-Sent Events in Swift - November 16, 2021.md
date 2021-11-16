@@ -73,7 +73,7 @@ Now that we’ve set-up our EventSource receiver and connected to our remote ser
 var currId = ""
 ```
 
-
+&nbsp;
 
 We'll use this to keep track of whatever the most recent event ID from our event source was. This value gets used in the `onComplete` callback above to reconnect with the server in the event that our app gets disconnected from it for some reason.
 
@@ -85,7 +85,7 @@ guard let dataString = data else {
 }
 ```
 
-
+&nbsp;
 
 If you're receiving JSON data, and want to convert it to a Dictionary, you can do so with a function like this:
 
