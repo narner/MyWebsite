@@ -20,7 +20,7 @@ In this post, I'll walk through how to implement an iOS app to connect to an eve
 
 In the function below, we'll first setup our EventSource with the URL of the server that we're connecting to:
 
-```
+```objective-c
 func setupEventSource(channelURLString: String) {
         
 	let serverURL = URL(string: channelURLString)!
@@ -32,7 +32,7 @@ func setupEventSource(channelURLString: String) {
 
 Inside this function, we'll register our callbacks for interacting with the EventSource. The first one, onComplete, is called if the EventSource is closed for whatever reason. This could happen if there's an error at the network layer, loss of connectivity, or the server itself requests a disconnection.
 
-```
+```objective-c
 eventSource?.onComplete({ [self] (statusCode, reconnect, error) in
 	eventSource?.connect(lastEventId: currId);
 })
@@ -42,7 +42,7 @@ eventSource?.onComplete({ [self] (statusCode, reconnect, error) in
 
 The next callback is called once our EventSource has successfully connected to the upstream server, and is ready to receive data from it:
 
-```
+```objective-c
 eventSource?.onOpen {
 	print("Event sourced opened!")
 }
@@ -52,7 +52,7 @@ eventSource?.onOpen {
 
 Finally, we register a callback that gets called whenever we have received a message over the EventSource. This gives us back an id, an event, and data from our server.
 
-```
+```objective-c
 eventSource?.onMessage({ [self] (id, event, data) in
 	guard let id = id else {
 		return
@@ -69,7 +69,7 @@ currId = id;
 
 Now that we’ve set-up our EventSource receiver and connected to our remote server, we’re ready to process any data that our server sends us. Here, we set the value of `id` to a global variable, `currentID`:
 
-```
+```objective-c
 var currId = ""
 ```
 
@@ -79,7 +79,7 @@ We'll use this to keep track of whatever the most recent event ID from our event
 
 The data we get back is represented as a `String`: 
 
-```
+```objective-c
 guard let dataString = data else {
 	return
 }
@@ -89,7 +89,7 @@ guard let dataString = data else {
 
 If you're receiving JSON data, and want to convert it to a Dictionary, you can do so with a function like this:
 
-```
+```objective-c
 func convertToDictionary(text: String) -> [String: Any]? {
 	if let data = text.data(using: .utf8) {
 		do {
@@ -106,7 +106,7 @@ func convertToDictionary(text: String) -> [String: Any]? {
 
 Here's the full function that we use to set-up our EventSource and register the three callbacks within it: `onComplete`, `onOpen`, and `onMessage`.
 
-```
+```objective-c
 func setupEventSource(channelURLString: String) {
         
 	let serverURL = URL(string: channelURLString)!
@@ -149,7 +149,7 @@ Now, we're all set up to connect to our EventSource and receive data from it in 
 
 If someone dismisses our app to the background, we have no guarantee for how long our EventSource will stay open. In order to re-establish connection with our server when the app is opened again, we can set-up a notification listener in our ViewController to detect when the app has moved back into the foreground:
 
-```
+```objective-c
 NotificationCenter.default.addObserver(self, selector:#selector(appMovedToForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
 ```
 
@@ -157,7 +157,7 @@ NotificationCenter.default.addObserver(self, selector:#selector(appMovedToForegr
 
 When the ViewController receives the notification that the app has moved back into the foreground, we can then call the `appMovedToForeground` function, which re-establishes the connection with our server if the EventSource is closed:
 
-```
+```objective-c
 @objc func appMovedToForeground() {
 	if eventSource?.readyState == .closed {
 		resetEventSource { [self] in
@@ -170,7 +170,7 @@ When the ViewController receives the notification that the app has moved back in
 
 Here's the function for resetting the EventSource - we make sure to manually disconnect before connecting again, just to make sure that we don't ever enter a state where we're accidentally trying to connect to the EventSource if we're already connected.
 
-```
+```objective-c
 func resetEventSource(completion: @escaping () -> Void) {
 	eventSource?.disconnect()
 	eventSource?.connect()
