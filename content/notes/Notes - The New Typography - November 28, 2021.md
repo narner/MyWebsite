@@ -15,7 +15,7 @@ In a passage on page 211, Tschichold writes:
 
 “The enormous importance of magazines today require us to give them the most careful attention. Since today more magazines are read than books, and much important matter appears only in magazines, there are many new problems, of which the most important is to find a contemporary style for their production.”
 
-This feels like it could have been easily written in 2021 - with the substitution of digital media and all it encompasses…Twitter threads, the ubiquitous “story” format first created by Snap, the ubiquity of image (which still contains text!) over the written word in books, newspapers, and magazines. The fact that so much written content is consumed by readers via screens that are also capable of displaying static and moving images is significant, and surely 
+This feels like it could have been easily written in 2021 - with the substitution of digital media and all it encompasses…Twitter threads, the ubiquitous “story” format first created by Snap, the ubiquity of image (which still contains text!) over the written word in books, newspapers, and magazines. The fact that so much written content is consumed by readers via screens that are also capable of displaying static and moving images is significant in the history of meida, and  something I'm very curious what Tshichold would have thought about. 
 
 I can’t help but wonder what issues typographers, designers, media theorists; etc will be grappling with 50 years from now. In the event that media creation and consumption does move from centralized to decentralized platforms, what material properties of decentralization (if any) will there be that that designers will have to consider for clearly communicating information for these new platforms?
 
