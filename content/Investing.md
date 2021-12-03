@@ -17,4 +17,6 @@ I'm fortunate to be an investor and advisor in some fantastic companies. Some of
 
 * [Texts](http://texts.com)  - Unified messaging application. *Currently [hiring](https://texts.com/jobs) Full-Stack and Backend engineers, iOS engineers with SwiftUI experience, and Reverse Engineers with knowledge of Ghidra, IDA, or Frida.*
 
+* [Vuecason](https://www.vuecason.com) - Combined 3D metal printing and machine tool
+
   
