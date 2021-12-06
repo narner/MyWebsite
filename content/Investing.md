@@ -5,7 +5,7 @@ date: "2021-09-06"
 
 I'm fortunate to be an investor and advisor in some fantastic companies. Some of them are hiring - if you see a role you're interested in at any of these, please feel free to reach out at nicholasarner@gmail.com
 
-* [Collage](www.collage.party) - Create and remix memes with your friends.
+* [Collage](https://twitter.com/thecollageapp) - Create and remix memes with your friends.
 
 * [Default](https://www.default.com/) - Capture inbound sales leads via customizable and integratable forms on your website. *Currently hiring Full-Stack React engineers*.
 
