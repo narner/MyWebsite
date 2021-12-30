@@ -1,4 +1,4 @@
-name: Pint to IPFS via Pinata
+name: Pin to IPFS via Pinata
 on:
   push:
     branches:
