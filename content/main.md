@@ -38,5 +38,3 @@ I keep a list of books I've found important in my work [here](books/), and a col
 
 Send me a note at nicholasarner (at) gmail (dot) com, or find me on [Twitter](https://twitter.com/nickarner).
 
-You can check out the sketches and designs I made while working with Soli [here](NickArner-SoliNotebookSketches.pdf). 
-
