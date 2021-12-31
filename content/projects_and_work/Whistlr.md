@@ -17,6 +17,6 @@ This is the [post](https://medium.com/@narner/announcing-whistlr-for-ios-15a715b
 
 
 
-Walkthrough Video: 
+​										Walkthrough Video: 
 
 [![](http://img.youtube.com/vi/p2KNcUt_-ZI/0.jpg)](http://www.youtube.com/watch?v=p2KNcUt_-ZI "")
