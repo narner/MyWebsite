@@ -10,8 +10,7 @@ jobs:
     - name: Upload to IPFS
       uses: aquiladev/ipfs-action@v0.1.6
       with:
-        path: 'MyWebsite'
-        verbose: true
+        path: /
         pinataKey: 9dce9fe37f9307865f5e
-        pinataSecret: eyJhbGciOiJIUzl1 NilsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiI0MTQ3NzdhMi03MmQ2LTRjMTUtOGYwZi03ZDk4ND|4MTFiY2QiLCJIbWFpbCI6Im5pY2hvbGFzYXJuZXJAZ21 haV29tliwiZW1haWxfdmVyaWZpZWQiOnRydWUsInBpbl9wb2xpY3kiOnsicmVnaW9ucyl6W3siaWQiOiJOWUMxliwiZGVzaXJIZFJIcGxpY2F0aW9uQ291bnQiOjF9XSwidmVyc2lvbil6MX0slm1mYV9IbmFibGVkljpmYWxzZX0sImF1dGhlbnRpY2F0aW9uVHlwZSI6InNjb3BIZEtleSIsInNjb3BIZEtleUtleSl6IjlkY2U5ZmUzN2Y5MzA3ODY1ZjVlliwic2NvcGVkS2V5U2VjcmV0ljoiMGRmZGVIZGQ4OWI3MWM5MGE2MmZkZDNkMTAwMDMxZDUyY2E0YjdmOTE2MmRjNDIwOWEzNWRiN2VIYTUwMDA0OCIsImIhdCI6MTY0MDg4Nz15Nn0.JnTP9Hs0LqTcTUIEQzSCAw-IHRnPe2lsERjK-QzVhM8
+        pinataSecret: ${{ secrets.PINATA_SECRET }}
         pinataPinName: 'Nick Arner website'
