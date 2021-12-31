@@ -3,7 +3,7 @@ title: "Talking to Plants: Touché Experiments"
 date: "2017-08-04"
 ---
 
-As I mentioned in a[previous post]({{< ref "Tools for Machine Learning and Sensor Inputs for Gesture Recognition - July 6, 2017.md" >}}), I was really pleased to see that the [ESP-Sensors project](https://github.com/damellis/ESP) had included code for [working with a circuit based on Touché](https://github.com/damellis/ESP/wiki/[Example]-Touché-swept-frequency-capacitive-sensing).
+As I mentioned in a [previous post]({{< ref "Tools for Machine Learning and Sensor Inputs for Gesture Recognition - July 6, 2017.md" >}}), I was really pleased to see that the [ESP-Sensors project](https://github.com/damellis/ESP) had included code for [working with a circuit based on Touché](https://github.com/damellis/ESP/wiki/[Example]-Touché-swept-frequency-capacitive-sensing).
 
 I had earlier come across other implementations of Touché for the Arduino, but unlike the ESP project, none of them utilized machine learning for classifying gesture types.
 
