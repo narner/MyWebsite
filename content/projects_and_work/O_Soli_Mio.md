@@ -5,10 +5,11 @@ date: "2021-09-06"
 
 
 
-I was of 80 developers worldwide to be accepted into Google's [Project Soli](https://atap.google.com/soli/) Alpha Developer Program and was one of only 14 Alpha Developers to be invited to Google HQ to workshop new ideas regarding potential applications using SOLI.  Specifically,  my work involved investigating Soli's potential use in new musical instruments.  Some of this work was show in in this video presented by ATAP at  Google I/O 2016:
+I was of 80 developers worldwide to be accepted into Google's [Project Soli](https://atap.google.com/soli/) Alpha Developer Program and was one of 14 Alpha Developers to be invited to Google HQ to workshop new ideas regarding potential applications using SOLI.  
 
 
 
+My work involved investigating Soli's potential use in new musical instruments.  Some of this work was shown in in this video presented by ATAP at  Google I/O 2016:
 [![](http://img.youtube.com/vi/H41A_IWZwZI/0.jpg)](http://www.youtube.com/watch?v=H41A_IWZwZI "")
 
 
