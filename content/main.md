@@ -8,12 +8,9 @@ type: "main"
 
 I'm a developer and researcher working in the field of Human-Computer Interaction.  I live and work in San Francisco, California. 
 
-### Selected Projects
+### Projects
 
-* [O Soli Mio - Radar Powered Gestural Interfaces for Music](/projects_and_work/o_soli_mio/)
-* [Emulating Touché - Open-Source Capacitive Sensing Interactions with Plants and Water](/projects_and_work/emulating_touché/)
-* [Whistlr - iOS Contact Sharing over Audio](/projects_and_work/whistlr/)
-* [Push-To-Talk Audio Chat App](/projects_and_work/push_to_talk_audio_chat_app/)
+You can check out some of the things I've made and worked on [here](/projects_and_work/projects/). 
 
 
 ### Notes
@@ -23,7 +20,7 @@ Published work can be found [here](/publications/publications/).
 
 ### Working Together
 
-I'm currently available for small freelance iOS / macOS development projects, as well as technical writing and research work. You can download my resume [here](NFA-Resume.pdf). 
+I'm currently available for small freelance iOS / macOS development projects, as well as technical writing and research work. You can download my [resume](NFA-Resume.pdf). 
 
 ### Investing / Advising
 

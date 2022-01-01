@@ -9,7 +9,14 @@ I was of 80 developers worldwide to be accepted into Google's [Project Soli](htt
 
 
 
-My work involved investigating Soli's potential use in new musical instruments.  Some of this work was shown in in this video presented by ATAP at  Google I/O 2016:
+![](/post_assets/soli/atap.jpg)
+
+
+
+My work involved investigating Soli's potential use in new musical instruments with [Paul Batchelor](http://pbat.ch); who wrote the sound synthesis language that powered the instruments.  Some of this work was shown in in this video presented by ATAP at  Google I/O 2016:
+
+
+
 [![](http://img.youtube.com/vi/H41A_IWZwZI/0.jpg)](http://www.youtube.com/watch?v=H41A_IWZwZI "")
 
 
