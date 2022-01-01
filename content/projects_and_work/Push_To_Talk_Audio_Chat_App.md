@@ -3,7 +3,7 @@ title: "Push-To-Talk Audio Chat App"
 date: "2021-09-06"
 ---
 
-Through December 2019 to Feburary 2020, [Julie Young](https://twitter.com/juliey4) worked together on a push-to-talk audio chat app; Julie designed the app, and I built it. The app let people create audio channels that would be broadcast to others in a nearby physical location. 
+Through December 2019 to Feburary 2020, [Julie Young](https://twitter.com/juliey4) and I worked together on a push-to-talk audio chat app; Julie designed the app, and I built it. The app let people create audio channels that would be broadcast to others in a nearby physical location. 
 
 Users could see available nearby channels and join them. Using the push-to-talk interface, they could talk to the channel.  
 
