@@ -55,7 +55,7 @@ date: "2021-08-18"
 * [GOOGLE ATAP DEPLOYS STRATASYS 3D PRINTING TO CREATE ‘JACQUARD’ WEARABLE MOTION SENSORS](https://3dprintingindustry.com/news/google-atap-deploys-stratasys-3d-printing-to-create-jacquard-wearable-motion-sensors-183454/)
 * [Metamaterials, mmWave antennas, 3D radar and holographic beamforming](https://www.eeworldonline.com/metamaterials-mmwave-antennas-3d-radar-holographic-beamforming-faq/)
 * [Valve, OpenBCI & Tobii to Launch VR Brain-computer Interface ‘Galea’ in Early 2022](https://www.roadtovr.com/valve-openbci-immersive-vr-games/)
-* [[3D Scene Understanding with TensorFlow 3D](http://ai.googleblog.com/2021/02/3d-scene-understanding-with-tensorflow.html)](https://ai.googleblog.com/2021/02/3d-scene-understanding-with-tensorflow.html)
+* [3D Scene Understanding with TensorFlow 3D](https://ai.googleblog.com/2021/02/3d-scene-understanding-with-tensorflow.html)
 * [Mobile Computational Photography: A Tour](https://arxiv.org/abs/2102.09000)
 * [UltraPower: Powering Tangible & Wearable Devices with Focused Ultrasound](https://dl.acm.org/doi/10.1145/3430524.3440620)
 * [Lyra: A New Very Low-Bitrate Codec for Speech Compression](https://ai.googleblog.com/2021/02/lyra-new-very-low-bitrate-codec-for.html)
