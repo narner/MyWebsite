@@ -68,6 +68,7 @@ I modified the sketch so that if the hands were held, the particles coalesce aro
 
 
 **Lessons Learned on Training Gesture Recognition Systems and Workflows**
+
 When training machine learning systems for gesture recognition in general: take breaks! If you keep making the same gestures over and over while training your system, they start to lose their coherency. In the case of making gestures, if you train your system in a long, single setting; your gestures will start to become sloppy, or perhaps stiff and wooden...adversely affecting the training data for your gesture recognition pipeline. 
 
 Additionally, try to anticipate any of the subtle variations in which you (or your users, if you’re creating a system to be used by more than just yourself) may make a gesture. For example, if you want are training your system to recognize finger wiggles, and you’re training your system at the end of the day when you’re tired, you’re not going to make finger wiggles the same way when you wake up the next day and have had your double shot of espresso. The more you train a gesture recognition system with slight variations of similar gestures over a longer period of time with multiple sessions, the more robust the gesture recognition system will be in the pipeline. 
@@ -75,6 +76,7 @@ Additionally, try to anticipate any of the subtle variations in which you (or yo
 
 
 **Instrumentality and Potential for Interactivity**
+
 While using these sketches, I became aware of something - using them felt like playing an instrument. I have a background as a bass guitarist, and while performing the various gestures, I wasn’t able to shake the feeling that I was playing an instrument - even after having worked with a trained gesture recognition + sketch for a period of time, while filming the demo videos, I found that I had to “rehearse” my gestures to get the desired visual output from the sketches. I was definitely relying on muscle memory to perform the gestures in a way that made the output of the sketches make sense. This feeling only reinforced how I feel about Soli’s potential as a tool for adding interactivity to creative coding environments. 
 
 While Soli certainly has lots of potential for various “utilitarian” applications (including the IoT, industrial robotics, AR/VR, etc), it also continues to show promise as a way for adding gesture recognition capabilities to creative audio and visual applications. I believe these sketches are stepping stones in showing how gestural interaction, provided via Project Soli, can enhance the way we interact with creative computational environments.
