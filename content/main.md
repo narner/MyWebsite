@@ -24,7 +24,9 @@ I'm currently available for small freelance iOS / macOS development projects, as
 
 ### Investing / Advising
 
-I also [angel invest](investing/); if you're interested in any of the roles at the companies I've invested in, please feel free to reach out. 
+I also [angel invest](investing/), and am particularly interested in founders and startups reimagining the way we interact with computers. 
+
+Some of the companies I've invested in are [hiring](https://narner.notion.site/Nick-Arner-s-Job-Board-270bf00c8f67410881a29a2c6242ff17); reach out if you're interested in any of the listed roles!
 
 ### Other Things
 
