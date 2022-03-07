@@ -1,16 +1,1 @@
-name: Pin to IPFS via Pinata
-on:
-  push:
-    branches:
-      - main
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Upload to IPFS
-      uses: aquiladev/ipfs-action@v0.1.6
-      with:
-        path: /
-        pinataKey: 9dce9fe37f9307865f5e
-        pinataSecret: ${{ secrets.PINATA_SECRET }}
-        pinataPinName: 'Nick Arner website'
+
