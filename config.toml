@@ -6,12 +6,17 @@ theme = "ezhil"
 
 copyright = "© Copyright Nicholas Arner, 2022"
 RSSLink = ""
+rssLimit = 20
 logo = ""
 orgName = ""
 orgWebsite = ""
 orgDescription = ""
 staticDir = "static"
 googleAnalytics = "UA-187116527-1"
+
+[author]
+	name = "Nick Arner"
+	email = "nicholasarner@gmail.com"
 
   # [params]
   # [menu]
