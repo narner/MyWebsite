@@ -1,5 +1,5 @@
 ---
-title: "Push Notifications and The Tyrrany of Stolen Attention"
+title: "The Causes of Latency in Computing Systems, and Why Exactly It Frustrates Us"
 date: "2022-04-06"
 
 ---
