@@ -59,8 +59,8 @@ If the latency is consistent and predictable, then people will know what to expe
 
 
 
-
 **Latency and Trust**
+
 Latency in a computing system will inspire distrust in the person using the system. They’ll either:
 
 * Think the system is inherently broken, and liable to lose their data + work 
