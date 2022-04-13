@@ -5,6 +5,8 @@ date: "2021-09-06"
 
 I'm fortunate to be an investor in some fantastic companies. 
 
+&nbsp;
+
 * [Collage](https://twitter.com/thecollageapp) - Create and remix memes with your friends.
 
 * [Default](https://www.default.com/) - Capture inbound sales leads via customizable and integratabtle forms on your website. 
