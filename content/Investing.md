@@ -19,9 +19,9 @@ I'm fortunate to be an investor in some fantastic companies.
 
 * [Texts](http://texts.com)  - Unified messaging application. 
 
-* [Theatre.js](https://www.theatrejs.com/) - JavaScript animation library + GUI
+* [Theatre.js](https://www.theatrejs.com/) - JavaScript animation library + GUI.
 
-* [Vuecason](https://www.vuecason.com) - Combined 3D metal printing and machine tool
+* [Vuecason](https://www.vuecason.com) - Combined 3D metal printing and machine tool.
 
 * (Stealth) - consumer hardware 
 
