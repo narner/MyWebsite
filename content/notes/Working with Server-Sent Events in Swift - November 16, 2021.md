@@ -8,9 +8,15 @@ date: "2021-11-16"
 
 In most mobile applications that work with networked data, standard HTTP GET requests are used to fetch the data from the server that you want to display in your app's UI.
 
+&nbsp;
+
 However, some backend servers may make use of a different pattern for data transfer between themselves and a client than the common REST architecture - that of[ Server Sent Events (SSE's)](https://en.wikipedia.org/wiki/Server-sent_events).
 
+&nbsp;
+
 In this scenario, a server broadcasts any updated data, and the client application listens for these changes to come in over the HTTP connection. As long as that connection remains open, the client will be aware of any changes that have occurred server-side.
+
+&nbsp;
 
 In this post, I'll walk through how to implement an iOS app to connect to an event source using the[ EventSource Library](https://github.com/inaka/EventSource).
 
