@@ -28,9 +28,8 @@ In the function below, we'll first setup our EventSource with the URL of the ser
 
 &nbsp;
 
-```swift
+```
 func setupEventSource(channelURLString: String) {
-        
 	let serverURL = URL(string: channelURLString)!
 	eventSource = EventSource(url: serverURL, headers: ["Authorization" : cookie!.value])
 	eventSource?.connect()
