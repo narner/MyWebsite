@@ -34,11 +34,14 @@ func setupEventSource(channelURLString: String) {
 	let serverURL = URL(string: channelURLString)!
 	eventSource = EventSource(url: serverURL, headers: ["Authorization" : cookie!.value])
 	eventSource?.connect()
+}
 ```
 
 &nbsp;
 
 Inside this function, we'll register our callbacks for interacting with the EventSource. The first one, onComplete, is called if the EventSource is closed for whatever reason. This could happen if there's an error at the network layer, loss of connectivity, or the server itself requests a disconnection.
+
+&nbsp;
 
 ```
 eventSource?.onComplete({ [self] (statusCode, reconnect, error) in
@@ -61,6 +64,8 @@ eventSource?.onOpen {
 &nbsp;
 
 Finally, we register a callback that gets called whenever we have received a message over the EventSource. This gives us back an id, an event, and data from our server.
+
+&nbsp;
 
 ```
 eventSource?.onMessage({ [self] (id, event, data) in
