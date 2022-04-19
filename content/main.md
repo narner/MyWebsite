@@ -8,6 +8,8 @@ type: "main"
 
 I'm a developer and researcher working in the field of Human-Computer Interaction.  I live and work in San Francisco, California. 
 
+&nbsp;
+
 ### Projects
 
 You can check out some of the things I've made and worked on [here](/projects_and_work/projects/). 
