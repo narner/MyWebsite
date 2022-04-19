@@ -66,7 +66,7 @@ Finally, we register a callback that gets called whenever we have received a mes
 
 &nbsp;
 
-```
+```swift
 eventSource?.onMessage({ [self] (id, event, data) in
 	guard let id = id else {
 		return
