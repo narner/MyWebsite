@@ -14,9 +14,6 @@ orgDescription = ""
 staticDir = "static"
 googleAnalytics = "UA-187116527-1"
 
-#https://www.tomspencer.dev/blog/2018/08/03/deploying-a-hugo-powered-site-to-netlify-with-source-code-syntax-highlighting/
-pygmentsCodeFences = true   # Enable triple backtick 'code fence' markdown
-pygmentsUseClasses = false  # Add inline styles, no need to compile extra CSS
 
 [author]
 	name = "Nick Arner"
