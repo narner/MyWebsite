@@ -54,7 +54,7 @@ The next callback is called once our EventSource has successfully connected to t
 
 &nbsp;
 
-```
+```swift
 eventSource?.onOpen {
 	print("Event sourced opened!")
 }
@@ -81,7 +81,7 @@ currId = id;
 
 Now that we’ve set-up our EventSource receiver and connected to our remote server, we’re ready to process any data that our server sends us. Here, we set the value of `id` to a global variable, `currentID`:
 
-```
+```swift
 var currId = ""
 ```
 
@@ -93,7 +93,7 @@ The data we get back is represented as a `String`:
 
 &nbsp;
 
-```
+```swift
 guard let dataString = data else {
 	return
 }
@@ -105,7 +105,7 @@ If you're receiving JSON data, and want to convert it to a Dictionary, you can d
 
 &nbsp;
 
-```
+```swift
 func convertToDictionary(text: String) -> [String: Any]? {
 	if let data = text.data(using: .utf8) {
 		do {
@@ -124,7 +124,7 @@ Here's the full function that we use to set-up our EventSource and register the 
 
 &nbsp;
 
-```
+```swift
 func setupEventSource(channelURLString: String) {
         
 	let serverURL = URL(string: channelURLString)!
@@ -167,7 +167,7 @@ Now, we're all set up to connect to our EventSource and receive data from it in 
 
 If someone dismisses our app to the background, we have no guarantee for how long our EventSource will stay open. In order to re-establish connection with our server when the app is opened again, we can set-up a notification listener in our ViewController to detect when the app has moved back into the foreground:
 
-```
+```swift
 NotificationCenter.default.addObserver(self, selector:#selector(appMovedToForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
 ```
 
@@ -177,7 +177,7 @@ When the ViewController receives the notification that the app has moved back in
 
 &nbsp;
 
-```
+```swift
 @objc func appMovedToForeground() {
 	if eventSource?.readyState == .closed {
 		resetEventSource { [self] in
@@ -192,7 +192,7 @@ Here's the function for resetting the EventSource - we make sure to manually dis
 
 &nbsp;
 
-```
+```swift
 func resetEventSource(completion: @escaping () -> Void) {
 	eventSource?.disconnect()
 	eventSource?.connect()
