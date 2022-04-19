@@ -28,7 +28,7 @@ In the function below, we'll first setup our EventSource with the URL of the ser
 
 &nbsp;
 
-```
+```swift
 func setupEventSource(channelURLString: String) {
 	let serverURL = URL(string: channelURLString)!
 	eventSource = EventSource(url: serverURL, headers: ["Authorization" : cookie!.value])
@@ -42,7 +42,7 @@ Inside this function, we'll register our callbacks for interacting with the Even
 
 &nbsp;
 
-```
+```swift
 eventSource?.onComplete({ [self] (statusCode, reconnect, error) in
 	eventSource?.connect(lastEventId: currId);
 })
