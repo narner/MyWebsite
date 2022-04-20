@@ -6,7 +6,11 @@ date: "2020-06-26"
 
 I've been [interviewing for new positions recently](https://nickarner.com/NFA-Resume.pdf), and for one of the roles I interviewed for; was told it would be a good job to brush up on my Objective-C knowledge. I've been writing iOS and macOS apps primarily in Swift since it was launched in 2014; I've actually been writing software in Swift longer than I ever did in Objective-C. So, I spent some time reviewing Objective-C concepts and patterns; and thought it may be helpful to share my review note in the form of a blog post for anyone who may find themself in a similar circumstance. 
 
+&nbsp;
+
 This definitely is not a complete overview of the Objective-C language or the patterns and paradigms of programming in it, but it should be a good overview of some of the concepts in it that may come up during an interview. 
+
+&nbsp;
 
 &nbsp;
 
@@ -22,6 +26,8 @@ If you want to add a method to an existing class, you can use a category. The ca
 
 &nbsp;
 
+&nbsp;
+
 **What are Extensions?**
 
 Extensions are similar to categories in that you they allow you to extend the functionality of a class. Unlike categories, they allow you to add your own properties and instance variables to a class. As such, they can only be added to a class for which you have the source code at compile time. The implementation of a class extension should be placed in the implementation file of the class who’s functionality you are extending.
@@ -33,6 +39,8 @@ Extensions are similar to categories in that you they allow you to extend the fu
 // Add new properties and variables here		
 @end
 ```
+
+&nbsp;
 
 &nbsp;
 
@@ -59,7 +67,7 @@ By default, all methods listed in a protocol are required. However, you can spec
 
 &nbsp;
 
-
+&nbsp;
 
 **Describe how automated reference counting (ARC) (including weak references) works.**
 
@@ -225,11 +233,13 @@ If an instance of UITableView relied on notifications instead of a delegate patt
 
 On the other hand; a situation where notifications would be desirable to use would be in the login handling of an application - it would be impractical to couple all the various parts of an application that may need to know about an app's login state to the login handler itself. 
 
-
+&nbsp;
 
 **What are the types that can be written to a P-List file**
 
 A P-List (or "Property List"), is a file that stores serialized objects. These objects are encoded in a UTF-8 string. The following Foundation types can be written to a P-List:
+
+&nbsp;
 
 - NSString
 - NSNumber
