@@ -88,7 +88,7 @@ Quartz Composer allowed non-technical people to create powerful, rich, interacti
 
 *If you are working on a native Mac app that’s a spiritual successor to Quartz Composer, please reach out! nicholasarner@gmail.com*
 
-
+&nbsp;
 
 **PD / MAX**
 
@@ -194,7 +194,7 @@ While Visual Programming Environments are certainly not perfect - when creating 
 
 &nbsp;
 
-**Learning More**
+**Learning More:**
 
 * [Dynamic Pictures](http://worrydream.com/#!/DynamicPicturesMotivation)
 
