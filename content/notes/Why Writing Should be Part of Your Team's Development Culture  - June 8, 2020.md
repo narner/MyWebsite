@@ -7,6 +7,8 @@ Writing things down is the best way to prevent common knowledge around a team’
 
 ** I’m defining tribal knowledge here as the shared development processes of a development team that are never written down or formalized in any way, but transmitted ad-hoc.&nbsp;
 
+
+
 **Don’t Rely on Tribal Knowledge for Communicating Processes and Knowledge**  
 
 In a team that relies on tribal knowledges for communication amongst developers, new team members have to gradually figure out who to talk to about things like how to set up their development environment, the dependencies of the project they’re working on, or any other similar things (that are hopefully remembered and relayed to the new team member accurately!) that could have been figured out quickly had this knowledge and process been written down. 
@@ -19,6 +21,8 @@ If processes like installing the dependencies that are needed for a project, any
 
 However, if you haven’t set that up yet (or there’s some reason why you can’t) then that process should be well documented. Otherwise, your development team will spend a lot of time trying to figure out how to get the project to build and run on someone’s local computer - which, especially in the age of remote engineering situations, is rather difficult to do effectively.   
 
+
+
 **Documenting Complex New Features**
 
 If you’re building out a new feature that’s technically complex and has a lot of moving parts, you should document it as much as possible. This has a few different positive effects:
@@ -28,6 +32,8 @@ If you’re building out a new feature that’s technically complex and has a lo
 * Documenting something that you built will also serve as a reminder to your future-self how everything should work -- software is incredibly complex, and it’s difficult to remember how everything works together for a long period of time
 
 *Software is extremely complex, and it’s difficult to keep all the objects that make up the mental model of a modern software system in one’s head for any lengthy period of time.* 
+
+
 
 **A Note on Speed and Time**
 
