@@ -4,8 +4,9 @@ date: "2021-09-06"
 
 ---
 
-
 These are by no means a comprehensive list of books I own or have read; but are ones that I own and have read that related to my work. Sharing in the hope of finding new ones to read and sparking interesting and productive conversations. 
+
+&nbsp;
 
 
 **Architecture**
@@ -36,6 +37,7 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [Towards a New Architecture](https://www.amazon.com/Towards-New-Architecture-Dover/dp/0486250237/ref=sr_1_1?dchild=1&keywords=Towards+a+New+Architecture&qid=1630811761&sr=8-1) - Le Corbusier's manifesto advocating for modern architecture. 
 
+  &nbsp;
   
 
 **Artificial Intelligence**
@@ -50,7 +52,7 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [The Computer and The Brain](https://www.amazon.com/Computer-Brain-Silliman-Memorial-Lectures/dp/0300181116/ref=sr_1_1?dchild=1&keywords=the+computer+and+the+brain+von+neumann&qid=1630900003&sr=8-1) - Johnny von Neuman's last published (and unfinished) work covering the nature of the human brain and its relation to computational machines. 
 
-
+&nbsp;
 
 **Computer Graphics**
 
@@ -62,7 +64,7 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [A Biography of The Pixel](https://www.amazon.com/Biography-Pixel-Leonardo-Alvy-Smith/dp/0262542455/ref=sr_1_2?dchild=1&keywords=A+Biography+of+The+Pixel&qid=1630811976&sr=8-2) - Alvy Ray Smith, co-founder of Pixar; tells the story of how computers can be used to display images. 
 
-
+&nbsp;
 
 **Creative Code**
 
@@ -72,7 +74,7 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [Maeda @ Media](https://www.amazon.com/Maeda-Media-John/dp/0789305259) - Designer and artist John Maeda shares his work combining computer programming and graphic design from his days working at the MIT Media Lab.
 
-
+&nbsp;
 
 **Creativity**
 
@@ -84,7 +86,7 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [Art and Fear](https://www.amazon.com/gp/product/0961454733/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1) - Moving meditations on "doing the work" in the face of loneliness or discouragement. Directed towards young artists early in their career, but the lessons are all equally applicable regardless of your domain. 
 
-
+&nbsp;
 
 **Design**
 
@@ -112,7 +114,7 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [The Visual Display of Quantitative Information](https://www.amazon.com/Visual-Display-Quantitative-Information/dp/1930824130) - [Edward Tufte](https://www.edwardtufte.com/tufte/)'s seminal work on the characteristics of good information visualization displays. 
 
-
+&nbsp;
 
 **Electronics**
 
@@ -126,7 +128,7 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [Grob Basic Electronics](https://www.amazon.com/Grobs-Basic-Electronics-Mitchel-Schultz/dp/0073510858) - A standard electronics textbook.
 
-
+&nbsp;
 
 **Human-Computer Interaction**
 
@@ -160,7 +162,7 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [Tools for Thought](https://www.amazon.com/gp/product/0262681153/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1) - Howard Rheingold discusses the pioneers of computing who believed in the field's potential to transform and enhance human thought and capability.
 
-
+&nbsp;
 
 **Miscellaneous **
 
@@ -168,7 +170,7 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [The Craftsman](https://www.amazon.com/Craftsman-Richard-Sennett/dp/0300151195/ref=sr_1_2?dchild=1&keywords=Craftsman+book&qid=1629299114&sr=8-2) - Beautiful meditation on craftsmanship across a variety of disciplines - the desire to a job well for it's own sake. 
 
-
+&nbsp;
 
 **Photography**
 
@@ -178,7 +180,7 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [Why Photography Matters](https://www.amazon.com/Why-Photography-Matters-MIT-Press/dp/0262529017/ref=sr_1_2?dchild=1&keywords=Why+Photography+Matters&qid=1630812623&sr=8-2) - Meditation on how photography is not only an artistic medium, but also a way to *know* about the world around us. 
 
-
+&nbsp;
 
 **Psychology**
 
@@ -198,7 +200,7 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [Metaphors We Live By](https://www.amazon.com/Metaphors-We-Live-George-Lakoff/dp/0226468011/ref=sr_1_1?dchild=1&keywords=Metaphors+We+Live+By&qid=1630812838&sr=8-1) - Presents the idea that metaphor is a basic building block to how people understand ourselves and the world around us. 
 
-
+&nbsp;
 
 **Media**
 
@@ -210,7 +212,7 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [Understanding Media: The Extensions of Man](https://www.amazon.com/Understanding-Media-Extensions-Marshall-McLuhan/dp/0262631598/ref=sr_1_1?dchild=1&keywords=Understanding+Media%3A+The+Extensions+of+Man&qid=1630963833&sr=8-1) - McLuhan's discussion of hot and cool media, and their relationship to the humans that created them.
 
-  
+&nbsp;
 
 **Music** 
 
@@ -224,9 +226,13 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [Musical Gestures](https://www.amazon.com/Musical-Gestures-Sound-Movement-Meaning/dp/0415998875/ref=sr_1_1?dchild=1&keywords=Musical+Gestures&qid=1630812974&sr=8-1) - Collection of essays on the relationship between gestures and music. 
 
+&nbsp;
+
 **Signal Processing**
 
 * [An Introduction to Information Theory](https://www.amazon.com/Introduction-Information-Theory-Symbols-Mathematics/dp/0486240614/ref=sr_1_2?dchild=1&keywords=An+Introduction+to+Information+Theory&qid=1630812998&sr=8-2) - Explanatory work on the field without the heavy math. 
+
+&nbsp;
 
 
 **Software Engineering**
@@ -249,7 +255,7 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [Concepts of Programming Languages](https://www.amazon.com/Concepts-Programming-Languages-Robert-Sebesta/dp/013394302X) -  academic textbook on programming language theory
 
-
+&nbsp;
 
 **Technology History**
 
@@ -287,7 +293,7 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [What the Dormouse Said](https://www.amazon.com/What-Dormouse-Said-Counterculture-Personal/dp/0143036769/ref=sr_1_1?dchild=1&keywords=What+the+Dormouse+Said&qid=1629314854&sr=8-1) - An exploration of the relationship between the 60's counterculture and early computing pioneers.
 
-  
+&nbsp;
 
 **Typography**
 
