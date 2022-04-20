@@ -21,9 +21,8 @@ Two big questions around how we interact with video content surfaced:
 
 &nbsp;
 
-1) How do we save info from video? How do we get information from video? 
-
-2) How do we get information from video? 
+	1. How do we save info from video? How do we get information from video? 
+	1. How do we get information from video? 
 
 &nbsp;
 
@@ -31,11 +30,10 @@ For the first question, it seems that there are a variety of ad-hoc solutions th
 
 &nbsp;
 
-1) Taking notes while watching a video
+1. Taking notes while watching a video
+2. Taking screenshots of the video 
 
-2) Taking screenshots of the video 
-
-3) Manually scrolling through a recording to find the part of the video you needed 
+2. Manually scrolling through a recording to find the part of the video you needed 
 
 &nbsp;
 
