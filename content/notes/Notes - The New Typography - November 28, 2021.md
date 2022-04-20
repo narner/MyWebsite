@@ -18,7 +18,9 @@ A theme that seemed to crop up repeatedly in the work was that of the ever-incre
 
 In a passage on page 211, Tschichold writes: 
 
-“The enormous importance of magazines today require us to give them the most careful attention. Since today more magazines are read than books, and much important matter appears only in magazines, there are many new problems, of which the most important is to find a contemporary style for their production.”
+&nbsp;
+
+*“The enormous importance of magazines today require us to give them the most careful attention. Since today more magazines are read than books, and much important matter appears only in magazines, there are many new problems, of which the most important is to find a contemporary style for their production.”*
 
 &nbsp;
 
