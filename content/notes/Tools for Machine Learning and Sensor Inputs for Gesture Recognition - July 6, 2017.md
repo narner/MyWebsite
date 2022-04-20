@@ -37,6 +37,8 @@ I wanted to go over some of the open-source tools that are currently available t
 
 &nbsp;
 
+&nbsp;
+
 ## WEKINATOR
 
 &nbsp;
@@ -84,6 +86,8 @@ Be sure to read Nick’s [paper](http://jmlr.org/papers/volume15/gillian14a/gill
 &nbsp;&nbsp;
 
 The GRT also comes embedded in a wrapper for use in Open Frameworks, a C++ toolkit for creative coding,[ ofxGrt](https://github.com/nickgillian/ofxGrt). This type of wrapper is known as an addon. This makes it extremely easy to integrate into new or existing Open Frameworks projects. Combined with the numerous other Open Frameworks[ addons](http://ofxaddons.com/categories), ofxGrt allows coders to integrate with various types of sensors for adding an interface to physical world with their creative projects.
+
+&nbsp;
 
 &nbsp;
 
