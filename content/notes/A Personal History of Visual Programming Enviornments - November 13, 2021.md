@@ -58,15 +58,25 @@ That said, the visuals that some of the artists I found were truly inspiring, an
 
 I’d take an audio line from the mixer board and plug it into my computer with an audio interface like this one:
 
+&nbsp;
+
 ![MAudio](/blog_assets/2021/MAudio.jpg)
+
+&nbsp;
 
 I’d route the audio into Quartz Composer, and use the amplitude / frequency of the signal to control the visuals. I could do this all by creating and connecting objects together on Quartz Composer’s canvas:
 
+&nbsp;
+
 ![QuartzComposer](/blog_assets/2021/QuartzComposer.png)
+
+[Source](https://stackoverflow.com/questions/15049276/quartz-composer-viewer-zoom)
+
+&nbsp;
 
 ...and would use the knobs and keys on a MIDI keyboard controller to adjust visual parameters or trigger visual sequences. 
 
-[Source](https://stackoverflow.com/questions/15049276/quartz-composer-viewer-zoom)
+&nbsp;
 
 Because you could connect anything to anything just by dragging virtual patch cowards between objects,you could quickly see how these different connections affected the visual output. 
 
@@ -84,23 +94,35 @@ Quartz Composer allowed non-technical people to create powerful, rich, interacti
 
 During my college classes on electronic music and composition, I was exposed to PureData. [PureData](http://puredata.info/) is a free and open-source programming environment for sound synthesis (though plugins exist for visuals, too). Though the interface is rather barebones, it’s canvas allows for complex audio synthesis patches to be created visually, without having to write any code:
 
+&nbsp;
+
 ![PureData](/blog_assets/2021/PureData.png)
 
 [Source](http://archive.flossmanuals.net/pure-data/dataflow-tutorials/graph-on-parent.html)
 
+&nbsp;
+
 Eventually, I made the jump to PureData’s paid cousin, [Cycling 74’s Max](https://cycling74.com/products/max). With a slick interface, packaging system, and regular updates; it's a Swiss Army knife for anyone working with interactive media. 
+
+&nbsp;
 
 ![Max](/blog_assets/2021/Max.png)
 
 [From Cycling 74’s Website](https://cycling74.com/products/max)
 
+&nbsp;
+
 PD and Max allowed me to make the jump from *using* software for composing and sound design to using making small programs to manipulate data and control things like DSP processes and effects at a fundamental level. My actions on the Max canvas, slicing and stretching and pulverizing sound samples, had an effect on me - I began to understand how computers could be capable of allowing me to have a more immediate and intimate connection to the medium I was working with. 
+
+&nbsp;
 
 I didn’t realize it at the time, but this would put me on a path to understanding a fundamental potential of computers - the ability to manipulate data in a way that would amplify my creative goals. 
 
+&nbsp;
+
 It also opened me to the world of OSS communities….PD and Max users would share mini programs (“patches”) in various forums that you could download and run yourself. Modifying these patches and figuring out how they worked was both how I learned about fundamental audio synthesis principles, and how the software itself worked. 
 
-
+&nbsp;
 
 **Asteroid**
 
@@ -122,17 +144,31 @@ For example, you could create a camera object, and connect it to an ML object. T
 
 FDepending on the type of ML model that was being used, you could do different things with the results. For example, one of the demos I made used an ML model that would detect different hand gestures. Depending on what type of gesture was detected (like an OK-sign, or a thumbs up), a corresponding 3D Emoji asset would appear in the field of view. 
 
+&nbsp;
+
 ![AsteroidEmoji](/blog_assets/2021/AsteroidEmoji.gif)
+
+&nbsp;
 
 When you were done creating your interactions in the visual canvas, you could export it out of our Mac app, and have a fully functioning ARKit-based Xcode project that was ready to deploy a working app to your iOS device. 
 
+&nbsp;
+
 I made several demos, including a yoga pose detector, and an app that could recognize electronic components, such as resistors or capacitors. 
+
+&nbsp;
 
 ![AsteroidElectronics](/blog_assets/2021/AsteroidElectronics.png)
 
+&nbsp;
+
 The visual, node-based canvas allowed for fairly complex ARKit-based interactions to be created without having to write any code. Once you had prototyped your interactions and exported out your Xcode project, you could dive into the code to modify it as you wished, and build out a complete iOS app around it.
 
+&nbsp;
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+&nbsp;
 
 Visual programming environments opened up a new way of thinking for me about how I could use computers. I would no longer be constrained to using already written software as a user - I could create my own software even though I didn’t (yet) know the first thing about programming. I was able to explore the medium of computation through the lenses of things I was familiar with (music) or things that I had a desire to learn (interactive visuals). 
 
