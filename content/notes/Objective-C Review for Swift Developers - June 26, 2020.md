@@ -215,8 +215,6 @@ BOOL valuesAreEqual = ([a isEqual:b]); *// YES*
 
 There are [several levels of Quality of Service](https://developer.apple.com/documentation/dispatch/dispatchqos) levels that you can specify for on a DispatchQueue, depending on the type of task that you are using a DispatchQueue for:
 
-&nbsp;
-
 - User Interactive - The quality-of-service class for user-interactive tasks, such as animations, event handling, or updating your app's user interface.
 - User Initiated - The quality-of-service class for tasks that prevent the user from actively using your app.
 - Default - The default quality-of-service class.
