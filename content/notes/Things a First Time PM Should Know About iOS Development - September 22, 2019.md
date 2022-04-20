@@ -13,6 +13,8 @@ I modified those notes for this blogpost. Feel free to reach out at [nicholasarn
 
 ## App Development
 
+&nbsp;
+
 **Languages**
 
 There are two programming languages that can be used for developing Apple apps; Objective-C, and Swift. Objective-C was the first language that was used by Apple for macOS/iOS development. You shouldn't really ever encounter much about Objective-C though, unless you're dealing with an older app project.
@@ -92,6 +94,8 @@ Apple's provided some great [resources for learning SwiftUI](https://developer.a
 &nbsp;
 
 ## MANAGING SOURCE CODE
+
+&nbsp;
 
 **Shared Code**
 
@@ -174,6 +178,8 @@ Assuming everything here worked, you should know be able to run the app from the
 
 ## App Store Distribution
 
+&nbsp;
+
 **Getting your app to Apple**
 
 When you update an app, you can select the update to go live immediately after Apple has approved it, to go live at a specific date/time, or to be manually set live by someone on the team
@@ -211,6 +217,8 @@ Apple beta versions of their pre-release software to developers, so that they're
 &nbsp;
 
 ## **Further Education**
+
+&nbsp;
 
 Staying up to date on everything that Apple announces during their WWDC (worldwide developers conference) event is a good idea - things to be aware of as far as new features for iOS / relevant devices. All the videos from WWDC events are [here](https://developer.apple.com/videos/wwdc2019/](https://developer.apple.com/videos/wwdc2019/)); grouped by date and topic.
 
