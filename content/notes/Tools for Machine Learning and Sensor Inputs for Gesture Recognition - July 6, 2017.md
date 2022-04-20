@@ -35,7 +35,7 @@ I wanted to go over some of the open-source tools that are currently available t
 - Gesture Recognition Toolkit / ofxGrt
 - ESP
 
-
+&nbsp;
 
 ## WEKINATOR
 
@@ -57,6 +57,8 @@ If you're interested in exploring how you can use Wekinator to add interactivity
 
 ## GESTURE RECOGNITION TOOLKIT
 
+&nbsp;
+
 The[ GRT](https://github.com/nickgillian/grt) is a cross-platform toolkit for interfacing with sensors for gesture-recognition systems. It's developed and maintained by[ Nick Gillian](http://nickgillian.com/), who is currently a lead machine learning researcher for Google's[ Project Soli](https://atap.google.com/soli/).
 
 &nbsp;
@@ -75,11 +77,15 @@ Be sure to read Nick’s [paper](http://jmlr.org/papers/volume15/gillian14a/gill
 
 ### OFXGRT
 
+&nbsp;&nbsp;
+
 The GRT also comes embedded in a wrapper for use in Open Frameworks, a C++ toolkit for creative coding,[ ofxGrt](https://github.com/nickgillian/ofxGrt). This type of wrapper is known as an addon. This makes it extremely easy to integrate into new or existing Open Frameworks projects. Combined with the numerous other Open Frameworks[ addons](http://ofxaddons.com/categories), ofxGrt allows coders to integrate with various types of sensors for adding an interface to physical world with their creative projects.
 
 &nbsp;
 
 ## EXAMPLE-BASED SENSOR PREDICTIONS
+
+&nbsp;
 
 The[ Example-based Sensor Predictions](https://github.com/damellis/ESP) project by[ David Mellis](http://alumni.media.mit.edu/~mellis/) and[ Ben Zhang](https://www.benzhang.name/) was created to make sensor-based machine-learning systems accessible to the Maker and Arduino community. Though the maker community was very familiar with how to work with sensors, fully utilizing their potential for rich interactions really wasn't possible to do in the Arduino ecosystem until this project was developed.
 
@@ -87,11 +93,11 @@ The[ Example-based Sensor Predictions](https://github.com/damellis/ESP) project 
 
 Here’s a short video overview of the project from the creators:
 
-
+&nbsp;
 
 [![](http://img.youtube.com/vi/5nDCG4vkFP0/0.jpg)](http://www.youtube.com/watch?v=5nDCG4vkFP0 "")
 
-
+&nbsp;
 
 The project is built so that users can interface with sensors via Processing, and the gesture recognition pipeline is built using the GRT. It contains four examples:
 
