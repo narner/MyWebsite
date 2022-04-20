@@ -19,6 +19,7 @@ In this post I want to explain exactly why computer latency is bad, outline some
 &nbsp;
 
 **Latency and Flow State**
+
 When a person is using a computer and experiences latency, it breaks their flow state. In the context of computing technology, flow is described as “…the natural, fluid state of being productively engaged with a task without being aware of the technology that is driving it” [1]. 
 
 &nbsp;
@@ -36,6 +37,7 @@ When SW is laggy, people lose attention + forget what they were doing in the fir
 &nbsp;
 
 **Latency and the Materiality of Computation**
+
 Latency increases the distance between the human and the material of computation. When we interact with objects in the physical world, we have immediate, direct feedback to our sense based on the response of the object to our interactions with it. We act on and in the world around us, and receive immediate feedback for our actions. 
 
 &nbsp;
