@@ -16,7 +16,7 @@ In a passage on page 211, Tschichold writes:
 
 &nbsp;
 
-This feels like it could have been easily written in 2021 - with the substitution of digital media and all it encompasses…Twitter threads, the ubiquitous “story” format first created by Snap, the ubiquity of image (which still contains text!) over the written word in books, newspapers, and magazines. The fact that so much written content is consumed by readers via screens that are also capable of displaying static and moving images is significant in the history of meida, and  something I'm very curious what Tshichold would have thought about. 
+This feels like it could have been easily written in 2021 - with the substitution of digital media and all it encompasses…Twitter threads, the ubiquitous “story” format first created by Snap, the ubiquity of image (which still contains text!) over the written word in books, newspapers, and magazines. The fact that so much written content is consumed by readers via screens that are also capable of displaying static and moving images is significant in the history of media, and  something I'm very curious what Tshichold would have thought about. 
 
 &nbsp;
 
