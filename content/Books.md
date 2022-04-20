@@ -37,8 +37,7 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [Towards a New Architecture](https://www.amazon.com/Towards-New-Architecture-Dover/dp/0486250237/ref=sr_1_1?dchild=1&keywords=Towards+a+New+Architecture&qid=1630811761&sr=8-1) - Le Corbusier's manifesto advocating for modern architecture. 
 
-  &nbsp;
-  
+&nbsp;
 
 **Artificial Intelligence**
 

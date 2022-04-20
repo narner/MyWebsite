@@ -58,11 +58,11 @@ These primitives include:
 
 * Bookmarks for video 
 
-
+&nbsp;
 
 These primitives can be created by leveraging computer vision and machine learning techniques such as: 
 
-
+&nbsp;
 
 **Object Recognition (including People Detection)**
 
@@ -99,6 +99,8 @@ https://medium.com/@ageitgey/machine-learning-is-fun-part-6-how-to-do-speech-rec
 ## ADOBE RESEARCH PROJECTS
 
 Mira presented some of the work that was being done at Adobe Research in the area of intelligent video interaction. 
+
+&nbsp;
 
 * [B-Script](https://berndhuber.github.io/bscript/), which searches for contextually relevant B-Roll (background footage placed under voiceover dialog) based on the position in a video transcript. When a word or group of words is highlighted, a search interface will search for possible video options from social media and professional stock footage libraries that the user can use as B-Roll for their video. 
 * [MixT](http://dontcheva.org/pubs/2012/uist12_MixT_chi.pdf), a system for automatically generated step-by-step tutorials from video of users demonstrating concepts 
