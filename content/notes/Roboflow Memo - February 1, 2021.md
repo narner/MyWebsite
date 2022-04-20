@@ -61,7 +61,7 @@ Roboflow has had over 10,000 users since their January release ranging from indi
 
 Roboflow has already been used in [supply chain optimization](https://blog.roboflow.com/retail-store-item-detection-using-yolov5/), [gaming](https://blog.roboflow.com/improving-uno-with-computer-vision/), [traffic optimization](https://blog.roboflow.com/infrastructure-asset-management-with-computer-vision/), [environmental improvement](https://blog.roboflow.com/using-computer-vision-to-count-fish-populations/), [cancer research](https://blog.roboflow.com/cancer-research-computer-vision/), [accessibility](https://blog.roboflow.com/computer-vision-american-sign-language/), and [much more](https://blog.roboflow.com/tag/case-studies/). 
 
-&nbsp;
+
 
 **Founders and Team**
 
@@ -75,7 +75,7 @@ I’ve used Roboflow on some experiments I was working on earlier this year, and
 
 My impression of the founders are that they are exceptionally hard working and earnest, and want to build a company that pushes the envelope in terms of working with computer vision; while also being one that will attract exceptional talent. 
 
-&nbsp;
+
 
 **Investment Details** 
 
