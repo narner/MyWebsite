@@ -155,6 +155,8 @@ A delegate's property is always declared weak to ensure that no retain cycles ar
 
 &nbsp;
 
+&nbsp;
+
 **What are Notifications?**
 
 Notifications allow for messages to be sent from one object to another object even if the objects are not part of the same class, or delegates of each other at all. They behave in a broadcast fashion - you can broadcast out a message from anywhere in an app, and any object that is listening for that notification will hear it. The listener object can then do things like update its variables with data passed from the notification, or call a method when the notification is received. 
