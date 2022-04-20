@@ -35,6 +35,8 @@ If we are to empower users to accomplish complex tasks through software, the int
 
 ## **Skill Floors and Skill Ceilings**
 
+&nbsp;
+
 A piece of software with a low skill floor and a high skill ceiling is one in which it is very easy to get started for very simple tasks, without having to do a lot of research or manual reading to figure out how to get started. 
 
 &nbsp;
@@ -117,7 +119,11 @@ A possible answer to that question are adaptive interfaces; parts of software th
 
 &nbsp;
 
+&nbsp;
+
 ## **Adaptive Interfaces**
+
+&nbsp;
 
 Phones, tablets, and computers carry ever more powerful sensors that are capable of gathering rich streams of data about the world. Cameras, microphones, GPS sensors, accelerometers, gyroscopes, magnetometers, LiDAR, radar. All of these things can be used to provide context for how a user is interacting with the software thatâ€™s running on that device. 
 
@@ -131,7 +137,11 @@ This allows for interfaces to become more dynamic, adapting to individual usersâ
 
 &nbsp;
 
+&nbsp;
+
 ## **UI Latency**
+
+&nbsp;
 
 Another area of contemporary software development that feels exceptionally frustrating; one in which we seem to have regressed, is that of User-Interface latency. 
 
