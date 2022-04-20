@@ -69,7 +69,7 @@ Not all of the UI is implemented from working in the storyboard file, however - 
 
 ![XcodeStoryboard](/blog_assets/2019/XcodeStoryboard.jpg)
 
-
+&nbsp;
 
 **SwiftUI**
 
@@ -154,27 +154,35 @@ Someone on your team will have to invite you to the company's Apple development 
 
 Once you've been invited to the Apple development account, you'll have the ability to upload app updates to the Apple App Store, should that end up being part of your job.
 
+&nbsp;
+
 Click on Preferences...
+
+&nbsp;
 
 ![XcodePreferences](/blog_assets/2019/XcodePreferences.jpg)
 
-
+&nbsp;
 
 Click on Accounts, then on the "+" button the bottom left corner
+
+&nbsp;
 
 ![XcodeAccounts](/blog_assets/2019/XcodeAccounts.jpg)
 
-
+&nbsp;
 
 Click on Accounts, then on the "+" button the bottom left corner
 
+&nbsp;
 
+You'll be prompted to sign in with your Apple ID - once that's down, click on "Download Manual Profiles".
 
-You'll be prompted to sign in with your Apple ID - once that's down, click on "Download Manual Profiles"
+&nbsp;
 
 Assuming everything here worked, you should know be able to run the app from the simulator or on your own iPhone.
 
-
+&nbsp;
 
 ## App Store Distribution
 
