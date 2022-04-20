@@ -215,7 +215,7 @@ NSDictionary *usernameDictionary = @{@”username”: @”narner”};
 
 &nbsp;
 
-
+&nbsp;
 
 **What are the tradeoffs between Delegates and Notifications?**
 
@@ -232,6 +232,8 @@ If an instance of UITableView relied on notifications instead of a delegate patt
 &nbsp;
 
 On the other hand; a situation where notifications would be desirable to use would be in the login handling of an application - it would be impractical to couple all the various parts of an application that may need to know about an app's login state to the login handler itself. 
+
+&nbsp;
 
 &nbsp;
 
@@ -252,7 +254,7 @@ For further review, check out [Apple's Reference Article on P-Lists](https://dev
 
 &nbsp;
 
-
+&nbsp;
 
 **Describe how to correctly implement equality comparison for subclasses of NSObject.**
 
@@ -293,7 +295,7 @@ BOOL valuesAreEqual = ([a isEqual:b]); *// YES*
 
 &nbsp;
 
-
+&nbsp;
 
 **Grand Central Dispatch and NSOperation**
 
@@ -334,7 +336,7 @@ The [NSHipster article on NSOperation](https://nshipster.com/nsoperation/) state
 
 &nbsp;
 
-
+&nbsp;
 
 **What is Key-Value Observation?**
 
@@ -381,7 +383,7 @@ Your Weather class could observe the properties of the class like so:
 
 &nbsp;
 
-
+&nbsp;
 
 **What is the purpose and function of Key-Value Coding (KVC).**
 
@@ -393,7 +395,7 @@ Any object that inherits from NSObject (so, everything; as that's the root base 
 
 &nbsp;
 
-
+&nbsp;
 
 **What are the disadvantages of the Singleton Pattern?** 
 
@@ -405,7 +407,7 @@ The problem with the Singleton Pattern is that it makes unit testing difficult -
 
 &nbsp;
 
-
+&nbsp;
 
 **Describe how message passing works**
 
@@ -427,6 +429,8 @@ In the code above, the receiver is the definition or instance of a class, and th
 
 &nbsp;
 
+&nbsp;
+
 \#import is used to ensure that a file is only ever included once in a project. Both lines of code below will include the file that you want in the project, but the second will make sure it's only included once:
 
 &nbsp;
@@ -439,8 +443,6 @@ In the code above, the receiver is the definition or instance of a class, and th
 &nbsp;
 
 &nbsp;
-
-
 
  *Thanks to* [*Warren Moore*](https://twitter.com/warrenm) *for proof-reading this post.*
 
