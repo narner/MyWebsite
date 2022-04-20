@@ -36,6 +36,8 @@ If you're interested in exploring how you can use Wekinator to add interactivity
 
 ###  
 
+&nbsp;
+
 ## GESTURE RECOGNITION TOOLKIT
 
 The[ GRT](https://github.com/nickgillian/grt) is a cross-platform toolkit for interfacing with sensors for gesture-recognition systems. It's developed and maintained by[ Nick Gillian](http://nickgillian.com/), who is currently a lead machine learning researcher for Google's[ Project Soli](https://atap.google.com/soli/).
@@ -46,11 +48,13 @@ However, the real benefit of the GRT is how you can write your gesture-recogniti
 
 Be sure to read Nick’s [paper](http://jmlr.org/papers/volume15/gillian14a/gillian14a.pdf) on the toolkit in the Journal of Machine Learning Research.
 
+&nbsp;
+
 ### OFXGRT
 
 The GRT also comes embedded in a wrapper for use in Open Frameworks, a C++ toolkit for creative coding,[ ofxGrt](https://github.com/nickgillian/ofxGrt). This type of wrapper is known as an addon. This makes it extremely easy to integrate into new or existing Open Frameworks projects. Combined with the numerous other Open Frameworks[ addons](http://ofxaddons.com/categories), ofxGrt allows coders to integrate with various types of sensors for adding an interface to physical world with their creative projects.
 
-
+&nbsp;
 
 ## EXAMPLE-BASED SENSOR PREDICTIONS
 

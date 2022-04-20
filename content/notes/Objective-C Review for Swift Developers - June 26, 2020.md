@@ -114,7 +114,7 @@ Methods that are required to implement the delegate pattern are part of a Protoc
 
 The most common example of the Delegate Pattern in iOS development is the UITableViewDelegate methods. These methods govern how an instance of UITableView updates the ViewController that it's part of. When you create an instance of UITableView and add it to your class, you are required to implement the following methods: 
 
-```
+```objective-c
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section 
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -141,7 +141,7 @@ Notifications are broadcast through the [NSNotificationCenter](https://developer
 
 Here's what posting a notification looks like: 
 
-```
+```objective-c
 [[NSNotificationCenter defaultCenter] postNotificationName:@”EventOccurred” object:nil userInfo:nil];
 
 ```
@@ -150,7 +150,7 @@ Here's what posting a notification looks like:
 
 In the ViewController that you want to receive the notification in, add an observer for it: 
 
-```
+```objective-c
 [[NSNotificationCenter defaultCenter] addObserver:**self** 
                        selector:**@selector**(methodToCallNext:) 
                          name:@"EventOccurred" object:nil];
@@ -162,7 +162,7 @@ Whenever the notification is received in the ViewController, the `methodToCallNe
 
 When the lifecycle of that ViewController is finished, remove the notification observer:
 
-```
+```objective-c
 [[NSNotificationCenter defaultCenter] removeObserver:myObserver];
 ```
 
@@ -170,7 +170,7 @@ When the lifecycle of that ViewController is finished, remove the notification o
 
 You can also pass objects:
 
-```
+```objective-c
 NSDictionary *usernameDictionary = @{@”username”: @”narner”};
 
  [[NSNotificationCenter defaultCenter] postNotificationName:@”UserNameUpdated” object:nil userInfo:usernameDictionary];
@@ -180,7 +180,7 @@ NSDictionary *usernameDictionary = @{@”username”: @”narner”};
 
 ...and receive them via Notifications:
 
-```
+```objective-c
 -(void) receiveNotification:(NSNotification*)notification
  {
    if ([notification.name isEqualToString:@"UserNameUpdated"])
@@ -234,7 +234,7 @@ In the code below (from the NSHipster post), we have two objects, a and b. They 
 
 
 
-```
+```objective-c
 NSObject *a = [NSObject new];
 NSObject *b = [NSObject new];
  
@@ -248,7 +248,7 @@ As Matt points, out, however, "...some NSObject subclasses override isEqual: and
 
 
 
-```
+```objective-c
 NSPoint point = NSMakePoint(2.0, 3.0);
 NSValue *a = [NSValue valueWithPoint:point];
 NSValue *b = [NSValue valueWithPoint:point];
@@ -294,7 +294,7 @@ Key-Value Observation allows for objects to monitor for changes of values in a d
 
 So, let's say you have a Temperature class with the following properties: 
 
-```
+```objective-c
 @property (nonatomic, strong) NSFloat *lowTemperature
 @property (nonatomic, strong) NSFloat *highTemperature
 ```
@@ -303,7 +303,7 @@ So, let's say you have a Temperature class with the following properties:
 
 Your Weather class could observe the properties of the class like so: 
 
-```
+```objective-c
 @immplementation Weather
 
  - (void)observeChanges:(Temperature *)temperature {
@@ -353,7 +353,7 @@ The problem with the Singleton Pattern is that it makes unit testing difficult -
 
 Messaging is the terminology for invoking methods on an object. In Objective-C, objects aren't called, but rather; messages are sent to them.
 
-```
+```objective-c
 -[<RECEIVER> <SELECTOR>];
 ```
 
@@ -367,7 +367,7 @@ In the code above, the receiver is the definition or instance of a class, and th
 
 \#import is used to ensure that a file is only ever included once in a project. Both lines of code below will include the file that you want in the project, but the second will make sure it's only included once:
 
-```
+```objective-c
 #include <Framework_name/Header_filename.h>
 #import <Framework_name/Header_filename.h>
 ```

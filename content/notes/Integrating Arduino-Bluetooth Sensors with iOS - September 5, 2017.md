@@ -19,6 +19,8 @@ Here's the completed circuit:
 
 ![iOS_Arduino](/blog_assets/2017/iOS_Arduino.jpg)
 
+&nbsp;
+
 ## ARDUINO SKETCH
 
 In order to run the Arduino sketch, you'll need to make sure you have:
@@ -33,7 +35,7 @@ Inside the loop function is the code that will get the value from the flame sens
 
 
 
-```
+```c
 // read the sensor on analog A9:
 int sensorReading = analogRead(A9);
 // map the sensor range (four options):
@@ -59,7 +61,7 @@ switch (range) {
 }
 ```
 
-
+&nbsp;
 
 ## iOS APP
 
@@ -71,7 +73,7 @@ The [Adafruit Basic Chat tutorial](https://learn.adafruit.com/crack-the-code/sen
 
 
 
-```
+```swift
 func updateIncomingData () {
      NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "Notify"), object: nil , queue: nil){
      notification in
@@ -91,7 +93,7 @@ func updateIncomingData () {
     }
 ```
 
-
+&nbsp;
 
 ## RUNNING THE SKETCH AND APP
 

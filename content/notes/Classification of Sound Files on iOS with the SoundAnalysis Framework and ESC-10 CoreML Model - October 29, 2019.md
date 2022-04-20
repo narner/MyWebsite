@@ -13,6 +13,8 @@ It’s available in the following SDK’s:
 - tvOS 13.0+
 - watchOS 6.0+
 
+&nbsp;
+
 ### **INPUT TYPES**
 
 The SoundAnalysis framework is able to work with live audio via the device microphone, or from pre-recorded audio files. In a real-world application scenario, these could be either audio files downloaded from a server onto the app, or recorded by the app for later analysis.
@@ -20,6 +22,8 @@ The SoundAnalysis framework is able to work with live audio via the device micro
 However, at the time of writing, I was not able to get live audio input working with Sound Analysis after following Apple’s guide. Here’s a [StackOverflow post](https://stackoverflow.com/questions/58496448/error-updating-tree-format-when-using-ios-soundanalysis-framework?noredirect=1#comment103345155_58496448) with what I was working through for future reference.
 
 Should I get live audio input working, I’ll update the blog post / project with an additional example. For now, this project demonstrates how to use SoundAnalysis off of audio files only.
+
+&nbsp;
 
 ###  **DATASET**
 
@@ -42,6 +46,8 @@ This is not a very large collection of audio files for an extremely robust datas
 
 There are some other audio-focused datasets available; a compilation of some can be found [here](http://www.cs.tut.fi/~heittolt/datasets), [here](https://towardsdatascience.com/a-data-lakes-worth-of-audio-datasets-b45b88cd4ad), and [here](https://cassebook.github.io/ch06/index/). However, you’ll need to make sure that you check what the licenses are for each dataset before you use them to create a model that can be used in a commercial application.
 
+&nbsp;
+
 ###  **CREATEML PROJECT**
 
 The [CreateML app](https://developer.apple.com/documentation/createml) that’s included in Xcode allows developers to create CoreML models that recognize sounds without writing any code.
@@ -62,7 +68,7 @@ The app will randomly select from ten pre-loaded .wav files and play them throug
 
 
 
-```
+```swift
 var model: MLModel!
     
 //Access the bundled CoreML model
@@ -87,7 +93,7 @@ do {
 audioFileAnalyzer.analyze()
 ```
 
-
+&nbsp;
 
 ### **HERE’S A VIDEO OF THE TEST APP IN ACTION:**
 
