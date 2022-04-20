@@ -48,13 +48,19 @@ Extensions are similar to categories in that you they allow you to extend the fu
 
 A protocol declares the methods that are required for a particular situation. If a class wants to adopt certain functionality that a protocol provides, it has to implement the methods that are part of the corresponding protocol.
 
+&nbsp;
+
 ```objective-c
 @protocol NewProtocol
 //list of methods for the protocol
 @end
 ```
 
+&nbsp;
+
 By default, all methods listed in a protocol are required. However, you can specify methods as optional:
+
+&nbsp;
 
 ```objective-c
 @protocol NewProtocol
