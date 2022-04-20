@@ -39,6 +39,8 @@ I wanted to go over some of the open-source tools that are currently available t
 
 ## WEKINATOR
 
+&nbsp;
+
 The[ Wekinator](http://www.wekinator.org/) is a machine-learning middleware program developed by[ Dr. Rebecca Fiebrink](http://www.doc.gold.ac.uk/~mas01rf/Rebecca_Fiebrink_Goldsmiths/welcome.html) of Goldsmith's University in London. The basic idea of its use is that it receives data from a sensor via[ OSC (open-sound control)](http://opensoundcontrol.org/) from a program that’s acquiring the data from the sensor, such as an Arduino or a Processing sketch. Wekinator is used to train a machine learning system on this incoming data to recognize which gesture has occurred, or to map the start and end times of a gesture to a value that can be used to control a parameter range. These values are sent out from Wekinator via OSC, and can then be received by a program that maps those values to to control audio/visual elements.
 
 &nbsp;
@@ -52,6 +54,8 @@ What's great about the Wekinator is that you don't have to know much about how m
 &nbsp;
 
 If you're interested in exploring how you can use Wekinator to add interactivity to your projects, I highly recommend Dr. Fiebrink's[ Machine Learning for Artists and Musicians](https://www.kadenze.com/courses/machine-learning-for-musicians-and-artists/info) course on Kadenze.
+
+&nbsp;&nbsp;
 
 &nbsp;
 
