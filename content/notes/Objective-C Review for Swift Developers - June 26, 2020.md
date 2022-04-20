@@ -114,7 +114,7 @@ There are three attributes of properties that can be changed for a property:
 
 &nbsp;
 
-
+&nbsp;
 
 **Describe the Delegate Pattern**
 
