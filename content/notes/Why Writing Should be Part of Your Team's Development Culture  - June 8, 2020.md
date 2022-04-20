@@ -47,7 +47,7 @@ If you’re building out a new feature that’s technically complex and has a lo
 
 *Software is extremely complex, and it’s difficult to keep all the objects that make up the mental model of a modern software system in one’s head for any lengthy period of time.* 
 
-
+&nbsp;
 
 **A Note on Speed and Time**
 
