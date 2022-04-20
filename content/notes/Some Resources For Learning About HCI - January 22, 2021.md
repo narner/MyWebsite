@@ -86,7 +86,8 @@ Augmentation of Man's Intellect](https://www.dougengelbart.org/content/view/382/
 
 * [What Is A Dynabook?](http://worrydream.com/refs/Kay%20-%20What%20is%20a%20Dynabook.pdf)
 
-  &nbsp;
+
+&nbsp;
 
 **Bill Buxton**, a chief research scientist at Xerox PARC and Microsoft Research, has a [website](https://www.billbuxton.com/) with a wealth of resources on Human-Computer Interaction, including his research papers. Buxton has [written extensively]() on interactive graphical systems, computer music, input devices, and UI design.. Additionally, Microsoft hosts the [Buxton Collection](https://www.microsoft.com/buxtoncollection), an online gallery of input devices and interactive systems that Buxton has collected and catalogued over the years. 
 
