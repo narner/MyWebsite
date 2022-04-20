@@ -33,7 +33,7 @@ For the first question, it seems that there are a variety of ad-hoc solutions th
 1. Taking notes while watching a video
 2. Taking screenshots of the video 
 
-2. Manually scrolling through a recording to find the part of the video you needed 
+3. Manually scrolling through a recording to find the part of the video you needed 
 
 &nbsp;
 
@@ -56,7 +56,9 @@ These primitives include:
 * A Table Of Contents for video, so that you can easily skip to the relevant section in the video right away. 
   * This is [something that YouTube now supports](https://www.youtube.com/watch?app=desktop&v=G-gFSVqlBvs); and will probably become more common with other video tools.
 
-* Making video translatable to documentsCTRL-F for video, so you can find specific things in a video file down to the frame level 
+* Making video translatable to documents
+
+* CTRL-F for video, so you can find specific things in a video file down to the frame level 
 
 * Bookmarks for video 
 
