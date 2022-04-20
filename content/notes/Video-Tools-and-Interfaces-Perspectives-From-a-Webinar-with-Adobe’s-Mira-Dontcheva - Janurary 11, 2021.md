@@ -21,8 +21,13 @@ Two big questions around how we interact with video content surfaced:
 
 &nbsp;
 
-	1. How do we save info from video? How do we get information from video? 
-	1. How do we get information from video? 
+
+
+1\. How do we save info from video? How do we get information from video?
+
+2\. How do we get information from video?
+
+
 
 &nbsp;
 
