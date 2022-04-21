@@ -57,7 +57,7 @@ Apple's provided some great [resources for learning SwiftUI](https://developer.a
 
 &nbsp;
 
-## MANAGING SOURCE CODE
+## Managing Source Code
 
 **Shared Code**
 
