@@ -88,7 +88,7 @@ https://medium.com/@ageitgey/machine-learning-is-fun-part-6-how-to-do-speech-rec
 
 &nbsp;
 
-## ADOBE RESEARCH PROJECTS
+## Adobe Research Projects
 
 Mira presented some of the work that was being done at Adobe Research in the area of intelligent video interaction. 
 
@@ -101,7 +101,7 @@ All of these research projects leverage computer vision and ML techniques to det
 
 &nbsp;
 
-## VIDEO TO AUGMENTED-REALITY TUTORIALS
+## Video to Augmented-Reality Tutorials
 
 During the webinar, we also discussed Augmented-Reality as a way to interact with video content. Augmented-Reality provides a way to bring video content out of a flat computer screen and into the physical, real world. It has the potential to take video content about and set in the real world, and actually *put that content in the real world* by displaying the videos in context around the objects that they are about. Instead of watching a cooking tutorial on your laptop and then cooking the meal in your kitchen, you would be able to have an AR headset guide you through the tutorial. 
 
@@ -111,7 +111,7 @@ Part of our thesis was that video manipulation and tutorials are going to be “
 
 &nbsp;
 
-## FUTURE DIRECTIONS
+## Future Directions
 
 Video is becoming more and more of a ubiquitous feature across all kinds of applications and industry sectors. One only needs to look at the success of Zoom, and the current circumstances of the pandemic, to see the opportunity of video startups. We will see more startups focused on not just providing video capabilities across application stacks, but also working on making it easier to interact with and manipulate video. These will be built around being able to extract information using cutting-edge computer vision and machine learning techniques...making it so that software can understand the content that is in video; to search for people, objects, spoken dialog, or text in a scene, and using that information to let users make decisions about how they’re making the video. 
 
