@@ -8,9 +8,7 @@ date: "2022-04-20"
 
 If you're developing an iOS SDK that you want to be able to license and distribute to customers via [CocoaPods](http://cocoapods.org), but don't want to be able to have your source code publically available; you can distribute it as a framework that CocoaPods will install in your project. 
 
-Once you've finished writing your framework* and it's ready for distribution, you'll first want to create a public repository that has your [.podspec file](https://guides.cocoapods.org/syntax/podspec.html). Name it something like "MyFramework-Podspec". This repository won't have any of the source code that you want to remain private - it will only have the 
-
-Here's an example `.podspec` file that 
+Once you've finished writing your framework* and it's ready for distribution, you'll first want to create a public repository that has your [.podspec file](https://guides.cocoapods.org/syntax/podspec.html), and the framework you want to distribute. Name it something like "MyFramework-Podspec". The one below can serve as a template:
 
 ```ruby
 Pod::Spec.new do |spec|
