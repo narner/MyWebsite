@@ -1,11 +1,10 @@
-
-
-
-
-```
+---
 title: "Distributing Frameworks via CocoaPods"
-date: "2022-18-06"
-```
+date: "2022-04-20"
+
+---
+
+
 
 If you're developing an iOS SDK that you want to be able to license and distribute to customers via [CocoaPods](http://cocoapods.org), but don't want to be able to have your source code publically available; you can distribute it as a framework that CocoaPods will install in your project. 
 
@@ -45,11 +44,15 @@ Zip your `.xcframework` file, and upload it to the Releases section of your repo
 
 ![GitHubRelease](/blog_assets/2022/GitHubReleases.png)
 
+The link to this file is what we'll use for the `podspec`'s `spec.source` parameter. 
+
+Now, the part that tripped me up was that it appears you also have to include the a copy of the `.xcframework` file in your repository *in addition to uploading it as a release*: 
+
+![GitHubRelease](/blog_assets/2022/Framework.png)
 
 
 
-
-**You'll probably want to bundle it as an [XCFramework](https://help.apple.com/xcode/mac/11.4/#/dev544efab96) (a framework that is compiled to run both on iOS simulators and physical iOS devices), you can distribute it via a private CocoaPod. Here's a sample script you can modify and run in the root of your project to build an `.xcframework`*:"
+*You'll probably want to bundle it as an [XCFramework](https://help.apple.com/xcode/mac/11.4/#/dev544efab96) (a framework that is compiled to run both on iOS simulators and physical iOS devices), you can distribute it via a private CocoaPod. Here's a sample script you can modify and run in the root of your project to build an `.xcframework`*:
 
 ```bash
 xcodebuild archive \
@@ -74,8 +77,3 @@ xcodebuild -create-xcframework \
   -output "MyFramework.xcframework"
 
 ```
-
-
-
-
-
