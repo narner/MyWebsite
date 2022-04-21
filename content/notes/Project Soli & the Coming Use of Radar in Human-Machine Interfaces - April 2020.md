@@ -42,7 +42,7 @@ There’s been several academic papers written exploring this area since Project
 
 First though, let’s take a look at the first commercial product to use Project Soli, the Pixel 4.
 
-### PIXEL 4 AND MOTION SENSE: CAPABILITIES
+### Pixel4 and Motion Sense: Capabilities
 
 The first commercial product to integrate Project Soli is the Pixel4, released by Google in October, 2019. The teaser-ad hinted that the new phone would be the first product to integrate with Soli; given the touchless air gestures shown in it:
 
@@ -126,13 +126,13 @@ One of the challenges with creating any robust machine learning model, especiall
 
 To make sure their models were accurate, the [**Soli team trained their TensorFlow model on millions of gestures made by thousands of volunteers**](https://venturebeat.com/2020/03/12/google-soli-ai-model-millions-of-gestures-thousands-volunteers/)**.** These models were then optimized to run directly on the Pixel 4’s DSP unit; enabling the phone to recognize gestures even when the main processor is powered down — which is how the Pixel 4 is able to detect is someone is moving towards the phone using MotionSense, and then power on the FaceUnlock sensors to unlock the phone.
 
-### PARTNERSHIP WITH INFINEON
+### Partnership with Infineon
 
 While Google developed the machine learning algorithms, signal processing, and UX patterns for interacting with Soli, German company [Infineon developed the radar chip that is part of the Project Soli system](https://www.eetimes.com/infineon-flies-under-the-radar-on-googles-soli/). While it is possible to purchase development kits from Infineon, they only stream raw radar data — no processed signal features that could be used to train a machine learning model to recognize gestures or presence.
 
 In their SSIGRAPH paper, [Soli: Ubiquitous Gesture Sensing with Millimeter Wave Radar](http://www.ivanpoupyrev.com/wp-content/uploads/2017/01/siggraph_final.pdf), the ATAP authors describe a HAL (Hardware Abstraction Layer) as a set of abstractions that would allow Project Soli to work across different radar sensor architectures from different manufacturers. This would allow Google to have the flexibility to use the same set of Soli feature primitives across various types of radar while keeping the same high-level interaction patterns.
 
-### EXAMPLE APPLICATIONS FROM THE ALPHA DEV PROGRAM
+### Example Applications from the Alpha Dev Program
 
 Participants of the Soli Alpha Dev Program were encouraged to publish our work in academic publications; some members also created demos for showcase on various blogs, including:
 
@@ -155,7 +155,7 @@ Some of the projects from the Alpha Developer program were showcased in a video 
 
 
 
-### GOOGLE PAPERS
+### Google Papers
 
 Members of Google ATAP also published papers on their work with Project Soli:
 
@@ -168,7 +168,7 @@ Members of Google ATAP also published papers on their work with Project Soli:
 
 # Speculation
 
-###  PROPERTIES OF MM-WAVE RADAR AND IT’S AFFORDANCES
+###  Properties of MM-Wave Radar and its Affordances
 
 Radar sensing is based on detecting the changing patterns of motion of an object in space. Radio waves are transmitted from the radar, bounce of a target (a human hand in motion), and then re-received by the radar’s antennas. The timed difference between when the waves are sent and when they are received is used to create a profile of the object that’s in the radar’s path.
 
@@ -182,7 +182,7 @@ Micro-gestures can be [defined](https://dl.acm.org/doi/10.1145/2984511.2984565) 
 
 These gestures could be used in a variety of contexts (IoT, AR/VR, etc) for interacting with user interface elements.
 
-### GOOGLE’S AMBIENT COMPUTING FUTURE
+### Google's Ambient Computing Future
 
 In the [first published paper for Project Soli](https://www.cs.virginia.edu/~bjc8c/class/cs6501-f17/lien16soli.pdf), the authors (from Google ATAP) list several possible application areas:
 
@@ -223,19 +223,19 @@ It feels fair to me to say that at the very least, Apple is looking at millimete
 
 My personal speculation is that Apple will release an AR headset with radar built-in for micro-gesture detection to augment their hand tracking capabilities. Additionally, as radar becomes better well known as a possible sensing modality (thanks mostly due to Project Soli, and whatever products Google and their partners decide to integrate it into), other AR and VR headset makers will begin integrating millimeter-wave radar chips into their headsets as a way to solve the “missing interface” problem mentioned earlier; making sure that the real-world physical objects that people interact with via AR/VR have a way to map to digital information that’s presented via the headset.
 
-## COMPETITION
+## Competition
 
 There is [at least one startup](https://www.eetimes.com/document.asp?doc_id=1335123) working on millimeter-wave radar for human-machine interfaces; Taiwan’s KaiKuTek (“CoolTech”). They claim that their radar-based gesture sensing system can match, if not surpass, Google’s Project Soli.
 
 A Machine-Learning inference chip is integrated with the radar sensor; so all the inference is done on a *sensor-side compute* level, unlike the Pixel 4’s MotionSense system, in which the sensor (Soli) and the inference engine are on separate chip components. This is, KaiKuTek claims, they are able to achieve such a low power (1 mW) rating.
 
-## CLOSING THOUGHTS
+## Closing Thoughts
 
 With Project Soli, Google has advanced the conversation on how we interact with computers across a wide range of modalities and contexts. Millimeter-wave radar offers a promising way to gesturally interact with computers without having to worry about occlusion, lighting conditions, or similar limiting conditions imposed on camera-based systems.
 
 With the increasing pace of computers being embedded in more devices, millimeter-wave radar could end up enabling a more universal gestural language that’s familiar across these devices. Of course, each manufacturer will inevitably have differences between each other (though Google is the first to use mm-wave radar as a sensor for gestural interaction, it does not mean it will be the last), it could end up affording “similar enough” gestural interactions the same way that touchscreens are almost universal, but each OEM vendor enables different gestures for use with the touch screen.
 
-## APPENDIX:
+## Appendix:
 
 I’ve included additional publications dealing with millimeter-wave radar and its applications in HCI (not necessarily involving Project Soli). A good portion of these focus on the machine learning techniques used to enable gesture recognition with a radar pipeline.
 
