@@ -26,8 +26,6 @@ When gestures are performed, the app will display the predicted gesture output o
 
 &nbsp;
 
-
-
 The App Delegate contains a global instance of a GRT pipeline, so that it can be accessed by both View Controllers:
 
 ```swift
@@ -43,8 +41,6 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 ```
 
 &nbsp;
-
-
 
 An AccelerometerManager class will allow the two View Controllers to have access to the X, Y, and Z coordinates from the phone’s accelerometer. The start method, shown below, will create an object that will return the accelerometer data:
 
@@ -67,7 +63,7 @@ The stop method will halt this process, so that the app is only gathering data f
 
 &nbsp;
 
-## TRAINING VIEW CONTROLLER
+## Training View Controller
 
 The heart of the Training View Controller is the `TrainBtnPressed` function. It’s called whenever the red “Train” button is held down, takes the accelerometer coordinates, and creates a vector out of them. This vector is then sent to the pipeline wrapper’s `addSamplesToClassificationData` function.
 
@@ -98,7 +94,7 @@ Once the gesture data has been recorded, and the “Save Pipeline” button is p
 
 &nbsp;
 
-## PREDICTION VIEW CONTROLLER  
+## Prediction View Controller 
 
 Once the pipeline has been saved, the app can be used in real-time prediction mode. This view controller will take the accelerometer data, and pass that to the pipeline using the “predict” function.
 
@@ -148,7 +144,7 @@ The remainder of the function gets the predicted class label from the pipeline, 
 
 &nbsp;
 
-## USING THE APP 
+## Using the App
 
 One important consideration to keep in mind when implementing a real-time gesture recognition system is to train the system what *not* to recognize. In this case, the resting state of the phone (when a gesture isn’t being performed with it) is when the phone is held stationary:
 
