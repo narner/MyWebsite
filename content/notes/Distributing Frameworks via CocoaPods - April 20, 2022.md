@@ -44,7 +44,7 @@ Zip your `.xcframework` file, and upload it to the Releases section of your repo
 
 The link to this file is what we'll use for the `podspec`'s `spec.source` parameter. 
 
-Now, the part that tripped me up was that it appears you also have to include the a copy of the `.xcframework` file in your repository *in addition to uploading it as a release*: 
+Now, the part that tripped me up was that it appears you also have to include a copy of the `.xcframework` file in your repository *in addition to uploading it as a release*: 
 
 ![GitHubRelease](/blog_assets/2022/Framework.png)
 
@@ -70,7 +70,7 @@ xcodebuild archive \
   BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
 xcodebuild -create-xcframework \
-  -framework "archivesMyFramework-iOS.xcarchive/Products/Library/Frameworks/MyFramework.framework" \
+  -framework "archives/MyFramework-iOS.xcarchive/Products/Library/Frameworks/MyFramework.framework" \
   -framework "archives/MyFramework-iOS-simulator.xcarchive/Products/Library/Frameworks/MyFramework.framework" \
   -output "MyFramework.xcframework"
 
