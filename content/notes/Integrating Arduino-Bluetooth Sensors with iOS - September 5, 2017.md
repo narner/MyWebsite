@@ -21,7 +21,7 @@ Here's the completed circuit:
 
 &nbsp;
 
-## ARDUINO SKETCH
+## Arduino Sketch
 
 In order to run the Arduino sketch, you'll need to make sure you have:
 
@@ -63,7 +63,7 @@ switch (range) {
 
 &nbsp;
 
-## iOS APP
+## iOS App
 
 The iOS app is a stripped-down version of the [Basic Chat app](https://github.com/adafruit/Basic-Chat) made by Adafruit, which shows how to implement two-way communication between an iOS app and a Bluetooth-enabled Arduino.
 
@@ -95,7 +95,7 @@ func updateIncomingData () {
 
 &nbsp;
 
-## RUNNING THE SKETCH AND APP
+## Running the Sketch and App
 
 - Upload the sketch to your FLORA board. Open the Serial Monitor to verify that the sketch has been uploaded, and that the Bluetooth sensor has been configured.
 - Run the iPhone app on a physical device. Make sure you have Bluetooth enabled. When you see your Arduino show up, click "Connect".
