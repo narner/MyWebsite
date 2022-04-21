@@ -43,7 +43,7 @@ I wanted to see if they could talk to me.
 
 ![Touche+AirPlant-Setup](/blog_assets/2017/Touche+AirPlant-Setup.jpg)
 
-## THE FERN
+## The Fern
 
 I first experimented with the fern. As suggested in the [Botanicus Interacticus paper](https://pdfs.semanticscholar.org/bad6/92a87a416a228542f5ed554503b604ad481e.pdf), I inserted a simple wire lead into the soil of the plant. This would allow the ESP system to measure the conductive profile of the plant as I touch it.
 
@@ -69,7 +69,7 @@ I also tried experimenting as to whether or not the system was able to detect wh
 
 
 
-## THE AIR PLANT
+## The Air Plant
 
 I experimented with the air plant next, and successfully trained the ESP system to be able to discriminate between whether I had my hand at rest on top of the plant:
 
@@ -119,9 +119,9 @@ I was a bit surprised at this - given the subtlety in touch which it seemed Touc
 
 
 
-## FURTHER LEARNING GOALS:
+## Further Learning Goals:
 
-### USING REGRESSION
+### Using Regression
 
 In the Bottanicus Interactus video (at the time below), the authors show that they are able to determine where at on a long plant stem is being touched, and interact with it in a way that resembles using a slider moving continuously between two points.
 
@@ -137,11 +137,11 @@ in the ESP system, classification is currently supported; regression is not. In 
 
 (For more info on the principles behind classification and regression, check Rebecca Fiebrink's Kadenze course, [Machine Learning for Musicians and Artists](https://www.kadenze.com/courses/machine-learning-for-musicians-and-artists/info)).
 
-### FINER DISCRIMINATION
+### Finer Discrimination
 
 Determine whether or not it is possible to detect the touches of individual leafs, as opposed to detecting whether "a leaf" has been touched. It may be that this is possible, but dependent on the type of plant involved - a plant with thicker, more "solid" leaves may return a conductive pattern that's better at discriminating between individual leaf touches than the thin, loose leaves of the fern plant.
 
-### GESTURE TIMEOUTS
+### Gesture Timeouts
 
 If you watch the videos of the Touché system in action above, you may have noticed that there were occasionally instances in which there is a short "bounce" during the transition between one gesture class and another. In the Air Plant example, when the hand is moving from a "Resting Hand" position to a "No Hand" position, the ESP system will falsely recognize a "Tickling" gesture.
 
@@ -149,6 +149,6 @@ A potential remedy for this situation is to add a [Class Label Filter](http://ni
 
 
 
-## CODE
+## Code
 
 The Processing sketches shown in the videos, and the ESP session data, can be found [here](https://github.com/narner/Touche-Experiments). You'll need to make sure you have [Processing](http://processing.org/) installed on your system to run the sketches, and have followed the installation guide for setting the [ESP](https://github.com/damellis/ESP) if you want to run the included sessions.
