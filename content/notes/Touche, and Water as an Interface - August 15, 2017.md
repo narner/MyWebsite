@@ -71,11 +71,11 @@ Here's a short clip of the system in use:
 
 
 
-## CODE
+## Code
 
 The Processing sketch + ESP model are on GitHub [here](https://www.nickarner.com/blog/2017/7/10/touch-and-water-as-an-interface#). If you're trying to replicate the experiments shown here, you'll most likely need to train your own model; as the accuracy will vary based on individual setups.
 
-## FURTHER GOALS
+## Further Goals
 
 Though I wasn't able to get the results I necessarily wanted with this experiment, I believe there is a lot of room for further research and exploration that may shed some insight into a deeper understanding of how the Touché system works, and how it can be applied to create a water-based interface.
 
@@ -87,7 +87,7 @@ Though I wasn't able to get the results I necessarily wanted with this experimen
 
 I still consider this prototyping experiment a success, as I was able to use everyday objects (a Tupperware container, a sheet of steel, an off-the-shelf electronics) to build a system that could distinguish whether I was touching the surface of water with one finger, five fingers, or not touching the water at all.
 
-## IMPLICATIONS
+## Implications
 
 Given its multi-sensory characteristics and emotional resonance, water can be an interesting choice for an interface in a game, installation, or in an AR/VR context.
 
