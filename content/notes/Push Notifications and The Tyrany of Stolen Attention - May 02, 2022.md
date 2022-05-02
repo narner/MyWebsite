@@ -1,5 +1,5 @@
 ---
-title: "Push Notifications and The Tyrrany of Stolen Attention"
+title: "Push Notifications and The Tyrany of Stolen Attention"
 date: "2022-05-02"
 
 ---
