@@ -35,6 +35,6 @@ Similarly to how apps like Twitter allow you to select an add and say you're not
 
 This learning could all be done on-device, thanks to modern machine learning frameworks like CoreML. None of the data about what notifications you don't want to see would get sent to Apple, or to the apps that are trying to send you the notification in the first place. 
 
-Something like this would allow for people to claim more control over their attention and their relationship with using their device. Of course, this would come at the expense of the am=mount of revenue generated on the platform. 
+Something like this would allow for people to claim more control over their attention and their relationship with using their device. Of course, this would come at the expense of the amount of revenue generated on the platform. 
 
 Computers and OS's should respect the people that use them - including the sanctity of their attention. 
