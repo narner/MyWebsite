@@ -6,6 +6,10 @@ date: "2022-05-20"
 
 
 
+*Guest post from Anton Troynikov*
+
+
+
 ## Visual Debugging Now!
 
 Over the last seven or so years of working in robotics and computer vision, the bitter lesson I’ve learned is that the bug is almost always in the part of the algorithm you didn’t visualize. 
