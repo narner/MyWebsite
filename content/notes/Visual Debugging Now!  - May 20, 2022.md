@@ -66,4 +66,4 @@ So build a MATLAB-like environment but for Python and C++. Here’s how you do i
 
 Combined with a library of shared visualization transforms, this ‘visual numerics IDE’ will accelerate a large fraction of the programming work for some of the most important disciplines in technology, and meets programmers where they are instead of forcing them to learn something new or creating another standard they must switch to. 
 
-There is probably initially very little money in trying to sell this but there could be huge and important developer adoption, and so it must be built as an open source project. If you are interested in building this, you can find me on twitter at @atroyn .
+There is probably initially very little money in trying to sell this but there could be huge and important developer adoption, and so it must be built as an open source project. If you are interested in building this, you can find me on twitter at [@atroyn](https://twitter.com/atroyn) .
