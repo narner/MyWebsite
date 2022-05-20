@@ -16,7 +16,7 @@ This is a call to fix that problem once and for all.
 
 
 
-**The Problem**
+## The Problem
 
 Many domains, including robotics, foundationally rely on highly performant numerical software. But since humans are adapted to understand space visually, we don’t have good intuitions for numerical data. Things that are obvious to human vision like “does this have a realistic pose in space” are very unclear in numerical representations - can you picture a quaternion intuitively from its vector representation? Can you see from a Hessian matrix whether your optimization is converging? 
 
@@ -47,7 +47,7 @@ Naturally the situation creates a huge drag on velocity and overall just a train
 
 
 
-**What To Build**
+## What To Build
 
 You know what doesn’t suck as an environment for numerical computing? MATLAB. 
 
