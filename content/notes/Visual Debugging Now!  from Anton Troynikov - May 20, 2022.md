@@ -1,5 +1,5 @@
 ---
-title: "Visual Debugging Now!"
+title: "Visual Debugging Now! - from Anton Troynikov"
 date: "2022-05-20"
 
 ---
