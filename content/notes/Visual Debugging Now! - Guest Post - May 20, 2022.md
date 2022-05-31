@@ -1,12 +1,12 @@
 ---
-title: "Visual Debugging Now! - from Anton Troynikov"
+title: "Visual Debugging Now! - Guest Post"
 date: "2022-05-20"
 
 ---
 
 
 
-*Guest post from Anton Troynikov*
+*Guest post from [Anton Troynikov](https://twitter.com/atroyn)*
 
 
 
