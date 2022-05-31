@@ -23,6 +23,8 @@ I'm fortunate to be an investor in some fantastic companies.
 
 * [Vuecason](https://www.vuecason.com) - Combined 3D metal printing and machine tool.
 
-* (Stealth) - consumer hardware 
+* (Stealth) - Consumer Hardware 
+
+* (Stealth) - ML Dev Tools
 
   
