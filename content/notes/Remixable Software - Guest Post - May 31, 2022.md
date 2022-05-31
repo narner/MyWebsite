@@ -62,8 +62,8 @@ The road to more humane software that overcomes the homogeneity of scale leverag
 
 ## **Further reading:**
 
-\- *[Rewilding the Web](https://troynikov.io/p/bed1acec-b4d0-48d8-a37c-ce053b8de8a8/troynikov.io/rewilding-the-web/)*: My article on a more human future for the internet.
-\- [*UI: A personal view*](http://worrydream.com/refs/Kay - User Interface, a Personal View.pdf): Alan Kay on what a user interface for a computer should be.
+\- *[Rewilding the Web](https://troynikov.io/rewilding-the-web/)*: My article on a more human future for the internet.
+\- [*UI: A personal view*](http://worrydream.com/refs/Kay%20-%20User%20Interface,%20a%20Personal%20View.pdf): Alan Kay on what a user interface for a computer should be.
 \- [*Tools for Thought*](http://www.rheingold.com/texts/tft/index.html): A "retrospective futurist" vision for computers.
 
 Ideas inspired by discussion in the [Why Computers Are Bad and What We Can Do About It](https://www.eventbrite.co.uk/e/why-computers-are-bad-and-what-we-can-do-about-it-interintellect-salon-tickets-121870322415#) salon held together with [@NickArner](https://twitter.com/nickarner?s=21).
