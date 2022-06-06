@@ -1,6 +1,6 @@
 ---
 title: "Not Everything is an OS!
-date: "2022-06-6"
+date: "2022-06-06"
 
 ---
 
