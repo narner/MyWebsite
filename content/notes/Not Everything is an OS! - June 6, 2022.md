@@ -1,5 +1,5 @@
 ---
-title: "Not Everything is an OS!
+title: "Not Everything is an OS!"
 date: "2022-06-06"
 
 ---
