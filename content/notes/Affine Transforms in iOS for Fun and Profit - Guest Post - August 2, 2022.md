@@ -1,5 +1,5 @@
 ---
-title: "Affine Transformas in iOS for Fun and Profit - Guest Post"
+title: "Affine Transforms in iOS for Fun and Profit - Guest Post"
 date: "2022-08-02"
 
 
