@@ -13,6 +13,8 @@ I'm fortunate to be an investor in some fantastic companies.
 
 * [Quinn](https://www.usequinn.com) - A productivity tool inspired by personal assistants. 
 
+* [Lumen](http://lumen.world) - Projected AR Flashlight
+
 * [Roboflow](https://roboflow.com) - Full-Scale computer vision platform for developers. 
 
 * [Sprout](https://sprout.place/) - Create customizable, shareable virtual spaces for you and your favorite people. 
@@ -26,5 +28,3 @@ I'm fortunate to be an investor in some fantastic companies.
 * (Stealth) - Consumer Hardware 
 
 * (Stealth) - ML Dev Tools
-
-  
