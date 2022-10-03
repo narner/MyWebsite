@@ -27,4 +27,4 @@ I'm fortunate to be an investor in some fantastic companies.
 
 * (Stealth) - Consumer Hardware 
 
-* (Stealth) - ML Dev Tools
+* [Chroma](http://trychroma.com) - Stack Trace for ML
