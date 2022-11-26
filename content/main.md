@@ -40,7 +40,7 @@ Some of the companies I've invested in are [hiring](https://narner.notion.site/N
 
 ### Other Things
 
-I keep a list of books I've found important in my work [here](books/), and a collection of [links](links/) I've found interesting here. 
+I keep a list of books I've found important in my work [here](books/). You can find me at other places on the web [here](web/). 
 
 
 
