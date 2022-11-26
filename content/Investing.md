@@ -5,7 +5,8 @@ date: "2021-09-06"
 
 I'm fortunate to be an investor in some fantastic companies. 
 
-&nbsp;
+
+## Angel Portfolio
 
 * [Collage](https://twitter.com/thecollageapp) - Create and remix memes with your friends.
 
@@ -28,3 +29,11 @@ I'm fortunate to be an investor in some fantastic companies.
 * (Stealth) - Consumer Hardware 
 
 * [Chroma](http://trychroma.com) - Stack Trace for ML
+
+
+&nbsp;
+
+
+## Grants Projects
+
+I helped run the [BUIDL Grants project](https://twitter.com/atroyn/status/1333860797714370561?s=20&t=vXyyyATEqhxvRASrVEnF5w), and contributed grants to [makeabetter.computer](http://makeabetter.computer)
