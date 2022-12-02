@@ -8,13 +8,19 @@ I'm fortunate to be an investor in some fantastic companies.
 
 ## Angel Portfolio
 
+* [Chroma](http://trychroma.com) - Stack Trace for ML
+
 * [Collage](https://twitter.com/thecollageapp) - Create and remix memes with your friends.
 
 * [Default](https://www.default.com/) - Capture inbound sales leads via customizable and integratabtle forms on your website. 
 
+* [ExplainPaper](http://explainpaper.com) - LLM powered reserach explanations.
+
+* [Jangle](https://www.jangleinc.com) - Distraction Free Computing 
+
 * [Quinn](https://www.usequinn.com) - A productivity tool inspired by personal assistants. 
 
-* [Lumen](http://lumen.world) - Projected AR Flashlight
+* [Lumen](http://lumen.world) - Projected AR Flashlight.
 
 * [Roboflow](https://roboflow.com) - Full-Scale computer vision platform for developers. 
 
@@ -26,9 +32,6 @@ I'm fortunate to be an investor in some fantastic companies.
 
 * [Vuecason](https://www.vuecason.com) - Combined 3D metal printing and machine tool.
 
-* (Stealth) - Consumer Hardware 
-
-* [Chroma](http://trychroma.com) - Stack Trace for ML
 
 
 &nbsp;
