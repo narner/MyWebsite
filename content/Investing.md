@@ -14,13 +14,13 @@ I'm fortunate to be an investor in some fantastic companies.
 
 * [Default](https://www.default.com/) - Capture inbound sales leads via customizable and integratabtle forms on your website. 
 
-* [ExplainPaper](http://explainpaper.com) - LLM powered reserach explanations.
+* [ExplainPaper](http://explainpaper.com) - LLM powered research paper explanations.
 
 * [Jangle](https://www.jangleinc.com) - Distraction Free Computing 
 
-* [Quinn](https://www.usequinn.com) - A productivity tool inspired by personal assistants. 
-
 * [Lumen](http://lumen.world) - Projected AR Flashlight.
+
+* [Onward](http://onward.so) - Tool for schedule and calendar enhancement. 
 
 * [Roboflow](https://roboflow.com) - Full-Scale computer vision platform for developers. 
 
