@@ -24,6 +24,8 @@ I'm fortunate to be an investor in some fantastic companies.
 
 * [Roboflow](https://roboflow.com) - Full-Scale computer vision platform for developers. 
 
+* [Rime](http://rime.ai) - Genartive synthesized speech. 
+
 * [Sprout](https://sprout.place/) - Create customizable, shareable virtual spaces for you and your favorite people. 
 
 * [Texts](http://texts.com)  - Unified messaging application. 
