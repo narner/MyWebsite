@@ -16,7 +16,9 @@ I'm fortunate to be an investor in some fantastic companies.
 
 * [ExplainPaper](http://explainpaper.com) - LLM powered research paper explanations.
 
-* [Jangle](https://www.jangleinc.com) - Distraction Free Computing 
+* [Ixana](https://ixana.ai) - High-speed Human Computer Interfaces.
+
+* [Jangle](https://www.jangleinc.com) - Distraction Free Computing.
 
 * [Lumen](http://lumen.world) - Projected AR Flashlight.
 
