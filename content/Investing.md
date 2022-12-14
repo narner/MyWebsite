@@ -8,7 +8,7 @@ I'm fortunate to be an investor in some fantastic companies.
 
 ## Angel Portfolio
 
-* [Chroma](http://trychroma.com) - Stack Trace for ML
+* [Chroma](http://trychroma.com) - Always optimal ML training data.
 
 * [Collage](https://twitter.com/thecollageapp) - Create and remix memes with your friends.
 
@@ -24,9 +24,9 @@ I'm fortunate to be an investor in some fantastic companies.
 
 * [Onward](http://onward.so) - Tool for schedule and calendar enhancement. 
 
-* [Roboflow](https://roboflow.com) - Full-Scale computer vision platform for developers. 
-
 * [Rime](http://rime.ai) - Genartive synthesized speech. 
+
+* [Roboflow](https://roboflow.com) - Full-Scale computer vision platform for developers. 
 
 * [Sprout](https://sprout.place/) - Create customizable, shareable virtual spaces for you and your favorite people. 
 
