@@ -10,8 +10,6 @@ I'm fortunate to be an investor in some fantastic companies.
 
 * [Chroma](http://trychroma.com) - Always optimal ML training data.
 
-* [Collage](https://twitter.com/thecollageapp) - Create and remix memes with your friends.
-
 * [Default](https://www.default.com/) - Capture inbound sales leads via customizable and integratabtle forms on your website. 
 
 * [ExplainPaper](http://explainpaper.com) - LLM powered research paper explanations.
@@ -23,6 +21,8 @@ I'm fortunate to be an investor in some fantastic companies.
 * [Lumen](http://lumen.world) - Projected AR Flashlight.
 
 * [Onward](http://onward.so) - Tool for schedule and calendar enhancement. 
+
+* [Rememe](https://twitter.com/therememeapp) - Create and remix memes with your friends.
 
 * [Rime](http://rime.ai) - Genartive synthesized speech. 
 
