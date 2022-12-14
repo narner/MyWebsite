@@ -14,7 +14,9 @@ I'm fortunate to be an investor in some fantastic companies.
 
 * [ExplainPaper](http://explainpaper.com) - LLM powered research paper explanations.
 
-* [Jangle](https://www.jangleinc.com) - Distraction Free Computing 
+* [Ixana](https://ixana.ai) - High-speed Human Computer Interfaces.
+
+* [Jangle](https://www.jangleinc.com) - Distraction Free Computing.
 
 * [Lumen](http://lumen.world) - Projected AR Flashlight.
 
@@ -23,6 +25,8 @@ I'm fortunate to be an investor in some fantastic companies.
 * [Rememe](https://twitter.com/therememeapp) - Create and remix memes with your friends.
 
 * [Roboflow](https://roboflow.com) - Full-Scale computer vision platform for developers. 
+
+* [Rime](http://rime.ai) - Genartive synthesized speech. 
 
 * [Sprout](https://sprout.place/) - Create customizable, shareable virtual spaces for you and your favorite people. 
 
