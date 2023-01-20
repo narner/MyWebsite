@@ -8,6 +8,8 @@ I'm fortunate to be an investor in some fantastic companies.
 
 ## Angel Portfolio
 
+* [Banana Dev](http://banana.dev) - Machine Learning Model Deployment on Serverless GPUs
+
 * [Chroma](http://trychroma.com) - Always optimal ML training data.
 
 * [Default](https://www.default.com/) - Capture inbound sales leads via customizable and integratabtle forms on your website. 
