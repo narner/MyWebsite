@@ -13,9 +13,7 @@ This also enables the application to be able to always work without concerns ove
 
 ## LLaMA Changes Everything
 
-Recently, the weights of [Facebook’s LLaMA model](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/) [leaked via a torrent posted to 4Chan](https://www.theverge.com/2023/3/8/23629362/meta-ai-language-model-llama-leak-online-misuse). This sparked a flurry of open-source activity, including [llama.cpp](https://github.com/ggerganov/llama.cpp). Authored by the [creator](https://ggerganov.com) of [whisper.cpp](https://github.com/ggerganov/whisper.cpp), it quickly showed that it’s possible to get an LLM running on an M1 Mac:
-
-[https://twitter.com/ggerganov/status/1634320862722551809](https://twitter.com/ggerganov/status/1634320862722551809?s=20)
+Recently, the weights of [Facebook’s LLaMA model](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/) [leaked via a torrent posted to 4Chan](https://www.theverge.com/2023/3/8/23629362/meta-ai-language-model-llama-leak-online-misuse). This sparked a flurry of open-source activity, including [llama.cpp](https://github.com/ggerganov/llama.cpp). Authored by the [creator](https://ggerganov.com) of [whisper.cpp](https://github.com/ggerganov/whisper.cpp), it quickly showed that [it’s possible to get an LLM running on an M1 Mac](https://twitter.com/ggerganov/status/1634320862722551809):
 
 ![LLaMa_On_M1](/blog_assets/2023/LLaMA_On_M1.png)
 
