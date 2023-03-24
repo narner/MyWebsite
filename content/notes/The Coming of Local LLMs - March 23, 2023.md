@@ -1,6 +1,6 @@
 ---
 title: "The Coming of Local LLMs"
-date: "2023-03-24"
+date: "2023-03-23"
 ---
 
 While there’s been a truly remarkable advance in large language models as they continue to scale up, facilitated by being trained and run on larger and larger GPU clusters, there is still a need to be able to run smaller models on devices that have constraints on memory and processing power. 
