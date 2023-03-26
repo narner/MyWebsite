@@ -26,7 +26,7 @@ I'm fortunate to be an investor in some fantastic companies.
 
 * [Rememe](https://twitter.com/therememeapp) - Create and remix memes with your friends.
 
-* [Rime](http://rime.ai) - Genartive synthesized speech. 
+* [Rime](http://rime.ai) - Generative synthesized speech. 
 
 * [Roboflow](https://roboflow.com) - Full-Scale computer vision platform for developers. 
 
