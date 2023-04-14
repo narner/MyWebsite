@@ -4,7 +4,7 @@ In 2022 I lead the building of [Roboflow Native iOS SDK](https://blog.roboflow.c
 
 The Native iOS SDK let iOS developers download the [CoreML](https://blog.roboflow.com/what-is-coreml/) version of their model created on Roboflow direclty to their device for use in their app. 
 
-Additionally, I built [CashCounter](https://apps.apple.com/app/roboflow-cash-counter/id1633812788), an app availble on the App Store, that would identify US currency and display the total monetary value. If the model predicted an incorrect value, users could press the "Incorrect Count" button, which would upload the image frame to the Cash Counter [dataset](https://universe.roboflow.com/alex-hyams-cosqx/cash-counter) in order to 
+Additionally, I built [CashCounter](https://apps.apple.com/app/roboflow-cash-counter/id1633812788), an app availble on the App Store, that would identify US currency and display the total monetary value. If the model predicted an incorrect value, users could press the "Incorrect Count" button, which would upload the image frame to the Cash Counter [dataset](https://universe.roboflow.com/alex-hyams-cosqx/cash-counter) in order to gradually improve the model over time. 
 
 <img src="/Users/nicholasarner/Development-Active/MyWebsite/static/post_assets/roboflow/CashCounter-3.PNG" alt="CashCounter-3" style="zoom:25%;" />
 
