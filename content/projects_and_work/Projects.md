@@ -60,8 +60,3 @@ You can check out the first version of the project website [here](https://web.ar
 **Delay Tracker: iOS App for Reporting Amtrak Delays** | 2015
 
 Delay Tracker was the first iOS app I built. It's purpose was to let Amtrak travelers who were experiencing train delays to report them to the Surface Transportation Board, the federal agency charged with regulation of the nation's railroads. You can read more about it [here](/projects_and_work/delay_tracker/).  
-
-
-
-
-
