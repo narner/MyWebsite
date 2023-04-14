@@ -1,3 +1,8 @@
+---
+title: "Roboflow Native iOS SDK"
+date: "2023-04-13"
+---
+
 In 2022 I lead the building of [Roboflow Native iOS SDK](https://blog.roboflow.com/roboflow-ios-sdk/). Roboflow's a startup building tools for the creation and deployment of Computer Vision ML models by developers without the need for specialized computer vision knowledge. Developers can create and host their models on the Roboflow platform, as well as deploy them on edge devices. 
 
 <img src="/Users/nicholasarner/Development-Active/MyWebsite/static/post_assets/roboflow/roboflow_ios_sdk.png" alt="roboflow_ios_sdk" style="zoom:25%;" />
