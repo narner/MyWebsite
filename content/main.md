@@ -26,7 +26,7 @@ Published work can be found [here](/publications/publications/).
 
 ### Working Together
 
-I'm currently available for small freelance iOS / macOS development projects, as well as technical writing and research work. I've done work for companies such as Tlon, Dusty Robotics, [Roboflow](Roboflow-Native-iOS-SDK/), and Meter.
+I'm currently available for small freelance iOS / macOS development projects, as well as technical writing and research work. I've done work for companies such as Tlon, Dusty Robotics, [Roboflow](Roboflow_Native_iOS_SDK/), and Meter.
 
 You can download my [resume](NFA-Resume.pdf). 
 
