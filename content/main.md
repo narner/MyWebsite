@@ -16,19 +16,19 @@ You can check out some of the things I've made and worked on [here](/projects_an
 
 
 
-
-### Notes
-
-I write about HCI, new technologies, and software development [here](/notes/).
-Published work can be found [here](/publications/publications/).
-
-
-
 ### Working Together
 
 I'm currently available for small freelance iOS / macOS development projects, as well as technical writing and research work. I've done work for companies such as Tlon, Dusty Robotics, [Roboflow](roboflow_native_mobile_sdk), and Meter.
 
 You can download my [resume](NFA-Resume.pdf). 
+
+
+
+
+### Notes
+
+I write about HCI, new technologies, and software development [here](/notes/).
+Published work can be found [here](/publications/publications/).
 
 
 
