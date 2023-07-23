@@ -4,6 +4,7 @@ date: "2021-09-06"
 ---
 
 I'm fortunate to be an investor in some fantastic companies. 
+Some of the companies I’ve invested in are ; reach out if you’re interested in any of the listed roles!
 
 
 ## Angel Portfolio
@@ -25,9 +26,6 @@ I'm fortunate to be an investor in some fantastic companies.
 * [Theatre.js](https://www.theatrejs.com/) - JavaScript animation library + GUI.
 * [Vuecason](https://www.vuecason.com) - Combined 3D metal printing and machine tool.
 
-
-
-&nbsp;
 
 
 ## Grants Projects

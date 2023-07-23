@@ -1,15 +1,12 @@
 ---
 title: "Books"
 date: "2021-09-06"
-
+layout: has-contents
 ---
 
 These are by no means a comprehensive list of books I own or have read; but are ones that I own and have read that related to my work. Sharing in the hope of finding new ones to read and sparking interesting and productive conversations. 
 
-&nbsp;
-
-
-**Architecture**
+## Architecture
 
 * [Architectural Intelligence](https://www.amazon.com/Architectural-Intelligence-Designers-Architects-Landscape/dp/0262037068/ref=sr_1_1?dchild=1&keywords=architectural+intelligence&qid=1629314863&sr=8-1) - [Molly Wright Steenson](https://design.cmu.edu/people/faculty/molly-steenson) tells of how designers and architects were influential in the early days of computing.
 
@@ -37,9 +34,10 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [Towards a New Architecture](https://www.amazon.com/Towards-New-Architecture-Dover/dp/0486250237/ref=sr_1_1?dchild=1&keywords=Towards+a+New+Architecture&qid=1630811761&sr=8-1) - Le Corbusier's manifesto advocating for modern architecture. 
 
-&nbsp;
 
-**Artificial Intelligence**
+
+
+## Artificial Intelligence
 
 * [Understanding Computers and Cognition: A New Foundation for Design](https://www.amazon.com/Understanding-Computers-Cognition-Foundation-Design/dp/0201112973/ref=sr_1_1?dchild=1&keywords=Understanding+Computers+and+Cognition&qid=1630811844&sr=8-1) - An approach to understanding what computers can and cannot do, and that relationship to human cognition and language. 
 
@@ -51,9 +49,10 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [The Computer and The Brain](https://www.amazon.com/Computer-Brain-Silliman-Memorial-Lectures/dp/0300181116/ref=sr_1_1?dchild=1&keywords=the+computer+and+the+brain+von+neumann&qid=1630900003&sr=8-1) - Johnny von Neuman's last published (and unfinished) work covering the nature of the human brain and its relation to computational machines. 
 
-&nbsp;
 
-**Computer Graphics**
+
+
+### Computer Graphics
 
 * [Visual Computing](https://www.ebay.com/itm/274876847754?chn=ps&mkevt=1&mkcid=28) - Two Silicon Graphics, Inc. alumni discuss computers' ability to generate and display images, and that relationship to art and human psychology and perception. 
 
@@ -63,9 +62,10 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [A Biography of The Pixel](https://www.amazon.com/Biography-Pixel-Leonardo-Alvy-Smith/dp/0262542455/ref=sr_1_2?dchild=1&keywords=A+Biography+of+The+Pixel&qid=1630811976&sr=8-2) - Alvy Ray Smith, co-founder of Pixar; tells the story of how computers can be used to display images. 
 
-&nbsp;
 
-**Creative Code**
+
+
+## Creative Code
 
 * [Code as Creative Medium](https://www.amazon.com/How-Buildings-Learn-Happens-Theyre/dp/0140139966/ref=sr_1_1?dchild=1&keywords=How+Buildings+Learn&qid=1629314971&sr=8-1) - Golan Levin and Tega Brain provide pedagogic exercises for instructors teaching creative coding.
 
@@ -73,9 +73,11 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [Maeda @ Media](https://www.amazon.com/Maeda-Media-John/dp/0789305259) - Designer and artist John Maeda shares his work combining computer programming and graphic design from his days working at the MIT Media Lab.
 
-&nbsp;
 
-**Creativity**
+
+
+
+## Creativity
 
 * [The Storm Of Creativity](https://www.amazon.com/Storm-Creativity-Simplicity-Technology-Business/dp/0262539497/ref=sr_1_1?dchild=1&keywords=The+Storm+Of+Creativity&qid=1630811995&sr=8-1) - Covers the stages of the creative process, with examples from practicing artists, architects, poets, and others. 
 
@@ -85,9 +87,10 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [Art and Fear](https://www.amazon.com/gp/product/0961454733/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1) - Moving meditations on "doing the work" in the face of loneliness or discouragement. Directed towards young artists early in their career, but the lessons are all equally applicable regardless of your domain. 
 
-&nbsp;
 
-**Design**
+
+
+## Design
 
 * [B is for Bauhaus](https://www.amazon.com/Bauhaus-Z-Modern-Sudjic-Hardcover/dp/B01071KHS6) - Wide ranging work on the objects and concepts of modern design 
 
@@ -113,9 +116,10 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [The Visual Display of Quantitative Information](https://www.amazon.com/Visual-Display-Quantitative-Information/dp/1930824130) - [Edward Tufte](https://www.edwardtufte.com/tufte/)'s seminal work on the characteristics of good information visualization displays. 
 
-&nbsp;
 
-**Electronics**
+
+
+## Electronics
 
 * [Audio Cyclopedia](https://www.amazon.com/Audio-Cyclopedia-Howard-M-Tremaine/dp/0672206757/ref=sr_1_2?dchild=1&keywords=Audio+Cyclopedia&qid=1630812289&sr=8-2) - A book from my grandfather (a radio broadcast engineer of 50 years)'s library; everything you could want to know about all variety of audio equipment.
 
@@ -127,9 +131,10 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [Grob Basic Electronics](https://www.amazon.com/Grobs-Basic-Electronics-Mitchel-Schultz/dp/0073510858) - A standard electronics textbook.
 
-&nbsp;
 
-**Human-Computer Interaction**
+
+
+## Human-Computer Interaction
 
 * [A Small Matter of Programming](https://www.amazon.com/gp/product/0262140535?pf_rd_r=BD0QR3VMQQYHJ4XYPBQF&pf_rd_p=8fe9b1d0-f378-4356-8bb8-cada7525eadd&pd_rd_r=43b236db-bccc-42b5-9722-418ac028a46b&pd_rd_w=x7OHL&pd_rd_wg=8gwM7&ref_=pd_gw_unk) - A sadly out of print book exploring the difficulties around end-user programming and application development. (You should [absolutely tell Stripe Press that you would like to see them re-issue this](https://twitter.com/nickarner/status/1427389644002500608?s=20), by the way...)
 
@@ -161,17 +166,18 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [Tools for Thought](https://www.amazon.com/gp/product/0262681153/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1) - Howard Rheingold discusses the pioneers of computing who believed in the field's potential to transform and enhance human thought and capability.
 
-&nbsp;
 
-**Miscellaneous **
+
+## Miscellaneous 
 
 * [Finite and Infinite Games](https://www.amazon.com/gp/product/1476731713/ref=ppx_yo_dt_b_asin_title_o09_s01?ie=UTF8&psc=1) - A bit of a Silicon Valley trope; but one of my favorite books. Encourages the reader to think of our interactions with others as positive-sum (an infinite game; where the goal is to keep playing) and a finite game (zero-sum, where the purpose is to "win" in finality).
 
 * [The Craftsman](https://www.amazon.com/Craftsman-Richard-Sennett/dp/0300151195/ref=sr_1_2?dchild=1&keywords=Craftsman+book&qid=1629299114&sr=8-2) - Beautiful meditation on craftsmanship across a variety of disciplines - the desire to a job well for it's own sake. 
 
-&nbsp;
 
-**Photography**
+
+
+## Photography
 
 * [On Photography](https://www.amazon.com/Photography-Susan-Sontag/dp/0312420099/ref=sr_1_1?dchild=1&keywords=On+Photography&qid=1630812536&sr=8-1) - Susan Sontag's evocative collection of essays on the philosophy of photography.
 
@@ -179,9 +185,10 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [Why Photography Matters](https://www.amazon.com/Why-Photography-Matters-MIT-Press/dp/0262529017/ref=sr_1_2?dchild=1&keywords=Why+Photography+Matters&qid=1630812623&sr=8-2) - Meditation on how photography is not only an artistic medium, but also a way to *know* about the world around us. 
 
-&nbsp;
 
-**Psychology**
+
+
+## Psychology
 
 * [Mind in Motion: How Action Shapes Thought](https://www.amazon.com/gp/product/046509306X/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) - Barbara Tversky makes the case that "movement and our interactions in space, not language, are the true foundations of thought".
 
@@ -199,9 +206,9 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [Metaphors We Live By](https://www.amazon.com/Metaphors-We-Live-George-Lakoff/dp/0226468011/ref=sr_1_1?dchild=1&keywords=Metaphors+We+Live+By&qid=1630812838&sr=8-1) - Presents the idea that metaphor is a basic building block to how people understand ourselves and the world around us. 
 
-&nbsp;
 
-**Media**
+
+## Media
 
 * [The Medium is The Message](https://www.amazon.com/Medium-Massage-Marshall-McLuhan/dp/1584230703/ref=sr_1_1?dchild=1&keywords=the+medium+is+the+message&qid=1630812200&sr=8-1) - Seminal work by Marshall McLuhan on "The New Media".
 
@@ -211,9 +218,9 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [Understanding Media: The Extensions of Man](https://www.amazon.com/Understanding-Media-Extensions-Marshall-McLuhan/dp/0262631598/ref=sr_1_1?dchild=1&keywords=Understanding+Media%3A+The+Extensions+of+Man&qid=1630963833&sr=8-1) - McLuhan's discussion of hot and cool media, and their relationship to the humans that created them.
 
-&nbsp;
 
-**Music** 
+
+## Music
 
 * [Designing Sound](https://www.amazon.com/Designing-Sound-Press-Andy-Farnell/dp/0262014416/ref=sr_1_1?dchild=1&keywords=Designing+Sound&qid=1630812869&sr=8-1) - Sound designer Andy Farnell walks readers through the principles of synthesis for sound design with practical exercises using [PureData](https://puredata.info)
 
@@ -225,16 +232,16 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [Musical Gestures](https://www.amazon.com/Musical-Gestures-Sound-Movement-Meaning/dp/0415998875/ref=sr_1_1?dchild=1&keywords=Musical+Gestures&qid=1630812974&sr=8-1) - Collection of essays on the relationship between gestures and music. 
 
-&nbsp;
 
-**Signal Processing**
+
+## Signal Processing
 
 * [An Introduction to Information Theory](https://www.amazon.com/Introduction-Information-Theory-Symbols-Mathematics/dp/0486240614/ref=sr_1_2?dchild=1&keywords=An+Introduction+to+Information+Theory&qid=1630812998&sr=8-2) - Explanatory work on the field without the heavy math. 
 
 &nbsp;
 
 
-**Software Engineering**
+## Software Engineering
 
 * [Code: The Hidden Language of Computer Hardware and Software](https://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0735611319/ref=sr_1_4?dchild=1&keywords=Code&qid=1630813918&sr=8-4) - Explains how computers work from a bottoms-up approach; from the hardware level up to the application layer. 
 
@@ -254,9 +261,9 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [Concepts of Programming Languages](https://www.amazon.com/Concepts-Programming-Languages-Robert-Sebesta/dp/013394302X) -  academic textbook on programming language theory
 
-&nbsp;
 
-**Technology History**
+
+## Technology History
 
 * [A Mind at Play](https://www.amazon.com/Mind-Play-Shannon-Invented-Information/dp/147676669X/ref=sr_1_1?dchild=1&keywords=A+Mind+at+Play&qid=1630813675&sr=8-1) - Biography of the Father Of Information Theory, Claude Shannon.
 
@@ -292,9 +299,9 @@ These are by no means a comprehensive list of books I own or have read; but are 
 
 * [What the Dormouse Said](https://www.amazon.com/What-Dormouse-Said-Counterculture-Personal/dp/0143036769/ref=sr_1_1?dchild=1&keywords=What+the+Dormouse+Said&qid=1629314854&sr=8-1) - An exploration of the relationship between the 60's counterculture and early computing pioneers.
 
-&nbsp;
 
-**Typography**
+
+## Typography
 
 * [An Essay on Typography](https://www.amazon.com/Essay-Typography-Eric-Gill/dp/0879239506/ref=sr_1_2?dchild=1&keywords=An+Essay+on+Typography+-&qid=1630968653&s=books&sr=1-2) - A short work by	 Eric Gill argues that a "a good piece of lettering is as beautiful a thing to see as any sculpture or painted picture".
 

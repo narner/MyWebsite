@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+<h1>{{.Title}}</h1>
+      {{ .Content }}
+
+          <!-- {{ range .Pages }}
+
+      <div class=note> 
+          <a href="{{ .Permalink }}"> {{ .Params.Title }} </a> – {{ .PublishDate.Format "January 2, 2006" }}
+      </div>
+
+          {{ end }} -->
+
+          {{ $currentYear := 0 }}
+
+          {{ range .Pages.ByDate.Reverse }}
+              {{ $year := .Date.Year }}
+              {{ if ne $currentYear $year }}
+                  {{ $currentYear = $year }}
+                  <h2>{{ $currentYear }}</h2>
+              {{ end }}
+              <div class=note>
+                   <a href="{{ .Permalink }}"> {{ .Params.Title }} </a> – {{ .Date.Format "Jan 2" }}
+              </div>
+          {{ end }}
+       
+{{ end }}

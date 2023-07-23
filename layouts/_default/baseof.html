@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title> {{ .Title }} • {{ .Site.Title }} </title>
+        <meta charset="utf-8">
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180"  href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="16x16"  href="/favicon.ico"> 
+
+        <!-- Facebook Open Graph tags -->
+        <meta property="og:url" content="https://nickarner.com" />
+        <meta property="og:title" content="{{ .Title }}" />
+        <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else if .Site.Params.description }}{{ .Site.Params.description }}{{ else }} Page from Nick Arner's site. {{ end }}" />
+        <meta property="og:image" content="https://nickarner.com/card.jpg" />
+
+        <!-- Twitter Card (large image card) tags -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:creator" content="@joodaloop">
+        <meta name="twitter:title" content="{{ .Title }}">
+        <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else if .Site.Params.description }}{{ .Site.Params.description }}{{ else }} Page from Nick Arner's site. {{ end }}" />
+        <meta name="twitter:image" content="https://nickarner.com/card.jpg" />
+
+        <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .Site.Params.description }}{{ .Site.Params.description }}{{ else }} Page from Nick Arner's site. {{ end }}">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>    
+    
+<main>
+        <div class=left>
+                {{ partial "menu.html" . }}
+        </div><div class=content>
+                <article>
+                        {{- block "main" . }}
+                        {{- end }}
+                </article>
+                <footer> © Copyright Nicholas Arner, 2023  </footer>
+        </div>
+        
+</main>
+
+        
+</body>
+</html>

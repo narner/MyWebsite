@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+        <title> {{ .Site.Title }} </title>
+        <meta charset="utf-8">
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180"  href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="16x16"  href="/favicon.ico"> 
+
+        <!-- Facebook Open Graph tags -->
+        <meta property="og:url" content="https://nickarner.com" />
+        <meta property="og:title" content="{{ .Site.Title }}" />
+        <meta property="og:description" content="{{ .Site.Params.description }}" />
+        <meta property="og:image" content="https://nickarner.com/card.jpg" />
+
+        <!-- Twitter Card (large image card) tags -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:creator" content="@nickarner">
+        <meta name="twitter:title" content="{{ .Site.Title }}">
+        <meta name="twitter:description" content="{{ .Site.Params.description }}" />
+        <meta name="twitter:image" content="https://nickarner.com/card.jpg" />
+
+        <meta name="description" content="{{ .Site.Params.description }}">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+
+</head>
+
+<body>
+
+<main>
+	<div class=left>
+		{{ partial "menu.html" . }}
+	</div><div class=content>
+		<article>
+			{{ .Content }}
+		</article>
+                <footer> {{ .Site.Copyright }}  </footer>
+	</div>
+	
+</main>
+
+
+</body>
+
+</html>

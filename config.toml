@@ -1,8 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Nick Arner"
-# theme = "anubis"
-theme = "ezhil"
+# theme = "narner"
 
 copyright = "© Copyright Nicholas Arner, 2022"
 RSSLink = ""
@@ -18,6 +17,12 @@ googleAnalytics = "UA-187116527-1"
 [author]
 	name = "Nick Arner"
 	email = "nicholasarner@gmail.com"
+
+[params]
+  description = "Nick's new site."
+
+[markup.goldmark.renderer]
+    unsafe = "true"
 
   # [params]
   # [menu]

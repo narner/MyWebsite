@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<h1>{{.Title}} </h1>
+
+    {{ partial "toc.html" . }}
+
+      {{ .Content }}
+
+          <!-- {{ range .Pages }}
+
+      <div class=note> 
+          <a href="{{ .Permalink }}"> {{ .Params.Title }} </a> – {{ .PublishDate.Format "January 2, 2006" }}
+      </div>
+
+          {{ end }} -->
+{{ end }}
