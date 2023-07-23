@@ -4,7 +4,7 @@ date: "2021-09-06"
 ---
 
 I'm fortunate to be an investor in some fantastic companies. 
-Some of the companies I’ve invested in are ; reach out if you’re interested in any of the listed roles!
+Some of the companies I’ve invested in are hiring; reach out if you’re interested in any of the listed roles!
 
 
 ## Angel Portfolio
