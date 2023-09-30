@@ -1,82 +1,93 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Machine Learning Development on Apple Platforms - Nick Arner</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:title" content="Machine Learning Development on Apple Platforms" />
-<meta property="og:description" content="Apple has been investing heavily in machine learning (ML) capabilities for its development platforms. Acquisitions of applied ML startups allows Apple to fold their technology into the hardware, operating system, and software development tooling for their products. Creating developer friendly frameworks makes it easy to leverage the ML capabilities of Apple’s computing devices, allowing for a greater number of apps that can apply ML in a wider array of use cases." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/notes/machine-learning-development-on-apple-platforms-october-14-2019/" />
-<meta property="article:published_time" content="2019-10-14T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-10-14T00:00:00+00:00" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Machine Learning Development on Apple Platforms"/>
-<meta name="twitter:description" content="Apple has been investing heavily in machine learning (ML) capabilities for its development platforms. Acquisitions of applied ML startups allows Apple to fold their technology into the hardware, operating system, and software development tooling for their products. Creating developer friendly frameworks makes it easy to leverage the ML capabilities of Apple’s computing devices, allowing for a greater number of apps that can apply ML in a wider array of use cases."/>
-<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+        <title> Machine Learning Development on Apple Platforms • Nick Arner </title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180"  href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="16x16"  href="/favicon.ico"> 
 
-	
-	<script src="/js/main.js"></script>
+        
+        <meta property="og:url" content="https://nickarner.com" />
+        <meta property="og:title" content="Machine Learning Development on Apple Platforms" />
+        <meta property="og:description" content="Nick&#39;s new site." />
+        <meta property="og:image" content="https://nickarner.com/card.jpg" />
+
+        
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:creator" content="@joodaloop">
+        <meta name="twitter:title" content="Machine Learning Development on Apple Platforms">
+        <meta name="twitter:description" content="Nick&#39;s new site." />
+        <meta name="twitter:image" content="https://nickarner.com/card.jpg" />
+
+        <meta name="description" content="Nick&#39;s new site.">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css" />
 </head>
 
-<body>
-	<div class="container wrapper post">
-		<div class="header">
-	<h1 class="site-title"><a href="/">Nick Arner</a></h1>
-	<div class="site-description"><nav class="nav social">
-			<ul class="flat"></ul>
-		</nav>
-	</div>
+<body>    
+    
+<main>
+        <div class=left>
+                <div class=menu>
 
-	<nav class="nav">
-		<ul class="flat">
-			
-		</ul>
+	<nav>
+		<div class="home">
+			<a href="/"> Nick Arner </a>
+		</div>
+		<a href="/investing"> Investments </a>
+		<a href="/projects_and_work"> Projects </a>
+		<a href="/people"> People </a>
+		<a href="/books"> Books </a>
+		<a href="/notes"> Notes </a>
 	</nav>
 </div>
+        </div><div class=content>
+                <article>
 
-
-		<div class="post-header">
-			<h1 class="title">Machine Learning Development on Apple Platforms</h1>
-			<div class="meta">Posted at &mdash; Oct 14, 2019</div>
-		</div>
-
-		<div class="markdown">
-			<p>Apple has been investing heavily in machine learning (ML) capabilities for its development platforms. Acquisitions of applied ML startups allows Apple to fold their technology into the hardware, operating system, and software development tooling for their products. Creating developer friendly frameworks makes it easy to leverage the ML capabilities of Apple’s computing devices, allowing for a greater number of apps that can apply ML in a wider array of use cases.</p>
+<h1>Machine Learning Development on Apple Platforms</h1>
+      <div class=date>Published on Oct 14, 2019 </div>
+      <p>Apple has been investing heavily in machine learning (ML) capabilities for its development platforms. Acquisitions of applied ML startups allows Apple to fold their technology into the hardware, operating system, and software development tooling for their products. Creating developer friendly frameworks makes it easy to leverage the ML capabilities of Apple’s computing devices, allowing for a greater number of apps that can apply ML in a wider array of use cases.</p>
 <p>It&rsquo;s up to app developers to creatively make use of these powerful capabilities. A wide range of available input data (video, audio, text, and sensors) allows developers to create compelling apps in sectors as varied as health care, augmented reality, and creativity tools.</p>
 <p>This post discusses how ML development fits into the Apple development ecosystem. We’ll look at frameworks and tools Apple has introduced in the last few years and how they fit into the broader world of ML.</p>
-<h2 id="on-device-inference">ON-DEVICE INFERENCE</h2>
+<h2 id="on-device-inference">On-Device Inference</h2>
 <p>&ldquo;On-device inference&rdquo; is basically a techno-speak way of saying &ldquo;the ML model performs a prediction on incoming data without sending the data to a server running in the cloud somewhere” or “the data used for prediction never leaves the user&rsquo;s device.&rdquo;</p>
 <p>In apps that use ML without on-device inference, data is sent to a cloud server that&rsquo;s hosting a ML model. The model performs predictions based on the received data, and then sends the results back to the application running on a user&rsquo;s device.</p>
 <p>One major benefit to on-device inference is that it can be performed with poor or non-existent network connectivity.</p>
-<h2 id="tools-for-working-with-machine-learning-on-apple-platforms">TOOLS FOR WORKING WITH MACHINE LEARNING ON APPLE PLATFORMS</h2>
-<h3 id="coreml">COREML</h3>
-<p><a href="https://developer.apple.com/documentation/coreml">CoreML</a> is the framework for running ML models on an Apple device. No data is sent off the device to a cloud server that&rsquo;s processing user data — all of the inference is done with some combination of the CPU, GPU, and the Neural Engine (silicon that&rsquo;s part of the A11 Bionic and newer processors that&rsquo;s designed to accelerate certain ML tasks).</p>
-<h3 id="existing-coreml-models">EXISTING COREML MODELS</h3>
-<p>Apple has created a variety of <a href="https://developer.apple.com/machine-learning/models/">CoreML models for developers</a> to easily get started working with on-device ML straight away. These models include object detection, image segmentation, drawing prediction, and others.</p>
-<p><img src="/blog_assets/2019/ImageClassification.jpg" alt="ImageClassification"></p>
+<h2 id="tools-for-working-with-machine-learning-on-apple-platforms">Tools for Working with Machine Learning on Apple Platforms</h2>
+<h3 id="coreml">CoreML</h3>
+<p><a href="https://developer.apple.com/documentation/coreml" target="_blank" class="external-link" >CoreML</a> is the framework for running ML models on an Apple device. No data is sent off the device to a cloud server that&rsquo;s processing user data — all of the inference is done with some combination of the CPU, GPU, and the Neural Engine (silicon that&rsquo;s part of the A11 Bionic and newer processors that&rsquo;s designed to accelerate certain ML tasks).</p>
+<h3 id="existing-coreml-models">Existing CoreML Models</h3>
+<p>Apple has created a variety of <a href="https://developer.apple.com/machine-learning/models/" target="_blank" class="external-link" >CoreML models for developers</a> to easily get started working with on-device ML straight away. These models include object detection, image segmentation, drawing prediction, and others.</p>
+<p><img src="/blog_assets/2019/ImageClassification.jpg" alt="ImageClassification" title="ImageClassification"  />
+</p>
 <p>​						Image Classification - SqueezeNet Model</p>
-<p><img src="/blog_assets/2019/Segmentation.jpg" alt="Segmentation"></p>
+<p><img src="/blog_assets/2019/Segmentation.jpg" alt="Segmentation" title="Segmentation"  />
+</p>
 <p>​						Image Segmmentation - Deeplab V3 Model</p>
-<p><img src="/blog_assets/2019/ObjectDetectionRealTime.jpg" alt="ObjectDetectionRealTime"></p>
+<p><img src="/blog_assets/2019/ObjectDetectionRealTime.jpg" alt="ObjectDetectionRealTime" title="ObjectDetectionRealTime"  />
+</p>
 <p>​							Object Detection - YOLOv3 Model</p>
-<h3 id="turicreate">TURICREATE</h3>
-<p><a href="https://github.com/apple/turicreate">TuriCreate</a> is a Python library that allows developers to build custom ML models of several different types:</p>
-<p><img src="/blog_assets/2019/TuriCreateModelTypes.jpg" alt="TuriCreateModelTypes"></p>
+<h3 id="turicreate">TuriCreate</h3>
+<p><a href="https://github.com/apple/turicreate" target="_blank" class="external-link" >TuriCreate</a> is a Python library that allows developers to build custom ML models of several different types:</p>
+<p><img src="/blog_assets/2019/TuriCreateModelTypes.jpg" alt="TuriCreateModelTypes" title="TuriCreateModelTypes"  />
+</p>
 <p>Once the ML model has been created with TuriCreate, it can then be converted to a CoreML model that&rsquo;s ready to be deployed in an app.</p>
 <p>ML developers that are familiar with existing Python-based ML tools like TensorFlow or PyTorch should find TuriCreate to be familiar.</p>
-<p>For a detailed walkthrough of how to use TuriCreate, take a look at this Apple <a href="https://developer.apple.com/videos/play/wwdc2018/712">presentation</a> from last year&rsquo;s WWDC event.</p>
-<p>TuriCreate is the result of <a href="https://techcrunch.com/2016/08/05/apple-acquires-turi-a-machine-learning-company/">an acquisition Apple made in 2016 of Turi</a>, a Seattle-based ML startup that had described itself as &ldquo;a ML platform for developers and data scientists.&rdquo;</p>
-<h2 id="createml-developer-tool"><strong>CREATEML DEVELOPER TOOL</strong></h2>
+<p>For a detailed walkthrough of how to use TuriCreate, take a look at this Apple <a href="https://developer.apple.com/videos/play/wwdc2018/712" target="_blank" class="external-link" >presentation</a> from last year&rsquo;s WWDC event.</p>
+<p>TuriCreate is the result of <a href="https://techcrunch.com/2016/08/05/apple-acquires-turi-a-machine-learning-company/" target="_blank" class="external-link" >an acquisition Apple made in 2016 of Turi</a>, a Seattle-based ML startup that had described itself as &ldquo;a ML platform for developers and data scientists.&rdquo;</p>
+<h2 id="createml-developer-tool"><strong>CreateML Developer Tool</strong></h2>
 <p>Apple recently released a developer tool bundled with Xcode 11 called CreateML:</p>
-<p><img src="/blog_assets/2019/CrateMLLocation.jpg" alt="CrateMLLocation"></p>
+<p><img src="/blog_assets/2019/CrateMLLocation.jpg" alt="CrateMLLocation" title="CrateMLLocation"  />
+</p>
 <p>It allows developers create CoreML models through a drag and drop interface; models are built from image, sound, sound, motion, text, and tabular data sources.</p>
-<p>For more on what you can do with this tool, check out this <a href="https://www.notion.so/narner/Machine-Learning-Development-on-Apple-Platforms-a690f86d419242c5a3964a405a19fac4">presentation</a> from the most recent WWDC.</p>
+<p>For more on what you can do with this tool, check out this <a href="https://www.notion.so/narner/Machine-Learning-Development-on-Apple-Platforms-a690f86d419242c5a3964a405a19fac4" target="_blank" class="external-link" >presentation</a> from the most recent WWDC.</p>
 <p>Apple is putting a lot of money and hours into making frameworks and tools that help non-ML experts create models that can run on their platforms. I don&rsquo;t think it&rsquo;s a stretch to say that CreateML could end up allowing users to create all of the ML model types that TuriCreate supports without the need for writing any code.</p>
-<h3 id="converting-existing-models-to-coreml">CONVERTING EXISTING MODELS TO COREML</h3>
-<p>There are a variety of open-source tools for converting pre-trained ML models into CoreML models that can then be used in an app. Apple&rsquo;s open-source CoreML Community Tools project, <a href="https://github.com/apple/coremltools">coremltools</a>, provides scripts for converting all of the below into a CoreML model format:</p>
+<h3 id="converting-existing-models-to-coreml">Converting Existing Models to CoreML</h3>
+<p>There are a variety of open-source tools for converting pre-trained ML models into CoreML models that can then be used in an app. Apple&rsquo;s open-source CoreML Community Tools project, <a href="https://github.com/apple/coremltools" target="_blank" class="external-link" >coremltools</a>, provides scripts for converting all of the below into a CoreML model format:</p>
 <ul>
 <li>scikit-learn</li>
 <li>LIBSVM</li>
@@ -84,49 +95,43 @@
 <li>Keras</li>
 <li>XGBoost</li>
 </ul>
-<p>Gaël Foppolo has a <a href="https://blog.gaelfoppolo.com/introduction-to-core-ml-conversion-tool-d1466bf10018">blog post</a> with a walkthrough on how to use coremltools to perform model conversion.</p>
-<p>One important thing to note is that not all model architecture types are able to be automatically converted to CoreML! Be sure to check <a href="https://developer.apple.com/documentation/coreml/converting_trained_models_to_core_ml">this document from Apple</a> to make sure that the model you want to convert is able to be converted. If it is not covered, you may have to use open source third party tools or write your own custom conversion code.</p>
-<p>In addition to core-ml tools, there&rsquo;s an open source project for converting TensorFlow models to CoreML called <a href="https://github.com/tf-coreml/tf-coreml">tf-coreml</a>.</p>
+<p>Gaël Foppolo has a <a href="https://blog.gaelfoppolo.com/introduction-to-core-ml-conversion-tool-d1466bf10018" target="_blank" class="external-link" >blog post</a> with a walkthrough on how to use coremltools to perform model conversion.</p>
+<p>One important thing to note is that not all model architecture types are able to be automatically converted to CoreML! Be sure to check <a href="https://developer.apple.com/documentation/coreml/converting_trained_models_to_core_ml" target="_blank" class="external-link" >this document from Apple</a> to make sure that the model you want to convert is able to be converted. If it is not covered, you may have to use open source third party tools or write your own custom conversion code.</p>
+<p>In addition to core-ml tools, there&rsquo;s an open source project for converting TensorFlow models to CoreML called <a href="https://github.com/tf-coreml/tf-coreml" target="_blank" class="external-link" >tf-coreml</a>.</p>
 <p>If you have an existing, pre-trained model that you want to convert to take advantage of Apple&rsquo;s neural engine hardware, you can convert it to CoreML using these tools. Additionally, if you&rsquo;re writing a model from scratch and have an existing machine-learning developing pipeline that makes use of frameworks like Caffe, Keras, TensorFlow; etc, you can continue to develop the model using them, and then convert the model to CoreML once it&rsquo;s completed.</p>
-<h2 id="on-device-training">ON DEVICE TRAINING</h2>
-<p><a href="https://heartbeat.fritz.ai/whats-new-in-core-ml-3-d108d352e50a">As of CoreML3</a>, CoreML now offers the ability to personalize ML models directly on a user&rsquo;s device — enabling the app to fine-tune the embedded ML model to adapt to the individual data of the user.</p>
+<h2 id="on-device-training">On-Device Training</h2>
+<p><a href="https://heartbeat.fritz.ai/whats-new-in-core-ml-3-d108d352e50a" target="_blank" class="external-link" >As of CoreML3</a>, CoreML now offers the ability to personalize ML models directly on a user&rsquo;s device — enabling the app to fine-tune the embedded ML model to adapt to the individual data of the user.</p>
 <p>As a user is interacting with an app having a personalizable ML model, the app will analyzes user interaction data to tune the model to conform to the individual user.</p>
 <p>These new capabilities enable a whole new frontier for how people can interact with their computing devices - their software will be able to adapt itself to their habits, behaviors, and tastes.</p>
 <p>Apps making use of ML will increasingly be able to anticipate people&rsquo;s actions and desires, in a way that will be respectful of their privacy and the integrity of their personal data.</p>
-<p>Matthijs Hollemans has <a href="https://machinethink.net/blog/coreml-training-part1/">a multi-part, in-depth overview</a> of how CoreML&rsquo;s on-device training capabilities work.</p>
-<h2 id="what-about-tflite-and-other-mobile-frameworks">WHAT ABOUT TFLITE AND OTHER MOBILE FRAMEWORKS?</h2>
+<p>Matthijs Hollemans has <a href="https://machinethink.net/blog/coreml-training-part1/" target="_blank" class="external-link" >a multi-part, in-depth overview</a> of how CoreML&rsquo;s on-device training capabilities work.</p>
+<h2 id="what-abut-tflite-and-other-mobile-frameworks">What Abut TFLite and Other Mobile Frameworks?</h2>
 <p>While cross-platform frameworks like TFLite or PyTorch Mobile are able to be deployed on Apple devices, they&rsquo;re not able to take advantage of the work that Apple has done at the framework level of enabling the operating system to dynamically determine whether a model gets run on the CPU, GPU, or Apple’s new Neural Engine.</p>
 <p>There is no SDK or API for interacting with these chips directly - the operating system manages their use for the developer via CoreML. The developer is only concerned with implementing the ML model, while CoreML handles how that model gets run at the silicon level.</p>
 <p>That said, it would be remiss not to mention some of the other frameworks that can be used to deploy ML models for devices in the Apple ecosystem:</p>
-<h3 id="tensorflow-lite">TENSORFLOW LITE</h3>
-<p><img src="/blog_assets/2019/TensorFlowLite.jpg" alt="TensorFlowLite"></p>
-<p><a href="https://www.tensorflow.org/lite">TensorFlow Lite</a> is a &ldquo;lite&rdquo; version of TensorFlow that&rsquo;s designed to run on IoT and mobile devices. Developers choose an existing pre-trained model, or create a new one with TensorFlow, and then use the TensorFlow Lite Converter to convert the model to run on TensorFlow Lite. The converter optimizes these pre-trained TensorFlow models to run on devices with a limited amount of compute and memory resources.</p>
-<h3 id="pytorch-mobile">PYTORCH MOBILE</h3>
-<p>The recently announced [PyTorch Mobile](<a href="https://pytorch.org/mobile/home/#targetText=PyTorch">https://pytorch.org/mobile/home/#targetText=PyTorch</a> Mobile,deployment on iOS and Android) framework is designed to be a cross-platform library for deploying PyTorch models on both iOS and Android devices. A model would be created once in PyTorch, and then deployed via the respective platform-specific frameworks.</p>
-<p><img src="/blog_assets/2019/PyTorchMobile.jpg" alt="PyTorchMobile"></p>
-<h2 id="further-learning-and-good-work-to-check-out">FURTHER LEARNING AND GOOD WORK TO CHECK OUT</h2>
+<h3 id="tensorflow-lite">TensorFlow Lite</h3>
+<p><img src="/blog_assets/2019/TensorFlowLite.jpg" alt="TensorFlowLite" title="TensorFlowLite"  />
+</p>
+<p><a href="https://www.tensorflow.org/lite" target="_blank" class="external-link" >TensorFlow Lite</a> is a &ldquo;lite&rdquo; version of TensorFlow that&rsquo;s designed to run on IoT and mobile devices. Developers choose an existing pre-trained model, or create a new one with TensorFlow, and then use the TensorFlow Lite Converter to convert the model to run on TensorFlow Lite. The converter optimizes these pre-trained TensorFlow models to run on devices with a limited amount of compute and memory resources.</p>
+<h3 id="pytorch-mobile">PyTorch Mobile</h3>
+<p>The recently announced [PyTorch Mobile](<a href="https://pytorch.org/mobile/home/#targetText=PyTorch" target="_blank" class="external-link" >https://pytorch.org/mobile/home/#targetText=PyTorch</a> Mobile,deployment on iOS and Android) framework is designed to be a cross-platform library for deploying PyTorch models on both iOS and Android devices. A model would be created once in PyTorch, and then deployed via the respective platform-specific frameworks.</p>
+<p><img src="/blog_assets/2019/PyTorchMobile.jpg" alt="PyTorchMobile" title="PyTorchMobile"  />
+</p>
+<h2 id="further-learning">Further Learning</h2>
 <ul>
-<li>The folks at <a href="http://fritz.ai/">fritz.ai</a> have done an excellent job of publishing their findings, as well as curating <a href="https://www.fritz.ai/newsletter.html">a fantastic newsletter</a> that showcases the very latest developments in mobile machine learning technology</li>
-<li>Matthijs Hollemans' <a href="https://machinethink.net/blog/">blog</a> is an excellent resource for in-depth technical posts and examples on using CoreML in iOS projects.</li>
-<li>The <a href="https://github.com/likedan/Awesome-CoreML-Models">Awesome CoreML Models GitHub repository</a> has, as it&rsquo;s name suggest, a list of really awesome open source CoreML models, as well as example projects that use them.</li>
+<li>The folks at <a href="http://fritz.ai/" target="_blank" class="external-link" >fritz.ai</a> have done an excellent job of publishing their findings, as well as curating <a href="https://www.fritz.ai/newsletter.html" target="_blank" class="external-link" >a fantastic newsletter</a> that showcases the very latest developments in mobile machine learning technology</li>
+<li>Matthijs Hollemans&rsquo; <a href="https://machinethink.net/blog/" target="_blank" class="external-link" >blog</a> is an excellent resource for in-depth technical posts and examples on using CoreML in iOS projects.</li>
+<li>The <a href="https://github.com/likedan/Awesome-CoreML-Models" target="_blank" class="external-link" >Awesome CoreML Models GitHub repository</a> has, as it&rsquo;s name suggest, a list of really awesome open source CoreML models, as well as example projects that use them.</li>
 </ul>
 
-		</div>
+       
 
-		<div class="post-tags">
-			
-				
-			
-		</div>
-		</div>
-	<div class="footer wrapper">
-	<nav class="nav">
-		<div>	
-	</nav>
-</div>
+                </article>
+                <footer> © Copyright Nicholas Arner, 2022  </footer>
+        </div>
+        
+</main>
 
-
-
-
+        
 </body>
 </html>

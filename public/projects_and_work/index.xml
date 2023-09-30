@@ -1,49 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects_and_works on Nick Arner</title>
+    <title>Projects on Nick Arner</title>
     <link>/projects_and_work/</link>
-    <description>Recent content in Projects_and_works on Nick Arner</description>
+    <description>Recent content in Projects on Nick Arner</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/projects_and_work/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <managingEditor>nicholasarner@gmail.com (Nick Arner)</managingEditor>
+    <webMaster>nicholasarner@gmail.com (Nick Arner)</webMaster>
+    <copyright>© Copyright Nicholas Arner, 2022</copyright>
+    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/projects_and_work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Delay Tracker</title>
+      <link>/projects_and_work/delay_tracker/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/projects_and_work/delay_tracker/</guid>
+      <description>Delay Tracker was built to educate Amtrak passengers experiencing delays on their trip why those delays may be occuring, and to give them the opportunity to report the fact that their train was delayed to the Surface Transportation Board.
+This way, the Amtrak-riding public could both become educated about hte challenges to the nation&amp;rsquo;s rail infrastructure, as well as have a way to ensure their complaints about their trip were heard.</description>
+    </item>
+    
     <item>
       <title>Emulating Touché</title>
-      <link>/projects_and_work/emulating_touch%C3%A9/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects_and_work/emulating_touch%C3%A9/</guid>
+      <link>/projects_and_work/emulating_touche%CC%81/</link>
+      <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/projects_and_work/emulating_touche%CC%81/</guid>
       <description>In 2017, I worked on a project where I built a circuit that emulated the Touché circuit from Disney Research.
-I wanted to see if, using the circuit and machine-learning software, I could replicate the results of the Touché paper by training a system to detect how I was touching various plants, or how to use water as an interface.</description>
+I wanted to see if, using the circuit and machine-learning software, I could replicate the results of the Touché paper by training a system to detect how I was touching various plants, or how to use water as an interface.
+I wrote about these experiments in Touché, and Water as an Interface, and Talking to Plants: Touché Experiments.</description>
     </item>
     
     <item>
       <title>O Soli Mio</title>
       <link>/projects_and_work/o_soli_mio/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
       <guid>/projects_and_work/o_soli_mio/</guid>
-      <description>I was of 80 developers worldwide to be accepted into Google&amp;rsquo;s Project Soli Alpha Developer Program and was one of only 14 Alpha Developers to be invited to Google HQ to workshop new ideas regarding potential applications using SOLI. Specifically, my work involved investigating Soli&amp;rsquo;s potential use in new musical instruments. Some of this work was show in in this video presented by ATAP at Google I/O 2016:
-
-This research was published in O Soli Mio: Exploring Millimeter Wave Radar for Musical Interaction, co-written with Francisco Bernardo and Paul Batchelor, at the NIME 2017 Conference in Copenhagen.</description>
+      <description>I was of 80 developers worldwide to be accepted into Google&amp;rsquo;s Project Soli Alpha Developer Program and was one of 14 Alpha Developers to be invited to Google HQ to workshop new ideas regarding potential applications using SOLI.
+My work involved investigating Soli&amp;rsquo;s potential use in new musical instruments with Paul Batchelor; who wrote the sound synthesis language that powered the instruments. Some of this work was shown in in this video presented by ATAP at Google I/O 2016:</description>
     </item>
     
     <item>
       <title>Push-To-Talk Audio Chat App</title>
       <link>/projects_and_work/push_to_talk_audio_chat_app/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
       <guid>/projects_and_work/push_to_talk_audio_chat_app/</guid>
-      <description>Through December 2019 to Feburary 2020, Julie Young and I built a push-to-talk audio chat app. It let users create audio channels that would be broadcast to others in a nearby physical location.
+      <description>Through December 2019 to Feburary 2020, Julie Young and I worked together on a push-to-talk audio chat app; Julie designed the app, and I built it. The app let people create audio channels that would be broadcast to others in a nearby physical location.
 Users could see available nearby channels and join them. Using the push-to-talk interface, they could talk to the channel.
- Creating Audio Channels
+Creating Audio Channels
 We used the OpenTok (now known as the Vonage Video API) SDK for audio channel creation and communciation.</description>
     </item>
     
     <item>
       <title>Whistlr</title>
       <link>/projects_and_work/whistlr/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
       <guid>/projects_and_work/whistlr/</guid>
       <description>with Matt Becker and Tana Green
 Whistlr was an app for sharing your contact information with acquaintances, colleagues at a conference, or the person you just met at the coffeeshop.

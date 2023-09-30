@@ -1,85 +1,86 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Objective-C Review for Swift Developers - Nick Arner</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:title" content="Objective-C Review for Swift Developers" />
-<meta property="og:description" content="I&rsquo;ve been interviewing for new positions recently, and for one of the roles I interviewed for; was told it would be a good job to brush up on my Objective-C knowledge. I&rsquo;ve been writing iOS and macOS apps primarily in Swift since it was launched in 2014; I&rsquo;ve actually been writing software in Swift longer than I ever did in Objective-C. So, I spent some time reviewing Objective-C concepts and patterns; and thought it may be helpful to share my review note in the form of a blog post for anyone who may find themself in a similar circumstance." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/notes/objective-c-review-for-swift-developers-june-26-2020/" />
-<meta property="article:published_time" content="2020-06-26T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-06-26T00:00:00+00:00" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Objective-C Review for Swift Developers"/>
-<meta name="twitter:description" content="I&rsquo;ve been interviewing for new positions recently, and for one of the roles I interviewed for; was told it would be a good job to brush up on my Objective-C knowledge. I&rsquo;ve been writing iOS and macOS apps primarily in Swift since it was launched in 2014; I&rsquo;ve actually been writing software in Swift longer than I ever did in Objective-C. So, I spent some time reviewing Objective-C concepts and patterns; and thought it may be helpful to share my review note in the form of a blog post for anyone who may find themself in a similar circumstance."/>
-<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+        <title> Objective-C Review for Swift Developers • Nick Arner </title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180"  href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="16x16"  href="/favicon.ico"> 
 
-	
-	<script src="/js/main.js"></script>
+        
+        <meta property="og:url" content="https://nickarner.com" />
+        <meta property="og:title" content="Objective-C Review for Swift Developers" />
+        <meta property="og:description" content="Nick&#39;s new site." />
+        <meta property="og:image" content="https://nickarner.com/card.jpg" />
+
+        
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:creator" content="@joodaloop">
+        <meta name="twitter:title" content="Objective-C Review for Swift Developers">
+        <meta name="twitter:description" content="Nick&#39;s new site." />
+        <meta name="twitter:image" content="https://nickarner.com/card.jpg" />
+
+        <meta name="description" content="Nick&#39;s new site.">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css" />
 </head>
 
-<body>
-	<div class="container wrapper post">
-		<div class="header">
-	<h1 class="site-title"><a href="/">Nick Arner</a></h1>
-	<div class="site-description"><nav class="nav social">
-			<ul class="flat"></ul>
-		</nav>
-	</div>
+<body>    
+    
+<main>
+        <div class=left>
+                <div class=menu>
 
-	<nav class="nav">
-		<ul class="flat">
-			
-		</ul>
+	<nav>
+		<div class="home">
+			<a href="/"> Nick Arner </a>
+		</div>
+		<a href="/investing"> Investments </a>
+		<a href="/projects_and_work"> Projects </a>
+		<a href="/people"> People </a>
+		<a href="/books"> Books </a>
+		<a href="/notes"> Notes </a>
 	</nav>
 </div>
+        </div><div class=content>
+                <article>
 
-
-		<div class="post-header">
-			<h1 class="title">Objective-C Review for Swift Developers</h1>
-			<div class="meta">Posted at &mdash; Jun 26, 2020</div>
-		</div>
-
-		<div class="markdown">
-			<p>I&rsquo;ve been <a href="https://nickarner.com/NFA-Resume.pdf">interviewing for new positions recently</a>, and for one of the roles I interviewed for; was told it would be a good job to brush up on my Objective-C knowledge. I&rsquo;ve been writing iOS and macOS apps primarily in Swift since it was launched in 2014; I&rsquo;ve actually been writing software in Swift longer than I ever did in Objective-C. So, I spent some time reviewing Objective-C concepts and patterns; and thought it may be helpful to share my review note in the form of a blog post for anyone who may find themself in a similar circumstance.</p>
+<h1>Objective-C Review for Swift Developers</h1>
+      <div class=date>Published on Jun 26, 2020 </div>
+      <p>I&rsquo;ve been <a href="https://nickarner.com/NFA-Resume.pdf" target="_blank" class="external-link" >interviewing for new positions recently</a>, and for one of the roles I interviewed for; was told it would be a good job to brush up on my Objective-C knowledge. I&rsquo;ve been writing iOS and macOS apps primarily in Swift since it was launched in 2014; I&rsquo;ve actually been writing software in Swift longer than I ever did in Objective-C. So, I spent some time reviewing Objective-C concepts and patterns; and thought it may be helpful to share my review note in the form of a blog post for anyone who may find themself in a similar circumstance.</p>
 <p>This definitely is not a complete overview of the Objective-C language or the patterns and paradigms of programming in it, but it should be a good overview of some of the concepts in it that may come up during an interview.</p>
-<p> </p>
 <p><strong>What are Categories?</strong></p>
 <p>If you want to add a method to an existing class, you can use a category. The can be declared for any class, and can be used to split the implementation of a complex class across multiple source-code files.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-objective-c" data-lang="objective-c"><span style="color:#66d9ef">@interface</span> <span style="color:#a6e22e">ClassName</span> (CategoryName)
-<span style="color:#75715e">//add new methods here
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">@end</span>
-</code></pre></div><p> </p>
-<p><strong>What are Extensions?</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objective-c" data-lang="objective-c"><span style="display:flex;"><span><span style="color:#66d9ef">@interface</span> <span style="color:#a6e22e">ClassName</span> (CategoryName)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//add new methods here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">@end</span>
+</span></span></code></pre></div><p><strong>What are Extensions?</strong></p>
 <p>Extensions are similar to categories in that you they allow you to extend the functionality of a class. Unlike categories, they allow you to add your own properties and instance variables to a class. As such, they can only be added to a class for which you have the source code at compile time. The implementation of a class extension should be placed in the implementation file of the class who’s functionality you are extending.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-objective-c" data-lang="objective-c"><span style="color:#66d9ef">@interface</span> <span style="color:#a6e22e">ClassName</span> ()
-<span style="color:#75715e">// Add new properties and variables here		
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">@end</span>
-</code></pre></div><p> </p>
-<p><strong>What is a Protocol?</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objective-c" data-lang="objective-c"><span style="display:flex;"><span><span style="color:#66d9ef">@interface</span> <span style="color:#a6e22e">ClassName</span> ()
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Add new properties and variables here		
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">@end</span>
+</span></span></code></pre></div><p><strong>What is a Protocol?</strong></p>
 <p>A protocol declares the methods that are required for a particular situation. If a class wants to adopt certain functionality that a protocol provides, it has to implement the methods that are part of the corresponding protocol.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-objective-c" data-lang="objective-c"><span style="color:#66d9ef">@protocol</span> <span style="color:#a6e22e">NewProtocol</span>
-<span style="color:#75715e">//list of methods for the protocol
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">@end</span>
-</code></pre></div><p>By default, all methods listed in a protocol are required. However, you can specify methods as optional:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-objective-c" data-lang="objective-c"><span style="color:#66d9ef">@protocol</span> <span style="color:#a6e22e">NewProtocol</span>
-<span style="color:#66d9ef">@required</span>
-<span style="color:#75715e">//list of required methods for the protocol
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">@optional</span>
-<span style="color:#75715e">//list of optional methods for the protocol
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">@end</span>
-</code></pre></div><p> </p>
-<p><strong>Describe how automated reference counting (ARC) (including weak references) works.</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objective-c" data-lang="objective-c"><span style="display:flex;"><span><span style="color:#66d9ef">@protocol</span> <span style="color:#a6e22e">NewProtocol</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//list of methods for the protocol
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">@end</span>
+</span></span></code></pre></div><p>By default, all methods listed in a protocol are required. However, you can specify methods as optional:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objective-c" data-lang="objective-c"><span style="display:flex;"><span><span style="color:#66d9ef">@protocol</span> <span style="color:#a6e22e">NewProtocol</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">@required</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//list of required methods for the protocol
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">@optional</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//list of optional methods for the protocol
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">@end</span>
+</span></span></code></pre></div><p><strong>Describe how automated reference counting (ARC) (including weak references) works.</strong></p>
 <p>A reference is any object pointer or property that lets you reach an object. When a reference is strong, the object will be kept alive in memory - it keeps the class instance that the reference points to from being deallocated. Whenever there are no remaining strong references to an object, the object will get deallocated.</p>
 <p>However, strong references are not always the right thing to use when writing code. If two objects need to refer to each other, making both references strong would create a strong reference cycle, preventing either object from ever being deallocated. In this case, you would want to make sure one of the objects has a weak reference, which has no effect on the lifetime of the object - weak references are aware of objects, while strong references are owners of an object - allowing for objects to be able to be deallocated.</p>
-<p>With <a href="https://clang.llvm.org/docs/AutomaticReferenceCounting.html">Automated Reference Counting</a>, the compiler inserts the object code messages retain and release into the source code, which will increase and decrease the reference count of the objects, when appropriate, at run time. Essentially, what ARC does is add in memory management handling code automatically when the code is compiled. When an object&rsquo;s reference count reaches zero, the object gets marked for deallocation.</p>
-<p><img src="/blog_assets/2020/ARC.jpg" alt="ARC"></p>
-<p>(from <a href="https://developer.apple.com/library/archive/releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011226">Apple&rsquo;s Transitioning to ARC Release Notes</a>)</p>
-<p> </p>
-<p> </p>
+<p>With <a href="https://clang.llvm.org/docs/AutomaticReferenceCounting.html" target="_blank" class="external-link" >Automated Reference Counting</a>, the compiler inserts the object code messages retain and release into the source code, which will increase and decrease the reference count of the objects, when appropriate, at run time. Essentially, what ARC does is add in memory management handling code automatically when the code is compiled. When an object&rsquo;s reference count reaches zero, the object gets marked for deallocation.</p>
+<p><img src="/blog_assets/2020/ARC.jpg" alt="ARC" title="ARC"  />
+</p>
+<p>(from <a href="https://developer.apple.com/library/archive/releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011226" target="_blank" class="external-link" >Apple&rsquo;s Transitioning to ARC Release Notes</a>)</p>
 <p><strong>Describe the various @property types</strong></p>
 <p>There are three attributes of properties that can be changed for a property:</p>
 <ul>
@@ -112,50 +113,43 @@
 </ul>
 <p> </p>
 <p><strong>Describe the Delegate Pattern</strong></p>
-<p>Apple&rsquo;s <a href="https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/DelegatesandDataSources/DelegatesandDataSources.html#:~:text=A%20delegate%20is%20an%20object,an%20event%20in%20a%20program.&amp;text=The%20delegate%20is%20an%20object,in%20an%20application%2Dspecific%20manner.">Concepts in Objective-C Programming Guide</a> defines a delegate as &ldquo;&hellip;an object that acts on behalf of, or in coordination with, another object when that object encounters an event in a program&rdquo;.</p>
+<p>Apple&rsquo;s <a href="https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/DelegatesandDataSources/DelegatesandDataSources.html#:~:text=A%20delegate%20is%20an%20object,an%20event%20in%20a%20program.&amp;text=The%20delegate%20is%20an%20object,in%20an%20application%2Dspecific%20manner." target="_blank" class="external-link" >Concepts in Objective-C Programming Guide</a> defines a delegate as &ldquo;&hellip;an object that acts on behalf of, or in coordination with, another object when that object encounters an event in a program&rdquo;.</p>
 <p>Methods that are required to implement the delegate pattern are part of a Protocol, which, as we saw earlier; is what encapsulates the methods to implement a specific functionality for an object.</p>
 <p>The most common example of the Delegate Pattern in iOS development is the UITableViewDelegate methods. These methods govern how an instance of UITableView updates the ViewController that it&rsquo;s part of. When you create an instance of UITableView and add it to your class, you are required to implement the following methods:</p>
-<pre><code>- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section 
-- (UITableViewCell *)tableView:(UITableView *)tableView
-       cellForRowAtIndexPath:(NSIndexPath *)indexPath
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-</code></pre><p> </p>
-<p>These delegate methods govern not only the properties of the table-view, will also update whenever the user interacts with the table view in the app. If a user selects a row in the table view, then didSelectRowAtIndexPath is called. Depending on what the indexPath value is (which determines what row was selected, and therefore what table-view cell was selected), the view controller can then take the correct action based on what was selected.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objective-c" data-lang="objective-c"><span style="display:flex;"><span>- (NSInteger)<span style="color:#a6e22e">numberOfSectionsInTableView:</span>(UITableView <span style="color:#f92672">*</span>)tableView
+</span></span><span style="display:flex;"><span>- (NSInteger)<span style="color:#a6e22e">tableView:</span>(UITableView <span style="color:#f92672">*</span>)tableView <span style="color:#a6e22e">numberOfRowsInSection:</span>(NSInteger)section 
+</span></span><span style="display:flex;"><span>- (UITableViewCell <span style="color:#f92672">*</span>)<span style="color:#a6e22e">tableView:</span>(UITableView <span style="color:#f92672">*</span>)tableView
+</span></span><span style="display:flex;"><span>       <span style="color:#a6e22e">cellForRowAtIndexPath:</span>(NSIndexPath <span style="color:#f92672">*</span>)indexPath
+</span></span><span style="display:flex;"><span>- (<span style="color:#66d9ef">void</span>)<span style="color:#a6e22e">tableView:</span>(UITableView <span style="color:#f92672">*</span>)tableView <span style="color:#a6e22e">didSelectRowAtIndexPath:</span>(NSIndexPath <span style="color:#f92672">*</span>)indexPath
+</span></span><span style="display:flex;"><span>- (CGFloat)<span style="color:#a6e22e">tableView:</span>(UITableView <span style="color:#f92672">*</span>)tableView <span style="color:#a6e22e">heightForRowAtIndexPath:</span>(NSIndexPath <span style="color:#f92672">*</span>)indexPath
+</span></span></code></pre></div><p>These delegate methods govern not only the properties of the table-view, will also update whenever the user interacts with the table view in the app. If a user selects a row in the table view, then didSelectRowAtIndexPath is called. Depending on what the indexPath value is (which determines what row was selected, and therefore what table-view cell was selected), the view controller can then take the correct action based on what was selected.</p>
 <p>A delegate&rsquo;s property is always declared weak to ensure that no retain cycles are created. Since a delegate and its delegating object have to refer to each other, if both were marked as strong, a retain cycle would occur, and the objects may not be able to be deallocated using ARC. Marking the delegate as weak prevents this from occurring.</p>
-<p> </p>
 <p><strong>What are Notifications?</strong></p>
 <p>Notifications allow for messages to be sent from one object to another object even if the objects are not part of the same class, or delegates of each other at all. They behave in a broadcast fashion - you can broadcast out a message from anywhere in an app, and any object that is listening for that notification will hear it. The listener object can then do things like update its variables with data passed from the notification, or call a method when the notification is received.</p>
-<p>Notifications are broadcast through the <a href="https://developer.apple.com/documentation/foundation/nsnotificationcenter">NSNotificationCenter</a>.</p>
+<p>Notifications are broadcast through the <a href="https://developer.apple.com/documentation/foundation/nsnotificationcenter" target="_blank" class="external-link" >NSNotificationCenter</a>.</p>
 <p>Here&rsquo;s what posting a notification looks like:</p>
-<pre><code>[[NSNotificationCenter defaultCenter] postNotificationName:@”EventOccurred” object:nil userInfo:nil];
-
-</code></pre><p> </p>
-<p>In the ViewController that you want to receive the notification in, add an observer for it:</p>
-<pre><code>[[NSNotificationCenter defaultCenter] addObserver:**self** 
-                       selector:**@selector**(methodToCallNext:) 
-                         name:@&quot;EventOccurred&quot; object:nil];
-</code></pre><p> </p>
-<p>Whenever the notification is received in the ViewController, the <code>methodToCallNext</code> will be called.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objective-c" data-lang="objective-c"><span style="display:flex;"><span>[[NSNotificationCenter defaultCenter] postNotificationName:@<span style="color:#960050;background-color:#1e0010">”</span>EventOccurred<span style="color:#960050;background-color:#1e0010">”</span> object:nil userInfo:nil];
+</span></span></code></pre></div><p>In the ViewController that you want to receive the notification in, add an observer for it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objective-c" data-lang="objective-c"><span style="display:flex;"><span>[[NSNotificationCenter defaultCenter] addObserver:<span style="color:#f92672">**</span>self<span style="color:#f92672">**</span> 
+</span></span><span style="display:flex;"><span>                       selector:<span style="color:#f92672">**</span><span style="color:#66d9ef">@selector</span><span style="color:#f92672">**</span>(methodToCallNext:) 
+</span></span><span style="display:flex;"><span>                         name:<span style="color:#e6db74">@&#34;EventOccurred&#34;</span> object:nil];
+</span></span></code></pre></div><p>Whenever the notification is received in the ViewController, the <code>methodToCallNext</code> will be called.</p>
 <p>When the lifecycle of that ViewController is finished, remove the notification observer:</p>
-<pre><code>[[NSNotificationCenter defaultCenter] removeObserver:myObserver];
-</code></pre><p> </p>
-<p>You can also pass objects:</p>
-<pre><code>NSDictionary *usernameDictionary = @{@”username”: @”narner”};
-
- [[NSNotificationCenter defaultCenter] postNotificationName:@”UserNameUpdated” object:nil userInfo:usernameDictionary];
-</code></pre><p> </p>
-<p>&hellip;and receive them via Notifications:</p>
-<pre><code>-(void) receiveNotification:(NSNotification*)notification
- {
-   if ([notification.name isEqualToString:@&quot;UserNameUpdated&quot;])
-   {
-     NSDictionary *userInfo = notification.userInfo;
-     NSString *userName = (NSString*)userInfo[@&quot;username&quot;];
-   }
- }
-</code></pre><p> </p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objective-c" data-lang="objective-c"><span style="display:flex;"><span>[[NSNotificationCenter defaultCenter] removeObserver:myObserver];
+</span></span></code></pre></div><p>You can also pass objects:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objective-c" data-lang="objective-c"><span style="display:flex;"><span>NSDictionary <span style="color:#f92672">*</span>usernameDictionary <span style="color:#f92672">=</span> <span style="color:#ae81ff">@{</span>@<span style="color:#960050;background-color:#1e0010">”</span>username<span style="color:#960050;background-color:#1e0010">”</span><span style="color:#f92672">:</span> @<span style="color:#960050;background-color:#1e0010">”</span>narner<span style="color:#960050;background-color:#1e0010">”</span><span style="color:#ae81ff">}</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> [[NSNotificationCenter defaultCenter] postNotificationName:@<span style="color:#960050;background-color:#1e0010">”</span>UserNameUpdated<span style="color:#960050;background-color:#1e0010">”</span> object:nil userInfo:usernameDictionary];
+</span></span></code></pre></div><p>&hellip;and receive them via Notifications:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objective-c" data-lang="objective-c"><span style="display:flex;"><span>-(<span style="color:#66d9ef">void</span>) <span style="color:#a6e22e">receiveNotification:</span>(NSNotification<span style="color:#f92672">*</span>)notification
+</span></span><span style="display:flex;"><span> {
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">if</span> ([notification.name isEqualToString:<span style="color:#e6db74">@&#34;UserNameUpdated&#34;</span>])
+</span></span><span style="display:flex;"><span>   {
+</span></span><span style="display:flex;"><span>     NSDictionary <span style="color:#f92672">*</span>userInfo <span style="color:#f92672">=</span> notification.userInfo;
+</span></span><span style="display:flex;"><span>     NSString <span style="color:#f92672">*</span>userName <span style="color:#f92672">=</span> (NSString<span style="color:#f92672">*</span>)userInfo[<span style="color:#e6db74">@&#34;username&#34;</span>];
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span> }
+</span></span></code></pre></div><p> </p>
 <p><strong>What are the tradeoffs between Delegates and Notifications?</strong></p>
 <p>Notifications result in loose-coupling between objects: an object that sends a notification does not have to know anything about any of the objects that may be listening for the notification, and likewise; the objects that are listening for a notification do not have to know anything about the object that may have sent the notification.</p>
 <p>While this is very useful in terms of keeping objects de-coupled from one another; it can make things a lot harder to debug when code heavily relies on notifications for sending messages between objects.</p>
@@ -171,29 +165,27 @@
 <li>NSArray</li>
 <li>NSDictionary</li>
 </ul>
-<p>For further review, check out <a href="https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html">Apple&rsquo;s Reference Article on P-Lists</a>.</p>
-<p> </p>
+<p>For further review, check out <a href="https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html" target="_blank" class="external-link" >Apple&rsquo;s Reference Article on P-Lists</a>.</p>
 <p><strong>Describe how to correctly implement equality comparison for subclasses of NSObject.</strong></p>
-<p><a href="https://twitter.com/mattt">@matt</a> wrote an excellent <a href="https://nshipster.com/equality/">post on NSHipster</a> on the topic of equality in Objective-C; I&rsquo;ll briefly summarize some of they key points of it here.</p>
+<p><a href="https://twitter.com/mattt" target="_blank" class="external-link" >@matt</a> wrote an excellent <a href="https://nshipster.com/equality/" target="_blank" class="external-link" >post on NSHipster</a> on the topic of equality in Objective-C; I&rsquo;ll briefly summarize some of they key points of it here.</p>
 <p>In Objective-C, using the == operator checks to see if two objects point to the same location in memory; in other words, whether or not they have the same identity. isEqual, in its base implementation, simply tests for whether objects have the same identity in the same way that == does.</p>
-<p>In the code below (from the NSHipster post), we have two objects, a and b. They are distinct objects that occupy distinct places in memory - they, therefore, do not have the same identity, and are not equal to each other.  </p>
-<pre><code>NSObject *a = [NSObject new];
-NSObject *b = [NSObject new];
- 
-BOOL objectsHaveSameIdentity = (a == b); *// NO*
-BOOL objectsAreEqual = ([a isEqual:b]); *// NO*
-</code></pre><p>As Matt points, out, however, &ldquo;&hellip;some NSObject subclasses override isEqual: and thereby redefine the criteria for equality.&rdquo; <a href="https://developer.apple.com/documentation/foundation/nsvalue?language=objc">NSValue</a> is an object that encapsulates a value - if you compare two NSValue objects with ==, you&rsquo;ll get a result stating that they are not equal, because they occupy distinct spaces in memory, though their values are the same. If you compare them with isEqual, you&rsquo;ll get a result stating that they <strong>are</strong> equal, because their values are the same, though they occupy different spaces in memory.</p>
-<pre><code>NSPoint point = NSMakePoint(2.0, 3.0);
-NSValue *a = [NSValue valueWithPoint:point];
-NSValue *b = [NSValue valueWithPoint:point];
-
-BOOL valuesHaveSameIdentity = (a == b); *// NO*
-BOOL valuesAreEqual = ([a isEqual:b]); *// YES*
-</code></pre><p> </p>
-<p><strong>Grand Central Dispatch and NSOperation</strong></p>
-<p><a href="https://developer.apple.com/documentation/dispatch?language=objc">Dispatch (also known as Grand Central Dispatch)</a> is a lower-level API for managing concurrent operations. The system builds a thread pool that has a set number of threads that are available for tasks to be run on. As a developer, you can rely on Dispatch to handle the creation of threads, without having to manually create and assign them yourself. When you add blocks of code to be executed to a DispatchQueue, Dispatch will decide what thread to execute them on for you.</p>
-<p><a href="https://developer.apple.com/documentation/dispatch/dispatchqueue">DispatchQueue</a> is a First-In-First-Out queue that can be run on either the main thread or a background thread in your application. Tasks added to a DispatchQueue can be run either synchronously or asynchronously.</p>
-<p>There are <a href="https://developer.apple.com/documentation/dispatch/dispatchqos">several levels of Quality of Service</a> levels that you can specify for on a DispatchQueue, depending on the type of task that you are using a DispatchQueue for:</p>
+<p>In the code below (from the NSHipster post), we have two objects, a and b. They are distinct objects that occupy distinct places in memory - they, therefore, do not have the same identity, and are not equal to each other.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objective-c" data-lang="objective-c"><span style="display:flex;"><span>NSObject <span style="color:#f92672">*</span>a <span style="color:#f92672">=</span> [NSObject new];
+</span></span><span style="display:flex;"><span>NSObject <span style="color:#f92672">*</span>b <span style="color:#f92672">=</span> [NSObject new];
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">BOOL</span> objectsHaveSameIdentity <span style="color:#f92672">=</span> (a <span style="color:#f92672">==</span> b); <span style="color:#960050;background-color:#1e0010">*/</span><span style="color:#f92672">/</span> NO<span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">BOOL</span> objectsAreEqual <span style="color:#f92672">=</span> ([a isEqual:b]); <span style="color:#960050;background-color:#1e0010">*/</span><span style="color:#f92672">/</span> NO<span style="color:#f92672">*</span>
+</span></span></code></pre></div><p>As Matt points, out, however, &ldquo;&hellip;some NSObject subclasses override isEqual: and thereby redefine the criteria for equality.&rdquo; <a href="https://developer.apple.com/documentation/foundation/nsvalue?language=objc" target="_blank" class="external-link" >NSValue</a> is an object that encapsulates a value - if you compare two NSValue objects with ==, you&rsquo;ll get a result stating that they are not equal, because they occupy distinct spaces in memory, though their values are the same. If you compare them with isEqual, you&rsquo;ll get a result stating that they <strong>are</strong> equal, because their values are the same, though they occupy different spaces in memory.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objective-c" data-lang="objective-c"><span style="display:flex;"><span>NSPoint point <span style="color:#f92672">=</span> NSMakePoint(<span style="color:#ae81ff">2.0</span>, <span style="color:#ae81ff">3.0</span>);
+</span></span><span style="display:flex;"><span>NSValue <span style="color:#f92672">*</span>a <span style="color:#f92672">=</span> [NSValue valueWithPoint:point];
+</span></span><span style="display:flex;"><span>NSValue <span style="color:#f92672">*</span>b <span style="color:#f92672">=</span> [NSValue valueWithPoint:point];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">BOOL</span> valuesHaveSameIdentity <span style="color:#f92672">=</span> (a <span style="color:#f92672">==</span> b); <span style="color:#960050;background-color:#1e0010">*/</span><span style="color:#f92672">/</span> NO<span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">BOOL</span> valuesAreEqual <span style="color:#f92672">=</span> ([a isEqual:b]); <span style="color:#960050;background-color:#1e0010">*/</span><span style="color:#f92672">/</span> YES<span style="color:#f92672">*</span>
+</span></span></code></pre></div><p><strong>Grand Central Dispatch and NSOperation</strong></p>
+<p><a href="https://developer.apple.com/documentation/dispatch?language=objc" target="_blank" class="external-link" >Dispatch (also known as Grand Central Dispatch)</a> is a lower-level API for managing concurrent operations. The system builds a thread pool that has a set number of threads that are available for tasks to be run on. As a developer, you can rely on Dispatch to handle the creation of threads, without having to manually create and assign them yourself. When you add blocks of code to be executed to a DispatchQueue, Dispatch will decide what thread to execute them on for you.</p>
+<p><a href="https://developer.apple.com/documentation/dispatch/dispatchqueue" target="_blank" class="external-link" >DispatchQueue</a> is a First-In-First-Out queue that can be run on either the main thread or a background thread in your application. Tasks added to a DispatchQueue can be run either synchronously or asynchronously.</p>
+<p>There are <a href="https://developer.apple.com/documentation/dispatch/dispatchqos" target="_blank" class="external-link" >several levels of Quality of Service</a> levels that you can specify for on a DispatchQueue, depending on the type of task that you are using a DispatchQueue for:</p>
 <ul>
 <li>User Interactive - The quality-of-service class for user-interactive tasks, such as animations, event handling, or updating your app&rsquo;s user interface.</li>
 <li>User Initiated - The quality-of-service class for tasks that prevent the user from actively using your app.</li>
@@ -202,75 +194,61 @@ BOOL valuesAreEqual = ([a isEqual:b]); *// YES*
 <li>Background - The quality-of-service class for maintenance or cleanup tasks that you create.</li>
 <li>Unspecified - The absence of a quality-of-service class.</li>
 </ul>
-<p><a href="https://theswiftdev.com/ultimate-grand-central-dispatch-tutorial-in-swift/">This article from TheSwiftDev</a> goes into some great detail on the mechanisms behind Dispatch, and some of the principles of Synchronous and Asynchronous programming.</p>
-<p>There&rsquo;s another tool available for working with threaded programming, <a href="https://developer.apple.com/documentation/foundation/nsoperation?language=objc">NSOperation</a>. NSOperation is &ldquo;an abstract class that represents the code and data associated with a single task&rdquo;. NSOperation is actually a bit higher level than DispatchQueue, as it uses DispatchQueue under the hood.</p>
+<p><a href="https://theswiftdev.com/ultimate-grand-central-dispatch-tutorial-in-swift/" target="_blank" class="external-link" >This article from TheSwiftDev</a> goes into some great detail on the mechanisms behind Dispatch, and some of the principles of Synchronous and Asynchronous programming.</p>
+<p>There&rsquo;s another tool available for working with threaded programming, <a href="https://developer.apple.com/documentation/foundation/nsoperation?language=objc" target="_blank" class="external-link" >NSOperation</a>. NSOperation is &ldquo;an abstract class that represents the code and data associated with a single task&rdquo;. NSOperation is actually a bit higher level than DispatchQueue, as it uses DispatchQueue under the hood.</p>
 <p>Just like DispatchQueue, NSOperation also allows for specification of Quality of Service levels and priority levels.</p>
-<p>The <a href="https://nshipster.com/nsoperation/">NSHipster article on NSOperation</a> states that &ldquo;&hellip;For one-off computation, or simply speeding up an existing method, it will often be more convenient to use a lightweight GCD dispatch than employ NSOperation.&rdquo; Since NSOperation can be cancelled, scheduled, and have it&rsquo;s operational state observed, it&rsquo;s probably best for more &ldquo;heavy-duty&rdquo; threaded tasks.</p>
-<p> </p>
+<p>The <a href="https://nshipster.com/nsoperation/" target="_blank" class="external-link" >NSHipster article on NSOperation</a> states that &ldquo;&hellip;For one-off computation, or simply speeding up an existing method, it will often be more convenient to use a lightweight GCD dispatch than employ NSOperation.&rdquo; Since NSOperation can be cancelled, scheduled, and have it&rsquo;s operational state observed, it&rsquo;s probably best for more &ldquo;heavy-duty&rdquo; threaded tasks.</p>
 <p><strong>What is Key-Value Observation?</strong></p>
 <p>Key-Value Observation allows for objects to monitor for changes of values in a different object. For example, if you had a Weather class, you could have it observe the changes in property values in a Temperature, Humidity, or Precipitation class - keeping the Weather class up-to-date with whatever the latest weather parameters are.</p>
 <p>So, let&rsquo;s say you have a Temperature class with the following properties:</p>
-<pre><code>@property (nonatomic, strong) NSFloat *lowTemperature
-@property (nonatomic, strong) NSFloat *highTemperature
-</code></pre><p> </p>
-<p>Your Weather class could observe the properties of the class like so:</p>
-<pre><code>@immplementation Weather
-
- - (void)observeChanges:(Temperature *)temperature {
-   [person addObserver:**self**
-       forKeyPath:@&quot;lowTemperature&quot;
-         options:NSKeyValueObservingOptionNew
-         context:nil];
- }
-
- - (void)observeValueForKeyPath:(NSString *)keyPath
-            ofObject:(id)object
-             change:(NSDictionary&lt;NSKeyValueChangeKey,id&gt; *)change
-            context:(void *)context {
-  	if ([keyPath isEqualToString:@&quot;lowTemperature&quot;]) {
-     NSNumber *ageNumber = change[NSKeyValueChangeNewKey];
-     NSInteger lowTemperature = [lowTemperature integerValue];
-     NSLog(@&quot;New low temperature is: %@&quot;, lowTemperature);
-   }
- }
-</code></pre><p> </p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objective-c" data-lang="objective-c"><span style="display:flex;"><span><span style="color:#66d9ef">@property</span> (<span style="color:#66d9ef">nonatomic</span>, <span style="color:#66d9ef">strong</span>) NSFloat <span style="color:#f92672">*</span>lowTemperature
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">@property</span> (<span style="color:#66d9ef">nonatomic</span>, <span style="color:#66d9ef">strong</span>) NSFloat <span style="color:#f92672">*</span>highTemperature
+</span></span></code></pre></div><p>Your Weather class could observe the properties of the class like so:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objective-c" data-lang="objective-c"><span style="display:flex;"><span>@immplementation Weather
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#f92672">-</span> (<span style="color:#66d9ef">void</span>)observeChanges:(Temperature <span style="color:#f92672">*</span>)temperature {
+</span></span><span style="display:flex;"><span>   [person addObserver:<span style="color:#f92672">**</span>self<span style="color:#f92672">**</span>
+</span></span><span style="display:flex;"><span>       forKeyPath:<span style="color:#e6db74">@&#34;lowTemperature&#34;</span>
+</span></span><span style="display:flex;"><span>         options:NSKeyValueObservingOptionNew
+</span></span><span style="display:flex;"><span>         context:nil];
+</span></span><span style="display:flex;"><span> }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#f92672">-</span> (<span style="color:#66d9ef">void</span>)observeValueForKeyPath:(NSString <span style="color:#f92672">*</span>)keyPath
+</span></span><span style="display:flex;"><span>            ofObject:(<span style="color:#66d9ef">id</span>)object
+</span></span><span style="display:flex;"><span>             change:(NSDictionary<span style="color:#f92672">&lt;</span>NSKeyValueChangeKey,<span style="color:#66d9ef">id</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">*</span>)change
+</span></span><span style="display:flex;"><span>            context:(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>)context {
+</span></span><span style="display:flex;"><span>  	<span style="color:#66d9ef">if</span> ([keyPath isEqualToString:<span style="color:#e6db74">@&#34;lowTemperature&#34;</span>]) {
+</span></span><span style="display:flex;"><span>     NSNumber <span style="color:#f92672">*</span>ageNumber <span style="color:#f92672">=</span> change[NSKeyValueChangeNewKey];
+</span></span><span style="display:flex;"><span>     NSInteger lowTemperature <span style="color:#f92672">=</span> [lowTemperature integerValue];
+</span></span><span style="display:flex;"><span>     NSLog(<span style="color:#e6db74">@&#34;New low temperature is: %@&#34;</span>, lowTemperature);
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span> }
+</span></span></code></pre></div><p> </p>
 <p><strong>What is the purpose and function of Key-Value Coding (KVC).</strong></p>
-<p>Key-Value Coding is what makes things like Key-Value Observation possible. It&rsquo;s a &ldquo;&hellip;fundamental concept that underlies many other Cocoa technologies, such as key-value observing, Cocoa bindings, Core Data, and AppleScript-ability.&rdquo; (from <a href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/index.html#:~:text=About%20Key%2DValue%20Coding,indirect%20access%20to%20their%20properties.&amp;text=A%20set%20accessor%20">Apple&rsquo;s Key-Value Coding Programming Guide</a>). Key-Value Coding allows for an object&rsquo;s properties to be accessible through string parameters which, as we saw above; is the mechanism that Key-Value Observation uses to allow for one object to observe the property values of another object.</p>
+<p>Key-Value Coding is what makes things like Key-Value Observation possible. It&rsquo;s a &ldquo;&hellip;fundamental concept that underlies many other Cocoa technologies, such as key-value observing, Cocoa bindings, Core Data, and AppleScript-ability.&rdquo; (from <a href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/index.html#:~:text=About%20Key%2DValue%20Coding,indirect%20access%20to%20their%20properties.&amp;text=A%20set%20accessor%20" target="_blank" class="external-link" >Apple&rsquo;s Key-Value Coding Programming Guide</a>). Key-Value Coding allows for an object&rsquo;s properties to be accessible through string parameters which, as we saw above; is the mechanism that Key-Value Observation uses to allow for one object to observe the property values of another object.</p>
 <p>Any object that inherits from NSObject (so, everything; as that&rsquo;s the root base class off all objects in Objective-C).</p>
-<p> </p>
 <p><strong>What are the disadvantages of the Singleton Pattern?</strong></p>
 <p>The Singleton Pattern restricts the instantiation of a class to a single instance. That single object is able to be accessed globally throughout your app by other classes and objects - data can be shared between different pieces of code without having to pass the data around manually.</p>
 <p>The problem with the Singleton Pattern is that it makes unit testing difficult - since the Singleton relies on a global application state, it&rsquo;s impossible to completely isolate classes that interact with the Singleton instance. As a result, these classes can&rsquo;t be truly isolated from one another to ensure testing of their independent functions. Additionally, the Singleton pattern encourages excessive coupling between classes - since the class that needs to access the Singleton is bound to a specific interface, making it not only more difficult to test, but also making production code more fragile.</p>
-<p> </p>
 <p><strong>Describe how message passing works</strong></p>
 <p>Messaging is the terminology for invoking methods on an object. In Objective-C, objects aren&rsquo;t called, but rather; messages are sent to them.</p>
-<pre><code>-[&lt;RECEIVER&gt; &lt;SELECTOR&gt;];
-</code></pre><p>In the code above, the receiver is the definition or instance of a class, and the selector is the name of the method that you want to invoke. When the receiver object receives the message of the selector, it calls the corresponding method.</p>
-<p> </p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objective-c" data-lang="objective-c"><span style="display:flex;"><span><span style="color:#f92672">-</span>[<span style="color:#f92672">&lt;</span>RECEIVER<span style="color:#f92672">&gt;</span> <span style="color:#f92672">&lt;</span>SELECTOR<span style="color:#f92672">&gt;</span>];
+</span></span></code></pre></div><p>In the code above, the receiver is the definition or instance of a class, and the selector is the name of the method that you want to invoke. When the receiver object receives the message of the selector, it calls the corresponding method.</p>
 <p><strong>What is the difference between #import vs #include?</strong></p>
-<p>#import is used to ensure that a file is only ever included once in a project. Both lines of code below will include the file that you want in the project, but the second will make sure it&rsquo;s only included once:</p>
-<pre><code>#include &lt;Framework_name/Header_filename.h&gt;
-#import &lt;Framework_name/Header_filename.h&gt;
-</code></pre><p> </p>
-<p> </p>
-<p><em>Thanks to</em> <a href="https://twitter.com/warrenm"><em>Warren Moore</em></a> <em>for proof-reading this post.</em></p>
+<p><code>#import</code> is used to ensure that a file is only ever included once in a project. Both lines of code below will include the file that you want in the project, but the second will make sure it&rsquo;s only included once:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objective-c" data-lang="objective-c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;Framework_name/Header_filename.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#import &lt;Framework_name/Header_filename.h&gt;
+</span></span></span></code></pre></div><p> </p>
+<p><em>Thanks to</em> <a href="https://twitter.com/warrenm" target="_blank" class="external-link" ><em>Warren Moore</em></a> <em>for proof-reading this post.</em></p>
 
-		</div>
+       
 
-		<div class="post-tags">
-			
-				
-			
-		</div>
-		</div>
-	<div class="footer wrapper">
-	<nav class="nav">
-		<div>	
-	</nav>
-</div>
+                </article>
+                <footer> © Copyright Nicholas Arner, 2022  </footer>
+        </div>
+        
+</main>
 
-
-
-
+        
 </body>
 </html>

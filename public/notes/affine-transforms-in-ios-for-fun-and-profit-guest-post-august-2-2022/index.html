@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title> Affine Transforms in iOS for Fun and Profit - Guest Post • Nick Arner </title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180"  href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="16x16"  href="/favicon.ico"> 
+
+        
+        <meta property="og:url" content="https://nickarner.com" />
+        <meta property="og:title" content="Affine Transforms in iOS for Fun and Profit - Guest Post" />
+        <meta property="og:description" content="Nick&#39;s new site." />
+        <meta property="og:image" content="https://nickarner.com/card.jpg" />
+
+        
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:creator" content="@joodaloop">
+        <meta name="twitter:title" content="Affine Transforms in iOS for Fun and Profit - Guest Post">
+        <meta name="twitter:description" content="Nick&#39;s new site." />
+        <meta name="twitter:image" content="https://nickarner.com/card.jpg" />
+
+        <meta name="description" content="Nick&#39;s new site.">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>    
+    
+<main>
+        <div class=left>
+                <div class=menu>
+
+	<nav>
+		<div class="home">
+			<a href="/"> Nick Arner </a>
+		</div>
+		<a href="/investing"> Investments </a>
+		<a href="/projects_and_work"> Projects </a>
+		<a href="/people"> People </a>
+		<a href="/books"> Books </a>
+		<a href="/notes"> Notes </a>
+	</nav>
+</div>
+        </div><div class=content>
+                <article>
+
+<h1>Affine Transforms in iOS for Fun and Profit - Guest Post</h1>
+      <div class=date>Published on Aug 2, 2022 </div>
+      <p><em>Guest post from <a href="http://warrenmoore.net" target="_blank" class="external-link" >Warren Moore</a></em></p>
+<p>Imagine we want to build an iOS app that allows us to select regions of an image. These regions might be selected for manipulation by some image processing algorithm, or perhaps some machine learning (ML) procedure. Many ML algorithms perform better when directed to focus on specific image regions, and selecting image regions is an integral part of ML work such as <a href="https://www.ibm.com/cloud/learn/data-labeling" target="_blank" class="external-link" >labeling</a>.</p>
+<p>For the sake of discussion, suppose the subject image is being displayed by a <code>UIImageView</code> which is a subview of the view that hosts our selection UI. In this scenario, each selected region is represented by a <code>UIView</code> whose bounds are chosen interactively by the user by tapping and dragging. The user interface might look like this:</p>
+<p><img src="/blog_assets/2022/affine_single_selection.png" alt="SingleSelection" title="SingleSelection"  />
+</p>
+<p>In this example, the selected region (highlighted in green) lies partially outside the image&rsquo;s bounds, and furthermore the image has been scaled by the image view to maintain its aspect ratio, via a content mode called <a href="https://developer.apple.com/documentation/uikit/uiview/contentmode/scaleaspectfit" target="_blank" class="external-link" >aspect-fit</a>. The question we want to answer then, is: <em>What region of the subject image is selected?</em> To answer this, we need to traverse a number of coordinate spaces, but ultimately this is a matter of combining applied linear algebra with creative use of Apple&rsquo;s APIs. In particular, the process decomposes into a sequence of coordinate space transformations, summarized as follows:</p>
+<p>First, convert the selected region from the coordinate space of the selection view into the space of the image view. Since these two views have a common ancestor in the view hierarchy, we can ask UIKit to do this work for us.</p>
+<p>Second, we need to account for the aspect-fit scaling of the image view. This can be decomposed into a scale and a translation. We will consider the two special cases inherent in this transformation below.</p>
+<p>Third, we need to constrain the selection rectangle to the image bounds, since we are only interested in regions that actually contain image pixels.</p>
+<p>Finally, we need to consider whether to quantize the selection region to pixel boundaries and/or normalize it into a coordinate-independent format. We will discuss these considerations below.</p>
+<p>So, how shall we implement this procedure? It turns out that the UIKit and Core Graphics frameworks have utilities that make it all straightforward once we understand the problem we&rsquo;re solving. Throughout the following discussion, it is important to note that most operations take place in coordinate spaces whose fundamental unit is a device independent unit called a <em>point</em>, rather than operating directly on pixels <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p>First, to convert between coordinate spaces, we use UIKit&rsquo;s built-in facilities:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> selectionInImageView = imageView.convert(selectionView.frame, from: view)
+</span></span></code></pre></div><p>where <code>view</code> is the immediate parent of the image view and the selection view.</p>
+<p>The trickiest part of the process is how to account for the aspect-fit scaling of the image view, since the transformation is internal to the implementation and not immediately available to API clients. However, as outlined above, we know that in the aspect-fit case, the image first must be scaled to match the dimensions of the image view—while maintaining its aspect ratio—and then moved (translated) such that its center winds up in the center of the image view.</p>
+<p>There are two special cases to consider: (1) when the aspect ratio of the image is wider than the aspect ratio of the view (in which case we determine the scale factor to be the ratio of the view&rsquo;s width to the image&rsquo;s width), and (2) when the aspect ratio of the image is narrower than the aspect ratio of the view (in which case the scale factor is the ratio of the view&rsquo;s height to the image&rsquo;s height). The scale factor is the same for both dimensions, since the purpose of aspect-fitting is to preserve the proportions of the image.</p>
+<p>The translation transform then encodes how far the image needs to move in the coordinate space of the view to be centered. The whole routine can be implemented as an extension on <code>UIImageView</code> if desired. The core code is as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> imageAspect = image.size.width <span style="color:#f92672">/</span> image.size.height
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> viewAspect = bounds.width <span style="color:#f92672">/</span> bounds.height
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> scale = (imageAspect <span style="color:#f92672">&gt;</span> viewAspect) ? 
+</span></span><span style="display:flex;"><span>  bounds.width <span style="color:#f92672">/</span> image.size.width :
+</span></span><span style="display:flex;"><span>  bounds.height <span style="color:#f92672">/</span> image.size.height
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> scaleTransform = CGAffineTransform(scaleX: scale, y: scale)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> offset = CGPoint(
+</span></span><span style="display:flex;"><span>  x: (bounds.width <span style="color:#f92672">-</span> (image.size.width <span style="color:#f92672">*</span> scale)) <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.5</span>,
+</span></span><span style="display:flex;"><span>  y: (bounds.height <span style="color:#f92672">-</span> (image.size.height <span style="color:#f92672">*</span> scale)) <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.5</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> translationTransform = CGAffineTransform(translationX: offset.x, 
+</span></span><span style="display:flex;"><span>                                             y: offset.y)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> scaleTransform.concatenating(translationTransform)
+</span></span></code></pre></div><p>Suppose we wrap this code in an extension method called <code>imageTransform</code>. Then, to transform our selection rectangle from image view space into image space, accounting for aspect-fit scaling, we apply the <em>inverse</em> (opposite) of the image transform:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> selectionInImage = selectionInImageView.applying(aspectFitTransform.inverted())
+</span></span></code></pre></div><p>With this accomplished, we almost home free. We next need to apply the constraint that the selection only applies to pixels <strong>inside</strong> the image.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> clippedSelection = selectionInImage.intersection(CGRect(origin: .zero, 
+</span></span><span style="display:flex;"><span>                                     size: image.size))
+</span></span></code></pre></div><p>It is possible for this method to return an invalid rectangle called the <a href="https://developer.apple.com/documentation/coregraphics/cgrectnull" target="_blank" class="external-link" >null rectangle</a>. This happens when there is no overlap between the selection region and the image, which should be handled as a special case.</p>
+<p>At this point, we need to consider the desired final format of our selection region. If we want it to be expressed in pixels rather than points, we need to account for the fact that <code>UIImage</code> has a scale property relating image points to image pixels. We can find the selected region in image pixels by creating yet another scaling transform and applying it to our region expressed in points.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> imageScale = image.scale
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> selectionInPx = clippedSelection.applying(CGAffineTransform(scaleX: imageScale, 
+</span></span><span style="display:flex;"><span>                                            y: imageScale))
+</span></span></code></pre></div><p>Some algorithms will want to operate on whole pixels rather than the fractional values that result from the previous operations. In that case, we can snap the selection rect to the nearest pixels with the <code>integral</code> method on <code>CGRect</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> integralSelectionInPx = selectionInPx.integral
+</span></span></code></pre></div><p>As one final Core Graphics trick, you can crop an image to a selected region with the <code>cropping(to:)</code> method of <code>CGImage</code>. <code>CGImage</code>s operate in pixels, so you&rsquo;ll need to use the pixel-based region we created above to operate on them.</p>
+<p>The following code snippet creates an image from the selected region and displays it in a separate image view so we can see our work in action:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> subimage = cgImage.cropping(to: integralSelectionInPx) {
+</span></span><span style="display:flex;"><span>    selectionImageView.image = UIImage(cgImage: subimage)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>And here&rsquo;s the result of selecting our furry friends:</p>
+<p><img src="/blog_assets/2022/affine_multiple_selection.png" alt="MultipleSelection" title="MultipleSelection"  />
+</p>
+<p>Rather than expressing the region as integral pixels (i.e. where the origin and extent of the bounding rectangle are whole numbers), we could also normalize it so that the x and y axes of the image run from 0.0 to 1.0. This is done by dividing the coordinates by the image width and height. The virtue of this choice is that even if the image is ultimately downsampled or distorted disproportionately, the region will still correspond to the area selected by the user. Different software packages expect different inputs in this regard.</p>
+<p>As a final note, the procedure described above is not robust to interface resizing or rotation. Storing selection regions in normalized coordinates (where the upper left corner of the image is (0, 0) and the bottom right corner is (1, 1)) can also alleviate this issue to a significant degree, so consider using them at every step along the pipeline, rather than leaning on coordinate systems that might shift underneath you.</p>
+<p>You can take a look at the example project used in the article <a href="https://github.com/warrenm/UIImageRegionSelection" target="_blank" class="external-link" >here.</a></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>When working with images and graphics on Apple platforms, you almost never have to worry about working at the pixel level. You generally will never have to worry about accessing raw pixels - the Operating System abstracts this away for you. However, if you’re building something like a photo/video editing app, or working with an image-based CoreML pipeline, you may find that you need to work with pixels.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+       
+
+                </article>
+                <footer> © Copyright Nicholas Arner, 2022  </footer>
+        </div>
+        
+</main>
+
+        
+</body>
+</html>

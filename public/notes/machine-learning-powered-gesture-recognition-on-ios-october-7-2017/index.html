@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title> Machine-Learning Powered Gesture Recognition on iOS • Nick Arner </title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180"  href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="16x16"  href="/favicon.ico"> 
+
+        
+        <meta property="og:url" content="https://nickarner.com" />
+        <meta property="og:title" content="Machine-Learning Powered Gesture Recognition on iOS" />
+        <meta property="og:description" content="Nick&#39;s new site." />
+        <meta property="og:image" content="https://nickarner.com/card.jpg" />
+
+        
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:creator" content="@joodaloop">
+        <meta name="twitter:title" content="Machine-Learning Powered Gesture Recognition on iOS">
+        <meta name="twitter:description" content="Nick&#39;s new site." />
+        <meta name="twitter:image" content="https://nickarner.com/card.jpg" />
+
+        <meta name="description" content="Nick&#39;s new site.">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>    
+    
+<main>
+        <div class=left>
+                <div class=menu>
+
+	<nav>
+		<div class="home">
+			<a href="/"> Nick Arner </a>
+		</div>
+		<a href="/investing"> Investments </a>
+		<a href="/projects_and_work"> Projects </a>
+		<a href="/people"> People </a>
+		<a href="/books"> Books </a>
+		<a href="/notes"> Notes </a>
+	</nav>
+</div>
+        </div><div class=content>
+                <article>
+
+<h1>Machine-Learning Powered Gesture Recognition on iOS</h1>
+      <div class=date>Published on Oct 7, 2017 </div>
+      <p>It’s almost hard not to be reading about machine learning these days — and that trend will only increase. Machine learning is opening up powerful new capabilities for smartphone apps, from image classification to facial recognition.</p>
+<p>It’s also capable of identifying how someone is interacting with their smartphone.</p>
+<p>This project shows how to use the <a href="https://github.com/nickgillian/grt" target="_blank" class="external-link" >Gesture Recognition Toolkit</a> to detect how a user is moving their phone through physical space. (I wrote up a quick guide <a href="https://medium.com/@narner/integrating-the-grt-into-an-iphone-app-part-one-1b12dc69c5bc" target="_blank" class="external-link" >here</a> on how to begin integrating the GRT into an iPhone app project).</p>
+<p>The iPhone’s accelerometer will be used as the input for the gesture recognition system. This all for the app to extract gestural intent from the way the iPhone is moved by the user. The data will be fed into a classifier that’s part of a GRT pipeline, which will predict what gesture the user is performing. To access this sensor data, the app will make use of Apple’s <a href="https://developer.apple.com/documentation/coremotion" target="_blank" class="external-link" >CoreMotion Framework</a>. The fine folks at NSHipster have a good overview of the framework <a href="http://nshipster.com/cmdevicemotion/" target="_blank" class="external-link" >here</a>.</p>
+<p>The app will have two modes, and two view controllers accordingly. The first one, shown below, is the training mode. While we’re making the corresponding gesture with the phone, the red “Train” button is held down. While it’s held down, data from the phone’s accelerometer is being saved to a data structure that we’ll use to train our pipeline. As soon as the button is let go from being held down, that process is stopped. A segment controller will serve as a way to set the class-label for the gesture that’s being performed.</p>
+<p><img src="/blog_assets/2017/Training&#43;VC.jpg" alt="Training&#43;VC" title="Training&#43;VC"  />
+</p>
+<p>The second View Controller is the real-time prediction mode. When we get to this screen, our pipeline will be quickly trained on the data structure.</p>
+<p>When gestures are performed, the app will display the predicted gesture output on the screen, as well as print the predicted class to the console when in debug mode.</p>
+<p><img src="/blog_assets/2017/Prediction&#43;VC.jpg" alt="Prediction&#43;VC" title="Prediction&#43;VC"  />
+</p>
+<p> </p>
+<p>The App Delegate contains a global instance of a GRT pipeline, so that it can be accessed by both View Controllers:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> pipeline: GestureRecognitionPipeline?
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">application</span>(<span style="color:#66d9ef">_</span> application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -&gt; Bool {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//Create an instance of a gesture recognition pipeline to be used as a global variable, accesible by both our training and prediction view controllers</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">self</span>.pipeline = GestureRecognitionPipeline()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p> </p>
+<p>An AccelerometerManager class will allow the two View Controllers to have access to the X, Y, and Z coordinates from the phone’s accelerometer. The start method, shown below, will create an object that will return the accelerometer data:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">start</span>(<span style="color:#66d9ef">_</span> accHandler: @escaping (<span style="color:#66d9ef">_</span> x: Double, <span style="color:#66d9ef">_</span> y: Double, <span style="color:#66d9ef">_</span> z: Double) -&gt; Void) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> handler: CMAccelerometerHandler  = {(data: CMAccelerometerData?, error: Error?) -&gt; Void <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">guard</span> <span style="color:#66d9ef">let</span> acceleration = data?.acceleration <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;Error: data is nil: </span><span style="color:#e6db74">\(</span>String<span style="color:#e6db74">(</span>describing: error<span style="color:#e6db74">))</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        accHandler(acceleration.x, acceleration.x, acceleration.z)
+</span></span><span style="display:flex;"><span>    } 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    motionManager.startAccelerometerUpdates(to: motionQueue, withHandler: handler)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The stop method will halt this process, so that the app is only gathering data from the phone’s accelerometer when the pipeline is being trained, or performing real-time recognition.</p>
+<p> </p>
+<h2 id="training-view-controller">Training View Controller</h2>
+<p>The heart of the Training View Controller is the <code>TrainBtnPressed</code> function. It’s called whenever the red “Train” button is held down, takes the accelerometer coordinates, and creates a vector out of them. This vector is then sent to the pipeline wrapper’s <code>addSamplesToClassificationData</code> function.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">TrainBtnPressed</span>(<span style="color:#66d9ef">_</span> sender: Any) {
+</span></span><span style="display:flex;"><span>        trainButton.isSelected = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> gestureClass = <span style="color:#66d9ef">self</span>.gestureSelector.selectedSegmentIndex
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        accelerometerManager.start({ (x, y, z) -&gt; Void <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">//Add the accellerometer data to a vector, which is how we&#39;ll store the classification data</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">let</span> vector = VectorFloat()
+</span></span><span style="display:flex;"><span>            vector.clear()
+</span></span><span style="display:flex;"><span>            vector.pushBack(x)
+</span></span><span style="display:flex;"><span>            vector.pushBack(y)
+</span></span><span style="display:flex;"><span>            vector.pushBack(z)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;x&#34;</span>, x)
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;y&#34;</span>, y)
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;z&#34;</span>, z)
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;Gesture class is %@&#34;</span>, gestureClass);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">self</span>.pipeline!.addSamplesToClassificationData(forGesture: UInt(gestureClass), vector)
+</span></span><span style="display:flex;"><span>        })
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>Once the gesture data has been recorded, and the “Save Pipeline” button is pressed, the pipeline and gesture training data is saved.</p>
+<p> </p>
+<h2 id="prediction-view-controller">Prediction View Controller</h2>
+<p>Once the pipeline has been saved, the app can be used in real-time prediction mode. This view controller will take the accelerometer data, and pass that to the pipeline using the “predict” function.</p>
+<p>What’s happening here is that the pipeline is comparing the incoming accelerometer data against the labeled training data, and making a prediction as to what gesture the user has made with their phone. This data is represented with the classLabel property.</p>
+<p>The app will first make sure sure that it can successfully load the <code>train.grt</code> pipeline file and <code>trainingData.csv</code> classification data files. If it can, then a call to the pipeline’s <code>train</code> method is made, which is located in the Objective-C wrapper for the GRT:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objective-c" data-lang="objective-c"><span style="display:flex;"><span>- (<span style="color:#66d9ef">BOOL</span>)<span style="color:#a6e22e">trainPipeline</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">*</span>self.trainingData <span style="color:#f92672">=</span> self.classificationData<span style="color:#f92672">-&gt;</span>split(<span style="color:#ae81ff">80</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">BOOL</span> trainSuccess <span style="color:#f92672">=</span> self.instance<span style="color:#f92672">-&gt;</span>train( <span style="color:#f92672">*</span>(self.trainingData) );
+</span></span><span style="display:flex;"><span>    ...
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> trainSuccess;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Back in the Prediction Controller, the performGesturePrediction() method takes the real-time accelerometer coordinates, and puts them inside of a Vector:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">performGesturePrediction</span>() {
+</span></span><span style="display:flex;"><span>        accelerometerManager.start { (x, y, z) -&gt; Void <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">self</span>.vector.clear()
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">self</span>.vector.pushBack(x)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">self</span>.vector.pushBack(y)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">self</span>.vector.pushBack(z)
+</span></span><span style="display:flex;"><span>            ...
+</span></span></code></pre></div><p>This vector is then passed to the pipeline’s Objective-C wrapper:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">self</span>.pipeline?.predict(<span style="color:#66d9ef">self</span>.vector)
+</span></span></code></pre></div><p>The remainder of the function gets the predicted class label from the pipeline, and displays the predicted gesture result in the user interface:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>            DispatchQueue.main.async {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">self</span>.predictedGestureLabel.text = String(describing:                 <span style="color:#66d9ef">self</span>.pipeline?.predictedClassLabel ?? <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;PREDICTED GESTURE&#34;</span>, <span style="color:#66d9ef">self</span>.pipeline?.predictedClassLabel ?? <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p> </p>
+<h2 id="using-the-app">Using the App</h2>
+<p>One important consideration to keep in mind when implementing a real-time gesture recognition system is to train the system what <em>not</em> to recognize. In this case, the resting state of the phone (when a gesture isn’t being performed with it) is when the phone is held stationary:</p>
+<p><img src="/blog_assets/2017/StationaryPosition.jpg" alt="StationaryPosition" title="StationaryPosition"  />
+</p>
+<p>​</p>
+<p>I was able to train the gesture recognition system to be able to recognize a rapid shaking of the phone:</p>
+<p><img src="/blog_assets/2017/Gesture1.gif" alt="Gesture1" title="Gesture1"  />
+</p>
+<p>…a side swipe:</p>
+<p><img src="/blog_assets/2017/Swipe&#43;Gesture.gif" alt="Swipe&#43;Gesture" title="Swipe&#43;Gesture"  />
+</p>
+<p>…and a “wave motion”:</p>
+<p><img src="/blog_assets/2017/WaveGesture.gif" alt="Swipe&#43;Gesture" title="Swipe&#43;Gesture"  />
+</p>
+<p>If you end up using this demo to recognize some interesting gestures, please feel free to share your results in the comments! Remember that the robustness of the gesture recognition system will depend on how well you train for the specific gestures that you want to be recognized.</p>
+<p>The project code is on GitHub <a href="https://github.com/narner/GRT-iOS-HelloWorld" target="_blank" class="external-link" >here</a>.</p>
+
+       
+
+                </article>
+                <footer> © Copyright Nicholas Arner, 2022  </footer>
+        </div>
+        
+</main>
+
+        
+</body>
+</html>

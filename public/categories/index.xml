@@ -5,6 +5,9 @@
     <link>/categories/</link>
     <description>Recent content in Categories on Nick Arner</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <managingEditor>nicholasarner@gmail.com (Nick Arner)</managingEditor>
+    <webMaster>nicholasarner@gmail.com (Nick Arner)</webMaster>
+    <copyright>© Copyright Nicholas Arner, 2022</copyright><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

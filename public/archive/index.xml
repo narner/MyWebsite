@@ -5,12 +5,15 @@
     <link>/archive/</link>
     <description>Recent content in ARCHIVEs on Nick Arner</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/archive/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <managingEditor>nicholasarner@gmail.com (Nick Arner)</managingEditor>
+    <webMaster>nicholasarner@gmail.com (Nick Arner)</webMaster>
+    <copyright>© Copyright Nicholas Arner, 2022</copyright><atom:link href="/archive/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AudioKit</title>
       <link>/archive/audiokit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
       <guid>/archive/audiokit/</guid>
       <description>AudioKit is an open-source audio analysis, synthesis, and processing toolkit for iOS and OS X apps. Now in its third version, I was involved in development, communication, and education since prior to the initial public release in 2014.
 Prior to its initial public release, I helped prepare AudioKit for open-sourcing by creating example projects, writing tutorials, and creating website content. I also worked on features like framework testing, and what we internally called &amp;ldquo;Sensible Defaults&amp;rdquo; - the idea that programmers wanting to incorporate AudioKit into their projects who didn&amp;rsquo;t have an audio or music background could easily get get started with using audio objects thatt sounded good without having to tweak individual parameters to start.</description>

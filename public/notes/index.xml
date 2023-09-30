@@ -1,193 +1,221 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Nick Arner</title>
+    <title>Notes on Nick Arner</title>
     <link>/notes/</link>
-    <description>Recent content on Nick Arner</description>
+    <description>Recent content in Notes on Nick Arner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/notes/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>nicholasarner@gmail.com (Nick Arner)</managingEditor>
+    <webMaster>nicholasarner@gmail.com (Nick Arner)</webMaster>
+    <copyright>© Copyright Nicholas Arner, 2022</copyright>
+    <lastBuildDate>Thu, 23 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Coming of Local LLMs</title>
+      <link>/notes/the-coming-of-local-llms-march-23-2023/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/notes/the-coming-of-local-llms-march-23-2023/</guid>
+      <description>While there’s been a truly remarkable advance in large language models as they continue to scale up, facilitated by being trained and run on larger and larger GPU clusters, there is still a need to be able to run smaller models on devices that have constraints on memory and processing power.
+Being able to run models at the edge enables creating applications that may be more sensitive to user privacy or latency considerations - ensuring that user data does not leave the device.</description>
+    </item>
+    
+    <item>
+      <title>LLM Powered Assistants for Complex Interfaces</title>
+      <link>/notes/llm-powered-assistants-for-complex-interfaces-february-26-2023/</link>
+      <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/notes/llm-powered-assistants-for-complex-interfaces-february-26-2023/</guid>
+      <description>Text Interfaces Aren&amp;rsquo;t Enough The last few months of LLM development have been staggering. It’s been amazing to see how powerful chat-based interfaces, heralded by OpenAI’s ChatGPT, can be. It’s inspired some to postulate that text is the universal interface, and for others to say that the humble text box is going to be the most important interface component there is.
+This enthusiasm, understandable though it may be, risks creating the perception that any and all user interfaces can be more or less replaced with a chatbot or text-box based interface.</description>
+    </item>
+    
+    <item>
+      <title>Angel Investing Notes</title>
+      <link>/notes/angel-investing-notes-february-7-2023/</link>
+      <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/notes/angel-investing-notes-february-7-2023/</guid>
+      <description>For the past year or so, I’ve been putting small checks into various startups. A couple of friends simultaneously asked me recently for advice on what they should know about angel investing themselves, and I wrote up some notes for them. Decided to publish an edited version of those here in hopes it may be useful to others:
+Pick a check size and stick to it. This helps you minimise regret + avoid having FOMO.</description>
+    </item>
+    
+    <item>
+      <title>Notes from Functional Swift</title>
+      <link>/notes/notes-from-functional-swift-november-26-2022/</link>
+      <pubDate>Sat, 26 Nov 2022 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/notes/notes-from-functional-swift-november-26-2022/</guid>
+      <description>These are my notes from objc.io&amp;rsquo;s Functional Swift book. For a recent proejct, I&amp;rsquo;ve had to dive into a codebase that heavily makes use of functional programming in Swift; this book was helpful in getting a basic understanding of functional programming concepts in the world of Swift and iOS.
+Characteristics of Functional Programming: Modularity Carteful treatment of mutable state Careful use of types Functions are first-class values
+Can be passed as arguments to other funcitons Methods: functions defined on a type **Types guide the development process!</description>
+    </item>
+    
+    <item>
+      <title>Affine Transforms in iOS for Fun and Profit - Guest Post</title>
+      <link>/notes/affine-transforms-in-ios-for-fun-and-profit-guest-post-august-2-2022/</link>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/notes/affine-transforms-in-ios-for-fun-and-profit-guest-post-august-2-2022/</guid>
+      <description>Guest post from Warren Moore
+Imagine we want to build an iOS app that allows us to select regions of an image. These regions might be selected for manipulation by some image processing algorithm, or perhaps some machine learning (ML) procedure. Many ML algorithms perform better when directed to focus on specific image regions, and selecting image regions is an integral part of ML work such as labeling.
+For the sake of discussion, suppose the subject image is being displayed by a UIImageView which is a subview of the view that hosts our selection UI.</description>
+    </item>
+    
+    <item>
+      <title>Not Everything is an OS!</title>
+      <link>/notes/not-everything-is-an-os-june-6-2022/</link>
+      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/notes/not-everything-is-an-os-june-6-2022/</guid>
+      <description>There&amp;rsquo;s an annoying trend right now to refer to any arbitrary thing being built in tech as an &amp;ldquo;OS for X&amp;rdquo;; a quick search on Product Hunt shows a plethora of results for of &amp;ldquo;An OS for X&amp;rdquo;&amp;hellip;none of which are actually Operating Systems.
+For whatever reason, the tech industry has migrated from thinking that everything is a platform of some kind to thinking that everything and anything can be considered an Operating System.</description>
+    </item>
+    
+    <item>
+      <title>Remixable Software - Guest Post</title>
+      <link>/notes/remixable-software-guest-post-may-31-2022/</link>
+      <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/notes/remixable-software-guest-post-may-31-2022/</guid>
+      <description>Guest post from Anton Troynikov
+The personal computing revolution succeeded and we are all miserable. The dream of personal computing as augmentation for the intellect, and the joyful, radical counterculture that arose around the first PC&amp;rsquo;s has given way to our increasingly dismal present.
+The riot of experimentation of the early PC era was eventually subsumed by commercially successful but ultimately bland products. In a classic example of the flaw of averages, the computers and software we use today are intended for everyone but ultimately satisfy no one.</description>
+    </item>
+    
+    <item>
+      <title>Visual Debugging Now! - Guest Post</title>
+      <link>/notes/visual-debugging-now-guest-post-may-20-2022/</link>
+      <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/notes/visual-debugging-now-guest-post-may-20-2022/</guid>
+      <description>Guest post from Anton Troynikov
+Over the last seven or so years of working in robotics and computer vision, the bitter lesson I’ve learned is that the bug is almost always in the part of the algorithm you didn’t visualize.
+This is a call to fix that problem once and for all.
+The Problem Many domains, including robotics, foundationally rely on highly performant numerical software. But since humans are adapted to understand space visually, we don’t have good intuitions for numerical data.</description>
+    </item>
+    
+    <item>
+      <title>Push Notifications and The Tyrany of Stolen Attention</title>
+      <link>/notes/push-notifications-and-the-tyrany-of-stolen-attention-may-02-2022/</link>
+      <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/notes/push-notifications-and-the-tyrany-of-stolen-attention-may-02-2022/</guid>
+      <description>It&amp;rsquo;s been said before that not building payment rails into the web browser was the original sin of the internet era. The ability to send arbitrary push notifications is the original sin of the smartphone era.
+As we can all attest, there&amp;rsquo;s many apps on our phones that spew forth little banners, sounds, and vibrations in attempts to get us to part with our money in some shape or fashion - and our attention.</description>
+    </item>
+    
+    <item>
+      <title>Distributing Frameworks via CocoaPods</title>
+      <link>/notes/distributing-frameworks-via-cocoapods-april-20-2022/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/notes/distributing-frameworks-via-cocoapods-april-20-2022/</guid>
+      <description>If you&amp;rsquo;re developing an iOS SDK that you want to be able to license and distribute to customers via CocoaPods, but don&amp;rsquo;t want to be able to have your source code publically available; you can distribute it as a framework that CocoaPods will install in your project.
+Once you&amp;rsquo;ve finished writing your framework* and it&amp;rsquo;s ready for distribution, you&amp;rsquo;ll first want to create a public repository that has your .podspec file, and the framework you want to distribute.</description>
+    </item>
+    
+    <item>
+      <title>The Causes of Latency in Computing Systems, and Why Exactly It Frustrates Us</title>
+      <link>/notes/the-causes-of-latency-in-computing-systems-and-why-exactly-it-frustrates-us-april-6-2022/</link>
+      <pubDate>Wed, 06 Apr 2022 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/notes/the-causes-of-latency-in-computing-systems-and-why-exactly-it-frustrates-us-april-6-2022/</guid>
+      <description>One of the most frustrating experiences about using computers is when you try to do something, and the system freezes up or is otherwise slow. This is latency - the unacceptably large amount of time between when an action is triggered by the user and the response to that action by the computer is relayed to the user.
+It’s something that people have come to expect as a “natural” consequence of using computers, but frankly, it’s an utterly unacceptable one.</description>
+    </item>
+    
+    <item>
+      <title>Notes - The New Typography</title>
+      <link>/notes/notes-the-new-typography-november-28-2021/</link>
+      <pubDate>Sun, 28 Nov 2021 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/notes/notes-the-new-typography-november-28-2021/</guid>
+      <description>I recently finished reading Jan Tshichold’s “The New Typography”. Tshichold was a typographer and teacher who wrote this work in 1928 Berlin. He was taken into “protective custody” by the Nazi’s for “cultural Bolshevism”, but eventually made his way out of Germany and settled in England; where he later oversaw the typographic reform of Penguin Books.
+At once both a practical and theoretical work on modern typography, it was eventually translated from the original German into English by Ruari McLean.</description>
+    </item>
+    
+    <item>
+      <title>Working with Server-Sent Events in Swift</title>
+      <link>/notes/working-with-server-sent-events-in-swift-november-16-2021/</link>
+      <pubDate>Tue, 16 Nov 2021 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/notes/working-with-server-sent-events-in-swift-november-16-2021/</guid>
+      <description>In most mobile applications that work with networked data, standard HTTP GET requests are used to fetch the data from the server that you want to display in your app&amp;rsquo;s UI.
+However, some backend servers may make use of a different pattern for data transfer between themselves and a client than the common REST architecture - that of Server Sent Events (SSE&amp;rsquo;s).
+In this scenario, a server broadcasts any updated data, and the client application listens for these changes to come in over the HTTP connection.</description>
+    </item>
+    
+    <item>
+      <title>A Personal History of Visual Programming Environments</title>
+      <link>/notes/a-personal-history-of-visual-programming-enviornments-november-13-2021/</link>
+      <pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/notes/a-personal-history-of-visual-programming-enviornments-november-13-2021/</guid>
+      <description>Part of my journey to becoming a software engineer and working in tech is due to the fact that while in music school, I had exposure to visual programming environments like Pure Data / Max and Quartz Composer. Hindsight being 20/20, I probably would not have been as enamored with the idea of creating software - and learning how to program it - had I not been exposed to these environments.</description>
+    </item>
+    
+    <item>
+      <title>Re-Visiting Old Work - SOLI Sketches</title>
+      <link>/notes/re-visiting-old-work-soli-sketches-october-28-2021/</link>
+      <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/notes/re-visiting-old-work-soli-sketches-october-28-2021/</guid>
+      <description>A few years ago, I was a participant in Google ATAP’s Project Soli Alpha Developer program. The program gave access to early Soli hardware; a mm-wave radar development kit and software package to various academics, companies, and independent researchers such as myself. Some of the work I had done as part of this program was published in a paper, as well as shown in a video that was presented at Google I/O 2016.</description>
+    </item>
+    
     <item>
       <title>Some Thoughts on Interfaces</title>
-      <link>/notes/some-thoughts-on-interfaces-december-10-2020/</link>
-      <pubDate>Thu, 10 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/some-thoughts-on-interfaces-december-10-2020/</guid>
+      <link>/notes/some-thoughts-on-interfaces-october-24th-2021/</link>
+      <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/notes/some-thoughts-on-interfaces-october-24th-2021/</guid>
       <description>The way we’ve interacted with computers has evolved considerably - from the early days of punch cards fed into a giant, room sized machine to the command line interface, to the Graphical User Interface developed at PARC (and subsequently popularized by Apple, and eventually Microsoft), to multitouch-based smartphones, to emerging computing paradigms like Augmented-Reality, Virtual-Reality, and ubiquitous computing.
 Top: https://www.computerhistory.org/revolution/punched-cards/2
 Bottom Left: https://en.wikipedia.org/wiki/Command-line_interface
 Bottom Right: https://www.extremetech.com/computing/104661-how-steve-jobs-stole-the-mouse-and-gui-video
- As the field of computing has marched on, we have learned that there is a tension between wanting our interfaces to be more intuitive and at the same time help us accomplish a wider variety of ever more complex tasks.</description>
+As the field of computing has marched on, we have learned that there is a tension between wanting our interfaces to be more intuitive and at the same time help us accomplish a wider variety of ever more complex tasks.</description>
+    </item>
+    
+    <item>
+      <title>Memo - Roboflow</title>
+      <link>/notes/roboflow-memo-february-1-2021/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/notes/roboflow-memo-february-1-2021/</guid>
+      <description>Company Overview
+Roboflow is a feature-rich platform for working with computer vision ML models. Roboflow makes it possible for non computer-vision specialists to easily host datasets, train new ML models on common architectures, and deploy them in a variety of formats.
+With the proliferation of ever more powerful cameras, new machine learning techniques, and the ability to train and deploy computer-vision based ML models in both the cloud and on the edge; computer vision is a field that is only going to continue to grow in its importance across a variety of sectors.</description>
+    </item>
+    
+    <item>
+      <title>Some Resources For Learning About HCI</title>
+      <link>/notes/some-resources-for-learning-about-hci-january-22-2021/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/notes/some-resources-for-learning-about-hci-january-22-2021/</guid>
+      <description>I was recently asked what books or other resources to check out to learn more about the field of Human-Computer Interaction, and thought the best way to respond would be a blog post with some books, papers, and people that I personally found interesting.
+While the field of HCI is very wide and very deep, and this list will not cover nearly everything there is that&amp;rsquo;s been written on the field; I wanted to highlight a few books and papers I personally consider to be significant.</description>
+    </item>
+    
+    <item>
+      <title>Video Tools and Interfaces: Perspectives From Adobe Research</title>
+      <link>/notes/video-tools-and-interfaces-perspectives-from-a-webinar-with-adobes-mira-dontcheva-janurary-11-2021/</link>
+      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/notes/video-tools-and-interfaces-perspectives-from-a-webinar-with-adobes-mira-dontcheva-janurary-11-2021/</guid>
+      <description>I recently attended an online seminar hosted by Mira Dontcheva of Adobe Research. Mira is a principal scientist and research manager working in Human-Computer Interaction. Her seminar, titled “Video is the Core Communication Tool of the Future”, highlighted some of the work that Adobe Research is doing in that area.
+Mira was quick to point out that the title of the talk may already be inaccurate, given how the Covid-19 epidemic has so accelerated this technological trend.</description>
     </item>
     
     <item>
       <title>Thoughts on Projects Never Finished</title>
       <link>/notes/thoughts-on-projects-never-finished-september-22-2020/</link>
       <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
-      
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
       <guid>/notes/thoughts-on-projects-never-finished-september-22-2020/</guid>
       <description>Something that&amp;rsquo;s been on my mind a lot this year in relation to my work is that of unfinished projects. I know that starting and not finishing (despite every intention to!) projects is something that&amp;rsquo;s universal, but something I&amp;rsquo;ve in particular had a very hard time making peace with.
 There have been so many times where I&amp;rsquo;ve started projects or outlined a blog post or sketched some ideaI could very clearly see in my mind in their final forms; finished and complete objects and artifacts.</description>
-    </item>
-    
-    <item>
-      <title>Objective-C Review for Swift Developers</title>
-      <link>/notes/objective-c-review-for-swift-developers-june-26-2020/</link>
-      <pubDate>Fri, 26 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/objective-c-review-for-swift-developers-june-26-2020/</guid>
-      <description>I&amp;rsquo;ve been interviewing for new positions recently, and for one of the roles I interviewed for; was told it would be a good job to brush up on my Objective-C knowledge. I&amp;rsquo;ve been writing iOS and macOS apps primarily in Swift since it was launched in 2014; I&amp;rsquo;ve actually been writing software in Swift longer than I ever did in Objective-C. So, I spent some time reviewing Objective-C concepts and patterns; and thought it may be helpful to share my review note in the form of a blog post for anyone who may find themself in a similar circumstance.</description>
-    </item>
-    
-    <item>
-      <title>Why Writing Should be Part of Your Team&#39;s Development Culture</title>
-      <link>/notes/why-writing-should-be-part-of-your-teams-development-culture-june-2020/</link>
-      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/why-writing-should-be-part-of-your-teams-development-culture-june-2020/</guid>
-      <description>Writing things down is the best way to prevent common knowledge around a team’s development processes from being misremembered or miscommunicated. Documenting systems and practices around a team’s software development workflow stops tribal knowledge* from being the primary way that information is shared and spread amongst a team.
-** I’m defining tribal knowledge here as the shared development processes of a development team that are never written down or formalized in any way, but transmitted ad-hoc.</description>
-    </item>
-    
-    <item>
-      <title>Project Soli &amp; the Coming Use of Radar in Human-Machine Interfaces</title>
-      <link>/notes/project-soli-the-coming-use-of-radar-in-human-machine-interfaces-april-2020/</link>
-      <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/project-soli-the-coming-use-of-radar-in-human-machine-interfaces-april-2020/</guid>
-      <description>Radar is a 85 — year old technology that up until recently has not been actively deployed in human-machine interfaces. Radar — based gesture sensing allows user intent to be inferred across more contexts than optical-only based tracking currently allows.
-Google’s use of Project Soli, a radar-based gesture recognition system, in the Pixel 4 series of phones is most likely the first step in further adoption of radar as an input for interacting with our devices.</description>
-    </item>
-    
-    <item>
-      <title>Classification of Sound Files on iOS with the SoundAnalysis Framework and ESC-10 CoreML Model</title>
-      <link>/notes/classification-of-sound-files-on-ios-with-the-soundanalysis-framework-and-esc-10-coreml-model-october-29-2019/</link>
-      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/classification-of-sound-files-on-ios-with-the-soundanalysis-framework-and-esc-10-coreml-model-october-29-2019/</guid>
-      <description>Earlier this year, Apple introduced the SoundAnalysis framework, enabling apps to “analyze streamed and file-based audio to classify it as a particular type”.
-It’s available in the following SDK’s:
- iOS13+ macOS 10.15+ Mac Catalyst 13.0+ tvOS 13.0+ watchOS 6.0+  INPUT TYPES The SoundAnalysis framework is able to work with live audio via the device microphone, or from pre-recorded audio files. In a real-world application scenario, these could be either audio files downloaded from a server onto the app, or recorded by the app for later analysis.</description>
-    </item>
-    
-    <item>
-      <title>Machine Learning Development on Apple Platforms</title>
-      <link>/notes/machine-learning-development-on-apple-platforms-october-14-2019/</link>
-      <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/machine-learning-development-on-apple-platforms-october-14-2019/</guid>
-      <description>Apple has been investing heavily in machine learning (ML) capabilities for its development platforms. Acquisitions of applied ML startups allows Apple to fold their technology into the hardware, operating system, and software development tooling for their products. Creating developer friendly frameworks makes it easy to leverage the ML capabilities of Apple’s computing devices, allowing for a greater number of apps that can apply ML in a wider array of use cases.</description>
-    </item>
-    
-    <item>
-      <title>Things a First Time PM Should Know About iOS Development</title>
-      <link>/notes/things-a-first-time-pm-should-know-about-ios-development-september-22-2019/</link>
-      <pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/things-a-first-time-pm-should-know-about-ios-development-september-22-2019/</guid>
-      <description>This post is a modification of some notes I wrote for a friend, who was recently hired for their first Project Management position at a startup that is developing an iOS app. They don&amp;rsquo;t have a technical background, and wanted to know what some fundamental things to know about iOS development, the iOS ecosystem, and workflows of development.
-I modified those notes for this blogpost. Feel free to reach out at nicholasarner@gmail.</description>
-    </item>
-    
-    <item>
-      <title>Machine-Learning Powered Gesture Recognition on iOS</title>
-      <link>/notes/machine-learning-powered-gesture-recognition-on-ios-octobober-7-2017/</link>
-      <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/machine-learning-powered-gesture-recognition-on-ios-octobober-7-2017/</guid>
-      <description>It’s almost hard not to be reading about machine learning these days — and that trend will only increase. Machine learning is opening up powerful new capabilities for smartphone apps, from image classification to facial recognition.
-It’s also capable of identifying how someone is interacting with their smartphone.
-This project shows how to use the Gesture Recognition Toolkit to detect how a user is moving their phone through physical space. (I wrote up a quick guide here on how to begin integrating the GRT into an iPhone app project).</description>
-    </item>
-    
-    <item>
-      <title>Jazz, Gestures, and Open-Source - Why and How I Learned to Code</title>
-      <link>/notes/jazz-gestures-and-open-source-why-and-how-i-learned-to-code-october-3-2017/</link>
-      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/jazz-gestures-and-open-source-why-and-how-i-learned-to-code-october-3-2017/</guid>
-      <description>Inspired by a conversation with Diana Berlin, I wrote about what motivates me as a technologist, and the personal story behind why and how I learned to code.
-I published the piece on Medium here, and am including it below as an archive:
- There’s been lots of discussion lately on how many people working as software developers “started off doing something else” before they learned to code…often meaning that they studied something other than computer science in college.</description>
-    </item>
-    
-    <item>
-      <title>Integrating Arduino-Bluetooth Sensors with iOS</title>
-      <link>/notes/integrating-arduino-bluetooth-sensors-with-ios-september-5-2017/</link>
-      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/integrating-arduino-bluetooth-sensors-with-ios-september-5-2017/</guid>
-      <description>One area that I&amp;rsquo;ve been exploring recently is Bluetooth communication between sensor-circuits and iOS apps. I wanted to share one of these studies, based on some of the examples provided from the good folks at Adafruit. It consists of a sensor that can detect the presence of a flame, and send that information over Bluetooth to an iPhone app, which displays the reading from the sensor.
-Here&amp;rsquo;s what it looks like in action:</description>
-    </item>
-    
-    <item>
-      <title>Integrating the GRT into an iPhone Project</title>
-      <link>/notes/integrating-the-grt-into-an-iphone-project-august-29-2017/</link>
-      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/integrating-the-grt-into-an-iphone-project-august-29-2017/</guid>
-      <description>In this blog post, I&amp;rsquo;ll show you to add the Gesture Recognition Toolkit to an iPhone app. Created by Nick GIllian while he was a post-doc at MIT, the GRT is a &amp;ldquo;cross-platform, open-source, C++ machine learning library designed for real-time gesture recognition&amp;rdquo;. I had known from this issue on GitHub that the GRT has been used in iOS development. I was only able to find one example of this in action, which this guide is partially based upon.</description>
-    </item>
-    
-    <item>
-      <title>Real-Time Data Teceiving and Rendering in Processing</title>
-      <link>/notes/real-time-data-receiving-and-rendering-in-processing-august-21-2017/</link>
-      <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/real-time-data-receiving-and-rendering-in-processing-august-21-2017/</guid>
-      <description>I wanted to talk a little bit about one of the technical challenges I had faced while writing the Processing receiver sketches for the Touché experiments in some previous blog posts (here and here).
-The problem I was experiencing was that the Processing sketches that would receive the gesture-classification data from the ESP program seemed to updating incredibly slowly. As in, I could clearly see the gesture-classification results being updated in the ESP program, but in the Processing receiver sketches, the results would be displayed several seconds behind what the ESP system was sending!</description>
-    </item>
-    
-    <item>
-      <title>Touché, and Water as an Interface</title>
-      <link>/notes/touche-and-water-as-an-interface-august-15-2017/</link>
-      <pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/touche-and-water-as-an-interface-august-15-2017/</guid>
-      <description>After experimenting with learning how Touché could be used to interact with plants, I wanted to see how I could use it to interact with water.
-In the Touché paper, the authors demonstrate that the sensor is capable of detecting how a user is touching the surface of, or submerging their hand in water. The system is able to distinguish among a variety of touch interactions: no hand, 1 finger, 3 fingers, and hand submerged:</description>
-    </item>
-    
-    <item>
-      <title>Talking to Plants: Touché Experiments</title>
-      <link>/notes/talking-to-plants-touche-experiments-august-4-2017/</link>
-      <pubDate>Fri, 04 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/talking-to-plants-touche-experiments-august-4-2017/</guid>
-      <description>As I mentioned in aprevious post, I was really pleased to see that the ESP-Sensors project had included code for working with a circuit based on Touché.
-I had earlier come across other implementations of Touché for the Arduino, but unlike the ESP project, none of them utilized machine learning for classifying gesture types.
-Touché is a project developed at Disney Research that uses swept-frequency capacitive sensing to &amp;ldquo;&amp;hellip;not only detect a touch event, but simultaneously recognize complex configurations of the human hands and body during touch interaction.</description>
-    </item>
-    
-    <item>
-      <title>Tools for Machine Learning and Sensor Inputs for Gesture Recognition</title>
-      <link>/notes/tools-for-machine-learning-and-sensor-inputs-for-gesture-recognition-july-6-2017/</link>
-      <pubDate>Tue, 06 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/tools-for-machine-learning-and-sensor-inputs-for-gesture-recognition-july-6-2017/</guid>
-      <description>The past several years have seen an explosion in machine learning, including in creative contexts - everything fromhallucinating puppyslugs, togenerating new melodies, machine learning is already beginning to revolutionize the way artists and musicians execute their craft.
-My personal interest in the area of machine learning relates to using it to recognize human gestural input via sensors. This interest was sparked from working with Project Soli as a member of the Alpha Developer program.</description>
-    </item>
-    
-    <item>
-      <title>EYEO 2016: Observations on Toolmaking</title>
-      <link>/notes/eyeo-2016-observations-on-toolmaking-june-13-2016/</link>
-      <pubDate>Mon, 13 Jun 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/eyeo-2016-observations-on-toolmaking-june-13-2016/</guid>
-      <description>I&amp;rsquo;m writing this having returned from the 2016 EYEO Festival, a gathering of creative technologists, designers, and artists from all over the world. It was an amazing experience, and I highly recommend going if you ever have the chance to do so. There were many things I enjoyed about it&amp;hellip;the excellent talks, getting to meet people I&amp;rsquo;ve only talked to on Twitter for the first time, and the late night dancing at Prince&amp;rsquo;s nightclub.</description>
-    </item>
-    
-    <item>
-      <title>Participating in the SOLI Alpha Developer Program</title>
-      <link>/notes/participating-in-the-soli-alpha-developer-program-may-23-2016/</link>
-      <pubDate>Mon, 23 May 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/participating-in-the-soli-alpha-developer-program-may-23-2016/</guid>
-      <description>Last year, Google announced that they would be accepting accepting applications from developers to be part of the Project SOLI Alpha Developer program. My friend Paul Batchelor and I were one of 80 total developers selected worldwide to be part of the Alpha program. Our work focuses on the use of SOLI in interactive music.
-We were selected to attend a workshop in Mountain View with other Alpha developers, and members of the SOLI team.</description>
     </item>
     
   </channel>
