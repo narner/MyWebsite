@@ -13,7 +13,7 @@ Some of the companies I’ve invested in are hiring; reach out if you’re inter
 
 **Alive Companies** 
 
-* [Augmental](https://www.augmental.tech) - Hands-free touchpad
+* [Augmental](https://www.augmental.tech) - Hands-free touchpad.
 * [Automat](https://www.runautomat.com/about) - Automate your automations with video demonstrations and text descriptions.
 * [Banana Dev](http://banana.dev) - Machine Learning Model Deployment on Serverless GPUs.
 * [BrevDev](http://brev.dev) - Fine-tune and train ML models in < 10 minutes.
