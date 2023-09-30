@@ -3,9 +3,9 @@ title: "Push-To-Talk Audio Chat App"
 date: "2021-09-06"
 ---
 
-Through December 2019 to Feburary 2020, [Julie Young](https://twitter.com/juliey4) and I worked together on a push-to-talk audio chat app; Julie designed the app, and I built it. The app let people create audio channels that would be broadcast to others in a nearby physical location. 
+[Julie Young](https://twitter.com/juliey4) and I collaborated on the development of a local peer-to-peer, push-to-talk audio chat app designed for real-time communication within proximate geographic locations.  The app was tailored to facilitate instant audio interactions in scenarios such as production sets, construction sites, and similar environments where immediate communication is crucial.
 
-Users could see available nearby channels and join them. Using the push-to-talk interface, they could talk to the channel.  
+The core functionality allowed users to create and join audio channels based on their relative geographic proximity. The channels were visible to individuals within the designated area, who could effortlessly join any available channel. Utilizing the push-to-talk interface, users could seamlessly communicate with others in the channel, thus promoting real-time, on-site collaboration and coordination.  
 
 
 
