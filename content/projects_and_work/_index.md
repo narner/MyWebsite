@@ -27,7 +27,7 @@ I built a demo app that can detect American Sign Language signs using computer v
 
 I built a local peer-to-peer, push-to-talk audio chat app. You could create audio channels with other people who were in the same relative geographic location as you - useful for situations like production sets, construction sites, etc. Read more [here](/projects_and_work/push_to_talk_audio_chat_app/). 
 
---- 
+---
 
 **Whistlr - Audio QR-Code Contact Sharing iOS App** | 2017
 
@@ -65,9 +65,15 @@ I built an AudioKit-powered macOS synthesizer that was controlled by an Arduino 
 
 **AudioKit** | 2014-2016
 
-[AudioKit](https://audiokit.io) is an open-source framework for audio synthesis, analysis, and production for Apple platforms. I joined the AudioKit team prior to its public launch, and was part of the project for three years. I created example projects, tutorials, and website content; as well as features like framework testing and Sensible Defaults - presets for a variety of audio synthesis objects that when used by a developer, would allow for a good template to start with.
+[AudioKit](https://audiokit.io/) is an open-source framework designed for audio synthesis, analysis, and production on Apple platforms. I was instrumental in launching the project and remained an active contributor for three years. My contributions spanned from creating example projects, tutorials, and website content to developing key features like framework testing and Sensible Defaults.
 
-You can check out the first version of the project website [here](https://web.archive.org/web/20141108033113/http://audiokit.io/).
+Prior to its public release, I played a pivotal role in preparing AudioKit for open-sourcing. I crafted example projects and tutorials, enriched the website content, and worked on innovative features to enhance user experience. One such feature was the introduction of "Sensible Defaults," aimed at aiding developers without an audio or music background to effortlessly integrate AudioKit into their projects. This feature provided preset configurations for a variety of audio synthesis objects, enabling a seamless start without the need to tweak individual parameters initially.
+
+For instance, within AudioKit, there are several physical modeling objects. I tailored defaults for an object generating a bells sound, which, when utilized, would produce a jingling bells effect upon audio playback.
+
+Feel free to explore the initial version of the project website [here](https://web.archive.org/web/20141108033113/http://audiokit.io/).
+
+------
 
 **Delay Tracker: iOS App for Reporting Amtrak Delays** | 2015
 
