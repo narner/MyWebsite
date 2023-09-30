@@ -50,6 +50,8 @@ Some of them are [hiring](https://narner.notion.site/Nick-Arner-s-Job-Board-270b
 
 
 
+
+
 ## Grants Projects
 
 I helped run the [BUIDL Grants project](https://web.archive.org/web/20220824184950/https://troynikov.io/buidl-grants/), and contributed grants to [makeabetter.computer](http://makeabetter.computer)
