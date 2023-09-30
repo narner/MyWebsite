@@ -3,7 +3,7 @@ title: Home
 description: Nick Arner
 ---
 
-<i> Interfaces + Invention + Investing. Computers are great but they could be better. MacOS / iOS dev and occasional ML/HW tinkerer. </i>
+<i>Interfaces + Invention + Investing.<br>Computers are great but they could be better.</i>
 
 ![Nick](/headshot.jpg "l-float") I'm a developer and researcher working in the field of Human-Computer Interaction.  I live and work in San Francisco, California. 
 
@@ -23,7 +23,7 @@ I've written a lot of software for work, open-source projects, freelance and per
 
 ## Now
 
-A paragraph about whatever you're up to now.
+I'm currently [working with a couple folks on an iPad app for Designers](https://twitter.com/adammenges/status/1699093455371477343?s=20) called [Stitch](http://stitchdesign.com). We'll be rolling out TestFlight access soon.
 
 I also [angel invest](/investing), and am particularly interested in founders and startups reimagining the way we interact with computers.
 
