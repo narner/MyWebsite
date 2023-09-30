@@ -4,13 +4,15 @@ date: "2022-01-01"
 
 ---
 
-Delay Tracker was built to educate Amtrak passengers experiencing delays on their trip why those delays may be occuring, and to give them the opportunity to report the fact that their train was delayed to the Surface Transportation Board. 
+Delay Tracker was the first iOS app I built, aimed at enabling Amtrak travelers facing train delays to report them to the Surface Transportation Board, the federal entity responsible for regulating the nation's railroads. 
 
-This way, the Amtrak-riding public could both become educated about hte challenges to the nation's rail infrastructure, as well as have a way to ensure their complaints about their trip were heard. 
+The app served a dual purpose: educating Amtrak passengers about the potential reasons behind the delays they were experiencing, and providing a channel to report these delays to the Surface Transportation Board. This initiative not only fostered awareness regarding the challenges faced by the nation's rail infrastructure but also empowered travelers to voice their concerns and ensure their grievances were acknowledged.
 
-The app was written in Objective-C. [Tana Green](https://www.linkedin.com/in/tanagreen/) designed the interface.
+Delay Tracker was crafted in Objective-C, with the interface designed by [Tana Green](https://www.linkedin.com/in/tanagreen/).
 
-&nbsp;
+------
+
+
 
 ![](/post_assets/delay_tracker/DelayTrackerCollage.jpg)
 

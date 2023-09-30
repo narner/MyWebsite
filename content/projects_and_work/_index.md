@@ -29,9 +29,7 @@ I built a local peer-to-peer, push-to-talk audio chat app. You could create audi
 
 ---
 
-**Whistlr - Audio QR-Code Contact Sharing iOS App** | 2017
-
-Whistlr was an app that would let people share their contact cards with each other via audio signals - sort of like [Bump](https://en.wikipedia.org/wiki/Bump_(application)), but with audio. It used the [ChirpSDK](https://github.com/chirp), which allows for data to be transmitted via tones as an audio QR code. Read more [here](/projects_and_work/whistlr/). 
+* **[Whistlr - Audio QR-Code Contact Sharing iOS App]((/projects_and_work/whistlr/))** | 2017
 
 **Project Soli Alpha Developer Program** |  2016-2017
 
@@ -63,18 +61,20 @@ GitHub repo [here](https://github.com/narner/GRT-iOS-HelloWorld) + blog post [he
 
 I built an AudioKit-powered macOS synthesizer that was controlled by an Arduino circuit. Data from the potentiometers and switch connected to the Arduino was read by the macOS app over the USB serial port, and used to control the synthesizer parameters. GitHub repo [here](https://github.com/narner/Arduino-AudioKitOSX). 
 
-**AudioKit** | 2014-2016
-
-[AudioKit](https://audiokit.io/) is an open-source framework designed for audio synthesis, analysis, and production on Apple platforms. I was instrumental in launching the project and remained an active contributor for three years. My contributions spanned from creating example projects, tutorials, and website content to developing key features like framework testing and Sensible Defaults.
-
-Prior to its public release, I played a pivotal role in preparing AudioKit for open-sourcing. I crafted example projects and tutorials, enriched the website content, and worked on innovative features to enhance user experience. One such feature was the introduction of "Sensible Defaults," aimed at aiding developers without an audio or music background to effortlessly integrate AudioKit into their projects. This feature provided preset configurations for a variety of audio synthesis objects, enabling a seamless start without the need to tweak individual parameters initially.
-
-For instance, within AudioKit, there are several physical modeling objects. I tailored defaults for an object generating a bells sound, which, when utilized, would produce a jingling bells effect upon audio playback.
-
-Feel free to explore the initial version of the project website [here](https://web.archive.org/web/20141108033113/http://audiokit.io/).
+* **[AudioKit](/projects_and_work/audiokit/)** | 2014-2016
+* **[Delay Tracker: iOS App for Reporting Amtrak Delays](/projects_and_work/delay_tracker/)** | 2015
 
 ------
 
-**Delay Tracker: iOS App for Reporting Amtrak Delays** | 2015
 
-Delay Tracker was the first iOS app I built. It's purpose was to let Amtrak travelers who were experiencing train delays to report them to the Surface Transportation Board, the federal agency charged with regulation of the nation's railroads. You can read more about it [here](/projects_and_work/delay_tracker/).  
+
+
+
+
+
+
+
+
+
+
+

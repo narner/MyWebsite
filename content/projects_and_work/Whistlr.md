@@ -5,9 +5,9 @@ date: "2021-09-06"
 
 *with [Matt Becker](https://www.linkedin.com/in/mattsbecker/) and [Tana Green](https://www.linkedin.com/in/tanagreen/)*
 
-[Whistlr](https://twitter.com/WhistlrApp) was an app for sharing your contact information with acquaintances, colleagues at a conference, or the person you just met at the coffeeshop.
+Whistlr was an application designed to facilitate the exchange of contact cards between individuals through audio signals, reminiscent of the [Bump](https://en.wikipedia.org/wiki/Bump_(application)) app, but utilizing audio instead. It employed the [ChirpSDK](https://github.com/chirp) to enable data transmission via audio tones, essentially creating an audio QR code.
 
-The app would create your contact profile by pulling in your contact card information from the iOS Contacts App. Once you had done that, you could share your contact card with othter people nearby who had Whistlr open. For security, whenever a contact card was sent, a three-digit code was generated. Whoever was meant to receive the contact card would enter the code, and the sender's contact card would be added as a new contact in their Contacts app.
+[Whistlr](https://twitter.com/WhistlrApp) catered to individuals looking to share contact details with new acquaintances, colleagues at events, or casual meetups at cafes. The app streamlined the creation of your contact profile by importing your contact card information from the iOS Contacts App. Once set up, you could share your contact card with others in proximity who had Whistlr open. To bolster security, a three-digit code was generated each time a contact card was shared. The intended recipient would input this code to receive and save the sender's contact card in their Contacts app.
 
 ![](/post_assets/whistlr/WhistlrCollage.jpg)
 
