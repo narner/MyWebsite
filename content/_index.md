@@ -25,7 +25,7 @@ I've written a lot of software for work, open-source projects, freelance and per
 
 I'm currently [working with a couple folks on an iPad app for Designers](https://twitter.com/adammenges/status/1699093455371477343?s=20) called [Stitch](http://stitchdesign.com). We'll be rolling out TestFlight access soon.
 
-I also [angel invest](/investing), and am particularly interested in founders and startups reimagining the way we interact with computers.
+I also [angel invest](/investing), and am particularly interested startups reimagining the way we interact with computers.
 
 Some of the companies I’ve invested in are [hiring]([hiring](https://narner.notion.site/Nick-Arner-s-Job-Board-270bf00c8f67410881a29a2c6242ff17)); reach out if you’re interested in any of the listed roles!
 
