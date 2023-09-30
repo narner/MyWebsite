@@ -4,7 +4,7 @@ date: "2021-09-06"
 ---
 
 I'm fortunate to be an investor in some fantastic companies. 
-Some of the companies I’ve invested in are [hiring](https://narner.notion.site/Nick-Arner-s-Job-Board-270bf00c8f67410881a29a2c6242ff17); reach out if you’re interested in any of the listed roles!
+Some of them are [hiring](https://narner.notion.site/Nick-Arner-s-Job-Board-270bf00c8f67410881a29a2c6242ff17); reach out if you’re interested in any of the listed roles!
 
 
 ## Angel Portfolio
