@@ -16,7 +16,7 @@ Some of the companies I’ve invested in are hiring; reach out if you’re inter
 * [Augmental](https://www.augmental.tech) - Hands-free touchpad
 * [Automat](https://www.runautomat.com/about) - Automate your automations with video demonstrations and text descriptions.
 * [Banana Dev](http://banana.dev) - Machine Learning Model Deployment on Serverless GPUs.
-* BrevDev - 
+* [BrevDev](http://brev.dev) - Fine-tune and train ML models in < 10 minutes.
 * [Chroma](http://trychroma.com) - The AI-native open-source embedding database.
 * [Default](https://www.default.com/) - Capture inbound sales leads via customizable and integratabtle forms on your website. 
 * [Embra](http://embra.app) - Your GPT Assistant for Mac.
