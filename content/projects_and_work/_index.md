@@ -19,9 +19,7 @@ layout: "has-contents"
 
 * **[Whistlr - Audio QR-Code Contact Sharing iOS App]((/projects_and_work/whistlr/))** | 2017
 
-* **Swept Frequency Capacitive Sensing (Touché) Experiments** | 2017 
-
-   [here](/projects_and_work/personal/emulating_touch%C3%A9/)
+* **[Swept Frequency Capacitive Sensing (Touché) Experiments](/projects_and_work/personal/emulating_touche/)** | 2017
 
 * **[MM-Wave Radar Interfaces: Project Soli Alpha Developer Program](/projects_and_work/personal/o_soli_mio/)** |  2016-2017
 
