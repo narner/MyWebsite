@@ -137,33 +137,19 @@ These are by no means a comprehensive list of books I own or have read; but are 
 ## Human-Computer Interaction
 
 * [A Small Matter of Programming](https://www.amazon.com/gp/product/0262140535?pf_rd_r=BD0QR3VMQQYHJ4XYPBQF&pf_rd_p=8fe9b1d0-f378-4356-8bb8-cada7525eadd&pd_rd_r=43b236db-bccc-42b5-9722-418ac028a46b&pd_rd_w=x7OHL&pd_rd_wg=8gwM7&ref_=pd_gw_unk) - A sadly out of print book exploring the difficulties around end-user programming and application development. (You should [absolutely tell Stripe Press that you would like to see them re-issue this](https://twitter.com/nickarner/status/1427389644002500608?s=20), by the way...)
-
 * [Abstracting Craft](https://www.amazon.com/Abstracting-Craft-Practiced-Digital-Hand/dp/026263189X/ref=sr_1_2?dchild=1&keywords=Abstracting+Craft&qid=1629309423&sr=8-2) - Another sadly out of print book I was lucky to snag at a used bookstore. Focuses on computation as a medium for working and crafting in, rather than a set of tools.
-* 
 * [Affective Computing](https://www.amazon.com/Affective-Computing-Rosalind-W-Picard/dp/0262161702/ref=sr_1_1?dchild=1&keywords=Affective+Computing&qid=1630812333&sr=8-1) - The creator of the term, MIT Media Lab academic [Rosalind Picard](https://web.media.mit.edu/~picard/), expands upon her [foundational text](https://affect.media.mit.edu/pdfs/95.picard.pdf) on the subject.
-
 * [Computational Interaction](https://www.amazon.com/gp/product/0198799616/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1) - A collection of papers about the area of study of the title; using machine learning, signal processing, and control theory to improve interaction between humans and computers.
-
 * [Cybernetic Creativity](https://www.amazon.com/Cybernetic-creativity-Harold-Rothbart/dp/0831501189/ref=sr_1_2?dchild=1&keywords=Cybernetic+creativity%2C+Hardcover&qid=1629314397&s=books&sr=1-2) - Discusses the nature of creativity and its relationship to computation. 
-
 * [Designing Interactions](https://www.amazon.com/Designing-Interactions-Press-Bill-Moggridge/dp/0262134748/ref=sr_1_2?dchild=1&keywords=Designing+Interactions&qid=1630812345&sr=8-2) - The Bible of the field; extensive interviews and analysis of practitioners and products.
-
 * [Enchanted Objects](https://www.amazon.com/Enchanted-Objects-Design-Desire-Internet/dp/1476725632/ref=sr_1_1?dchild=1&keywords=Enchanted+Objects&qid=1630812384&sr=8-1) - David Rose imagines a more humane version of the Internet of Things, where everyday objects can anticipate and serve our needs.
-
 * [Interface Culture](https://www.amazon.com/Interface-Culture-Digital-Medium-Web-Changes/dp/0062514822/ref=sr_1_1?crid=1QNNSNJEV16Y8&dchild=1&keywords=interface+culture+johnson&qid=1630897290&sprefix=Interface+Culture+%2Caps%2C344&sr=8-1) - Wide ranging work tying today's computer interfaces to Victorian novels, early cinema, and Medieval urban planning.
-
 * [Interfacing Thought: Cognitive Aspects of Human-Computer Interaction](https://www.amazon.com/gp/product/0262031256/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) - Chapters on the relationship between human cognition and the use of computers. 
-
 * [Leonardo's Laptop](https://www.amazon.com/Leonardos-Laptop-Human-Computing-Technologies/dp/0262692996) - Far reaching work calling for people to expect more from their computers; causes the reader to wonder what da Vinci may have been able to accomplish with a computer. 
-
 * [Mindstorms](https://www.amazon.com/Seymour-Papert-Mindstorms-Children-Computers/dp/B008VR2VII/ref=sr_1_2?dchild=1&keywords=mindstorms+papert&qid=1629395478&sr=8-2) - Seymour Papert's classic work on making computing accessible to children.
-
 * [Plato and The Nerd](https://www.amazon.com/Plato-Nerd-Creative-Partnership-Technology/dp/0262036487/ref=sr_1_1?dchild=1&keywords=Plato+and+The+Nerd&qid=1630813256&sr=8-1) - Discusses how computers, given their powerful ability to simulate the real world, can evolve a co-partnership with their human creators. 
-
 * [The Best Interface Is No Interface](https://www.amazon.com/Best-Interface-No-brilliant-technology-ebook/dp/B00T0ER57I/ref=sr_1_1?dchild=1&keywords=The+Best+Interface+Is+No+Interface&qid=1630812447&sr=8-1) - Golden Krishna makes the case that interfaces should disappear; a call to arms for ambient computing. 
-
 * [The Humane Interface](https://www.amazon.com/Humane-Interface-Directions-Designing-Interactive/dp/0201379376/ref=sr_1_1?dchild=1&keywords=The+Humane+Interface&qid=1630812420&sr=8-1) - Jef Raskin (father of the Macintosh project at Apple) outlines the qualities of what good user interfaces look and behave like. 
-
 * [Tools for Thought](https://www.amazon.com/gp/product/0262681153/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1) - Howard Rheingold discusses the pioneers of computing who believed in the field's potential to transform and enhance human thought and capability.
 
 

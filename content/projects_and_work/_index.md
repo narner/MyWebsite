@@ -7,11 +7,11 @@ layout: "has-contents"
 
 ## Work
 
-* Meter
+* Meter - MacOS VPN App | 2023
 * **[Roboflow iOS SDK](/projects_and_work/work/roboflow_native_mobile_sdk/)** | 2023
-* Dusty Robotics
-* Tlon
-* Asteroid
+* Dusty Robotics - iPad app for construction robot control
+* Tlon - iOS Chat app for Urbit 
+* Asteroid 
 
 ## Personal
 
