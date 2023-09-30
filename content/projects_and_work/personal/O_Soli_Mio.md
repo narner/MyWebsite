@@ -22,7 +22,7 @@ My work involved investigating Soli's potential use in new musical instruments w
 
 
 
-This research was published in [*O Soli Mio: Exploring Millimeter Wave Radar for Musical Interaction*](http://homes.create.aau.dk/dano/nime17/papers/0054/index.html)*,*  co-written with [Francisco Bernardo](http://frantic0.com/) and [Paul Batchelor](http://paulbatchelor.github.io/), at the NIME 2017 Conference in Copenhagen.
+This research was published in [*O Soli Mio: Exploring Millimeter Wave Radar for Musical Interaction*](http://homes.create.aau.dk/dano/nime17/papers/0054/index.html)*,*  co-written with [Francisco Bernardo](https://fbernardo.com) and [Paul Batchelor](http://paulbatchelor.github.io/), at the NIME 2017 Conference in Copenhagen.
 
 
 
