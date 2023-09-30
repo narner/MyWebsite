@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Nick Arner"
 # theme = "narner"
 
-copyright = "© Copyright Nicholas Arner, 2022"
+copyright = "© Copyright Nicholas Arner, 2023"
 RSSLink = ""
 rssLimit = 20
 logo = ""
@@ -19,7 +19,7 @@ googleAnalytics = "UA-187116527-1"
 	email = "nicholasarner@gmail.com"
 
 [params]
-  description = "Nick's new site."
+  description = "Nick's Arner's personal site."
 
 [markup.goldmark.renderer]
     unsafe = "true"
