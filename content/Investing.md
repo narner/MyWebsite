@@ -13,8 +13,10 @@ Some of the companies I’ve invested in are hiring; reach out if you’re inter
 
 **Alive Companies** 
 
+* [Augmental](https://www.augmental.tech) - Hands-free touchpad
 * [Automat](https://www.runautomat.com/about) - Automate your automations with video demonstrations and text descriptions.
 * [Banana Dev](http://banana.dev) - Machine Learning Model Deployment on Serverless GPUs.
+* BrevDev - 
 * [Chroma](http://trychroma.com) - The AI-native open-source embedding database.
 * [Default](https://www.default.com/) - Capture inbound sales leads via customizable and integratabtle forms on your website. 
 * [Embra](http://embra.app) - Your GPT Assistant for Mac.
@@ -26,6 +28,7 @@ Some of the companies I’ve invested in are hiring; reach out if you’re inter
 * [Trace](https://www.trace.zip) - Create high-fidelity designs and animations in code.
 * [Rime Labs](http://rime.ai) - Generative synthesized speech with realistic and diverse voices. 
 * [Roboflow](https://roboflow.com) - Full-Scale computer vision platform for developers. 
+* [San Francisco Compute Company](https://sfcompute.com) - democratising compute for startups and researchers
 * [Sprout](https://sprout.place/) - Create customizable, shareable virtual spaces for you and your favorite people. 
 * [Rememe](https://twitter.com/therememeapp) - Create and remix memes with your friends.
 * [Theatre.js](https://www.theatrejs.com/) - JavaScript animation library + GUI.
