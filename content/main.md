@@ -18,9 +18,7 @@ You can check out some of the things I've made and worked on [here](/projects_an
 
 ### Working Together
 
-I'm currently available for small freelance iOS / macOS development projects, as well as technical writing and research work. I've done work for companies such as Tlon, Dusty Robotics, [Roboflow](roboflow_native_mobile_sdk), and Meter.
-
-You can download my [resume](NFA-Resume.pdf). 
+I'm currently available for small freelance iOS / macOS development projects, as well as technical writing and research work. I've done work for companies such as Tlon, Dusty Robotics, [Roboflow](roboflow_native_mobile_sdk), and Meter. I'm currently [working with a couple folks](https://twitter.com/adammenges/status/1699093455371477343?s=20) on a new app for designers called [Stitch](http://stitchdesign.com).
 
 
 
