@@ -7,7 +7,10 @@ layout: "has-contents"
 
 ## Work
 
+* Meter
 * **[Roboflow iOS SDK](/projects_and_work/work/roboflow_native_mobile_sdk/)** | 2023
+* Dusty Robotics
+* Tlon
 * Asteroid
 
 ## Personal
@@ -15,6 +18,12 @@ layout: "has-contents"
 * **[Peer-to-Peer Audio Chat iOS App](/projects_and_work/personal/push_to_talk_audio_chat_app/)** | 2019
 
 * **[Whistlr - Audio QR-Code Contact Sharing iOS App]((/projects_and_work/whistlr/))** | 2017
+
+* **Swept Frequency Capacitive Sensing (Touché) Experiments** | 2017 
+
+  I build a homemade version of Disney Research's [Touché swept-frequency capacitive sensor](https://la.disneyresearch.com/publication/touche-enhancing-touch-interaction-on-humans-screens-liquids-and-everyday-objects/) and made some demos that replicated the results in Disney's academic publications showing how this type of sensor could be used to make interactions between human gesture and plants / water. 
+
+  GitHub repo [here](https://github.com/narner/Touche-Experiments) + blog post [here](/projects_and_work/emulating_touch%C3%A9/)
 
 * **MM-Wave Radar Interfaces: Project Soli Alpha Developer Program** |  2016-2017
 
@@ -48,7 +57,7 @@ GitHub repo [here](https://github.com/narner/GRT-iOS-HelloWorld) + blog post [he
 
 I built an AudioKit-powered macOS synthesizer that was controlled by an Arduino circuit. Data from the potentiometers and switch connected to the Arduino was read by the macOS app over the USB serial port, and used to control the synthesizer parameters. GitHub repo [here](https://github.com/narner/Arduino-AudioKitOSX). 
 
-* 
+
 
 
 
@@ -69,14 +78,6 @@ I built a demo app that can detect American Sign Language signs using computer v
 ---
 
 
-
-
-
-**Swept Frequency Capacitive Sensing (Touché) Experiments** | 2017 
-
-I build a homemade version of Disney Research's [Touché swept-frequency capacitive sensor](https://la.disneyresearch.com/publication/touche-enhancing-touch-interaction-on-humans-screens-liquids-and-everyday-objects/) and made some demos that replicated the results in Disney's academic publications showing how this type of sensor could be used to make interactions between human gesture and plants / water. 
-
-GitHub repo [here](https://github.com/narner/Touche-Experiments) + blog post [here](/projects_and_work/emulating_touch%C3%A9/)
 
 
 
