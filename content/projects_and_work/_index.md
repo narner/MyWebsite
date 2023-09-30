@@ -17,7 +17,7 @@ layout: "has-contents"
 
 * **[Peer-to-Peer Audio Chat iOS App](/projects_and_work/personal/push_to_talk_audio_chat_app/)** | 2019
 
-* **[Whistlr - Audio QR-Code Contact Sharing iOS App]((/projects_and_work/whistlr/))** | 2017
+* **[Whistlr - Audio QR-Code Contact Sharing iOS App]((/projects_and_work/test/))** | 2017
 
 * **Swept Frequency Capacitive Sensing (Touché) Experiments** | 2017 
 
@@ -25,9 +25,7 @@ layout: "has-contents"
 
   GitHub repo [here](https://github.com/narner/Touche-Experiments) + blog post [here](/projects_and_work/emulating_touch%C3%A9/)
 
-* **MM-Wave Radar Interfaces: Project Soli Alpha Developer Program** |  2016-2017
-
-  Google ATAP had a program where third-party developers could get access to the development kit of a new  mm-wave radar sensor called [Project Soli](https://atap.google.com/soli/), and I was accepted to participate. I built some gesture-controlled musical instruments, which were [shown at Google I/O](https://www.youtube.com/watch?v=H41A_IWZwZI); and experimented with gesture controlled interactive graphics. Read more [here](/projects_and_work/o_soli_mio/).
+* **[MM-Wave Radar Interfaces: Project Soli Alpha Developer Program](/projects_and_work/personal/o_soli_mio/)** |  2016-2017
 
 * **[Delay Tracker: iOS App for Reporting Amtrak Delays](/projects_and_work/personal/delay_tracker/)** | 2015
 
@@ -36,6 +34,10 @@ layout: "has-contents"
 ## Open source
 
 
+
+- **Running Shell Commands from Screenshots**
+
+  
 
 **Detecting Flame Strength with a Bluetooth Sensor and iPhone** | 2017 
 
