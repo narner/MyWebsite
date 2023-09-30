@@ -17,13 +17,11 @@ layout: "has-contents"
 
 * **[Peer-to-Peer Audio Chat iOS App](/projects_and_work/personal/push_to_talk_audio_chat_app/)** | 2019
 
-* **[Whistlr - Audio QR-Code Contact Sharing iOS App]((/projects_and_work/test/))** | 2017
+* **[Whistlr - Audio QR-Code Contact Sharing iOS App]((/projects_and_work/whistlr/))** | 2017
 
 * **Swept Frequency Capacitive Sensing (Touché) Experiments** | 2017 
 
-  I build a homemade version of Disney Research's [Touché swept-frequency capacitive sensor](https://la.disneyresearch.com/publication/touche-enhancing-touch-interaction-on-humans-screens-liquids-and-everyday-objects/) and made some demos that replicated the results in Disney's academic publications showing how this type of sensor could be used to make interactions between human gesture and plants / water. 
-
-  GitHub repo [here](https://github.com/narner/Touche-Experiments) + blog post [here](/projects_and_work/emulating_touch%C3%A9/)
+   [here](/projects_and_work/personal/emulating_touch%C3%A9/)
 
 * **[MM-Wave Radar Interfaces: Project Soli Alpha Developer Program](/projects_and_work/personal/o_soli_mio/)** |  2016-2017
 
