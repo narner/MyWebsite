@@ -8,10 +8,16 @@ layout: "has-contents"
 ## Work
 
 * Meter - MacOS VPN App | 2023
+
 * **[Roboflow iOS SDK](/projects_and_work/work/roboflow_native_mobile_sdk/)** | 2023
+
 * Dusty Robotics - iPad app for construction robot control
+
 * Tlon - iOS Chat app for Urbit 
-* Asteroid 
+
+* Asteroid - No-Code AR Development Tool | 2018-2019
+
+  
 
 ## Personal
 
@@ -74,14 +80,6 @@ I built a demo app that can detect American Sign Language signs using computer v
 
 
 ---
-
-
-
-
-
-------
-
-
 
 
 
