@@ -1,5 +1,6 @@
 ---
 title: "AudioKit"
+date: "2023-09-30"
 ---
 
 [AudioKit](https://audiokit.io/) is an open-source framework designed for audio synthesis, analysis, and production on Apple platforms. I was instrumental in launching the project and remained an active contributor for three years. My contributions spanned from creating example projects, tutorials, and website content to developing key features like framework testing and Sensible Defaults.
@@ -8,4 +9,4 @@ Prior to its public release, I played a pivotal role in preparing AudioKit for o
 
 For instance, within AudioKit, there are several physical modeling objects. I tailored defaults for an object generating a bells sound, which, when utilized, would produce a jingling bells effect upon audio playback.
 
-Feel free to explore the initial version of the project website [here](https://web.archive.org/web/20141108033113/http://audiokit.io/).
+You can explore the initial version of the project website [here](https://web.archive.org/web/20141108033113/http://audiokit.io/).
