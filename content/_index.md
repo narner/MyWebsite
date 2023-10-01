@@ -33,7 +33,7 @@ I've written a lot of software for work, open-source projects, freelance and per
 
 I'm currently [working with a couple folks on an iPad app for Designers](https://twitter.com/adammenges/status/1699093455371477343?s=20) called [Stitch](https://stitchdesign.app). We'll be rolling out TestFlight access soon.
 
-I also [angel invest](/investing), and am particularly interested startups reimagining the way we interact with computers.
+I also [angel invest](/investing), and am particularly interested in startups reimagining the way we interact with computers.
 
 
 
