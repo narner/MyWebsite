@@ -21,6 +21,8 @@ layout: "has-contents"
 
 ## Personal
 
+* Email-Based Video Messaging App | 2020
+
 * **[Peer-to-Peer Audio Chat iOS App](/projects_and_work/personal/push_to_talk_audio_chat_app/)** | 2019
 
 * **[Whistlr - Audio QR-Code Contact Sharing iOS App]((/projects_and_work/personal/emulating_touche/))** | 2017
@@ -33,7 +35,7 @@ layout: "has-contents"
 
   
 
-## Open source
+## Open Source
 
 - **Running Shell Commands from Screenshots**
 - **[Detecting ASL Signs on iOS](https://github.com/narner/ASL-Classifier-Demo)** | 2021
