@@ -4,13 +4,21 @@ date: "2023-04-13"
 
 ---
 
-In 2022, I led the building of the [Roboflow Native iOS SDK](https://blog.roboflow.com/roboflow-ios-sdk/). Roboflow is a startup that builds tools for the creation and deployment of Computer Vision ML models by developers, without the need for specialized computer vision knowledge. Developers can create and host their models on the Roboflow platform, as well as deploy them on edge devices.
+I was the founding employee of a pre-seed startup called [Asteroid](https://www.producthunt.com/products/asteroid). Our product was a native macOS app, built in Swift, that let users create ARKit apps without having to write any code. 
 
-![Roboflow-iOS-SDK](/post_assets/roboflow/roboflow_ios_sdk.png)
+It had a node-based interface, inspisred by Max, Quartz Composer, and Origami. Users woudl create "reactions"; a building block of functionality that notices something happening via an input object, and triggers something happening in 3D.
 
-The Native iOS SDK allows iOS developers to download the [CoreML](https://blog.roboflow.com/what-is-coreml/) version of their model, created on Roboflow, directly to their device for use in their app.
+![Reactions](/post_assets/asteroid/Reactions.png)
 
-Additionally, I built [CashCounter](https://apps.apple.com/app/roboflow-cash-counter/id1633812788), an app available on the App Store, that identifies US currency and displays the total monetary value. If the model predicts an incorrect value, users can press the "Incorrect Count" button, which will upload the image frame to the Cash Counter [dataset](https://universe.roboflow.com/alex-hyams-cosqx/cash-counter) to gradually improve the model over time.
+I built the much of the app including the node-based interface, project export, and various nodes; including the camera, audio, and CoreML nodes. 
 
-![CashCounter](/post_assets/roboflow/CashCounter.png)
+![AsteroidNodeInterface](/post_assets/asteroid/AsteroidNodes.gif)
+
+When you had created your prototype on the graph, it could be exported out of the app as an Xcode project. It would contain a framework we wrote that would bundle the code for your prototype in an iOS app. You could then run the app on your phone, and modify the project to create a fully-featured app. 
+
+You can check out our ProductHunt launches [here](https://www.producthunt.com/products/asteroid) and [here](https://www.producthunt.com/products/asteroid#asteroid-2) 
+
+
+
+
 
