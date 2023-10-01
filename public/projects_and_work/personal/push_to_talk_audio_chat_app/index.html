@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title> Push-To-Talk Audio Chat App • Nick Arner </title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180"  href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="16x16"  href="/favicon.ico"> 
+
+        
+        <meta property="og:url" content="https://nickarner.com" />
+        <meta property="og:title" content="Push-To-Talk Audio Chat App" />
+        <meta property="og:description" content="Nick&#39;s Arner&#39;s website." />
+        <meta property="og:image" content="https://nickarner.com/card.jpg" />
+
+        
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:creator" content="@joodaloop">
+        <meta name="twitter:title" content="Push-To-Talk Audio Chat App">
+        <meta name="twitter:description" content="Nick&#39;s Arner&#39;s website." />
+        <meta name="twitter:image" content="https://nickarner.com/card.jpg" />
+
+        <meta name="description" content="Nick&#39;s Arner&#39;s website.">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>    
+    
+<main>
+        <div class=left>
+                <div class=menu>
+
+	<nav>
+		<div class="home">
+			<a href="/"> Nick Arner </a>
+		</div>
+		<a href="/projects_and_work"> Projects </a>
+		<a href="/investing"> Investments </a>
+		<a href="/notes"> Notes </a>
+		<a href="/books"> Books </a>
+		<a href="/publications"> Publications </a>
+	</nav>
+</div>
+        </div><div class=content>
+                <article>
+
+<h1>Push-To-Talk Audio Chat App</h1>
+      <p><a href="https://twitter.com/juliey4" target="_blank" class="external-link" >Julie Young</a> and I collaborated on the development of a local peer-to-peer, push-to-talk audio chat app designed for real-time communication within proximate geographic locations.  The app was tailored to facilitate instant audio interactions in scenarios such as production sets, construction sites, and similar environments where immediate communication is crucial.</p>
+<p>The core functionality allowed users to create and join audio channels based on their relative geographic proximity. The channels were visible to individuals within the designated area, who could effortlessly join any available channel. Utilizing the push-to-talk interface, users could seamlessly communicate with others in the channel, thus promoting real-time, on-site collaboration and coordination.</p>
+<p><img src="/blog_assets/2020/PushToTalkLoginFlow.png" alt="PushToTalkLoginFlow" title="PushToTalkLoginFlow"  />
+</p>
+<p><img src="/blog_assets/2020/PushToTalkMainStoryboard.png" alt="PushToTalkMainStoryboard" title="PushToTalkMainStoryboard"  />
+</p>
+<p> </p>
+<p><strong>Creating Audio Channels</strong></p>
+<p>We used the <a href="https://www.vonage.com/developer-center/?icmp=mainnav_developers_novalue" target="_blank" class="external-link" >OpenTok (now known as the Vonage Video API)</a> SDK for audio channel creation and communciation. A simple server was hosted on Heroku that allowed for interfacing between our app and the OpenTok API, allowing for easily creating new audio channels.</p>
+<p>We created audio channels using a combination of a randomly - generated number, and the user supplied channel name. We passed this to the OpenTok API, and used the token it gave back as a way to create a new audio channel that would then be broadcast to nearby phones:</p>
+<pre tabindex="0"><code>self.createAudioChannel(readableChannelName: self.createdChannelReadableName, fullChannelName: self.createdChannelName, id: self.createdChannelSessionID, token: self.createdChannelToken, createdTime: createdTime)
+</code></pre><p> </p>
+<p><strong>Interacting with Audio Channels</strong></p>
+<p>Whenever a user joined a new audio channel, three objects were created:</p>
+<pre tabindex="0"><code>var session: OTSession?
+var subscriber: OTSubscriber?
+var publisher: OTPublisher?
+</code></pre><p>The <code>session</code> object would create an OpenTok session with an API key and <code>sessionID</code>.</p>
+<p>The <code>subscriber</code> object handled listening to audio streams from a session (in other words, the audio of other participants in the audio channel).</p>
+<p>Finally, the <code>publisher</code> would handle the broadcat of your own live audio to other members of the audio channel.</p>
+<p> </p>
+<p><strong>Push To Talk</strong></p>
+<p>Push To Talk functionality was achieved by setting the <code>publishAudio</code> property of an instance of the OpenTok  <code>OTPublisher</code> object to true if the Microphone button was held down:</p>
+<pre tabindex="0"><code>@IBAction func pressButtonToTalk(_ sender: UIButton?) -&gt; Void {
+	userIsTalking = true
+	publisher?.publishAudio = true
+}
+</code></pre><p>&hellip;and false if the button was released:</p>
+<pre tabindex="0"><code>@IBAction func releaseButton(_ sender: UIButton?) -&gt; Void {
+	userIsTalking = false
+	publisher?.publishAudio = false
+}
+</code></pre><p> </p>
+<p><strong>Location-Based Broadcasting</strong></p>
+<p>We used an open-soruce library called <a href="https://github.com/dingwilson/MultiPeer" target="_blank" class="external-link" >MultiPeer</a> to broadcast and receive channel information to nearby phones. MultiPeer is a wrapper around Apple&rsquo;s <a href="https://developer.apple.com/documentation/multipeerconnectivity" target="_blank" class="external-link" >MultipeerConnectivity Framework</a>, and let&rsquo;s phones transmit information to other phones that are nearby using Bluetooth and WiFi radios.</p>
+<p>When a user creates an audio channel, the channel name and ID is broadcast:</p>
+<pre tabindex="0"><code>    @objc func broadcastNewChannel(){
+        let broadcast: String = &#34;NEW&#34;+&#34; &#34;+self.createdChannelName + &#34; &#34; + self.createdChannelReadableName + &#34; &#34; + self.createdChannelSessionID
+        MultiPeer.instance.send(object: broadcast, type: DataType.string.rawValue)
+    }
+</code></pre><p>This channel info would be broadcast on a loop, so that if a new phone entered the range of the space and they missed the initial broadcast that occured when the channel was created:</p>
+<pre tabindex="0"><code>self.broadcastTimer = Timer.scheduledTimer(
+timeInterval: 10, 
+target: self, 
+selector:#selector(self.broadcastNewChannel), 
+userInfo: nil, 
+repeats: true)
+
+self.broadcastTimer.fire()
+</code></pre><p>Additionally, we if the creator of a channel deleted the channel, that information would also be broadcast in the MultiPeer message, and any other nearby phones would remove that channel from their list of available channels to join.</p>
+<pre tabindex="0"><code>@objc func broadcastDeletedChannel(deletedChannel: String){
+	let broadcast: String = &#34;DELETE&#34;+&#34; &#34;+deletedChannel+&#34; &#34; + &#34;&#34; + &#34; &#34; + &#34;&#34;
+	MultiPeer.instance.send(object: broadcast, type: DataType.string.rawValue)
+}
+</code></pre><p>Any nearby phone that also had the app installed would listen for boradcast messages that included any available audio channels.</p>
+<pre tabindex="0"><code>func multiPeer(didReceiveData data: Data, ofType type: UInt32) {
+	let receivedData = data.convert() as! String
+	parseReceivedChannelData(dataString: receivedData)                       
+}
+</code></pre><p>The received data would then be parsed to determine the channel information, and create a new channel. These channels would populate a table view with the nearby channels that you could join:</p>
+<pre tabindex="0"><code>    func parseReceivedChannelData(dataString: String){
+        let dataArray = dataString.split(separators: &#34; &#34;)
+        let channelStatus = dataArray[0]
+        let channelName = dataArray[1]
+        let channelReadableName = dataArray[2]
+        let channelID = dataArray[3]
+        
+        if channelStatus == &#34;NEW&#34; {
+            if !availableFractalChannels.contains(where: { $0.fullChannelName == channelName}) {
+                // channel does not exist, so add it
+                _ = fetchChannelToken(channelName: channelName, channelReadableName: channelReadableName)
+            } else {
+                // channel exists already, don&#39;t add it again
+            }
+        }
+        
+        if channelStatus == &#34;DELETE&#34; {
+            for f in availableFractalChannels {
+                if f.fullChannelName == channelName {
+                    availableFractalChannels.remove(object: f)
+                    DispatchQueue.main.async() {
+                        let section = self.tableViewAdaptor!.sections[0] as! TableViewAdaptorSection&lt;ChannelTableViewCell, FractalChannel&gt;
+                        section.items = self.availableFractalChannels
+                            self.tableViewAdaptor?.update()
+                        self.tableViewAdaptor?.tableView.reloadData()
+                    }
+                }
+            }
+        }
+    }
+</code></pre><p>If you clicked on a channel, the app would navigate to a new screen with a button that would stream your microphone audio to the other members of the channel.</p>
+<p><img src="/blog_assets/2020/JoinChannel&#43;PushToTalk.gif" alt="JoinChannel&#43;PushToTalk" title="JoinChannel&#43;PushToTalk"  />
+</p>
+
+       
+
+                </article>
+                <footer> © Copyright Nicholas Arner, 2023  </footer>
+        </div>
+        
+</main>
+
+        
+</body>
+</html>

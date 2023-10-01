@@ -2,11 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/roboflow_native_mobile_sdk/</loc>
-    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+    <loc>/projects_and_work/open_source/audiokit/</loc>
+    <lastmod>2023-09-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2023-03-23T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/projects_and_work/work/asteroid/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/projects_and_work/work/roboflow_native_mobile_sdk/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/notes/</loc>
     <lastmod>2023-03-23T00:00:00+00:00</lastmod>
@@ -47,7 +53,7 @@
     <loc>/notes/the-causes-of-latency-in-computing-systems-and-why-exactly-it-frustrates-us-april-6-2022/</loc>
     <lastmod>2022-04-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/projects_and_work/delay_tracker/</loc>
+    <loc>/projects_and_work/personal/delay_tracker/</loc>
     <lastmod>2022-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/projects_and_work/</loc>
@@ -71,19 +77,19 @@
     <loc>/books/</loc>
     <lastmod>2021-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/projects_and_work/emulating_touche%CC%81/</loc>
+    <loc>/projects_and_work/personal/emulating_touche/</loc>
     <lastmod>2021-09-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/investing/</loc>
     <lastmod>2021-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/projects_and_work/o_soli_mio/</loc>
+    <loc>/projects_and_work/personal/project_soli_alpha_dev_program/</loc>
     <lastmod>2021-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/projects_and_work/push_to_talk_audio_chat_app/</loc>
+    <loc>/projects_and_work/personal/push_to_talk_audio_chat_app/</loc>
     <lastmod>2021-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/projects_and_work/whistlr/</loc>
+    <loc>/projects_and_work/personal/whistlr/</loc>
     <lastmod>2021-09-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/notes/roboflow-memo-february-1-2021/</loc>
@@ -116,13 +122,10 @@
     <loc>/notes/things-a-first-time-pm-should-know-about-ios-development-september-22-2019/</loc>
     <lastmod>2019-09-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/main/</loc>
-    <lastmod>2018-03-02T14:58:10+01:00</lastmod>
-  </url><url>
     <loc>/notes/machine-learning-powered-gesture-recognition-on-ios-october-7-2017/</loc>
     <lastmod>2017-10-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/jazz-gestures-and-open-source-why-and-how-i-learned-to-code-october-3-2017/</loc>
+    <loc>/notes/jazz-gestures-and-open-source-why-how-i-learned-to-code-october-3-2017/</loc>
     <lastmod>2017-10-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/notes/integrating-arduino-bluetooth-sensors-with-ios-september-5-2017/</loc>
@@ -149,13 +152,9 @@
     <loc>/notes/participating-in-the-soli-alpha-developer-program-may-23-2016/</loc>
     <lastmod>2016-05-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/archive/</loc>
-  </url><url>
-    <loc>/archive/audiokit/</loc>
-  </url><url>
     <loc>/categories/</loc>
   </url><url>
-    <loc>/people/</loc>
+    <loc>/publications/</loc>
   </url><url>
     <loc>/tags/</loc>
   </url>

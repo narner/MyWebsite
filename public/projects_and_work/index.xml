@@ -8,60 +8,89 @@
     <language>en-us</language>
     <managingEditor>nicholasarner@gmail.com (Nick Arner)</managingEditor>
     <webMaster>nicholasarner@gmail.com (Nick Arner)</webMaster>
-    <copyright>© Copyright Nicholas Arner, 2022</copyright>
+    <copyright>© Copyright Nicholas Arner, 2023</copyright>
     <lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/projects_and_work/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>AudioKit</title>
+      <link>/projects_and_work/open_source/audiokit/</link>
+      <pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/projects_and_work/open_source/audiokit/</guid>
+      <description>AudioKit is an open-source framework designed for audio synthesis, analysis, and production on Apple platforms. I was instrumental in launching the project and remained an active contributor for three years. My contributions spanned from creating example projects, tutorials, and website content to developing key features like framework testing and Sensible Defaults.
+Prior to its public release, I played a pivotal role in preparing AudioKit for open-sourcing. I crafted example projects and tutorials, enriched the website content, and worked on innovative features to enhance user experience.</description>
+    </item>
+    
+    <item>
+      <title>Asteroid</title>
+      <link>/projects_and_work/work/asteroid/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/projects_and_work/work/asteroid/</guid>
+      <description>I was the founding employee of a pre-seed startup called Asteroid. Our product was a native macOS app, built in Swift, that let users create ARKit apps without having to write any code.
+It had a node-based interface, inspisred by Max, Quartz Composer, and Origami. Users would create &amp;ldquo;reactions&amp;rdquo;; building blocks of functionality that notices something happening via an input object, and triggers something happening in 3D.
+I built the much of the app including the node-based interface, project export, and various nodes; including the camera, audio, and CoreML nodes.</description>
+    </item>
+    
+    <item>
+      <title>Roboflow Native iOS SDK</title>
+      <link>/projects_and_work/work/roboflow_native_mobile_sdk/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      <author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>/projects_and_work/work/roboflow_native_mobile_sdk/</guid>
+      <description>In 2022, I led the building of the Roboflow Native iOS SDK. Roboflow is a startup that builds tools for the creation and deployment of Computer Vision ML models by developers, without the need for specialized computer vision knowledge. Developers can create and host their models on the Roboflow platform, as well as deploy them on edge devices.
+The Native iOS SDK allows iOS developers to download the CoreML version of their model, created on Roboflow, directly to their device for use in their app.</description>
+    </item>
+    
+    <item>
       <title>Delay Tracker</title>
-      <link>/projects_and_work/delay_tracker/</link>
+      <link>/projects_and_work/personal/delay_tracker/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/projects_and_work/delay_tracker/</guid>
-      <description>Delay Tracker was built to educate Amtrak passengers experiencing delays on their trip why those delays may be occuring, and to give them the opportunity to report the fact that their train was delayed to the Surface Transportation Board.
-This way, the Amtrak-riding public could both become educated about hte challenges to the nation&amp;rsquo;s rail infrastructure, as well as have a way to ensure their complaints about their trip were heard.</description>
+      <guid>/projects_and_work/personal/delay_tracker/</guid>
+      <description>Delay Tracker was the first iOS app I built, aimed at enabling Amtrak travelers facing train delays to report them to the Surface Transportation Board, the federal entity responsible for regulating the nation&amp;rsquo;s railroads.
+The app served a dual purpose: educating Amtrak passengers about the potential reasons behind the delays they were experiencing, and providing a channel to report these delays to the Surface Transportation Board. This initiative not only fostered awareness regarding the challenges faced by the nation&amp;rsquo;s rail infrastructure but also empowered travelers to voice their concerns and ensure their grievances were acknowledged.</description>
     </item>
     
     <item>
       <title>Emulating Touché</title>
-      <link>/projects_and_work/emulating_touche%CC%81/</link>
+      <link>/projects_and_work/personal/emulating_touche/</link>
       <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
       <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/projects_and_work/emulating_touche%CC%81/</guid>
+      <guid>/projects_and_work/personal/emulating_touche/</guid>
       <description>In 2017, I worked on a project where I built a circuit that emulated the Touché circuit from Disney Research.
 I wanted to see if, using the circuit and machine-learning software, I could replicate the results of the Touché paper by training a system to detect how I was touching various plants, or how to use water as an interface.
 I wrote about these experiments in Touché, and Water as an Interface, and Talking to Plants: Touché Experiments.</description>
     </item>
     
     <item>
-      <title>O Soli Mio</title>
-      <link>/projects_and_work/o_soli_mio/</link>
+      <title>Project SOLI Alpha Dev Program</title>
+      <link>/projects_and_work/personal/project_soli_alpha_dev_program/</link>
       <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
       <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/projects_and_work/o_soli_mio/</guid>
+      <guid>/projects_and_work/personal/project_soli_alpha_dev_program/</guid>
       <description>I was of 80 developers worldwide to be accepted into Google&amp;rsquo;s Project Soli Alpha Developer Program and was one of 14 Alpha Developers to be invited to Google HQ to workshop new ideas regarding potential applications using SOLI.
 My work involved investigating Soli&amp;rsquo;s potential use in new musical instruments with Paul Batchelor; who wrote the sound synthesis language that powered the instruments. Some of this work was shown in in this video presented by ATAP at Google I/O 2016:</description>
     </item>
     
     <item>
       <title>Push-To-Talk Audio Chat App</title>
-      <link>/projects_and_work/push_to_talk_audio_chat_app/</link>
+      <link>/projects_and_work/personal/push_to_talk_audio_chat_app/</link>
       <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
       <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/projects_and_work/push_to_talk_audio_chat_app/</guid>
-      <description>Through December 2019 to Feburary 2020, Julie Young and I worked together on a push-to-talk audio chat app; Julie designed the app, and I built it. The app let people create audio channels that would be broadcast to others in a nearby physical location.
-Users could see available nearby channels and join them. Using the push-to-talk interface, they could talk to the channel.
-Creating Audio Channels
-We used the OpenTok (now known as the Vonage Video API) SDK for audio channel creation and communciation.</description>
+      <guid>/projects_and_work/personal/push_to_talk_audio_chat_app/</guid>
+      <description>Julie Young and I collaborated on the development of a local peer-to-peer, push-to-talk audio chat app designed for real-time communication within proximate geographic locations. The app was tailored to facilitate instant audio interactions in scenarios such as production sets, construction sites, and similar environments where immediate communication is crucial.
+The core functionality allowed users to create and join audio channels based on their relative geographic proximity. The channels were visible to individuals within the designated area, who could effortlessly join any available channel.</description>
     </item>
     
     <item>
       <title>Whistlr</title>
-      <link>/projects_and_work/whistlr/</link>
+      <link>/projects_and_work/personal/whistlr/</link>
       <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
       <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/projects_and_work/whistlr/</guid>
+      <guid>/projects_and_work/personal/whistlr/</guid>
       <description>with Matt Becker and Tana Green
-Whistlr was an app for sharing your contact information with acquaintances, colleagues at a conference, or the person you just met at the coffeeshop.
-The app would create your contact profile by pulling in your contact card information from the iOS Contacts App. Once you had done that, you could share your contact card with othter people nearby who had Whistlr open. For security, whenever a contact card was sent, a three-digit code was generated.</description>
+Whistlr was an application designed to facilitate the exchange of contact cards between individuals through audio signals, reminiscent of the Bump app, but utilizing audio instead. It employed the ChirpSDK to enable data transmission via audio tones, essentially creating an audio QR code.
+Whistlr catered to individuals looking to share contact details with new acquaintances, colleagues at events, or casual meetups at cafes. The app streamlined the creation of your contact profile by importing your contact card information from the iOS Contacts App.</description>
     </item>
     
   </channel>
