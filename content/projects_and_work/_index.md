@@ -7,13 +7,13 @@ layout: "has-contents"
 
 ## Work
 
-* Meter - MacOS VPN App | 2023
+* **Meter - MacOS VPN App** | 2023
 
 * **[Roboflow iOS SDK](/projects_and_work/work/roboflow_native_mobile_sdk/)** | 2023
 
 * **[Dusty Robotics - iPad app for robotic field printer control](/projects_and_work/work/dusty_robotics_ipad_app/)** | 2021-2022
 
-* Tlon - iOS Chat app for Urbit | 2021 - 2022
+* **Tlon - iOS Chat app for Urbit** | 2021 - 2022
 
 * [**Asteroid - No-Code AR Development Tool**](/projects_and_work/work/asteroid/) | 2017-2019
 
@@ -21,7 +21,7 @@ layout: "has-contents"
 
 ## Personal
 
-* Email-Based Video Messaging App | 2020
+* **Email-Based Video Messaging App** | 2020
 
 * **[Peer-to-Peer Audio Chat iOS App](/projects_and_work/personal/push_to_talk_audio_chat_app/)** | 2019
 
@@ -49,7 +49,7 @@ layout: "has-contents"
 
 * **[Arduino Controlled macOS Synthesizer](https://github.com/narner/Arduino-AudioKitOSX)** | 2015 
 
-* **[AudioKit](/projects_and_work/open_source/audiokit/)** Founding Team | 2014-2016
+* **[AudioKit](/projects_and_work/open_source/audiokit/)** **Founding Team** | 2014-2016
 
 
 
