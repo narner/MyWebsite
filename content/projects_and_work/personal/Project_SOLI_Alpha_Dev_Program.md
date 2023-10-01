@@ -1,5 +1,5 @@
 ---
-title: "O Soli Mio"
+title: "Project SOLI Alpha Dev Program"
 date: "2021-09-06"
 ---
 

@@ -27,7 +27,7 @@ layout: "has-contents"
 
 * **[Swept Frequency Capacitive Sensing (Touché) Experiments](/projects_and_work/personal/emulating_touche/)** | 2017
 
-* **[MM-Wave Radar Interfaces: Project Soli Alpha Developer Program](/projects_and_work/personal/o_soli_mio/)** |  2016-2017
+* **[MM-Wave Radar Interfaces: Project Soli Alpha Developer Program](/projects_and_work/personal/project_soli_alpha_dev_program/)** |  2016-2017
 
 * **[Delay Tracker: iOS App for Reporting Amtrak Delays](/projects_and_work/personal/delay_tracker/)** | 2015
 
