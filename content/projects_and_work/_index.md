@@ -47,7 +47,7 @@ layout: "has-contents"
 
 * **[Arduino Controlled macOS Synthesizer](https://github.com/narner/Arduino-AudioKitOSX)** | 2015 
 
-* **[AudioKit](/projects_and_work/audiokit/)** Founding Team | 2014-2016
+* **[AudioKit](/projects_and_work/open_source/audiokit/)** Founding Team | 2014-2016
 
 
 
