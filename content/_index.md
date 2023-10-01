@@ -18,8 +18,6 @@ I've written a lot of software for work, open-source projects, freelance and per
 
  - [Github](https://github.com/narner)
 
- - [Resume](/NFA-Resume.pdf)
-
  - [Twitter](https://twitter.com/nickarner)
 
  - [AngelList](https://wellfound.com/p/nicholas-arner)
