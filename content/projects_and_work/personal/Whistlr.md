@@ -5,14 +5,6 @@ date: "2021-09-06"
 
 ---
 
-
-
-
-
-
-
-
-
 *with [Matt Becker](https://www.linkedin.com/in/mattsbecker/) and [Tana Green](https://www.linkedin.com/in/tanagreen/)*
 
 Whistlr was an application designed to facilitate the exchange of contact cards between individuals through audio signals, reminiscent of the [Bump](https://en.wikipedia.org/wiki/Bump_(application)) app, but utilizing audio instead. It employed the [ChirpSDK](https://github.com/chirp) to enable data transmission via audio tones, essentially creating an audio QR code.
