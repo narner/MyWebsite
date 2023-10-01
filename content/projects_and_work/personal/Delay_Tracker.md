@@ -14,7 +14,7 @@ Delay Tracker was written in Objective-C, with the interface designed by [Tana G
 
 
 
-![](/post_assets/delay_tracker/DelayTrackerCollage.jpg)
+
 
 ![](/post_assets/delay_tracker/DelayTrackerBanner.jpg)
 
