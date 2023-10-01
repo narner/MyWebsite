@@ -18,4 +18,4 @@ When you had created your prototype on the graph, it could be exported out of th
 
 You can check out the ProductHunt launches [here](https://www.producthunt.com/products/asteroid) and [here](https://www.producthunt.com/products/asteroid#asteroid-2) 
 
-
+![ProductVideo](/post_assets/asteroid/AsteroidProductVideo.mp4)
