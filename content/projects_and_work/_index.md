@@ -23,7 +23,7 @@ layout: "has-contents"
 
 * **[Peer-to-Peer Audio Chat iOS App](/projects_and_work/personal/push_to_talk_audio_chat_app/)** | 2019
 
-* **[Whistlr - Audio QR-Code Contact Sharing iOS App]((/projects_and_work/whistlr/))** | 2017
+* **[Whistlr - Audio QR-Code Contact Sharing iOS App]((/projects_and_work/personal/whistlr/))** | 2017
 
 * **[Swept Frequency Capacitive Sensing (Touché) Experiments](/projects_and_work/personal/emulating_touche/)** | 2017
 
@@ -52,14 +52,4 @@ layout: "has-contents"
 
 
 ---
-
-
-
-
-
-
-
-
-
-
 
