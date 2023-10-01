@@ -15,7 +15,7 @@ layout: "has-contents"
 
 * Tlon - iOS Chat app for Urbit | 2021 - 2022
 
-* [**Asteroid - No-Code AR Development Tool**](/projects_and_work/work/asteroid/) | 2018-2019
+* [**Asteroid - No-Code AR Development Tool**](/projects_and_work/work/asteroid/) | 2017-2019
 
   
 
