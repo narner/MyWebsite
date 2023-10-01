@@ -11,7 +11,7 @@ layout: "has-contents"
 
 * **[Roboflow iOS SDK](/projects_and_work/work/roboflow_native_mobile_sdk/)** | 2023
 
-* Dusty Robotics - iPad app for construction robot control | 2023
+* Dusty Robotics - iPad app for robotic field printer control | 2023
 
 * Tlon - iOS Chat app for Urbit | 2021 - 2022
 
