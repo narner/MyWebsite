@@ -6,7 +6,7 @@ date: "2023-04-13"
 
 I was the founding employee of a pre-seed startup called [Asteroid](https://www.producthunt.com/products/asteroid). Our product was a native macOS app, built in Swift, that let users create ARKit apps without having to write any code. 
 
-It had a node-based interface, inspisred by Max, Quartz Composer, and Origami. Users woudl create "reactions"; a building block of functionality that notices something happening via an input object, and triggers something happening in 3D.
+It had a node-based interface, inspisred by Max, Quartz Composer, and Origami. Users woudl create "reactions";  building blocks of functionality that notices something happening via an input object, and triggers something happening in 3D.
 
 ![Reactions](/post_assets/asteroid/Reactions.png)
 
