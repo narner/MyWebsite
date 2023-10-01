@@ -12,5 +12,4 @@ The Native iOS SDK allows iOS developers to download the [CoreML](https://blog.r
 
 Additionally, I built [CashCounter](https://apps.apple.com/app/roboflow-cash-counter/id1633812788), an app available on the App Store, that identifies US currency and displays the total monetary value. If the model predicts an incorrect value, users can press the "Incorrect Count" button, which will upload the image frame to the Cash Counter [dataset](https://universe.roboflow.com/alex-hyams-cosqx/cash-counter) to gradually improve the model over time.
 
-![CashCounter](/post_assets/roboflow/CashCounter.png)
-
+<img src=“/post_assets/roboflow/CashCounter.png” style=“max-width: 30rem”>
