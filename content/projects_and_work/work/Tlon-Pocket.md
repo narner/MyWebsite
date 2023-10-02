@@ -14,4 +14,4 @@ The Pocket app allowed users to sign-in to their ships and load all of ther DMs 
 
 The app was sunset in 2023.
 
-![Urbit-Pocket-iOS-App](/post_assets/urbit/urbitpocket.jpg)
+![Urbit-Pocket-iOS-App](/post_assets/urbit/UrbitPocket.jpg)
