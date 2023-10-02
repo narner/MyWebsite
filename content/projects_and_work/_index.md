@@ -13,7 +13,7 @@ layout: "has-contents"
 
 * **[Dusty Robotics - iPad app for robotic field printer control](/projects_and_work/work/dusty_robotics_ipad_app/)** | 2021-2022
 
-* **Tlon - iOS Chat app for Urbit** | 2021 - 2022
+* **[Tlon - iOS Chat app for Urbit](/projects_and_work/work/tlon-pocket/)** | 2021 - 2022
 
 * [**Asteroid - No-Code AR Development Tool**](/projects_and_work/work/asteroid/) | 2017-2019
 
