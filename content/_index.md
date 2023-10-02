@@ -9,7 +9,7 @@ description: Nick Arner
 
 I'm a developer and researcher working in the field of Human-Computer Interaction.  I live and work in San Francisco, California. 
 
-I've written a lot of software for work, open-source projects, freelance and personal projects. You can check out some of the things I've worked on on the [Projects](/projects_and_work) page.
+You can explore a variety of projects I've contributed to—spanning work assignments, open-source contributions, freelance gigs, and personal endeavors—on my [Projects](/projects_and_work) page.
 
 &nbsp;
 
