@@ -36,7 +36,7 @@ Some of them are [hiring](https://narner.notion.site/Nick-Arner-s-Job-Board-270b
 
 **Notable Outcomes**
 
-* One Unanounced Acquistion 
+* One Unanounnced Acquistion 
 
   
 
