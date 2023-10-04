@@ -13,7 +13,6 @@ Some of them are [hiring](https://narner.notion.site/Nick-Arner-s-Job-Board-270b
 
 **Alive Companies** 
 
-* [Augmental](https://www.augmental.tech) - Hands-free touchpad.
 * [Automat](https://www.runautomat.com/about) - Automate your automations with video demonstrations and text descriptions.
 * [Banana Dev](http://banana.dev) - Machine Learning Model Deployment on Serverless GPUs.
 * [BrevDev](http://brev.dev) - Fine-tune and train ML models in < 10 minutes.
@@ -27,7 +26,6 @@ Some of them are [hiring](https://narner.notion.site/Nick-Arner-s-Job-Board-270b
 * [Onward](http://onward.so) - Tool for schedule and calendar enhancement. 
 * [Rime Labs](http://rime.ai) - Generative synthesized speech with realistic and diverse voices. 
 * [Roboflow](https://roboflow.com) - Full-Scale computer vision platform for developers. 
-* [San Francisco Compute Company](https://sfcompute.com) - democratising compute for startups and researchers
 * [Sprout](https://sprout.place/) - Create customizable, shareable virtual spaces for you and your favorite people. 
 * [Theatre.js](https://www.theatrejs.com/) - JavaScript animation library + GUI.
 * [Trace](https://www.trace.zip) - Create high-fidelity designs and animations in code.
