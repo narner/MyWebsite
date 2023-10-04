@@ -7,8 +7,6 @@ layout: "has-contents"
 
 ## Work
 
-* **Meter - MacOS VPN App** | 2023
-
 * **[Roboflow iOS SDK](/projects_and_work/work/roboflow_native_mobile_sdk/)** | 2023
 
 * **[Dusty Robotics - iPad app for robotic field printer control](/projects_and_work/work/dusty_robotics_ipad_app/)** | 2021-2022
@@ -20,8 +18,6 @@ layout: "has-contents"
   
 
 ## Personal
-
-* **Email-Based Video Messaging App** | 2020
 
 * **[Peer-to-Peer Audio Chat iOS App](/projects_and_work/personal/push_to_talk_audio_chat_app/)** | 2019
 
@@ -37,7 +33,6 @@ layout: "has-contents"
 
 ## Open Source
 
-- **Running Shell Commands from Screenshots**
 - **[Detecting ASL Signs on iOS](https://github.com/narner/ASL-Classifier-Demo)** | 2021
 - **[Dyscalculia Tester App](https://github.com/narner/DyscalculiaTester)** | 2020
 
