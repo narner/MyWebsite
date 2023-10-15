@@ -12,10 +12,10 @@ I worked wtih them to build a MacOS app that would allow their customers to acce
 
 
 
-The app would also provide network packet and WiFI statistic information to the user. 
+The app also provides network packet and WiFI statistic information to the user. 
 
 
 
 
 
-The app's available for download on the App Store here, but, you have to be an existing Meter customer to use it. 
+It's available for download on the App Store here, but, you have to be an existing Meter customer to use it. 
