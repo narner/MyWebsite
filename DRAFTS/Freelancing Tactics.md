@@ -33,7 +33,7 @@ Wanted to share some thoughts on lessons learned from doing freelance for the pa
   - Coffee / meal meetings
   - Software
   - Phone/computer/other equipment 
-  - Rent (if you work from home, you can deduct ⅕ of your rent cost)
+  - Rent (if you work from home, you can [deduct part of your space](https://turbotax.intuit.com/tax-tips/small-business-taxes/the-home-office-deduction/L1RZyYxzv))
   - Domain names 
   - WiFi
   - Continuing education expenses 
