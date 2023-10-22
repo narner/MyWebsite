@@ -5,9 +5,11 @@ date: "2020-04-07"
 
 Radar is a 85 — year old technology that up until recently has not been actively deployed in human-machine interfaces. Radar — based gesture sensing allows user intent to be inferred across more contexts than optical-only based tracking currently allows.
 
+&nbsp;
+
 Google’s use of Project Soli, a radar-based gesture recognition system, in the Pixel 4 series of phones is most likely the first step in further adoption of radar as an input for interacting with our devices.
 
-
+&nbsp;
 
 **Background on Project Soli**
 
@@ -45,11 +47,7 @@ First though, let’s take a look at the first commercial product to use Project
 The first commercial product to integrate Project Soli is the Pixel4, released by Google in October, 2019. The teaser-ad hinted that the new phone would be the first product to integrate with Soli; given the touchless air gestures shown in it:
 
 
-
-[![](http://img.youtube.com/vi/KnRbXWojW7c/0.jpg)](http://www.youtube.com/watch?v=KnRbXWojW7c "")
-
-
-
+{{< video src="https://web.archive.org/web/20190731140838/https://www.youtube.com/watch?v=KnRbXWojW7c" width="640" height="360" >}}
 
 
 The Soli chip affords **three new types of capabilities** for the Pixel 4:
@@ -148,9 +146,7 @@ The HCI department at the University of St. Andrews produced a robust body of wo
 Some of the projects from the Alpha Developer program were showcased in a video that was presented in the update from ATAP at the following year’s I/O event (2016):
 
 
-
-[![](http://img.youtube.com/vi/H41A_IWZwZI/0.jpg)](http://www.youtube.com/watch?v=H41A_IWZwZI "")
-
+{{< video src="https://web.archive.org/web/20190731140838/https://www.youtube.com/watch?v=KnRbXWojW7c" width="640" height="360" >}}
 
 
 ### Google Papers
