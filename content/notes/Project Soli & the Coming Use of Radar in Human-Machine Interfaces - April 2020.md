@@ -5,9 +5,9 @@ date: "2020-04-07"
 
 Radar is a 85 — year old technology that up until recently has not been actively deployed in human-machine interfaces. Radar — based gesture sensing allows user intent to be inferred across more contexts than optical-only based tracking currently allows.
 
-&nbsp;Google’s use of Project Soli, a radar-based gesture recognition system, in the Pixel 4 series of phones is most likely the first step in further adoption of radar as an input for interacting with our devices.
+Google’s use of Project Soli, a radar-based gesture recognition system, in the Pixel 4 series of phones is most likely the first step in further adoption of radar as an input for interacting with our devices.
 
-&nbsp;
+
 
 **Background on Project Soli**
 
