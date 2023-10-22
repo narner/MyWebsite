@@ -47,7 +47,11 @@ First though, let’s take a look at the first commercial product to use Project
 The first commercial product to integrate Project Soli is the Pixel4, released by Google in October, 2019. The teaser-ad hinted that the new phone would be the first product to integrate with Soli; given the touchless air gestures shown in it:
 
 
-{{< video src="http://www.youtube.com/watch?v=KnRbXWojW7c" width="640" height="360" >}}
+
+[![](http://img.youtube.com/vi/KnRbXWojW7c/0.jpg)](http://www.youtube.com/watch?v=KnRbXWojW7c "")
+
+
+
 
 
 The Soli chip affords **three new types of capabilities** for the Pixel 4:
@@ -146,7 +150,9 @@ The HCI department at the University of St. Andrews produced a robust body of wo
 Some of the projects from the Alpha Developer program were showcased in a video that was presented in the update from ATAP at the following year’s I/O event (2016):
 
 
-{{< video src="https://web.archive.org/web/20190731140838/https://www.youtube.com/watch?v=KnRbXWojW7c" width="640" height="360" >}}
+
+[![](http://img.youtube.com/vi/H41A_IWZwZI/0.jpg)](http://www.youtube.com/watch?v=H41A_IWZwZI "")
+
 
 
 ### Google Papers
