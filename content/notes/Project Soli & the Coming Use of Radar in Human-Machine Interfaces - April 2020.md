@@ -140,8 +140,7 @@ The HCI department at the University of St. Andrews produced a robust body of wo
 
 Some of the projects from the Alpha Developer program were showcased in a video that was presented in the update from ATAP at the following year’s I/O event (2016):
 
-
-{{< video src="https://web.archive.org/web/20190731140838/https://www.youtube.com/watch?v=KnRbXWojW7c" width="640" height="360" >}}
+[![](http://img.youtube.com/vi/H41A_IWZwZI/0.jpg)](http://www.youtube.com/watch?v=H41A_IWZwZI "")
 
 
 ### Google Papers
