@@ -42,10 +42,7 @@ First though, let’s take a look at the first commercial product to use Project
 
 ### Pixel4 and Motion Sense: Capabilities
 
-The first commercial product to integrate Project Soli is the Pixel4, released by Google in October, 2019. The teaser-ad hinted that the new phone would be the first product to integrate with Soli; given the touchless air gestures shown in it:
-
-
-{{< video src="https://web.archive.org/web/20190731140838/https://www.youtube.com/watch?v=KnRbXWojW7c" width="640" height="360" >}}
+The first commercial product to integrate Project Soli is the Pixel4, released by Google in October, 2019. The teaser-ad hinted that the new phone would be the first product to integrate with Soli; given the touchless air gestures shown in it (*the video has since been made private, but can be found on the Wayback Machine [here](https://web.archive.org/web/20190731140838/https://www.youtube.com/watch?v=KnRbXWojW7c).*)
 
 
 The Soli chip affords **three new types of capabilities** for the Pixel 4:
