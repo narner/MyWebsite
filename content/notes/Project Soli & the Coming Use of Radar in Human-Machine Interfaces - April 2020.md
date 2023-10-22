@@ -209,11 +209,7 @@ Having a unified way to [interact with devices that exist in a variety of contex
 
 With the recent release of a [LiDAR capable iPad Pro](https://www.apple.com/newsroom/2020/03/apple-unveils-new-ipad-pro-with-lidar-scanner-and-trackpad-support-in-ipados/) in service to AR capabilities, Apple seems to be showing a willingness to put sensors of ever increasing complexity (and utility) into their products. Additionally, Apple has put up at least one posting for roles related to radar; a [now inactive posting on LinkedIn](https://www.linkedin.com/jobs/view/radar-signal-processing-engineer-at-apple-1380851968/) for a Radar Signal Processing Engineer includes the following in its description.
 
-
-
 ![AppleJob1](/blog_assets/2020/AppleJob1.png)
-
-​	
 
 ![AppleJob2](/blog_assets/2020/AppleJob2.png)
 
