@@ -211,11 +211,11 @@ With the recent release of a [LiDAR capable iPad Pro](https://www.apple.com/news
 
 
 
-![AppleJob1](/blog_assets/2020/AppleJob1.jpg)
+![AppleJob1](/blog_assets/2020/AppleJob1.png)
 
 ​	
 
-![AppleJob2](/blog_assets/2020/AppleJob2.jpg)
+![AppleJob2](/blog_assets/2020/AppleJob2.png)
 
 
 
