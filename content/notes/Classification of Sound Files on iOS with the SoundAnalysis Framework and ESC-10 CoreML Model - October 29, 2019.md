@@ -91,4 +91,6 @@ audioFileAnalyzer.analyze()
 
 The project can be found on GitHub [here](https://github.com/narner/ESC10-CoreML).
 
-[![](http://img.youtube.com/vi/dAtzSo51T_4/0.jpg)](http://www.youtube.com/watch?v=dAtzSo51T_4 "")
+<video autoplay controls width="640" height="360">
+  <source src="/blog_assets/2019/ESC-10_CoreML_Model_Demo.mp4" type="video/mp4">
+</video>
