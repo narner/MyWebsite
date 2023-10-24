@@ -99,7 +99,7 @@ What I was not successful at was training the ESP to discriminate between the ac
 
 
 
-![leaf+rub](s/blog_assets/2017/leaf+rub.gif)
+![leaf+rub](/blog_assets/2017/leaf+rub.gif)
 
 
 
