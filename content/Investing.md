@@ -29,14 +29,13 @@ Some of them are [hiring](https://narner.notion.site/Nick-Arner-s-Job-Board-270b
 * [Sprout](https://sprout.place/) - Create customizable, shareable virtual spaces for you and your favorite people. 
 * [Theatre.js](https://www.theatrejs.com/) - JavaScript animation library + GUI.
 * [Trace](https://www.trace.zip) - Create high-fidelity designs and animations in code.
-* [Texts](http://texts.com)  - Unified messaging application
 * [Vuecason](https://www.vuecason.com) - Combined 3D metal printing and machine tool.
 
 
 
 **Notable Outcomes**
 
-* One Unanounnced Acquistion 
+* [Texts](http://texts.com)  - Unified messaging application (acquired by Auttomatic) 
 
   
 
