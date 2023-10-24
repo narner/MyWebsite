@@ -18,4 +18,6 @@ When you had created your prototype on the graph, it could be exported out of th
 
 You can check out the ProductHunt launches [here](https://www.producthunt.com/products/asteroid) and [here](https://www.producthunt.com/products/asteroid#asteroid-2) 
 
-{{< video src="/post_assets/asteroid/AsteroidProductVideo.mp4" type="video/mp4" preload="auto" width="640" height="360" >}}
+
+
+<video autoplay controls>   <source src="post_assets/asteroid/AsteroidProductVideo.mp4" type="video/mp4"> </video>
