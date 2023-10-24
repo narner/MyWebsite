@@ -20,4 +20,4 @@ You can check out the ProductHunt launches [here](https://www.producthunt.com/pr
 
 
 
-<video autoplay controls>   <source src="post_assets/asteroid/AsteroidProductVideo.mp4" type="video/mp4"> </video>
+<video autoplay controls>   <source src="/post_assets/asteroid/AsteroidProductVideo.mp4" type="video/mp4"> </video>
