@@ -22,7 +22,7 @@ Some of them are [hiring](https://narner.notion.site/Nick-Arner-s-Job-Board-270b
 * [ExplainPaper](http://explainpaper.com) - LLM powered research paper explanations.
 * [Galileo AI](https://www.usegalileo.ai) - Copilot for Interface Design.
 * [Ixana](https://ixana.ai) - High-speed Human-Computer Interfaces with Distrbuted Computing.
-* [Jangle](https://www.jangleinc.com) - Distraction Free Computing.
+* [Jangle](https://www.jangleinc.com) - Distraction-Free Computing.
 * [Onward](http://onward.so) - Tool for schedule and calendar enhancement. 
 * [Rime Labs](http://rime.ai) - Generative synthesized speech with realistic and diverse voices. 
 * [Roboflow](https://roboflow.com) - Full-Scale computer vision platform for developers. 
