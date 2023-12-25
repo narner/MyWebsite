@@ -12,6 +12,4 @@ Urbit is a reimagining of what an OS can be; built around the concept of a peer-
 
 The Pocket app allowed users to sign-in to their ships and load all of ther DMs and group chats. They could also create new DMs and group chats with people they were in shared groups with. 
 
-The app was sunset in Fall 2023.
-
 ![Urbit-Pocket-iOS-App](/post_assets/urbit/UrbitPocket.jpg)
