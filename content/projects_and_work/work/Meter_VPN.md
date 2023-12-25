@@ -8,4 +8,4 @@ I worked with Meter to build a Mac app that allowed their customers to connect t
 
 The app is available on the App Store.
 
-![MeterVPNApp](/post_assets/meter/Meter_VPN_Main_Screenshot.png)
+![MeterVPNApp](/post_assets/meter/meter_vpn_main_screenshot.png)
