@@ -37,3 +37,6 @@ Wanted to share some thoughts on lessons learned from doing freelance for the pa
   - Domain names 
   - WiFi
   - Continuing education expenses 
+    - Books
+    - Classes
+    - Workshops
