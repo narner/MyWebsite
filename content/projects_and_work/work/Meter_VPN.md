@@ -8,11 +8,6 @@ date: "2023-12-25"
 
 It's built in Swift, and utilizes the Network Extension framework for creating a VPN connection.
 
-The app is available on the App Store.
+The app is available on the [App Store](https://apps.apple.com/us/app/meter-vpn/id6449044498?mt=12).
 
-![MeterVPNApp](/post_assets/meter/meter_vpn_main_screenshot.png)
-
-![MeterVPNApp](/post_assets/meter/meter_vpn_settings_screenshot.png)
-
-
-
+![MeterVPNApp](/post_assets/meter/meter_tunnel.png)
