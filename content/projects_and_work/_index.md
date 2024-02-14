@@ -7,6 +7,8 @@ layout: "has-contents"
 
 ## Work
 
+* **[Meter VPN App](/projects_and_work/work/meter_vpn/)** | 2023
+
 * **[Roboflow iOS SDK](/projects_and_work/work/roboflow_native_mobile_sdk/)** | 2023
 
 * **[Dusty Robotics - iPad app for robotic field printer control](/projects_and_work/work/dusty_robotics_ipad_app/)** | 2021-2022
