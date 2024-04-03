@@ -10,7 +10,7 @@ Wanted to share some thoughts on lessons learned from doing freelance for the pa
 - Always get a contract signed - this protects both you and the client 
 - Make sure to add in a clause to any contracts to late fees for your invoices. If a client is late to paying an invoice, add a late fee as some percentage of the amount owed. 
 - If doing project-based work, make sure it is very clearly defined in scope. There should be no ambiguity between either party on what the scope of the work to be completed is. 
-  - If all parties act in good faith, and a project evolves in scope out of unforeseen necessities, you should communicate with them about the need
+  - If all parties act in good faith, and a project evolves in scope out of unforeseen necessities, you should communicate with them about the additional work required. 
 - Your time is valuable, and you should treat it as such. 
 
 **Communication and Expectations**
