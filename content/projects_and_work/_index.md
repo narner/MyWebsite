@@ -35,6 +35,7 @@ layout: "has-contents"
 
 ## Open Source
 
+- **[Visual iMessage Descriptions](https://github.com/narner/Visual-iMessage-Demo)** - 2024
 - **[Detecting ASL Signs on iOS](https://github.com/narner/ASL-Classifier-Demo)** | 2021
 - **[Dyscalculia Tester App](https://github.com/narner/DyscalculiaTester)** | 2020
 
