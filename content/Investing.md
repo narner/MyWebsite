@@ -15,7 +15,6 @@ Some of them are [hiring](https://narner.notion.site/Nick-Arner-s-Job-Board-270b
 
 * [Automat](https://www.runautomat.com/about) - Automate your automations with video demonstrations and text descriptions.
 * [Banana Dev](http://banana.dev) - Machine Learning Model Deployment on Serverless GPUs.
-* [BrevDev](http://brev.dev) - Fine-tune and train ML models in < 10 minutes.
 * [Chroma](http://trychroma.com) - The AI-native open-source embedding database.
 * [Default](https://www.default.com/) - Capture inbound sales leads via customizable and integratabtle forms on your website. 
 * [Embra](http://embra.app) - Fastest AI assistant for professionals.
@@ -36,7 +35,7 @@ Some of them are [hiring](https://narner.notion.site/Nick-Arner-s-Job-Board-270b
 
 **Notable Outcomes**
 
-* [Texts](http://texts.com)  - Unified messaging application (acquired by Auttomatic) 
+* [Texts](http://texts.com)  - Unified messaging application (acquired by Automattic) 
 
   
 
