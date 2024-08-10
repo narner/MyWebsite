@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <title> Distributing Frameworks via CocoaPods • Nick Arner </title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180"  href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="16x16"  href="/favicon.ico"> 
+
+        
+        <meta property="og:url" content="https://nickarner.com" />
+        <meta property="og:title" content="Distributing Frameworks via CocoaPods" />
+        <meta property="og:description" content="Nick&#39;s Arner&#39;s website." />
+        <meta property="og:image" content="https://nickarner.com/card.jpg" />
+
+        
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:creator" content="@joodaloop">
+        <meta name="twitter:title" content="Distributing Frameworks via CocoaPods">
+        <meta name="twitter:description" content="Nick&#39;s Arner&#39;s website." />
+        <meta name="twitter:image" content="https://nickarner.com/card.jpg" />
+
+        <meta name="description" content="Nick&#39;s Arner&#39;s website.">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>    
+    
+<main>
+        <div class=left>
+                <div class=menu>
+
+	<nav>
+		<div class="home">
+			<a href="/"> Nick Arner </a>
+		</div>
+		<a href="/projects_and_work"> Projects </a>
+		<a href="/investing"> Investments </a>
+		<a href="/notes"> Notes </a>
+		<a href="/publications"> Publications </a>
+		<a href="/books"> Books </a>
+	</nav>
+</div>
+        </div><div class=content>
+                <article>
+
+<h1>Distributing Frameworks via CocoaPods</h1>
+      <div class=date>Published on Apr 20, 2022 </div>
+      <p>If you&rsquo;re developing an iOS SDK that you want to be able to license and distribute to customers via <a href="http://cocoapods.org" target="_blank" class="external-link" >CocoaPods</a>, but don&rsquo;t want to be able to have your source code publically available; you can distribute it as a framework that CocoaPods will install in your project.</p>
+<p>Once you&rsquo;ve finished writing your framework* and it&rsquo;s ready for distribution, you&rsquo;ll first want to create a public repository that has your <a href="https://guides.cocoapods.org/syntax/podspec.html" target="_blank" class="external-link" >.podspec file</a>, and the framework you want to distribute. Name it something like &ldquo;MyFramework-Podspec&rdquo;. The one below can serve as a template:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">Pod</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Spec</span><span style="color:#f92672">.</span>new <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>spec<span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span>  spec<span style="color:#f92672">.</span>name               <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;MyFramework&#34;</span>
+</span></span><span style="display:flex;"><span>  spec<span style="color:#f92672">.</span>version            <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0.0.1&#34;</span>
+</span></span><span style="display:flex;"><span>  spec<span style="color:#f92672">.</span>platform <span style="color:#f92672">=</span> <span style="color:#e6db74">:ios</span>, <span style="color:#e6db74">&#39;15.2&#39;</span>
+</span></span><span style="display:flex;"><span>  spec<span style="color:#f92672">.</span>ios<span style="color:#f92672">.</span>deployment_target <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;15.2&#39;</span>
+</span></span><span style="display:flex;"><span>  spec<span style="color:#f92672">.</span>summary            <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;My Framework&#34;</span>
+</span></span><span style="display:flex;"><span>  spec<span style="color:#f92672">.</span>description        <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;My Framework for doing Blah&#34;</span>
+</span></span><span style="display:flex;"><span>  spec<span style="color:#f92672">.</span>homepage           <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://www.nickarner.com&#34;</span>
+</span></span><span style="display:flex;"><span>  spec<span style="color:#f92672">.</span>documentation_url  <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://www.nickarner.com&#34;</span>
+</span></span><span style="display:flex;"><span>  spec<span style="color:#f92672">.</span>swift_versions <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;5.0&#39;</span>
+</span></span><span style="display:flex;"><span>  spec<span style="color:#f92672">.</span>license <span style="color:#f92672">=</span> { <span style="color:#e6db74">:type</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;Commercial&#39;</span>, <span style="color:#e6db74">:text</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;See www.nickarner.com&#39;</span> }
+</span></span><span style="display:flex;"><span>  spec<span style="color:#f92672">.</span>author             <span style="color:#f92672">=</span> { <span style="color:#e6db74">&#34;Nick Arner&#34;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#34;...&#34;</span> }
+</span></span><span style="display:flex;"><span>  spec<span style="color:#f92672">.</span>swift_version      <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;5.3&#34;</span>
+</span></span><span style="display:flex;"><span>  spec<span style="color:#f92672">.</span>source            <span style="color:#f92672">=</span> { <span style="color:#e6db74">:http</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;https://github.com/my-org/my-framework-podspecs/releases/download/0.0.1/MyFramework.xcframework.zip&#39;</span> }
+</span></span><span style="display:flex;"><span>  spec<span style="color:#f92672">.</span>dependency <span style="color:#e6db74">&#39;Alamofire&#39;</span> , <span style="color:#e6db74">&#39;~&gt; 5.4.3&#39;</span> 
+</span></span><span style="display:flex;"><span>  spec<span style="color:#f92672">.</span>ios<span style="color:#f92672">.</span>vendored_frameworks <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;MyFramework.xcframework&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>The key lines here are <code>spec.source</code> and <code>spec.ios.vendored_frameworks</code>. The first one is the field for specifiying that the location of the framework to be downloaded and used for compiling the CocoaPod. Rather than specifying the source as Swift files that would be downloaded and compiled, as you would if you were making your entire pod open-source; here we&rsquo;re specifying the path to our <code>xcramework</code> that will be used to build our CocoaPod.</p>
+<p><code>spec.ios.vendored_frameworks</code> specifies that we are going to use the framework we&rsquo;ve included in the compilation step for building the CocoaPod.</p>
+<p><em>For more information on configuring your <code>.podspec</code> file, see the <a href="https://guides.cocoapods.org/syntax/podspec.html" target="_blank" class="external-link" >Podspec Syntax Reference</a>.</em></p>
+<p>Once you&rsquo;ve created your <code>.podspec</code> file, go ahead and commit it to your repository.</p>
+<p>Zip your <code>.xcframework</code> file, and upload it to the Releases section of your repository:</p>
+<p><img src="/blog_assets/2022/GitHubReleases.png" alt="GitHubRelease" title="GitHubRelease"  />
+</p>
+<p>The link to this file is what we&rsquo;ll use for the <code>podspec</code>&rsquo;s <code>spec.source</code> parameter.</p>
+<p>Now, the part that tripped me up was that it appears you also have to include a copy of the <code>.xcframework</code> file in your repository <em>in addition to uploading it as a release</em>:</p>
+<p><img src="/blog_assets/2022/Framework.png" alt="GitHubRelease" title="GitHubRelease"  />
+</p>
+<p><em>You&rsquo;ll probably want to bundle it as an <a href="https://help.apple.com/xcode/mac/11.4/#/dev544efab96" target="_blank" class="external-link" >XCFramework</a> (a framework that is compiled to run both on iOS simulators and physical iOS devices), you can distribute it via a private CocoaPod. Here&rsquo;s a sample script you can modify and run in the root of your project to build an <code>.xcframework</code></em>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>xcodebuild archive <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -scheme MyFramework <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -archivePath <span style="color:#e6db74">&#34;archives/MyFramework-iOS.xcarchive&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -destination <span style="color:#e6db74">&#34;generic/platform=iOS&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -sdk iphoneos <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  SKIP_INSTALL<span style="color:#f92672">=</span>NO <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  BUILD_LIBRARY_FOR_DISTRIBUTION<span style="color:#f92672">=</span>YES
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>xcodebuild archive <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -scheme MyFramework <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -archivePath <span style="color:#e6db74">&#34;archives/MyFramework-iOS-simulator.xcarchive&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -destination <span style="color:#e6db74">&#34;generic/platform=iOS Simulator&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -sdk iphonesimulator <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  SKIP_INSTALL<span style="color:#f92672">=</span>NO <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  BUILD_LIBRARY_FOR_DISTRIBUTION<span style="color:#f92672">=</span>YES
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>xcodebuild -create-xcframework <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -framework <span style="color:#e6db74">&#34;archives/MyFramework-iOS.xcarchive/Products/Library/Frameworks/MyFramework.framework&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -framework <span style="color:#e6db74">&#34;archives/MyFramework-iOS-simulator.xcarchive/Products/Library/Frameworks/MyFramework.framework&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -output <span style="color:#e6db74">&#34;MyFramework.xcframework&#34;</span>
+</span></span></code></pre></div>
+       
+
+                </article>
+                <footer> © Copyright Nicholas Arner, 2024  </footer>
+        </div>
+        
+</main>
+
+        
+</body>
+</html>

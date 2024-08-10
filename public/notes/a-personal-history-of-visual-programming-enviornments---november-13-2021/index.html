@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <title> A Personal History of Visual Programming Environments • Nick Arner </title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180"  href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="16x16"  href="/favicon.ico"> 
+
+        
+        <meta property="og:url" content="https://nickarner.com" />
+        <meta property="og:title" content="A Personal History of Visual Programming Environments" />
+        <meta property="og:description" content="Nick&#39;s Arner&#39;s website." />
+        <meta property="og:image" content="https://nickarner.com/card.jpg" />
+
+        
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:creator" content="@joodaloop">
+        <meta name="twitter:title" content="A Personal History of Visual Programming Environments">
+        <meta name="twitter:description" content="Nick&#39;s Arner&#39;s website." />
+        <meta name="twitter:image" content="https://nickarner.com/card.jpg" />
+
+        <meta name="description" content="Nick&#39;s Arner&#39;s website.">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>    
+    
+<main>
+        <div class=left>
+                <div class=menu>
+
+	<nav>
+		<div class="home">
+			<a href="/"> Nick Arner </a>
+		</div>
+		<a href="/projects_and_work"> Projects </a>
+		<a href="/investing"> Investments </a>
+		<a href="/notes"> Notes </a>
+		<a href="/publications"> Publications </a>
+		<a href="/books"> Books </a>
+	</nav>
+</div>
+        </div><div class=content>
+                <article>
+
+<h1>A Personal History of Visual Programming Environments</h1>
+      <div class=date>Published on Nov 13, 2021 </div>
+      <p>Part of my journey to becoming a software engineer and working in tech is due to the fact that while in music school, I had exposure to visual programming environments like Pure Data / Max and Quartz Composer. Hindsight being 20/20, I probably would not have been as enamored with the idea of creating software - and learning how to program it - had I not been exposed to these environments.</p>
+<p>I learnt these visual programming environments because I wanted to get closer to realizing the sounds and visuals that were in my head, and I wasn’t able to realize using the ready-made, domain specific software programs that were available to me.</p>
+<p>I needed to get closer to writing software than using it - though this vocabulary was not available to me at the time.</p>
+<p>The music program I attended had various performing ensembles - classical, choral, jazz; even a rock ensemble!</p>
+<p>By far the most unique of these was the Midi Band. Around 8-10 musicians and two sound engineers would surround themselves with electronic drums, a Midi saxophone, Midi guitar, an excessive amount of electronic keyboards, and other electronic music arcana. We’d sometimes play to a backing or a click-track provided by a laptop.</p>
+<p><img src="/blog_assets/2021/MidiBand.jpg" alt="MidiBand" title="MidiBand"  />
+</p>
+<p>Since this was all <a href="https://en.wikipedia.org/wiki/MIDI" target="_blank" class="external-link" >Midi</a>, the only way you could hear it was to have the audio piped through a personal headphone mixing station, and then through large speakers so that the audience could actually hear the music.</p>
+<p>At various times while being in the music program, I would either play the Midi Bass, or be a sound engineer for the ensemble. During my senior year, I became interested in making interactive visuals that would play along with the music that the ensemble was playing; which was mostly music with an electronic component (I arranged a version of Depeche Mode’s “Behind the Wheel” for the group).</p>
+<p>One of my favorite blogs at the time was <a href="https://cdm.link/" target="_blank" class="external-link" >Create Digital Media</a> - a treasure trove of articles on how artists and musicians were using hardware and software in their creative practices.</p>
+<p>This was where I learned about <a href="https://en.wikipedia.org/wiki/Quartz_Composer" target="_blank" class="external-link" >Quartz Composer</a> - a wonderful piece of software that came bundled with my Mac’s OS. Seeing the dynamic, magical visuals that <a href="https://cdm.link/?s=quartz&#43;composer" target="_blank" class="external-link" >other people were able to create with Quartz Composer</a> made me want to dive in. The idea that it was possible to create concert-level quality of live visuals with this free program that came on my computer was captivating to me.</p>
+<p> </p>
+<p><strong>Quartz Composer</strong></p>
+<p>Used a lot by designers to create interactive demos and presentations, it went on to inspire <a href="https://origami.design/" target="_blank" class="external-link" >Facebook’s Origami Studio</a> (which originally was a <a href="https://github.com/facebookarchive/origami" target="_blank" class="external-link" >Quartz Composer plug-in</a>. It also found a niche home in the VJ community, where it was used to create absolutely breathtaking dynamic visuals. There was never a whole lot of resources on how to use it…you just kind of had to fuck around and find out until you got something that you thought looked cool. There were a few forum posts that were helpful with getting started, but sadly <a href="https://www.amazon.com/Quartz-Composer-Book/dp/486100568X" target="_blank" class="external-link" >the only book at the time</a> on the subject was written in Japanese.</p>
+<p>That said, the visuals that some of the artists I found were truly inspiring, and I was able to get far enough along with it to create visuals for the Midi Band performances.</p>
+<p>I’d take an audio line from the mixer board and plug it into my computer with an audio interface like this one:</p>
+<p> </p>
+<p><img src="/blog_assets/2021/MAudio.jpg" alt="MAudio" title="MAudio"  />
+</p>
+<p> </p>
+<p>I’d route the audio into Quartz Composer, and use the amplitude / frequency of the signal to control the visuals. I could do this all by creating and connecting objects together on Quartz Composer’s canvas:</p>
+<p> </p>
+<p><img src="/blog_assets/2021/QuartzComposer.png" alt="QuartzComposer" title="QuartzComposer"  />
+</p>
+<p><a href="https://stackoverflow.com/questions/15049276/quartz-composer-viewer-zoom" target="_blank" class="external-link" >Source</a></p>
+<p> </p>
+<p>&hellip;and would use the knobs and keys on a MIDI keyboard controller to adjust visual parameters or trigger visual sequences.</p>
+<p>Because you could connect anything to anything just by dragging virtual patch cowards between objects,you could quickly see how these different connections affected the visual output.</p>
+<p>Quartz Composer allowed non-technical people to create powerful, rich, interactive systems without writing any code yourself. It was truly a predecessor to contemporary no-code software, and deserves to be recognized as such. QC was one of a kind, and I continually mourn it’s unsettling - much in the same way that HyperCard users mourned that tool’s passing as well.</p>
+<p><em>If you are working on a native Mac app that’s a spiritual successor to Quartz Composer, please reach out! <a href="mailto:nicholasarner@gmail.com">nicholasarner@gmail.com</a></em></p>
+<p> </p>
+<p><strong>PD / MAX</strong></p>
+<p>During my college classes on electronic music and composition, I was exposed to PureData. <a href="http://puredata.info/" target="_blank" class="external-link" >PureData</a> is a free and open-source programming environment for sound synthesis (though plugins exist for visuals, too). Though the interface is rather barebones, it’s canvas allows for complex audio synthesis patches to be created visually, without having to write any code:</p>
+<p> </p>
+<p><img src="/blog_assets/2021/PureData.png" alt="PureData" title="PureData"  />
+</p>
+<p><a href="http://archive.flossmanuals.net/pure-data/dataflow-tutorials/graph-on-parent.html" target="_blank" class="external-link" >Source</a></p>
+<p> </p>
+<p>Eventually, I made the jump to PureData’s paid cousin, <a href="https://cycling74.com/products/max" target="_blank" class="external-link" >Cycling 74’s Max</a>. With a slick interface, packaging system, and regular updates; it&rsquo;s a Swiss Army knife for anyone working with interactive media.</p>
+<p> </p>
+<p><img src="/blog_assets/2021/Max.png" alt="Max" title="Max"  />
+</p>
+<p><a href="https://cycling74.com/products/max" target="_blank" class="external-link" >From Cycling 74’s Website</a></p>
+<p> </p>
+<p>PD and Max allowed me to make the jump from <em>using</em> software for composing and sound design to using making small programs to manipulate data and control things like DSP processes and effects at a fundamental level. My actions on the Max canvas, slicing and stretching and pulverizing sound samples, had an effect on me - I began to understand how computers could be capable of allowing me to have a more immediate and intimate connection to the medium I was working with.</p>
+<p>I didn’t realize it at the time, but this would put me on a path to understanding a fundamental potential of computers - the ability to manipulate data in a way that would amplify my creative goals.</p>
+<p>It also opened me to the world of OSS communities….PD and Max users would share mini programs (“patches”) in various forums that you could download and run yourself. Modifying these patches and figuring out how they worked was both how I learned about fundamental audio synthesis principles, and how the software itself worked.</p>
+<p><strong>Asteroid</strong></p>
+<p>Many years after these initial forays into visual programming environments for creative applications, I had learned to program, and had been working as a MacOS and iOS engineer for a few years.</p>
+<p>I eventually joined a nascent startup, Asteroid, as Employee One. The <a href="https://www.producthunt.com/posts/asteroid-2" target="_blank" class="external-link" >product we were working on</a> was a native Mac app, written in Swift, that would let you create ARKit interactions without writing any code.</p>
+<p>One of my main contributions was creating a node-based interface where you could add objects to a canvas that would power your ARKit interaction flows and connect them together to define the behaviors of the interaction.</p>
+<p>For example, you could create a camera object, and connect it to an ML object. The camera would send frames to the ML object and run them through a CoreML classifier.</p>
+<p>FDepending on the type of ML model that was being used, you could do different things with the results. For example, one of the demos I made used an ML model that would detect different hand gestures. Depending on what type of gesture was detected (like an OK-sign, or a thumbs up), a corresponding 3D Emoji asset would appear in the field of view.</p>
+<p> </p>
+<p><img src="/blog_assets/2021/AsteroidEmoji.gif" alt="AsteroidEmoji" title="AsteroidEmoji"  />
+</p>
+<p> </p>
+<p>When you were done creating your interactions in the visual canvas, you could export it out of our Mac app, and have a fully functioning ARKit-based Xcode project that was ready to deploy a working app to your iOS device.</p>
+<p> </p>
+<p>I made several demos, including a yoga pose detector, and an app that could recognize electronic components, such as resistors or capacitors.</p>
+<p> </p>
+<p><img src="/blog_assets/2021/AsteroidElectronics.png" alt="AsteroidElectronics" title="AsteroidElectronics"  />
+</p>
+<p> </p>
+<p>The visual, node-based canvas allowed for fairly complex ARKit-based interactions to be created without having to write any code. Once you had prototyped your interactions and exported out your Xcode project, you could dive into the code to modify it as you wished, and build out a complete iOS app around it.</p>
+<p> </p>
+<hr>
+<p> </p>
+<p>Visual programming environments opened up a new way of thinking for me about how I could use computers. I would no longer be constrained to using already written software as a user - I could create my own software even though I didn’t (yet) know the first thing about programming. I was able to explore the medium of computation through the lenses of things I was familiar with (music) or things that I had a desire to learn (interactive visuals).</p>
+<p>Visual Programming environments can be extremely powerful tools - allowing end-users to have the ability to move a bit lower on the <a href="http://worrydream.com/LadderOfAbstraction/" target="_blank" class="external-link" >ladder of abstraction</a> from just using software that someone else wrote for a particular domain or task.</p>
+<p>The biggest power of these tools lies in their ability to literally draw connections between dynamic objects, allowing for a fast and intuitive development process. Additionally, the canvas nature of these tools allows for the program to be composed / organized in a spatial manner - you can see how the program controls from one object to the next. Unlike regular software development, the user does not have to keep all of these connections and state information inside of their head - they can just look at the canvas.</p>
+<p>At the same time that I was learning these environments, I was taking a few CS classes in college, in addition to my required courses - and I absolutely hated them. The subject matter felt opaque, the professors were incredibly impatient with me, and in general the classes were very divorced from what I actually wanted to learn how to do - which was how to make things.</p>
+<p>I doubt I would have eventually learned how to program were it not from exposure to these Visual Programming Environments - <em>because</em> they were visual and I could <em>see</em> the effect that my actions would have on the output, I could understand my agency in the act of engaging with computation.</p>
+<p>While Visual Programming Environments are certainly not perfect - when creating something very complex in these environments, you can easily get a visually cluttered, tangled mess of connections that are impossible to parse through - the fact that they provide an easy path to being onboarded to interacting with computation is what makes them valuable for people who may not otherwise have been exposed to the process of creating software.</p>
+<p> </p>
+<p><strong>Learning More:</strong></p>
+<ul>
+<li>
+<p><a href="http://worrydream.com/#!/DynamicPicturesMotivation" target="_blank" class="external-link" >Dynamic Pictures</a></p>
+</li>
+<li>
+<p><a href="https://webflow.com/blog/from-no-code-to-know-code" target="_blank" class="external-link" >From no-code to know code</a></p>
+</li>
+<li>
+<p><a href="https://drossbucket.com/2021/06/30/hacker-news-folk-wisdom-on-visual-programming/" target="_blank" class="external-link" >Hacker News folk wisdom on visual programming</a></p>
+</li>
+<li>
+<p><a href="https://www.are.na/molly-mielke/visual-programming-ftlte60hhpu" target="_blank" class="external-link" >Molly Mielke&rsquo;s Visual Programming Resources</a></p>
+</li>
+<li>
+<p><a href="http://blog.interfacevision.com/design/design-visual-progarmming-languages-snapshots/" target="_blank" class="external-link" >Visual Programming Languages - Snapshots</a></p>
+</li>
+<li>
+<p><a href="https://github.com/ivanreese/visual-programming-codex" target="_blank" class="external-link" >Visual Programming Resources</a></p>
+</li>
+</ul>
+
+       
+
+                </article>
+                <footer> © Copyright Nicholas Arner, 2024  </footer>
+        </div>
+        
+</main>
+
+        
+</body>
+</html>

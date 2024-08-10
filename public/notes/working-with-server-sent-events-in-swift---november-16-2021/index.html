@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <title> Working with Server-Sent Events in Swift • Nick Arner </title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180"  href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="16x16"  href="/favicon.ico"> 
+
+        
+        <meta property="og:url" content="https://nickarner.com" />
+        <meta property="og:title" content="Working with Server-Sent Events in Swift" />
+        <meta property="og:description" content="Nick&#39;s Arner&#39;s website." />
+        <meta property="og:image" content="https://nickarner.com/card.jpg" />
+
+        
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:creator" content="@joodaloop">
+        <meta name="twitter:title" content="Working with Server-Sent Events in Swift">
+        <meta name="twitter:description" content="Nick&#39;s Arner&#39;s website." />
+        <meta name="twitter:image" content="https://nickarner.com/card.jpg" />
+
+        <meta name="description" content="Nick&#39;s Arner&#39;s website.">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>    
+    
+<main>
+        <div class=left>
+                <div class=menu>
+
+	<nav>
+		<div class="home">
+			<a href="/"> Nick Arner </a>
+		</div>
+		<a href="/projects_and_work"> Projects </a>
+		<a href="/investing"> Investments </a>
+		<a href="/notes"> Notes </a>
+		<a href="/publications"> Publications </a>
+		<a href="/books"> Books </a>
+	</nav>
+</div>
+        </div><div class=content>
+                <article>
+
+<h1>Working with Server-Sent Events in Swift</h1>
+      <div class=date>Published on Nov 16, 2021 </div>
+      <p>In most mobile applications that work with networked data, standard HTTP GET requests are used to fetch the data from the server that you want to display in your app&rsquo;s UI.</p>
+<p>However, some backend servers may make use of a different pattern for data transfer between themselves and a client than the common REST architecture - that of<a href="https://en.wikipedia.org/wiki/Server-sent_events" target="_blank" class="external-link" > Server Sent Events (SSE&rsquo;s)</a>.</p>
+<p>In this scenario, a server broadcasts any updated data, and the client application listens for these changes to come in over the HTTP connection. As long as that connection remains open, the client will be aware of any changes that have occurred server-side.</p>
+<p>In this post, I&rsquo;ll walk through how to implement an iOS app to connect to an event source using the<a href="https://github.com/inaka/EventSource" target="_blank" class="external-link" > EventSource Library</a>.</p>
+<h2 id="setting-up-the-eventsource-and-receiving-data">Setting up the EventSource and Receiving Data</h2>
+<p>In the function below, we&rsquo;ll first setup our EventSource with the URL of the server that we&rsquo;re connecting to:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">setupEventSource</span>(channelURLString: String) {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> serverURL = URL(string: channelURLString)<span style="color:#f92672">!</span>
+</span></span><span style="display:flex;"><span>	eventSource = EventSource(url: serverURL, headers: [<span style="color:#e6db74">&#34;Authorization&#34;</span> : cookie!.value])
+</span></span><span style="display:flex;"><span>	eventSource?.connect()
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Inside this function, we&rsquo;ll register our callbacks for interacting with the EventSource. The first one, onComplete, is called if the EventSource is closed for whatever reason. This could happen if there&rsquo;s an error at the network layer, loss of connectivity, or the server itself requests a disconnection.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>eventSource?.onComplete({ [<span style="color:#66d9ef">self</span>] (statusCode, reconnect, error) <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>	eventSource?.connect(lastEventId: currId);
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><p>The next callback is called once our EventSource has successfully connected to the upstream server, and is ready to receive data from it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>eventSource?.onOpen {
+</span></span><span style="display:flex;"><span>	print(<span style="color:#e6db74">&#34;Event sourced opened!&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Finally, we register a callback that gets called whenever we have received a message over the EventSource. This gives us back an id, an event, and data from our server.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>eventSource?.onMessage({ [<span style="color:#66d9ef">self</span>] (id, event, data) <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">guard</span> <span style="color:#66d9ef">let</span> id = id <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>currId = id;
+</span></span></code></pre></div><h2 id="receiving-and-processing-data-from-the-server">Receiving and Processing Data from the Server</h2>
+<p>Now that we’ve set-up our EventSource receiver and connected to our remote server, we’re ready to process any data that our server sends us. Here, we set the value of <code>id</code> to a global variable, <code>currentID</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> currId = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span></code></pre></div><p>We&rsquo;ll use this to keep track of whatever the most recent event ID from our event source was. This value gets used in the <code>onComplete</code> callback above to reconnect with the server in the event that our app gets disconnected from it for some reason.</p>
+<p>The data we get back is represented as a <code>String</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">guard</span> <span style="color:#66d9ef">let</span> dataString = data <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>If you&rsquo;re receiving JSON data, and want to convert it to a Dictionary, you can do so with a function like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">convertToDictionary</span>(text: String) -&gt; [String: Any]? {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> data = text.data(using: .utf8) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">do</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">try</span> JSONSerialization.jsonObject(with: data, options: []) <span style="color:#66d9ef">as</span>? [String: Any]
+</span></span><span style="display:flex;"><span>		} <span style="color:#66d9ef">catch</span> {
+</span></span><span style="display:flex;"><span>			print(error.localizedDescription)
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Here&rsquo;s the full function that we use to set-up our EventSource and register the three callbacks within it: <code>onComplete</code>, <code>onOpen</code>, and <code>onMessage</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">setupEventSource</span>(channelURLString: String) {
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> serverURL = URL(string: channelURLString)<span style="color:#f92672">!</span>
+</span></span><span style="display:flex;"><span>	eventSource = EventSource(url: serverURL, headers: [<span style="color:#e6db74">&#34;Authorization&#34;</span> : cookie!.value])
+</span></span><span style="display:flex;"><span>	eventSource?.connect()
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>	eventSource?.onComplete({ [<span style="color:#66d9ef">self</span>] (statusCode, reconnect, error) <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>		eventSource?.connect(lastEventId: currId);
+</span></span><span style="display:flex;"><span>	})
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>	eventSource?.onOpen {
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">&#34;Event sourced opened!&#34;</span>)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>	eventSource?.onMessage({ [<span style="color:#66d9ef">self</span>] (id, event, data) <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">guard</span> <span style="color:#66d9ef">let</span> id = id <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>		currId = id;
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">guard</span> <span style="color:#66d9ef">let</span> dataString = data <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">guard</span> <span style="color:#66d9ef">let</span> dict = dataString.convertToDictionary(text: dataString) <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	})
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Now, we&rsquo;re all set up to connect to our EventSource and receive data from it in our app.</p>
+<h2 id="reconnection">Reconnection</h2>
+<p>If someone dismisses our app to the background, we have no guarantee for how long our EventSource will stay open. In order to re-establish connection with our server when the app is opened again, we can set-up a notification listener in our ViewController to detect when the app has moved back into the foreground:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>NotificationCenter.<span style="color:#66d9ef">default</span>.addObserver(<span style="color:#66d9ef">self</span>, selector:<span style="color:#66d9ef">#selector</span>(appMovedToForeground), name: UIApplication.willEnterForegroundNotification, object: <span style="color:#66d9ef">nil</span>)
+</span></span></code></pre></div><p>When the ViewController receives the notification that the app has moved back into the foreground, we can then call the <code>appMovedToForeground</code> function, which re-establishes the connection with our server if the EventSource is closed:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">@objc</span> <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">appMovedToForeground</span>() {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> eventSource?.readyState == .closed {
+</span></span><span style="display:flex;"><span>		resetEventSource { [<span style="color:#66d9ef">self</span>] <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Here&rsquo;s the function for resetting the EventSource - we make sure to manually disconnect before connecting again, just to make sure that we don&rsquo;t ever enter a state where we&rsquo;re accidentally trying to connect to the EventSource if we&rsquo;re already connected.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">resetEventSource</span>(completion: @escaping () -&gt; Void) {
+</span></span><span style="display:flex;"><span>	eventSource?.disconnect()
+</span></span><span style="display:flex;"><span>	eventSource?.connect()
+</span></span><span style="display:flex;"><span>	completion()
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="final-thoughts">Final Thoughts</h2>
+<p>Working with Server-Side Events in an iOS app is not probably something you’ll encounter very often, but if you do; remember that the pattern you’re used to working with has been flipped around - you’re listening for updates from the server, not <em>polling</em> forupdates from the server.</p>
+
+       
+
+                </article>
+                <footer> © Copyright Nicholas Arner, 2024  </footer>
+        </div>
+        
+</main>
+
+        
+</body>
+</html>

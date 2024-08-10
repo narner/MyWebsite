@@ -2,218 +2,154 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Nick Arner</title>
-    <link>/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content in Home on Nick Arner</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>nicholasarner@gmail.com (Nick Arner)</managingEditor>
     <webMaster>nicholasarner@gmail.com (Nick Arner)</webMaster>
-    <copyright>© Copyright Nicholas Arner, 2023</copyright>
-    <lastBuildDate>Sat, 30 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© Copyright Nicholas Arner, 2024</copyright>
+    <lastBuildDate>Wed, 03 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Freelancing Tactics</title>
+      <link>//localhost:1313/notes/freelancing-tactics---april-4-2024/</link>
+      <pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate><author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>//localhost:1313/notes/freelancing-tactics---april-4-2024/</guid>
+      <description>Wanted to share some thoughts on lessons learned from doing freelance for the past few years. Several of these are lessons I’ve learned the hard way - which is sometimes the only way to learn a lesson.&#xA;Before Starting Work&#xA;Always get a contract signed - this protects both you and the client. Make sure to add in a clause to any contracts to late fees for your invoices. If a client is late to paying an invoice, add a late fee as some percentage of the amount owed.</description>
+    </item>
+    <item>
+      <title>Meter VPN</title>
+      <link>//localhost:1313/projects_and_work/work/meter_vpn/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0000</pubDate><author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>//localhost:1313/projects_and_work/work/meter_vpn/</guid>
+      <description>Meter is a company that develops IT hardware and software for network infrastructure, catering to environments such as schools, warehouses, and offices. I worked wtih them to build a native MacOS app that allows their customers to access their VPN with a simple and friendly user experience.&#xA;It&amp;rsquo;s built in Swift, and utilizes the Network Extension framework for creating a VPN connection.&#xA;The app is available on the App Store.</description>
+    </item>
+    <item>
+      <title>Designing for AI Notes</title>
+      <link>//localhost:1313/notes/designing-for-ai-notes---december-12-2023/</link>
+      <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate><author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>//localhost:1313/notes/designing-for-ai-notes---december-12-2023/</guid>
+      <description>Last night I went to the Designing for AI event at Notion hosted by Linus Lee. The panelists were Ryo Lu (Design Lead at Notion), Amelia Wattenberger (Designer at Adept), Omar Lee (VP, Product Design at Slack), and Adam Storr (Head of Design at Hex).&#xA;Wrote up some notes from the event:&#xA;How the panelists described their companies&amp;rsquo; useage of AI:&#xA;Slack - &amp;ldquo;Trying to make it so you get more of the signal and less of the noise in your communications&amp;rdquo;</description>
+    </item>
+    <item>
+      <title>Keeping Time in San Francisco</title>
+      <link>//localhost:1313/notes/keeping-time-in-san-francisco-october-21-2023/</link>
+      <pubDate>Sat, 21 Oct 2023 00:00:00 +0000</pubDate><author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>//localhost:1313/notes/keeping-time-in-san-francisco-october-21-2023/</guid>
+      <description>I moved to San Francisco at the end of a cycle. The first few months I lived here, someone told me that you have to be careful with seasons in here. They’re blurry and blend in to each other too easily, and time feels slippery because of it.&#xA;I didn’t understand what he meant at the time. But, the longer I’ve been here, I’ve come to realize how very easy it is to spend a lot of time in San Francisco without realizing you’ve done so.</description>
+    </item>
+    <item>
+      <title>Thoughts on AI Hardware</title>
+      <link>//localhost:1313/notes/thoughts-on-ai-hardware-october-4-2023/</link>
+      <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate><author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>//localhost:1313/notes/thoughts-on-ai-hardware-october-4-2023/</guid>
+      <description>There’s been a flurry of recent activity around AI hardware recently - from Humane’s runway debut to the rumoured partnership between OpenAI and Jony Ive, to Tab and to the Rewind Pendant.&#xA;It’s an exciting time - we’re starting to see new form factors for computing beyond the smartphone that don’t involve sticking a computer on your face.&#xA;However, I don’t think that any of these devices are going to fully replace smartphones for a while because of how much people love to take pictures.</description>
+    </item>
     <item>
       <title>AudioKit</title>
-      <link>/projects_and_work/open_source/audiokit/</link>
-      <pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate>
-      <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/projects_and_work/open_source/audiokit/</guid>
-      <description>AudioKit is an open-source framework designed for audio synthesis, analysis, and production on Apple platforms. I was instrumental in launching the project and remained an active contributor for three years. My contributions spanned from creating example projects, tutorials, and website content to developing key features like framework testing and Sensible Defaults.
-Prior to its public release, I played a pivotal role in preparing AudioKit for open-sourcing. I crafted example projects and tutorials, enriched the website content, and worked on innovative features to enhance user experience.</description>
+      <link>//localhost:1313/projects_and_work/open_source/audiokit/</link>
+      <pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate><author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>//localhost:1313/projects_and_work/open_source/audiokit/</guid>
+      <description>AudioKit is an open-source framework designed for audio synthesis, analysis, and production on Apple platforms. I was instrumental in launching the project and remained an active contributor for three years. My contributions spanned from creating example projects, tutorials, and website content to developing key features like framework testing and Sensible Defaults.&#xA;Prior to its public release, I played a pivotal role in preparing AudioKit for open-sourcing. I crafted example projects and tutorials, enriched the website content, and worked on innovative features to enhance user experience.</description>
     </item>
-    
     <item>
       <title>Asteroid</title>
-      <link>/projects_and_work/work/asteroid/</link>
-      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-      <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/projects_and_work/work/asteroid/</guid>
-      <description>I was the founding employee of a pre-seed startup called Asteroid. Our product was a native macOS app, built in Swift, that let users create ARKit apps without having to write any code.
-It had a node-based interface, inspisred by Max, Quartz Composer, and Origami. Users would create &amp;ldquo;reactions&amp;rdquo;; building blocks of functionality that notices something happening via an input object, and triggers something happening in 3D.
-I built the much of the app including the node-based interface, project export, and various nodes; including the camera, audio, and CoreML nodes.</description>
+      <link>//localhost:1313/projects_and_work/work/asteroid/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate><author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>//localhost:1313/projects_and_work/work/asteroid/</guid>
+      <description>I was the founding employee of a pre-seed startup called Asteroid. Our product was a native macOS app, built in Swift, that let users create ARKit apps without having to write any code.&#xA;It had a node-based interface, inspisred by Max, Quartz Composer, and Origami. Users would create &amp;ldquo;reactions&amp;rdquo;; building blocks of functionality that notices something happening via an input object, and triggers something happening in 3D.&#xA;I built the much of the app including the node-based interface, project export, and various nodes; including the camera, audio, and CoreML nodes.</description>
     </item>
-    
+    <item>
+      <title>Dusty Robotics iPad App</title>
+      <link>//localhost:1313/projects_and_work/work/dusty_robotics_ipad_app/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate><author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>//localhost:1313/projects_and_work/work/dusty_robotics_ipad_app/</guid>
+      <description>I was apporached by Dusty Robotics to build a prototype of an iPad app that would control their product, the FieldPrinter.&#xA;Dusty&amp;rsquo;s FieldPrinter is a robotic layout system for printing elements of floor plans on a construction site. These elements indicate to the various trade workers where something needs to be built on the construction floor plan.&#xA;At the time, Dusty had a test app they had built in Python for a Windows tablet to control the Field Printer, and wanted to have a more polished product to roll out ot their customers built for the iPad.</description>
+    </item>
+    <item>
+      <title>Pocket - Urbit for iOS</title>
+      <link>//localhost:1313/projects_and_work/work/tlon-pocket/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate><author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>//localhost:1313/projects_and_work/work/tlon-pocket/</guid>
+      <description>I built the first version of Pocket, an iOS chat app for Urbit. I contracted for Tlon Corp to build their vision of a mobile-first way to use the Urbit network.&#xA;Urbit is a reimagining of what an OS can be; built around the concept of a peer-to-peer network. Users have &amp;ldquo;ships&amp;rdquo; that can talk to each other in a federated manner. Previously, the most common way for users to do this was through a web-based product called Landscape.</description>
+    </item>
     <item>
       <title>Roboflow Native iOS SDK</title>
-      <link>/projects_and_work/work/roboflow_native_mobile_sdk/</link>
-      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-      <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/projects_and_work/work/roboflow_native_mobile_sdk/</guid>
-      <description>In 2022, I led the building of the Roboflow Native iOS SDK. Roboflow is a startup that builds tools for the creation and deployment of Computer Vision ML models by developers, without the need for specialized computer vision knowledge. Developers can create and host their models on the Roboflow platform, as well as deploy them on edge devices.
-The Native iOS SDK allows iOS developers to download the CoreML version of their model, created on Roboflow, directly to their device for use in their app.</description>
+      <link>//localhost:1313/projects_and_work/work/roboflow_native_mobile_sdk/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate><author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>//localhost:1313/projects_and_work/work/roboflow_native_mobile_sdk/</guid>
+      <description>In 2022, I led the building of the Roboflow Native iOS SDK. Roboflow is a startup that builds tools for the creation and deployment of Computer Vision ML models by developers, without the need for specialized computer vision knowledge. Developers can create and host their models on the Roboflow platform, as well as deploy them on edge devices.&#xA;The Native iOS SDK allows iOS developers to download the CoreML version of their model, created on Roboflow, directly to their device for use in their app.</description>
     </item>
-    
     <item>
       <title>The Coming of Local LLMs</title>
-      <link>/notes/the-coming-of-local-llms-march-23-2023/</link>
-      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
-      <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/notes/the-coming-of-local-llms-march-23-2023/</guid>
-      <description>While there’s been a truly remarkable advance in large language models as they continue to scale up, facilitated by being trained and run on larger and larger GPU clusters, there is still a need to be able to run smaller models on devices that have constraints on memory and processing power.
-Being able to run models at the edge enables creating applications that may be more sensitive to user privacy or latency considerations - ensuring that user data does not leave the device.</description>
+      <link>//localhost:1313/notes/the-coming-of-local-llms---march-23-2023/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate><author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>//localhost:1313/notes/the-coming-of-local-llms---march-23-2023/</guid>
+      <description>While there’s been a truly remarkable advance in large language models as they continue to scale up, facilitated by being trained and run on larger and larger GPU clusters, there is still a need to be able to run smaller models on devices that have constraints on memory and processing power.&#xA;Being able to run models at the edge enables creating applications that may be more sensitive to user privacy or latency considerations - ensuring that user data does not leave the device.</description>
     </item>
-    
     <item>
       <title>LLM Powered Assistants for Complex Interfaces</title>
-      <link>/notes/llm-powered-assistants-for-complex-interfaces-february-26-2023/</link>
-      <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
-      <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/notes/llm-powered-assistants-for-complex-interfaces-february-26-2023/</guid>
-      <description>Text Interfaces Aren&amp;rsquo;t Enough The last few months of LLM development have been staggering. It’s been amazing to see how powerful chat-based interfaces, heralded by OpenAI’s ChatGPT, can be. It’s inspired some to postulate that text is the universal interface, and for others to say that the humble text box is going to be the most important interface component there is.
-This enthusiasm, understandable though it may be, risks creating the perception that any and all user interfaces can be more or less replaced with a chatbot or text-box based interface.</description>
+      <link>//localhost:1313/notes/llm-powered-assistants-for-complex-interfaces---february-26-2023/</link>
+      <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate><author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>//localhost:1313/notes/llm-powered-assistants-for-complex-interfaces---february-26-2023/</guid>
+      <description>Text Interfaces Aren&amp;rsquo;t Enough The last few months of LLM development have been staggering. It’s been amazing to see how powerful chat-based interfaces, heralded by OpenAI’s ChatGPT, can be. It’s inspired some to postulate that text is the universal interface, and for others to say that the humble text box is going to be the most important interface component there is.&#xA;This enthusiasm, understandable though it may be, risks creating the perception that any and all user interfaces can be more or less replaced with a chatbot or text-box based interface.</description>
     </item>
-    
     <item>
       <title>Angel Investing Notes</title>
-      <link>/notes/angel-investing-notes-february-7-2023/</link>
-      <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
-      <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/notes/angel-investing-notes-february-7-2023/</guid>
-      <description>For the past year or so, I’ve been putting small checks into various startups. A couple of friends simultaneously asked me recently for advice on what they should know about angel investing themselves, and I wrote up some notes for them. Decided to publish an edited version of those here in hopes it may be useful to others:
-Pick a check size and stick to it. This helps you minimise regret + avoid having FOMO.</description>
+      <link>//localhost:1313/notes/angel-investing-notes---february-7-2023/</link>
+      <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate><author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>//localhost:1313/notes/angel-investing-notes---february-7-2023/</guid>
+      <description>For the past year or so, I’ve been putting small checks into various startups. A couple of friends simultaneously asked me recently for advice on what they should know about angel investing themselves, and I wrote up some notes for them. Decided to publish an edited version of those here in hopes it may be useful to others:&#xA;Pick a check size and stick to it. This helps you minimise regret + avoid having FOMO.</description>
     </item>
-    
     <item>
       <title>Notes from Functional Swift</title>
-      <link>/notes/notes-from-functional-swift-november-26-2022/</link>
-      <pubDate>Sat, 26 Nov 2022 00:00:00 +0000</pubDate>
-      <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/notes/notes-from-functional-swift-november-26-2022/</guid>
-      <description>These are my notes from objc.io&amp;rsquo;s Functional Swift book. For a recent proejct, I&amp;rsquo;ve had to dive into a codebase that heavily makes use of functional programming in Swift; this book was helpful in getting a basic understanding of functional programming concepts in the world of Swift and iOS.
-Characteristics of Functional Programming: Modularity Carteful treatment of mutable state Careful use of types Functions are first-class values
-Can be passed as arguments to other funcitons Methods: functions defined on a type **Types guide the development process!</description>
+      <link>//localhost:1313/notes/notes-from-functional-swift---november-26-2022/</link>
+      <pubDate>Sat, 26 Nov 2022 00:00:00 +0000</pubDate><author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>//localhost:1313/notes/notes-from-functional-swift---november-26-2022/</guid>
+      <description>These are my notes from objc.io&amp;rsquo;s Functional Swift book. For a recent proejct, I&amp;rsquo;ve had to dive into a codebase that heavily makes use of functional programming in Swift; this book was helpful in getting a basic understanding of functional programming concepts in the world of Swift and iOS.&#xA;Characteristics of Functional Programming: Modularity Carteful treatment of mutable state Careful use of types Functions are first-class values&#xA;Can be passed as arguments to other funcitons Methods: functions defined on a type **Types guide the development process!</description>
     </item>
-    
     <item>
       <title>Web Links</title>
-      <link>/web/</link>
-      <pubDate>Fri, 25 Nov 2022 00:00:00 +0000</pubDate>
-      <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/web/</guid>
-      <description>You can find me at other places on the web here:
-AngelList GitHub Twitter </description>
+      <link>//localhost:1313/web/</link>
+      <pubDate>Fri, 25 Nov 2022 00:00:00 +0000</pubDate><author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>//localhost:1313/web/</guid>
+      <description>You can find me at other places on the web here:&#xA;AngelList GitHub Twitter </description>
     </item>
-    
     <item>
       <title>Affine Transforms in iOS for Fun and Profit - Guest Post</title>
-      <link>/notes/affine-transforms-in-ios-for-fun-and-profit-guest-post-august-2-2022/</link>
-      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/notes/affine-transforms-in-ios-for-fun-and-profit-guest-post-august-2-2022/</guid>
-      <description>Guest post from Warren Moore
-Imagine we want to build an iOS app that allows us to select regions of an image. These regions might be selected for manipulation by some image processing algorithm, or perhaps some machine learning (ML) procedure. Many ML algorithms perform better when directed to focus on specific image regions, and selecting image regions is an integral part of ML work such as labeling.
-For the sake of discussion, suppose the subject image is being displayed by a UIImageView which is a subview of the view that hosts our selection UI.</description>
+      <link>//localhost:1313/notes/affine-transforms-in-ios-for-fun-and-profit---guest-post---august-2-2022/</link>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate><author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>//localhost:1313/notes/affine-transforms-in-ios-for-fun-and-profit---guest-post---august-2-2022/</guid>
+      <description>Guest post from Warren Moore&#xA;Imagine we want to build an iOS app that allows us to select regions of an image. These regions might be selected for manipulation by some image processing algorithm, or perhaps some machine learning (ML) procedure. Many ML algorithms perform better when directed to focus on specific image regions, and selecting image regions is an integral part of ML work such as labeling.&#xA;For the sake of discussion, suppose the subject image is being displayed by a UIImageView which is a subview of the view that hosts our selection UI.</description>
     </item>
-    
     <item>
       <title>Not Everything is an OS!</title>
-      <link>/notes/not-everything-is-an-os-june-6-2022/</link>
-      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
-      <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/notes/not-everything-is-an-os-june-6-2022/</guid>
-      <description>There&amp;rsquo;s an annoying trend right now to refer to any arbitrary thing being built in tech as an &amp;ldquo;OS for X&amp;rdquo;; a quick search on Product Hunt shows a plethora of results for of &amp;ldquo;An OS for X&amp;rdquo;&amp;hellip;none of which are actually Operating Systems.
-For whatever reason, the tech industry has migrated from thinking that everything is a platform of some kind to thinking that everything and anything can be considered an Operating System.</description>
+      <link>//localhost:1313/notes/not-everything-is-an-os---june-6-2022/</link>
+      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate><author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>//localhost:1313/notes/not-everything-is-an-os---june-6-2022/</guid>
+      <description>There&amp;rsquo;s an annoying trend right now to refer to any arbitrary thing being built in tech as an &amp;ldquo;OS for X&amp;rdquo;; a quick search on Product Hunt shows a plethora of results for of &amp;ldquo;An OS for X&amp;rdquo;&amp;hellip;none of which are actually Operating Systems.&#xA;For whatever reason, the tech industry has migrated from thinking that everything is a platform of some kind to thinking that everything and anything can be considered an Operating System.</description>
     </item>
-    
-    <item>
-      <title>Remixable Software - Guest Post</title>
-      <link>/notes/remixable-software-guest-post-may-31-2022/</link>
-      <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
-      <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/notes/remixable-software-guest-post-may-31-2022/</guid>
-      <description>Guest post from Anton Troynikov
-The personal computing revolution succeeded and we are all miserable. The dream of personal computing as augmentation for the intellect, and the joyful, radical counterculture that arose around the first PC&amp;rsquo;s has given way to our increasingly dismal present.
-The riot of experimentation of the early PC era was eventually subsumed by commercially successful but ultimately bland products. In a classic example of the flaw of averages, the computers and software we use today are intended for everyone but ultimately satisfy no one.</description>
-    </item>
-    
-    <item>
-      <title>Visual Debugging Now! - Guest Post</title>
-      <link>/notes/visual-debugging-now-guest-post-may-20-2022/</link>
-      <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
-      <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/notes/visual-debugging-now-guest-post-may-20-2022/</guid>
-      <description>Guest post from Anton Troynikov
-Over the last seven or so years of working in robotics and computer vision, the bitter lesson I’ve learned is that the bug is almost always in the part of the algorithm you didn’t visualize.
-This is a call to fix that problem once and for all.
-The Problem Many domains, including robotics, foundationally rely on highly performant numerical software. But since humans are adapted to understand space visually, we don’t have good intuitions for numerical data.</description>
-    </item>
-    
     <item>
       <title>Push Notifications and The Tyrany of Stolen Attention</title>
-      <link>/notes/push-notifications-and-the-tyrany-of-stolen-attention-may-02-2022/</link>
-      <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
-      <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/notes/push-notifications-and-the-tyrany-of-stolen-attention-may-02-2022/</guid>
-      <description>It&amp;rsquo;s been said before that not building payment rails into the web browser was the original sin of the internet era. The ability to send arbitrary push notifications is the original sin of the smartphone era.
-As we can all attest, there&amp;rsquo;s many apps on our phones that spew forth little banners, sounds, and vibrations in attempts to get us to part with our money in some shape or fashion - and our attention.</description>
+      <link>//localhost:1313/notes/push-notifications-and-the-tyrany-of-stolen-attention---may-02-2022/</link>
+      <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate><author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>//localhost:1313/notes/push-notifications-and-the-tyrany-of-stolen-attention---may-02-2022/</guid>
+      <description>It&amp;rsquo;s been said before that not building payment rails into the web browser was the original sin of the internet era. The ability to send arbitrary push notifications is the original sin of the smartphone era.&#xA;As we can all attest, there&amp;rsquo;s many apps on our phones that spew forth little banners, sounds, and vibrations in attempts to get us to part with our money in some shape or fashion - and our attention.</description>
     </item>
-    
     <item>
       <title>Distributing Frameworks via CocoaPods</title>
-      <link>/notes/distributing-frameworks-via-cocoapods-april-20-2022/</link>
-      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
-      <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/notes/distributing-frameworks-via-cocoapods-april-20-2022/</guid>
-      <description>If you&amp;rsquo;re developing an iOS SDK that you want to be able to license and distribute to customers via CocoaPods, but don&amp;rsquo;t want to be able to have your source code publically available; you can distribute it as a framework that CocoaPods will install in your project.
-Once you&amp;rsquo;ve finished writing your framework* and it&amp;rsquo;s ready for distribution, you&amp;rsquo;ll first want to create a public repository that has your .podspec file, and the framework you want to distribute.</description>
+      <link>//localhost:1313/notes/distributing-frameworks-via-cocoapods---april-20-2022/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate><author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>//localhost:1313/notes/distributing-frameworks-via-cocoapods---april-20-2022/</guid>
+      <description>If you&amp;rsquo;re developing an iOS SDK that you want to be able to license and distribute to customers via CocoaPods, but don&amp;rsquo;t want to be able to have your source code publically available; you can distribute it as a framework that CocoaPods will install in your project.&#xA;Once you&amp;rsquo;ve finished writing your framework* and it&amp;rsquo;s ready for distribution, you&amp;rsquo;ll first want to create a public repository that has your .podspec file, and the framework you want to distribute.</description>
     </item>
-    
     <item>
       <title>The Causes of Latency in Computing Systems, and Why Exactly It Frustrates Us</title>
-      <link>/notes/the-causes-of-latency-in-computing-systems-and-why-exactly-it-frustrates-us-april-6-2022/</link>
-      <pubDate>Wed, 06 Apr 2022 00:00:00 +0000</pubDate>
-      <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/notes/the-causes-of-latency-in-computing-systems-and-why-exactly-it-frustrates-us-april-6-2022/</guid>
-      <description>One of the most frustrating experiences about using computers is when you try to do something, and the system freezes up or is otherwise slow. This is latency - the unacceptably large amount of time between when an action is triggered by the user and the response to that action by the computer is relayed to the user.
-It’s something that people have come to expect as a “natural” consequence of using computers, but frankly, it’s an utterly unacceptable one.</description>
+      <link>//localhost:1313/notes/the-causes-of-latency-in-computing-systems-and-why-exactly-it-frustrates-us---april-6-2022/</link>
+      <pubDate>Wed, 06 Apr 2022 00:00:00 +0000</pubDate><author>nicholasarner@gmail.com (Nick Arner)</author>
+      <guid>//localhost:1313/notes/the-causes-of-latency-in-computing-systems-and-why-exactly-it-frustrates-us---april-6-2022/</guid>
+      <description>One of the most frustrating experiences about using computers is when you try to do something, and the system freezes up or is otherwise slow. This is latency - the unacceptably large amount of time between when an action is triggered by the user and the response to that action by the computer is relayed to the user.&#xA;It’s something that people have come to expect as a “natural” consequence of using computers, but frankly, it’s an utterly unacceptable one.</description>
     </item>
-    
-    <item>
-      <title>Delay Tracker</title>
-      <link>/projects_and_work/personal/delay_tracker/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/projects_and_work/personal/delay_tracker/</guid>
-      <description>Delay Tracker was the first iOS app I built, aimed at enabling Amtrak travelers facing train delays to report them to the Surface Transportation Board, the federal entity responsible for regulating the nation&amp;rsquo;s railroads.
-The app served a dual purpose: educating Amtrak passengers about the potential reasons behind the delays they were experiencing, and providing a channel to report these delays to the Surface Transportation Board. This initiative not only fostered awareness regarding the challenges faced by the nation&amp;rsquo;s rail infrastructure but also empowered travelers to voice their concerns and ensure their grievances were acknowledged.</description>
-    </item>
-    
-    <item>
-      <title>Notes - The New Typography</title>
-      <link>/notes/notes-the-new-typography-november-28-2021/</link>
-      <pubDate>Sun, 28 Nov 2021 00:00:00 +0000</pubDate>
-      <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/notes/notes-the-new-typography-november-28-2021/</guid>
-      <description>I recently finished reading Jan Tshichold’s “The New Typography”. Tshichold was a typographer and teacher who wrote this work in 1928 Berlin. He was taken into “protective custody” by the Nazi’s for “cultural Bolshevism”, but eventually made his way out of Germany and settled in England; where he later oversaw the typographic reform of Penguin Books.
-At once both a practical and theoretical work on modern typography, it was eventually translated from the original German into English by Ruari McLean.</description>
-    </item>
-    
-    <item>
-      <title>Working with Server-Sent Events in Swift</title>
-      <link>/notes/working-with-server-sent-events-in-swift-november-16-2021/</link>
-      <pubDate>Tue, 16 Nov 2021 00:00:00 +0000</pubDate>
-      <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/notes/working-with-server-sent-events-in-swift-november-16-2021/</guid>
-      <description>In most mobile applications that work with networked data, standard HTTP GET requests are used to fetch the data from the server that you want to display in your app&amp;rsquo;s UI.
-However, some backend servers may make use of a different pattern for data transfer between themselves and a client than the common REST architecture - that of Server Sent Events (SSE&amp;rsquo;s).
-In this scenario, a server broadcasts any updated data, and the client application listens for these changes to come in over the HTTP connection.</description>
-    </item>
-    
-    <item>
-      <title>A Personal History of Visual Programming Environments</title>
-      <link>/notes/a-personal-history-of-visual-programming-enviornments-november-13-2021/</link>
-      <pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate>
-      <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/notes/a-personal-history-of-visual-programming-enviornments-november-13-2021/</guid>
-      <description>Part of my journey to becoming a software engineer and working in tech is due to the fact that while in music school, I had exposure to visual programming environments like Pure Data / Max and Quartz Composer. Hindsight being 20/20, I probably would not have been as enamored with the idea of creating software - and learning how to program it - had I not been exposed to these environments.</description>
-    </item>
-    
-    <item>
-      <title>Re-Visiting Old Work - SOLI Sketches</title>
-      <link>/notes/re-visiting-old-work-soli-sketches-october-28-2021/</link>
-      <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
-      <author>nicholasarner@gmail.com (Nick Arner)</author>
-      <guid>/notes/re-visiting-old-work-soli-sketches-october-28-2021/</guid>
-      <description>A few years ago, I was a participant in Google ATAP’s Project Soli Alpha Developer program. The program gave access to early Soli hardware; a mm-wave radar development kit and software package to various academics, companies, and independent researchers such as myself. Some of the work I had done as part of this program was published in a paper, as well as shown in a video that was presented at Google I/O 2016.</description>
-    </item>
-    
   </channel>
 </rss>

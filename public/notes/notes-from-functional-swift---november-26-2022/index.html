@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <title> Notes from Functional Swift • Nick Arner </title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180"  href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="16x16"  href="/favicon.ico"> 
+
+        
+        <meta property="og:url" content="https://nickarner.com" />
+        <meta property="og:title" content="Notes from Functional Swift" />
+        <meta property="og:description" content="Nick&#39;s Arner&#39;s website." />
+        <meta property="og:image" content="https://nickarner.com/card.jpg" />
+
+        
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:creator" content="@joodaloop">
+        <meta name="twitter:title" content="Notes from Functional Swift">
+        <meta name="twitter:description" content="Nick&#39;s Arner&#39;s website." />
+        <meta name="twitter:image" content="https://nickarner.com/card.jpg" />
+
+        <meta name="description" content="Nick&#39;s Arner&#39;s website.">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>    
+    
+<main>
+        <div class=left>
+                <div class=menu>
+
+	<nav>
+		<div class="home">
+			<a href="/"> Nick Arner </a>
+		</div>
+		<a href="/projects_and_work"> Projects </a>
+		<a href="/investing"> Investments </a>
+		<a href="/notes"> Notes </a>
+		<a href="/publications"> Publications </a>
+		<a href="/books"> Books </a>
+	</nav>
+</div>
+        </div><div class=content>
+                <article>
+
+<h1>Notes from Functional Swift</h1>
+      <div class=date>Published on Nov 26, 2022 </div>
+      <p>These are my notes from <a href="http://objc.io" target="_blank" class="external-link" >objc.io</a>&rsquo;s <a href="https://www.objc.io/books/functional-swift/" target="_blank" class="external-link" >Functional Swift book</a>. For a recent proejct, I&rsquo;ve had to dive into a codebase that heavily makes use of functional programming in Swift; this book was helpful in getting a basic understanding of functional programming concepts in the world of Swift and iOS.</p>
+<hr>
+<h4 id="characteristics-of-functional-programming">Characteristics of Functional Programming:</h4>
+<ul>
+<li>Modularity</li>
+<li>Carteful treatment of mutable state</li>
+<li>Careful use of types
+ </li>
+</ul>
+<p>Functions are first-class values</p>
+<ul>
+<li>Can be passed as arguments to other funcitons</li>
+<li>Methods: functions defined on a type
+<ul>
+<li>**Types guide the development process! **</li>
+</ul>
+</li>
+<li>Higher-Order Functions - functions that take functions as arguments
+ </li>
+</ul>
+<h4 id="generics">Generics</h4>
+<ul>
+<li>When functions can work on any type, use generics</li>
+<li>Type signature as <T>
+ </li>
+</ul>
+<h4 id="map--filter--reduce">Map / Filter / Reduce</h4>
+<ul>
+<li>Map - modify each element in a collection
+<ul>
+<li>Transform one set of values into another set of values</li>
+</ul>
+</li>
+<li>Filter - returns set of values that passed an <code>if</code> statement</li>
+<li>Reduce - turns a collection into a single value
+ </li>
+</ul>
+<h4 id="any-vs-genertics"><code>Any</code> vs Genertics</h4>
+<ul>
+<li>
+<p>Generics can be used to define flexible functions</p>
+</li>
+<li>
+<p><code>Any</code> used to dodge Swfit&rsquo;s type system</p>
+</li>
+<li>
+<p>Optionals represent values that may be missing or computations that may fail</p>
+</li>
+<li>
+<p>?? checks if an optional argument is <code>nil</code></p>
+</li>
+<li>
+<p>Optional binding: avoid writing &ldquo;!&rdquo;, use this instead:</p>
+<ul>
+<li>
+<pre tabindex="0"><code>if let x = yX {
+	...
+}
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p>Optional chaining: calling methods / accessing properties on nested classes or structs</p>
+<ul>
+<li>
+<pre tabindex="0"><code>if let myThing = thing.one?.two?.three {
+	...
+}
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p><code>guard</code> statement - exit current scope early if some condition isn&rsquo;t met<br>
+ </p>
+</li>
+</ul>
+<h4 id="value-and-reference-types">Value and Reference Types</h4>
+<ul>
+<li>Value types - copied when passes as function arguments (Structs)</li>
+<li>Reference types - references to the type are passed (Classes)
+ </li>
+</ul>
+<h4 id="structs">Structs</h4>
+<ul>
+<li>
+<p>Examples of Structs</p>
+<ul>
+<li>Arrays</li>
+<li>Dictionaries</li>
+<li>Numbers</li>
+<li>Boolean</li>
+</ul>
+</li>
+<li>
+<p>Structs allow for local mutability without global side effects</p>
+</li>
+<li>
+<p>Coupling - measures the degree to which individual units of code depend on each other</p>
+<ul>
+<li>Fucntions that compute the same output for equal inputs = referentially transparent</li>
+<li>Favoring immutability makes it easier to write referentially transparent + reduces compuling!
+ </li>
+</ul>
+</li>
+</ul>
+<h4 id="mutating-structs">Mutating Structs</h4>
+<pre tabindex="0"><code>extension Point Struct {
+	mutating func fooBar() {
+		x = 0
+		y = 1
+	}
+}
+</code></pre><p> </p>
+<h4 id="types">Types</h4>
+<ul>
+<li>Use types effectively to rule out invalid programs!</li>
+<li>Unlike Objective-C, enums in Swift create new types distinc from integers or other existing types</li>
+<li>Drawback to using Swift&rsquo;s optional type: don&rsquo;t return error when something goes wrong</li>
+<li>Swift forces you to annotate any function or method that may throw an error with the <code>trhows</code> error; forces you to use <code>try</code> and variants`</li>
+<li>Enumerations - referred to as sum types</li>
+<li>Types defined using enumerations + structs are refered to as algebraic data types</li>
+</ul>
+<p>Types are isomorphic if we can convert between them w/o losing any information:</p>
+<pre tabindex="0"><code>f: (A) -&gt; B
+g: (B) -&gt; A
+</code></pre><ul>
+<li>For all of x: A, the result of calling g(f(x)) must be equal to x</li>
+<li>For all of y: B, the result of f(g(y)) must equal Y</li>
+<li>These functions are the inverse of each other
+ </li>
+</ul>
+<h4 id="dsls-domain-specific-languages">DSL&rsquo;s (Domain Specific Languages)</h4>
+<ul>
+<li>Shallow embedding of DSL - does not create intermediate data structures</li>
+<li>Deep embedding - explicityl creates intermediate data structures
+ </li>
+</ul>
+<h4 id="iterators">Iterators</h4>
+<ul>
+<li>
+<p>Used if you don&rsquo;t want to use all emenets in an array or calculate them all</p>
+</li>
+<li>
+<p>Is a process that generates an array&rsquo;s elements on request - adheres to this protocol:</p>
+<pre tabindex="0"><code>protocol IteratorProtocol{
+	associatedType Element
+	mutating func next() -&gt; Element
+}
+</code></pre></li>
+<li>
+<p>If we want to compute the indices in a different order, we only need to update the iteration, and never the code that uses it</p>
+</li>
+</ul>
+<p>​	separeate generation of data from usage</p>
+<ul>
+<li>By defining a protocol for iterators, we can also write generic methods that work for any iterator</li>
+<li>Iteraors can be combined on top of each other
+ </li>
+</ul>
+<h4 id="sequence">Sequence</h4>
+<ul>
+<li>Iterators provide a one-shot mechyanism for repeatedly computing a next element</li>
+<li>Sequences provide a mechanism for rewinding / replaying generated elements</li>
+<li>Every sequence has an associated iterator type + method to create a new iterator</li>
+<li>By encapsulating the creation of iterators in teh sequence definition, programmers uising sequences tdon&rsquo;t have to to concerting with underlying iterators</li>
+<li>Map / reduce do not return new sequence, but traverse the sequence to produce an array
+ </li>
+</ul>
+<h4 id="lazy-sequences">Lazy Sequences</h4>
+<ul>
+<li>Chain operations only once we compute the result do operations get applied
+ </li>
+</ul>
+<h4 id="parser-combinators">Parser Combinators</h4>
+<ul>
+<li>Functional approach to parsing</li>
+<li>Instead of managing mutable state of parser (e.g. what character we&rsquo;re at), parser combinators are pure fu;nctions to avoid mutable state</li>
+<li>Parser - takes some chars as input, reaturns some resulting value + remainder of string if parsing succeeds
+<ul>
+<li>Using <code>string</code> is bad for performance; use <code>substring</code> instead</li>
+</ul>
+</li>
+</ul>
+
+       
+
+                </article>
+                <footer> © Copyright Nicholas Arner, 2024  </footer>
+        </div>
+        
+</main>
+
+        
+</body>
+</html>

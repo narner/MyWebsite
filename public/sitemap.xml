@@ -2,160 +2,175 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/projects_and_work/open_source/audiokit/</loc>
+    <loc>//localhost:1313/notes/freelancing-tactics---april-4-2024/</loc>
+    <lastmod>2024-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2024-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/notes/</loc>
+    <lastmod>2024-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/projects_and_work/work/meter_vpn/</loc>
+    <lastmod>2023-12-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/notes/designing-for-ai-notes---december-12-2023/</loc>
+    <lastmod>2023-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/notes/keeping-time-in-san-francisco-october-21-2023/</loc>
+    <lastmod>2023-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/notes/thoughts-on-ai-hardware-october-4-2023/</loc>
+    <lastmod>2023-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/projects_and_work/open_source/audiokit/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2023-09-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/projects_and_work/work/asteroid/</loc>
+    <loc>//localhost:1313/projects_and_work/work/asteroid/</loc>
     <lastmod>2023-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/projects_and_work/work/roboflow_native_mobile_sdk/</loc>
+    <loc>//localhost:1313/projects_and_work/work/dusty_robotics_ipad_app/</loc>
     <lastmod>2023-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/</loc>
+    <loc>//localhost:1313/projects_and_work/work/tlon-pocket/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/projects_and_work/work/roboflow_native_mobile_sdk/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/notes/the-coming-of-local-llms---march-23-2023/</loc>
     <lastmod>2023-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/the-coming-of-local-llms-march-23-2023/</loc>
-    <lastmod>2023-03-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/notes/llm-powered-assistants-for-complex-interfaces-february-26-2023/</loc>
+    <loc>//localhost:1313/notes/llm-powered-assistants-for-complex-interfaces---february-26-2023/</loc>
     <lastmod>2023-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/angel-investing-notes-february-7-2023/</loc>
+    <loc>//localhost:1313/notes/angel-investing-notes---february-7-2023/</loc>
     <lastmod>2023-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/notes-from-functional-swift-november-26-2022/</loc>
+    <loc>//localhost:1313/notes/notes-from-functional-swift---november-26-2022/</loc>
     <lastmod>2022-11-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/web/</loc>
+    <loc>//localhost:1313/web/</loc>
     <lastmod>2022-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/affine-transforms-in-ios-for-fun-and-profit-guest-post-august-2-2022/</loc>
+    <loc>//localhost:1313/notes/affine-transforms-in-ios-for-fun-and-profit---guest-post---august-2-2022/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/not-everything-is-an-os-june-6-2022/</loc>
+    <loc>//localhost:1313/notes/not-everything-is-an-os---june-6-2022/</loc>
     <lastmod>2022-06-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/remixable-software-guest-post-may-31-2022/</loc>
-    <lastmod>2022-05-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/notes/visual-debugging-now-guest-post-may-20-2022/</loc>
-    <lastmod>2022-05-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/notes/push-notifications-and-the-tyrany-of-stolen-attention-may-02-2022/</loc>
+    <loc>//localhost:1313/notes/push-notifications-and-the-tyrany-of-stolen-attention---may-02-2022/</loc>
     <lastmod>2022-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/distributing-frameworks-via-cocoapods-april-20-2022/</loc>
+    <loc>//localhost:1313/notes/distributing-frameworks-via-cocoapods---april-20-2022/</loc>
     <lastmod>2022-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/the-causes-of-latency-in-computing-systems-and-why-exactly-it-frustrates-us-april-6-2022/</loc>
+    <loc>//localhost:1313/notes/the-causes-of-latency-in-computing-systems-and-why-exactly-it-frustrates-us---april-6-2022/</loc>
     <lastmod>2022-04-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/projects_and_work/personal/delay_tracker/</loc>
+    <loc>//localhost:1313/projects_and_work/personal/delay_tracker/</loc>
     <lastmod>2022-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/projects_and_work/</loc>
+    <loc>//localhost:1313/projects_and_work/</loc>
     <lastmod>2022-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/notes-the-new-typography-november-28-2021/</loc>
+    <loc>//localhost:1313/notes/notes---the-new-typography---november-28-2021/</loc>
     <lastmod>2021-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/working-with-server-sent-events-in-swift-november-16-2021/</loc>
+    <loc>//localhost:1313/notes/working-with-server-sent-events-in-swift---november-16-2021/</loc>
     <lastmod>2021-11-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/a-personal-history-of-visual-programming-enviornments-november-13-2021/</loc>
+    <loc>//localhost:1313/notes/a-personal-history-of-visual-programming-enviornments---november-13-2021/</loc>
     <lastmod>2021-11-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/re-visiting-old-work-soli-sketches-october-28-2021/</loc>
+    <loc>//localhost:1313/notes/re-visiting-old-work---soli-sketches---october-28-2021/</loc>
     <lastmod>2021-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/some-thoughts-on-interfaces-october-24th-2021/</loc>
+    <loc>//localhost:1313/notes/some-thoughts-on-interfaces---october-24th-2021/</loc>
     <lastmod>2021-10-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/books/</loc>
+    <loc>//localhost:1313/books/</loc>
     <lastmod>2021-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/projects_and_work/personal/emulating_touche/</loc>
+    <loc>//localhost:1313/projects_and_work/personal/emulating_touche/</loc>
     <lastmod>2021-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/investing/</loc>
+    <loc>//localhost:1313/investing/</loc>
     <lastmod>2021-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/projects_and_work/personal/project_soli_alpha_dev_program/</loc>
+    <loc>//localhost:1313/projects_and_work/personal/project_soli_alpha_dev_program/</loc>
     <lastmod>2021-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/projects_and_work/personal/push_to_talk_audio_chat_app/</loc>
+    <loc>//localhost:1313/projects_and_work/personal/push_to_talk_audio_chat_app/</loc>
     <lastmod>2021-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/projects_and_work/personal/whistlr/</loc>
+    <loc>//localhost:1313/projects_and_work/personal/whistlr/</loc>
     <lastmod>2021-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/roboflow-memo-february-1-2021/</loc>
+    <loc>//localhost:1313/notes/roboflow-memo---february-1-2021/</loc>
     <lastmod>2021-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/some-resources-for-learning-about-hci-january-22-2021/</loc>
+    <loc>//localhost:1313/notes/some-resources-for-learning-about-hci---january-22-2021/</loc>
     <lastmod>2021-01-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/video-tools-and-interfaces-perspectives-from-a-webinar-with-adobes-mira-dontcheva-janurary-11-2021/</loc>
+    <loc>//localhost:1313/notes/video-tools-and-interfaces-perspectives-from-a-webinar-with-adobes-mira-dontcheva---janurary-11-2021/</loc>
     <lastmod>2021-01-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/thoughts-on-projects-never-finished-september-22-2020/</loc>
+    <loc>//localhost:1313/notes/thoughts-on-projects-never-finished---september-22-2020/</loc>
     <lastmod>2020-09-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/objective-c-review-for-swift-developers-june-26-2020/</loc>
+    <loc>//localhost:1313/notes/objective-c-review-for-swift-developers---june-26-2020/</loc>
     <lastmod>2020-06-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/why-writing-should-be-part-of-your-teams-development-culture-june-8-2020/</loc>
+    <loc>//localhost:1313/notes/why-writing-should-be-part-of-your-teams-development-culture----june-8-2020/</loc>
     <lastmod>2020-06-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/project-soli-the-coming-use-of-radar-in-human-machine-interfaces-april-2020/</loc>
+    <loc>//localhost:1313/notes/project-soli--the-coming-use-of-radar-in-human-machine-interfaces---april-2020/</loc>
     <lastmod>2020-04-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/classification-of-sound-files-on-ios-with-the-soundanalysis-framework-and-esc-10-coreml-model-october-29-2019/</loc>
+    <loc>//localhost:1313/notes/classification-of-sound-files-on-ios-with-the-soundanalysis-framework-and-esc-10-coreml-model---october-29-2019/</loc>
     <lastmod>2019-10-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/machine-learning-development-on-apple-platforms-october-14-2019/</loc>
+    <loc>//localhost:1313/notes/machine-learning-development-on-apple-platforms---october-14-2019/</loc>
     <lastmod>2019-10-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/things-a-first-time-pm-should-know-about-ios-development-september-22-2019/</loc>
+    <loc>//localhost:1313/notes/things-a-first-time-pm-should-know-about-ios-development---september-22-2019/</loc>
     <lastmod>2019-09-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/machine-learning-powered-gesture-recognition-on-ios-october-7-2017/</loc>
+    <loc>//localhost:1313/notes/machine-learning-powered-gesture-recognition-on-ios---october-7-2017/</loc>
     <lastmod>2017-10-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/jazz-gestures-and-open-source-why-how-i-learned-to-code-october-3-2017/</loc>
+    <loc>//localhost:1313/notes/jazz-gestures-and-open-source---why--how-i-learned-to-code---october-3-2017/</loc>
     <lastmod>2017-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/integrating-arduino-bluetooth-sensors-with-ios-september-5-2017/</loc>
+    <loc>//localhost:1313/notes/integrating-arduino-bluetooth-sensors-with-ios---september-5-2017/</loc>
     <lastmod>2017-09-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/integrating-the-grt-into-an-iphone-project-august-29-2017/</loc>
+    <loc>//localhost:1313/notes/integrating-the-grt-into-an-iphone-project---august-29-2017/</loc>
     <lastmod>2017-08-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/real-time-data-receiving-and-rendering-in-processing-august-21-2017/</loc>
+    <loc>//localhost:1313/notes/real-time-data-receiving-and-rendering-in-processing---august-21-2017/</loc>
     <lastmod>2017-08-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/touche-and-water-as-an-interface-august-15-2017/</loc>
+    <loc>//localhost:1313/notes/touche-and-water-as-an-interface---august-15-2017/</loc>
     <lastmod>2017-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/talking-to-plants-touche-experiments-august-4-2017/</loc>
+    <loc>//localhost:1313/notes/talking-to-plants---touche-experiments---august-4-2017/</loc>
     <lastmod>2017-08-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/tools-for-machine-learning-and-sensor-inputs-for-gesture-recognition-july-6-2017/</loc>
+    <loc>//localhost:1313/notes/tools-for-machine-learning-and-sensor-inputs-for-gesture-recognition---july-6-2017/</loc>
     <lastmod>2017-06-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/eyeo-2016-observations-on-toolmaking-june-13-2016/</loc>
+    <loc>//localhost:1313/notes/eyeo-2016-observations-on-toolmaking---june-13-2016/</loc>
     <lastmod>2016-06-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/notes/participating-in-the-soli-alpha-developer-program-may-23-2016/</loc>
+    <loc>//localhost:1313/notes/participating-in-the-soli-alpha-developer-program---may-23-2016/</loc>
     <lastmod>2016-05-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
   </url><url>
-    <loc>/publications/</loc>
+    <loc>//localhost:1313/publications/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
   </url>
 </urlset>
