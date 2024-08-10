@@ -16,7 +16,7 @@
       <link>//localhost:1313/projects_and_work/work/meter_vpn/</link>
       <pubDate>Mon, 25 Dec 2023 00:00:00 +0000</pubDate><author>nicholasarner@gmail.com (Nick Arner)</author>
       <guid>//localhost:1313/projects_and_work/work/meter_vpn/</guid>
-      <description>Meter is a company that develops IT hardware and software for network infrastructure, catering to environments such as schools, warehouses, and offices. I worked wtih them to build a native MacOS app that allows their customers to access their VPN with a simple and friendly user experience.&#xA;It&amp;rsquo;s built in Swift, and utilizes the Network Extension framework for creating a VPN connection.&#xA;The app is available on the App Store.</description>
+      <description>Meter is a company that develops IT hardware and software for network infrastructure, catering to environments such as schools, warehouses, and offices. I worked wtih them to build a native MacOS app that allows their customers to access their VPN with a simple and friendly user experience.&#xA;It&amp;rsquo;s built in Swift, and utilizes the Network Extension framework for creating a VPN connection.</description>
     </item>
     <item>
       <title>AudioKit</title>
