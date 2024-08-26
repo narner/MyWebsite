@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <title>  • Nick Arner </title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180"  href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico"> 
+        <link rel="icon" type="image/png" sizes="16x16"  href="/favicon.ico"> 
+
+        
+        <meta property="og:url" content="https://nickarner.com" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="Nick&#39;s Arner&#39;s website." />
+        <meta property="og:image" content="https://nickarner.com/card.jpg" />
+
+        
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:creator" content="@joodaloop">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="Nick&#39;s Arner&#39;s website." />
+        <meta name="twitter:image" content="https://nickarner.com/card.jpg" />
+
+        <meta name="description" content="Nick&#39;s Arner&#39;s website.">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>    
+    
+<main>
+        <div class=left>
+                <div class=menu>
+
+	<nav>
+		<div class="home">
+			<a href="/"> Nick Arner </a>
+		</div>
+		<a href="/projects_and_work"> Projects </a>
+		<a href="/investing"> Investments </a>
+		<a href="/notes"> Notes </a>
+		<a href="/publications"> Publications </a>
+		<a href="/books"> Books </a>
+	</nav>
+</div>
+        </div><div class=content>
+                <article>
+
+<h1></h1>
+      <div class=date>Published on Jan 1, 1 </div>
+      <pre tabindex="0"><code>title: &#34;Working with the Opus Audio Codec in Swift &#34;
+date: &#34;2024-08-30
+</code></pre><p>The <a href="https://opus-codec.org/" target="_blank" class="external-link" >Opus Interactive Audio Codec</a> is an open-source, royalty free audio codec. It’s primarily used in applications like VoIP or voice-messaging applications, but can also be used for storage and streaming applications. It’s characterized by low latency, high quality, and wide platform support.</p>
+<p>In this blog post, we’ll go over how to setup an iOS app to get audio frames from the microphone, encode them using the Opus encoder, and then play them back using the Opus Decoder.</p>
+<p>Opus isn’t natively supported in Apple’s development frameworks, so we’ll use the <a href="https://github.com/alta/swift-opus" target="_blank" class="external-link" >swift-opus package</a> to help. It’s a set of Swift bindings over the C-based Opus codec.</p>
+<p>The code for this project can be found on GitHub here: <a href="https://github.com/narner/SwiftOpusAudioDemo" target="_blank" class="external-link" >https://github.com/narner/SwiftOpusAudioDemo</a></p>
+<h3 id="configuring-the-encoder-and-decoder">Configuring the Encoder and Decoder</h3>
+<p>Our Opus Encoder/Decoder can be initialized a number of different ways depending on the goal of your app:</p>
+<ul>
+<li>VoIP (Voice over IP)
+<ul>
+<li>Optimized for real-time communications</li>
+<li>Prioritizes low-latency and efficient speech compression</li>
+</ul>
+</li>
+<li>Audio
+<ul>
+<li>Designed for general, non-speech audio; including music</li>
+<li>Good for streaming music, podcasts, and audio book applications</li>
+</ul>
+</li>
+<li>Low Delay
+<ul>
+<li>Prioritizes low-latency over compression efficiency</li>
+<li>Used for live performances or interactive audio</li>
+</ul>
+</li>
+</ul>
+<p>When setting up the encoder and decoder, you can configure which mode you want to use by setting the <code>application</code> to one of these three values:</p>
+<pre tabindex="0"><code>.voip
+.audio
+.restrictedLowDelay
+</code></pre><p>You’ll need to ensure that you configure the encoder and decoder with a sample rate that is compatible with the Opus codec. Any one of these will be fine:</p>
+<ul>
+<li><strong>8 kHz</strong> (Narrowband)</li>
+<li><strong>12 kHz</strong> (Medium-band)</li>
+<li><strong>16 kHz</strong> (Wideband)</li>
+<li><strong>24 kHz</strong> (Super-wideband)</li>
+<li><strong>48 kHz</strong> (Fullband)</li>
+</ul>
+<p>For this example, we’ll use the 48KHz and the VoIP configuration. We’ll configure these parameters inside of our <code>setupAudioSession</code> function, which also sets up the audio nodes for recording and playback:</p>
+<pre tabindex="0"><code>private func setupAudioSession() {
+	...
+	let inputFormat = AVAudioFormat(standardFormatWithSampleRate: 	OPUS_ENCODER_SAMPLE_RATE, channels: 1)!
+	let outputFormat = AVAudioFormat(standardFormatWithSampleRate: 	AUDIO_OUTPUT_SAMPLE_RATE, channels: AUDIO_OUTPUT_CHANNELS)!
+            
+	encoder = try Opus.Encoder(format: inputFormat, application: .voip)
+	decoder = try Opus.Decoder(format: outputFormat, application: .voip)
+}
+</code></pre><h3 id="encoding-and-storing-the-audio-buffers">Encoding and Storing the Audio Buffers</h3>
+<p>Since this is a simple demo, we’re just going to immediately decode the Opus audio when we’re ready for playback, and play it back as raw PCM audio.</p>
+<p>When we start recording, we install a tap on the audio input node, and extract the audio buffer:</p>
+<pre tabindex="0"><code>let inputFormat = AVAudioFormat(standardFormatWithSampleRate: OPUS_ENCODER_SAMPLE_RATE, channels: 1)!
+let desiredBufferSize = AVAudioFrameCount((Double(OPUS_ENCODER_DURATION_MS) / 1000.0) * OPUS_ENCODER_SAMPLE_RATE)
+
+inputNode.installTap(onBus: 0, bufferSize: desiredBufferSize, format: inputFormat) { [weak self] buffer, _ in
+    self?.processBuffer(buffer)
+}
+</code></pre><p>And pass it into our <code>processBuffer</code> function, which encodes the raw PCM audio buffer as Opus data and adds it to our <code>encodedPackets</code> array:</p>
+<pre tabindex="0"><code>private var encodedPackets: [Data] = []
+
+private func processBuffer(_ buffer: AVAudioPCMBuffer) {
+    guard let encoder = encoder else { return }
+
+    do {
+        var encodedData = Data(count: Int(buffer.frameLength) * MemoryLayout&lt;Float32&gt;.size)
+        _ = try encoder.encode(buffer, to: &amp;encodedData)
+        encodedPackets.append(encodedData)
+    } catch {
+        print(&#34;Failed to encode buffer: \(error.localizedDescription)&#34;)
+    }
+}
+</code></pre><p>Whenever the user is holding down the record button, we’ll get the raw audio data from the microphone and encode it as Opus data and store it for playback as soon as recording has finished.</p>
+<h3 id="decoding-and-playing-back-the-audio-buffers">Decoding and Playing Back the Audio Buffers</h3>
+<p>When we’ve finished recording and encoding the audio buffers as Opus data, we’ll then decode them back into raw audio and play the audio through the speaker.</p>
+<p>Inside of <code>stopRecordingAndPlay</code>, we’ll call <code>decodePackets</code> over each item in the array of encoded data packets.</p>
+<pre tabindex="0"><code>func stopRecordingAndPlay() {
+    inputNode.removeTap(onBus: 0)
+    isRecording = false
+    statusMessage = &#34;Processing and playing back...&#34;
+
+    let decodedBuffers = decodePackets()
+    scheduleBuffersForPlayback(decodedBuffers)
+
+    playerNode.play()
+    isPlaying = true
+}
+</code></pre><pre tabindex="0"><code>private func decodePackets() -&gt; [AVAudioPCMBuffer] {
+  var decodedBuffers: [AVAudioPCMBuffer] = []
+
+  for packet in encodedPackets {
+      guard let decoder = decoder else { continue }
+      do {
+          let decodedBuffer = try decoder.decode(packet)
+          decodedBuffers.append(decodedBuffer)
+      } catch {
+          print(&#34;Failed to decode packet: \(error.localizedDescription)&#34;)
+      }
+  }
+
+  return decodedBuffers
+}
+</code></pre><p>and then play back the decoded audio with <code>scheduleBuffersForPlayback</code>:</p>
+<pre tabindex="0"><code>private func scheduleBuffersForPlayback(_ buffers: [AVAudioPCMBuffer]) {
+    guard !buffers.isEmpty else {
+        DispatchQueue.main.async {
+            self.statusMessage = &#34;No audio to play&#34;
+            self.isPlaying = false
+        }
+        return
+    }
+
+    for (index, buffer) in buffers.enumerated() {
+        if index == buffers.count - 1 {
+            playerNode.scheduleBuffer(buffer) {
+                DispatchQueue.main.async {
+                    self.statusMessage = &#34;Playback complete&#34;
+                    self.isPlaying = false
+                    self.encodedPackets.removeAll()
+                }
+            }
+        } else {
+            playerNode.scheduleBuffer(buffer)
+        }
+    }
+}
+</code></pre><h3 id="putting-it-all-together">Putting it All Together</h3>
+<p><img src="/blog_assets/2024/OpusEncodingDemo.MOV" alt="Opus Encoding Demo" title="Opus Encoding Demo"  />
+</p>
+<p>Now you know how to work with the Opus Codec in your Swift iOS or MacOS app. You can use this to build a low latency VoIP or audio-messaging based chat apps that will work over a variety of network bandwidths.</p>
+<p>In this example, we’ve gone over how to build an app that will take in raw audio, encode it via Opus; then decode it back to raw audio to play it back. However, you can also use Opus to encode and decode audio files, too.</p>
+
+       
+
+                </article>
+                <footer> © Copyright Nicholas Arner, 2024  </footer>
+        </div>
+        
+</main>
+
+        
+</body>
+</html>
