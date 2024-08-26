@@ -168,7 +168,7 @@ private func scheduleBuffersForPlayback(_ buffers: [AVAudioPCMBuffer]) {
 
 ### Putting it All Together 
 
-[![](http://img.youtube.com/vi/GJW8DCIZoyE/0.jpg)](https://https://youtu.be/GJW8DCIZoyE"")
+[![](http://img.youtube.com/vi/GJW8DCIZoyE/0.jpg)](https://youtu.be/GJW8DCIZoyE"")
 
 
 
