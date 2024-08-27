@@ -17,7 +17,7 @@ I’ve been lucky to work with lots of different teams while freelancing, from p
 
 **Culture**
 
-- Bias to action is important
+- Bias for action is important
 - A sense of urgency is good; a sense of panic is toxic
 - There’s a huge difference between moving fast and thrashing about in panic. Good engineering leaders will protect their teams from external stresses from other stakeholders so that they can do their best work.
 - A culture of ownership enables project leaders to shepherd a project to completiono
