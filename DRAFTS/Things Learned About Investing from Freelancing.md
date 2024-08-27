@@ -5,17 +5,7 @@ date: "2022-10-15"
 
 
 
-**FROM DIANA BERLIN:**
-
-***First, you have some great examples—certainly enough to “make a set” / justify a blog post.***
-
-***Second, the thing I think will make this piece shine the most is deciding a) who it’s for b) what action you want to inspire in them. Right now, it could be targeted at a founder, freelancer, angel investor, or institutional investor. There are lessons for each, but the piece will travel further and resonate more if you direct it at a certain profile. The decision here is less about “who needs the piece most” and more about what kind of person you’d ideally like to connect with more of.***
-
-
-
-
-
-My angel investing career is still far too short to determine whether or not I’m any good at it. Time and returns will tell. That said, having been able to work with a variety of teams across different sectors has given me some insight into what to try to look for when assessing how companies operate. 
+I'm still relatively early in my investing journey. That said, having been able to work with a variety of teams across different sectors has given me some insight into what to try to look for when assessing how companies operate. 
 
 Being “on the ground” working with a team at a startup is, of course, a very different perspective from that of an investor hearing a pitch from a startup’s founder(s). While investors do of course look for the ability of a startup to execute on the vision of the founders, they don’t always get a first-hand look at how the companies operate on the ground 
 
