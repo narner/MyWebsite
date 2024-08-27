@@ -29,4 +29,4 @@ I’ve been lucky to work with lots of different teams while freelancing, from p
 - Too many cooks make a bad meal. If everyone on a team has a say or direct input on a project, it will stall at best, or produce mediocre results at worst. 
   - Projects should have one person who is ultimately in charge. This is not to say that input should be discouraged; by no means. But, great results come from taste and opinion rather than group consensus. 
 
-I’d encourage founders to consider having people that help them out on a contract basis on their cap-table, and for freelancers to consider investing in the clients they work with. This can foster a mutually beneficial relationship between the founder and freelancer over the course of a startup. 
+I’d encourage founders to consider having people that help them out on a freelance/fractional basis on their cap-table, and for freelancers to consider investing in the clients they work with. This can foster a mutually beneficial relationship between the founder and freelancer over the course of a startup. 
