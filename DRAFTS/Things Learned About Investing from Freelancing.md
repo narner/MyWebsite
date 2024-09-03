@@ -1,7 +1,17 @@
 ---
 title: "Things Learned About Investing from Freelancing"
-date: "2022-10-15"
+date: "2024-09-1"
 ---
+
+
+
+***I think I have a slightly unconventional path to angel investing  I started advising & helping my friends & referrals in a fractional capacity to realize some of them are gems I wanted to invest in Didn’t see much material on it so here a post about my unique experience & why I advocate more people should try it. Some lessons/observations : Make that your own wordsAlso within Culture & product I’d put sub sections as : What I decided to invest. What I did not***
+
+
+
+
+
+
 
 
 
