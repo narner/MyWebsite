@@ -1,57 +1,105 @@
 ---
 title: "Working with Transformation Matrices in Swift"
 date: "2024-09-04"
+
 ---
 
-# Working with Transformation Matrices in Swift
+
 
 
 As part of some recent work, I was working on implementing applying transforms to 3D objects in a Swift app. I was having a really difficult time gaining an intuitive understanding of how the matrices behaved. 
 
 I had Claude help me generate a test app to visualize how modifying position, scale, and rotation values would affect the resulting matrices being used to modify the blue 3D cube.
 
-![Matrix Test App](MatrixTestApp.png)
+![Matrix Test App](/blog_assets/2024/MatrixTestApp.png)
 
 This helped me to gain a better understanding of how the matrices behaved. I had previously assumed that there would be a one-to-one mapping 
 
 The code for this app can be found here: [narner/3D-Matrix-Operation-Visualizer: Real-time 3D object transformation demo for Swift](https://github.com/narner/3D-Matrix-Operation-Visualizer)
 
 
+
 ## Matrix Representation
 
 A transformation matrix in 3D is typically a 4x4 matrix, which allows for the representation of both linear transformations (like rotation and scaling) and translations (movement in space). The general form of a 4x4 transformation matrix is:	
 
-​	| m11 m12 m13 m14 |
-​	| m21 m22 m23 m24 |
-​	| m31 m32 m33 m34 |
-​	|  0         0       0       1   |
+<table>
+  <tr>
+    <td>|</td><td>m11</td><td>m12</td><td>m13</td><td>m14</td><td>|</td>
+  </tr>
+  <tr>
+    <td>|</td><td>m21</td><td>m22</td><td>m23</td><td>m24</td><td>|</td>
+  </tr>
+  <tr>
+   <td>|</td> <td>m31</td><td>m32</td><td>m33</td><td>m34</td><td>|</td>
+  </tr>
+  <tr>
+   <td>|</td> <td>0</td><td>0</td><td>0</td><td>1</td><td>|</td>
+  </tr>
+</table>
+
+&nbsp;
 
 
 
-* The **top-left 3x3 submatrix** (m11 to m33) represents the rotation and scaling of the object.
+The **top-left 3x3 submatrix** (m11 to m33) represents the rotation and scaling of the object.
 
-  | **m11** **m12** **m13** m14 |
-  | **m21** **m22 m23** m24 |
-  | **m31 m32 m33** m34 |
-  |  0        0        0        1  |
+<table>
+  <tr>
+    <td>|</td><td><b>m11</b></td><td><b>m12</b></td><td><b>m13</b></td><td>m14</td><td>|</td>
+  </tr>
+  <tr>
+    <td>|</td><td><b>m21</b></td><td><b>m22</b></td><td><b>m23</b></td><td>m24</td><td>|</td>
+  </tr>
+  <tr>
+   <td>|</td> <td><b>m31</b></td><td><b>m32</b></td><td><b>m33</b></td><td>m34</td><td>|</td>
+  </tr>
+  <tr>
+   <td>|</td> <td>0</td><td>0</td><td>0</td><td>1</td><td>|</td>
+  </tr>
+</table>
+&nbsp;
 
-  
+&nbsp;
 
-* The **fourth column** (m14, m24, m34) represents the translation (position) of the object in 3D space.
+The **fourth column** (m14, m24, m34) represents the translation (position) of the object in 3D space.
 
-  | m11 m12 m13 **m14** |
-  | m21 m22 m23 **m24** |
-  | m31 m32 m33 **m34** |
-  |  0         0       0        1  |
+<table>
+  <tr>
+    <td>|</td><td>m11</td><td>m12</td><td>m13</td><td><b>m14</b></td><td>|</td>
+  </tr>
+  <tr>
+    <td>|</td><td>m21</td><td>m22</td><td>m23</td><td><b>m24</td><td>|</td>
+  </tr>
+  <tr>
+   <td>|</td> <td>m31</td><td>m32</td><td>m33</td><td><b>m34</td><td>|</td>
+  </tr>
+  <tr>
+   <td>|</td> <td>0</td><td>0</td><td>0</td><td>1</b></td><td>|</td>
+  </tr>
+</table>
+&nbsp;
 
-  
+&nbsp;
 
-* The **bottom row** is typically [0, 0, 0, 1], which is used to maintain the properties of homogeneous coordinates.
+The **bottom row** is typically [0, 0, 0, 1], which is used to maintain the properties of homogeneous coordinates.
 
-​	| m11 m12 m13 m14 |
-​	| m21 m22 m23 m24 |
-​	| m31 m32 m33 m34 |
-​	|  **0         0       0        1**  |
+<table>
+  <tr>
+    <td>|</td><td>m11</td><td>m12</td><td>m13</td><td>m14</td><td>|</td>
+  </tr>
+  <tr>
+    <td>|</td><td>m21</td><td>m22</td><td>m23</td><td>m24</td><td>|</td>
+  </tr>
+  <tr>
+   <td>|</td> <td>m31</td><td>m32</td><td>m33</td><td>m34</td><td>|</td>
+  </tr>
+  <tr>
+   <td>|</td> <td><b>0</b></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td><td>|</td>
+  </tr>
+</table>
+
+&nbsp;
 
 
 
@@ -63,16 +111,24 @@ We’ll look at ways to extract specific properties of the transformation matrix
 
 **Translation**: These are used to move an object from one location to another, and can be represented as:
 
-| 1  0 0   **tx** |
-| 0  1 0   **ty** |
-| 0  0  1  **tz** |
-| 0  0  0   1 |
+<table>
+  <tr>
+    <td>|</td><td>m11</td><td>m12</td><td>m13</td><td>m14</td><td>|</td>
+  </tr>
+  <tr>
+    <td>|</td><td>m21</td><td>m22</td><td>m23</td><td>m24</td><td>|</td>
+  </tr>
+  <tr>
+   <td>|</td> <td>m31</td><td>m32</td><td>m33</td><td>m34</td><td>|</td>
+  </tr>
+  <tr>
+   <td>|</td> <td><b>tx</b></td><td><b>ty</b></td><td><b>tz</b></td><td>1</td><td>|</td>
+  </tr>
+</table>
 
-Where (**tx, ty, tz**) are the translation distances along the x, y, and z axes.
+&nbsp;
 
-
-
-**Position**: The position of the object in 3D space is extracted from the fourth column of the matrix:
+Where (**tx, ty, tz**) are the translation distances along the x, y, and z axes. This can be represented in Swift like so:
 
 ```
 var position: SIMD3<Float> {
@@ -80,16 +136,26 @@ var position: SIMD3<Float> {
 }
 ```
 
-
+&nbsp;
 
 **Scaling**: This changes the size of an object. The scaling matrix is defined as:
 
-| **sx** 0  0  0 |
-| 0  **sy** 0  0 |
-| 0  0  **sz** 0 |
-| 0  0  0  1 |
+<table>
+  <tr>
+    <td>|</td><td><b>sx</b></td><td><b>sy</b></td><td><b>sz</b></td><td>m14</td><td>|</td>
+  </tr>
+  <tr>
+    <td>|</td><td>m21</td><td>m22</td><td>m23</td><td>m24</td><td>|</td>
+  </tr>
+  <tr>
+   <td>|</td> <td>m31</td><td>m32</td><td>m33</td><td>m34</td><td>|</td>
+  </tr>
+  <tr>
+   <td>|</td> <td>tx</td><td>ty</td><td>tz</td><td>1</td><td>|</td>
+  </tr>
+</table>
 
-
+&nbsp;&nbsp;
 
 Where (**sx, sy, sz**) are the scaling factors along the respective axes.
 
@@ -103,7 +169,7 @@ var scale: SIMD3<Float> {
 }
 ```
 
-
+&nbsp;
 
 **Rotation**: The rotation matrices are used to rotate an object around the X, Y, and Z axes; and can be represented as:
 
@@ -111,28 +177,60 @@ var scale: SIMD3<Float> {
 
 **Rotation around X-axis**:
 
-| 1             0               1            0 |
-| 0          **cos(θ)**     **-sin(θ)**       0 |
-| 0          **sin(θ)**      **cos(θ)**       0 |
-| 0             0               0            1 |
+<table>
+  <tr>
+    <td>|</td><td>1</td><td>0</td><td>1</td><td>0</td><td>|</td>
+  </tr>
+  <tr>
+    <td>|</td><td>0</td><td><b>cos(θ)</b></td><td><b>-sin(θ)</b></td><td>0</td><td>|</td>
+  </tr>
+  <tr>
+    <td>|</td><td>0</td><td><b>sin(θ)</b></td><td><b>cos(θ)</b></td><td>0</td><td>|</td>
+  </tr>
+  <tr>
+    <td>|</td><td>0</td><td>0</td><td>0</td><td>1</td><td>|</td>
+  </tr>
+</table>
+&nbsp;
 
 
 
-**Rotation around Y-axis**:
-
-| **cos(θ**)    0       **sin(θ)**            0 |
-| 0             1            0               0 |
-| **-sin(θ)**    0       **cos(θ**)           0 |
-| 0             0               0            1 |
+<p><b>Rotation around Y-axis</b>:</p>
+<table>
+  <tr>
+    <td>|</td><td><b>cos(θ)</b></td><td>0</td><td><b>sin(θ)</b></td><td>0</td><td>|</td>
+  </tr>
+  <tr>
+    <td>|</td><td>0</td><td>1</td><td>0</td><td>0</td><td>|</td>
+  </tr>
+  <tr>
+    <td>|</td><td><b>-sin(θ)</b></td><td>0</td><td><b>cos(θ)</b></td><td>0</td><td>|</td>
+  </tr>
+  <tr>
+    <td>|</td><td>0</td><td>0</td><td>0</td><td>1</td><td>|</td>
+  </tr>
+</table>
+&nbsp;
 
 
 
 **Rotation around Z-axis**:
 
-| **cos(θ**)  **-sin(θ)**        0            0 |
-| **sin(θ)**   **cos(θ)**        0            0 |
-| 0             0               1            0 |
-| 0             0               0            1 |
+<table>
+  <tr>
+    <td>|</td><td><b>cos(θ)</b></td><td><b>-sin(θ)</b></td><td>0</td><td>0</td><td>|</td>
+  </tr>
+  <tr>
+    <td>|</td><td><b>sin(θ)</b></td><td><b>cos(θ)</b></td><td>0</td><td>0</td><td>|</td>
+  </tr>
+  <tr>
+    <td>|</td><td>0</td><td>0</td><td>1</td><td>0</td><td>|</td>
+  </tr>
+  <tr>
+    <td>|</td><td>0</td><td>0</td><td>0</td><td>1</td><td>|</td>
+  </tr>
+</table>
+&nbsp;
 
 
 
@@ -188,17 +286,17 @@ There are a couple of parts here worth looking at. First are [Euler Angles](http
   
 
 
-![RollPitchYaw](RollPitchYaw.png)
+![RollPitchYaw](/blog_assets/2024/RollPitchYaw.png)
 
 
 The second thing is the conversion from Radians to Degrees. A Degree is 1/360th of a full rotation around a circle. A radian is the angle formed when the arc length equals the radius of a circle. One full circle is about 6.28 (2π) radians.
 
 
-![RadiansToDegrees](RadiansToDegrees.png)
+![RadiansToDegrees](/blog_assets/2024/RadiansToDegrees.png)
 
 You could construct the matrix directly from radians, however, degrees are much more common in user-facing applications for the reason that they are easier to reason about than radians. 
 
-![DegreesAndRadians		](DegreesAndRadians.png)
+![DegreesAndRadians](/blog_assets/2024/DegreesAndRadians.png)
 
 
 
