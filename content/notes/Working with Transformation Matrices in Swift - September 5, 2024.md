@@ -1,7 +1,7 @@
 ---
 title: "Working with Transformation Matrices in Swift"
-date: "2024-09-04"
-
+thumbnail: /blog_assets/2024/MatrixTestApp.png
+date: "2024-09-05"
 ---
 
 
