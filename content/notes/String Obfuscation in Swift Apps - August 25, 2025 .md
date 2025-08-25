@@ -1,6 +1,6 @@
 ---
-title: "String Obfuscation in Apple Apps"
-date: "2025-08-22"
+title: "String Obfuscation in Swift Apps"
+date: "2025-08-25"
 ---
 
 In your app, you may run into times where you want to obfuscate the content of sensitive strings. In the case of an app that leverages AI by making either API calls to a provider like OpenAI or Anthropic, or when running models locally; you may have stored the prompts for interacting with the models as strings on the device. In this case, you may want to ensure that a competitor can’t figure out the text of the prompts you use.	
