@@ -3,6 +3,8 @@ title: "Building Swift Bindings for Chroma"
 date: "2025-09-25"
 ```
 
+
+
 I recently collaborated with the folks at [Chroma](http://trychroma.com) (a company I'm an investor in) to build [**Chroma Swift**](https://github.com/chroma-core/chroma-swift) — a Swift package that brings Chroma’s retrieval system to iOS and macOS applications. This post outlines the technical journey of bridging Chroma’s Rust core with Swift, including cross-platform compilation, embedding support, and cloud synchronization.
 
 Until recently, most developers building apps with embeddings and vector search relied on remote APIs (e.g. OpenAI, Cohere) to generate embeddings and store them in cloud databases. That approach works, but it has drawbacks: network latency, recurring costs, and potential privacy concerns.
@@ -292,6 +294,4 @@ ChromaSwift, like Chroma itself, is licensed under the the [Apache 2.0 License](
 *Chroma Swift is open source and available today. Explore the* [*repository*](https://github.com/chroma-core/chroma-swift) *for installation details and example projects.*
 
 ------
-
-
 
