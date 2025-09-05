@@ -282,12 +282,8 @@ The repository includes **four demo apps**:
 Issues and PR's are welcome! Some things you could work on include:
 
 * Adding test coverage 
-
 * More documentation 
-
 * More examples
-
-  
 
 ------
 
