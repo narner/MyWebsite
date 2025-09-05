@@ -1,7 +1,7 @@
-```
-title: "Building Swift Bindings for Chroma"
-date: "2025-09-25"
-```
+---
+title: "String Obfuscation in Swift Apps"
+date: "2025-09-05"
+---
 
 
 
@@ -294,4 +294,8 @@ ChromaSwift, like Chroma itself, is licensed under the the [Apache 2.0 License](
 *Chroma Swift is open source and available today. Explore the* [*repository*](https://github.com/chroma-core/chroma-swift) *for installation details and example projects.*
 
 ------
+
+
+
+
 
