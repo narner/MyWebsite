@@ -7,7 +7,9 @@ layout: "has-contents"
 
 ## Work
 
-* **[Meter VPN App](/projects_and_work/work/meter_vpn/)** | 2023
+* **[ChromaSwift](/notes/building-chroma-for-swift---september-05-2025/)** | 2025
+
+* **[Meter VPN App](/projects_and_work/work/meter_vpn/)** | 2023 - 2024
 
 * **[Roboflow iOS SDK](/projects_and_work/work/roboflow_native_mobile_sdk/)** | 2023
 
