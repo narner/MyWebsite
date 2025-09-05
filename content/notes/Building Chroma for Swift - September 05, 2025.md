@@ -1,5 +1,5 @@
 ---
-title: "String Obfuscation in Swift Apps"
+title: "Building Chroma for Swift"
 date: "2025-09-05"
 ---
 
