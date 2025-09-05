@@ -1,6 +1,6 @@
 ```
 title: "Building Swift Bindings for Chroma"
-date: "2025-09-05"
+date: "2025-09-25"
 ```
 
 I recently collaborated with the folks at [Chroma](http://trychroma.com) (a company I'm an investor in) to build [**Chroma Swift**](https://github.com/chroma-core/chroma-swift) — a Swift package that brings Chroma’s retrieval system to iOS and macOS applications. This post outlines the technical journey of bridging Chroma’s Rust core with Swift, including cross-platform compilation, embedding support, and cloud synchronization.
